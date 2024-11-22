@@ -1,4 +1,5 @@
 import Image from "next/image";
+import {ThemeSwitcher} from "@/shared/ui/themeSwitcher";
 
 export default function Home() {
   return (
@@ -96,6 +97,8 @@ export default function Home() {
           Go to nextjs.org →
         </a>
       </footer>
+      <ThemeSwitcher/>
+      <h1>Ralewaaaaaaaaaaaaaay</h1>
     </div>
   );
 }
