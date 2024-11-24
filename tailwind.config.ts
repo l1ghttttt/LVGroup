@@ -12,7 +12,9 @@ export default {
     "./src/shared/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/entities/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/features/**/*.{js,ts,jsx,tsx,mdx}",
+	"./src/widgets/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@shadcn/ui/components/**/*.{js,ts,jsx,tsx}",
+	"./public/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
   	extend: {
@@ -47,7 +49,7 @@ export default {
   				DEFAULT: 'hsl(var(--destructive))',
   				foreground: 'hsl(var(--destructive-foreground))'
   			},
-  			border: 'hsl(var(--border))',
+  			border: 'hsl(var(--border-color))',
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
   			chart: {
@@ -62,7 +64,17 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		fontSize: {
+			  headerSize: 'var(--text-header)'
+		},
+		textColor: {
+			headerColor: 'hsl(var(--header-color))',
+			altColor: 'hsl(var(--text-inversion))',
+		},
+		backgroundColor: {
+			  mainColor: 'hsl(var(--main-color))',
+		}
   	}
   },
   plugins: [forms, typography, aspectRatio, require("tailwindcss-animate")],

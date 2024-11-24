@@ -2,6 +2,7 @@ import { ThemeProvider } from 'next-themes';
 import { Raleway } from 'next/font/google';
 import { Roboto } from 'next/font/google';
 import './globals.css';
+import Header from "@/widgets/header/Header";
 
 // Подключаем шрифты Raleway и Roboto
 const raleway = Raleway({
@@ -35,6 +36,7 @@ export default function RootLayout({
                 enableSystem
                 disableTransitionOnChange
             >
+                <Header/>
                 {children}
             </ThemeProvider>
             </body>
