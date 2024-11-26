@@ -66,14 +66,28 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
 		fontSize: {
-			  headerSize: 'var(--text-header)'
+			headerSize: 'var(--text-header)',
+			mainZag: 'var(--mainZag)',
+			welcomeLink: 'var(--welcome-link)',
+			welcomeDescr: 'var(--welcome-link-deskr)',
 		},
 		textColor: {
 			headerColor: 'hsl(var(--header-color))',
 			altColor: 'hsl(var(--text-inversion))',
 		},
 		backgroundColor: {
-			  mainColor: 'hsl(var(--main-color))',
+			mainColor: 'hsl(var(--main-color))',
+			darkMain: 'hsl(var(--dark-main))',
+		},
+		fontFamily: {
+			railway: 'var(--title-font)',
+		},
+		padding: {
+			welcomePadding: 'var(--welcome-pl)',
+			welcomeWrapper: 'var(--welcome-wrapper)',
+			welcomeWrapperBottom: 'var(--welcome-wrapper-bottom)',
+			welcomeLinkPadding: 'var(--welcome-link-padding)',
+			welcomeLinkPaddingTop: 'var(--welcome-link-padding-top)',
 		}
   	}
   },

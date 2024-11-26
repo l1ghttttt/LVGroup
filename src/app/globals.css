@@ -77,11 +77,22 @@ body {
     --text-font: Roboto, sans-serif;
     --text-header: 20px;
     --border-color: 0, 0%, 44%;
-    --header-color: 0, 0%, 71%;
-    --main-color: 20, 92%, 48%;
+    --header-color: 0, 0%, 29%;
+    --main-color: 20, 92%, 50%;
+    --dark-main: 20 92% 40%;
     --background: 0 0% 100%;
     --foreground: 224 71.4% 4.1%;
     --text-inversion: 0 100% 100%;
+    --mainZag: calc(24px + var(--responsive)* 56);
+    --responsive: calc(-0.27575px + 0.06645vw);
+    --welcome-pl: calc(25px + var(--responsive)* 35);
+    --welcome-wrapper: calc(105px + 5.46875vw) 0;
+    --welcome-wrapper-bottom: calc(var(--app__space)* 2);
+    --app__space: calc(25px + var(--responsive)* 35);
+    --welcome-link: calc(28.65306px + 1.22449vw);
+    --welcome-link-padding: 0 var(--app__space);
+    --welcome-link-padding-top: calc(8px + var(--responsive)*10);
+    --welcome-link-deskr: calc(15px + var(--responsive)*10);
 
     --card: 0 0% 100%;
     --card-foreground: 224 71.4% 4.1%;
@@ -109,6 +120,8 @@ body {
   }
   .dark {
     --text-inversion: 0 100% 0%;
+    --header-color: 0, 0%, 71%;
+
 
     --background: 0, 0%, 0%;
     --foreground: 210 20% 98%;
@@ -134,6 +147,45 @@ body {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+  }
+  @media (min-width: 1920px) {
+    .app {
+      --responsive: 1px;
+    }
+  }
+  @media (min-width: 415px) and (max-width: 1919px) {
+    .app {
+      --responsive: calc(-0.27575px + 0.06645vw);
+    }
+  }
+  @media (max-width: 414px) {
+    .app {
+      --responsive: 0px;
+    }
+  }
+
+  @media (min-width: 2560px) {
+    .welcome__link {
+      --welcome-link: 60px;
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 2559px) {
+    .welcome__link {
+      --welcome-link: calc(28.65306px + 1.22449vw);
+    }
+  }
+
+  @media (max-width: 599px) {
+    .welcome__link {
+      --welcome-link: 36px;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .hello__services {
+      --welcome-link-padding-top: 0;
+    }
   }
 }
 
@@ -175,4 +227,27 @@ a {
   width: 100%;
   height: 85px;
   border-bottom: black 1px solid;
+}
+
+.video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  z-index: -1000;
+  overflow: hidden;
+}
+
+#myVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  transform: translateX(-50%) translateY(-50%);
 }

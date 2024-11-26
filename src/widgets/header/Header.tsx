@@ -1,4 +1,6 @@
-import React from 'react';
+'use client'
+
+import React, {useEffect, useState} from 'react';
 import {
     NavigationMenu, NavigationMenuContent,
     NavigationMenuItem, NavigationMenuLink,
@@ -7,6 +9,8 @@ import {
 } from "@/shared/ui/navigation-menu";
 import ListItem from '@/shared/ui/ListItem';
 import Link from "next/link";
+import {useTheme} from "next-themes";
+import {ThemeSwitcher} from "@/shared/ui/themeSwitcher";
 
 interface NavbarComponent {
     trigger: string;
@@ -139,9 +143,20 @@ const components: NavbarComponent[] = [
 
 
 const Header = () => {
+    const { theme, setTheme } = useTheme();
+    const [mounted, setMounted] = useState(false);
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+    if (!mounted) return null;
     return (
-        <header className="header-clas w-full h-[85px] border-b-[1px] flex items-center pl-[15px] pr-[30px] gap-[30px]">
-            <img src="/LVGROUP_logo.svg" alt="логотип LVGroup" className={`w-[170px]`}/>
+        <header className="header-clas w-full h-[100px] border-b-[1px] flex items-center pl-[15px] pr-[30px] gap-[30px] absolute">
+            {/* Логотипы, которые переключаются в зависимости от темы */}
+            {theme === 'dark' ? (
+                <img src="/LVGROUP_logo.svg" alt="логотип LVGroup" className="w-[170px]" />
+            ) : (
+                <img src="/LVGROUP_logo-black.svg" alt="логотип LVGroup" className="w-[170px]" />
+            )}
             <nav className="flex items-center gap-3">
                 <NavigationMenu>
                     <NavigationMenuList className="flex-wrap">
@@ -149,7 +164,8 @@ const Header = () => {
 
                         <NavigationMenuItem>
                             <Link href="/" legacyBehavior passHref>
-                                <NavigationMenuLink className={`text-headerColor hover:text-white !text-[18px] ` + navigationMenuTriggerStyle()}>
+                                <NavigationMenuLink
+                                    className={`text-headerColor !text-[20px] ` + navigationMenuTriggerStyle()}>
                                     Проекты
                                 </NavigationMenuLink>
                             </Link>
@@ -159,9 +175,9 @@ const Header = () => {
                         {components.map((component) => (
                             <NavigationMenuItem key={component.trigger}>
                                 <NavigationMenuTrigger
-                                    className={`text-[18px] text-headerColor`}>{component.trigger}</NavigationMenuTrigger>
+                                    className={`text-[20px] text-headerColor `}>{component.trigger}</NavigationMenuTrigger>
                                 <NavigationMenuContent>
-                                    <ul className="grid w-[500px] gap-3 p-4 md:w-[600px] md:grid-cols-2 lg:w-[700px]">
+                                    <ul className="grid w-[500px] gap-3 p-4 md:w-[600px] md:grid-cols-2 lg:w-[700px] ">
                                         {component.values.map((subcomponent) => (
                                             <ListItem
                                                 key={subcomponent.title}
@@ -179,7 +195,8 @@ const Header = () => {
 
                         <NavigationMenuItem>
                             <Link href="/" legacyBehavior passHref>
-                                <NavigationMenuLink className={`text-headerColor hover:text-white !text-[18px] ` + navigationMenuTriggerStyle()}>
+                                <NavigationMenuLink
+                                    className={`text-headerColor !text-[20px] font-medium ` + navigationMenuTriggerStyle()}>
                                     Контакты
                                 </NavigationMenuLink>
                             </Link>
@@ -189,7 +206,11 @@ const Header = () => {
                     </NavigationMenuList>
                 </NavigationMenu>
             </nav>
-            <button className={`bg-amber-400 px-[40px] py-[10px] bg-mainColor rounded-[50px] font-semibold tracking-wider ml-auto text-altColor`}>
+            <div className={`ml-auto`}>
+                <ThemeSwitcher/>
+            </div>
+            <button
+                className={`bg-amber-400 px-[30px] py-[10px] bg-mainColor hover:bg-darkMain rounded-[50px] font-medium tracking-wider text-altColor duration-150 `}>
                 ЗАЯВКА
             </button>
         </header>
