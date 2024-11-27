@@ -76,9 +76,9 @@ body {
     --title-font: Raleway, sans-serif;
     --text-font: Roboto, sans-serif;
     --text-header: 20px;
-    --border-color: 0, 0%, 44%;
-    --header-color: 0, 0%, 29%;
-    --main-color: 20, 92%, 50%;
+    --border-color: 0 0% 44%;
+    --header-color: 0 0% 29%;
+    --main-color: 20 92% 50%;
     --dark-main: 20 92% 40%;
     --background: 0 0% 100%;
     --foreground: 224 71.4% 4.1%;
@@ -93,6 +93,7 @@ body {
     --welcome-link-padding: 0 var(--app__space);
     --welcome-link-padding-top: calc(8px + var(--responsive)*10);
     --welcome-link-deskr: calc(15px + var(--responsive)*10);
+    --welcome-colorDescr: 0 0% 40%;
 
     --card: 0 0% 100%;
     --card-foreground: 224 71.4% 4.1%;
@@ -120,10 +121,11 @@ body {
   }
   .dark {
     --text-inversion: 0 100% 0%;
-    --header-color: 0, 0%, 71%;
+    --header-color: 0 0% 71%;
+    --welcome-colorDescr: 0 0% 71%;
 
 
-    --background: 0, 0%, 0%;
+    --background: 0 0% 0%;
     --foreground: 210 20% 98%;
     --card: 224 71.4% 4.1%;
     --card-foreground: 210 20% 98%;
@@ -199,7 +201,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--title-font);
+  font-family: var(--title-font), serif;
 }
 
 h1 {
@@ -231,23 +233,27 @@ a {
 
 .video-background {
   position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  z-index: -1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
   overflow: hidden;
+  background-color: var(--background);
 }
 
 #myVideo {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 100%;
-  min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -1000;
-  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }

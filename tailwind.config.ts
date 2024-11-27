@@ -74,6 +74,8 @@ export default {
 		textColor: {
 			headerColor: 'hsl(var(--header-color))',
 			altColor: 'hsl(var(--text-inversion))',
+			welcomeColorDescr: 'hsl(var(--welcome-colorDescr))',
+			mainColor: 'hsl(var(--main-color))',
 		},
 		backgroundColor: {
 			mainColor: 'hsl(var(--main-color))',

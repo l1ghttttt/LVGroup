@@ -1,10 +1,11 @@
-import Image from "next/image";
-import {ThemeSwitcher} from "@/shared/ui/themeSwitcher";
 import Welcome from "@/widgets/welcome-page/Welcome";
+import Promo from "@/widgets/promo/Promo";
 
 export default function Home() {
   return (
-      <Welcome/>
-
+      <>
+        <Welcome/>
+        <Promo/>
+      </>
   );
 }
