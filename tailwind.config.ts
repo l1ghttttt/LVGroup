@@ -70,6 +70,7 @@ export default {
 			mainZag: 'var(--mainZag)',
 			welcomeLink: 'var(--welcome-link)',
 			welcomeDescr: 'var(--welcome-link-deskr)',
+			casesNameSize: 'var(--cases-name-size)',
 		},
 		textColor: {
 			headerColor: 'hsl(var(--header-color))',
@@ -90,7 +91,15 @@ export default {
 			welcomeWrapperBottom: 'var(--welcome-wrapper-bottom)',
 			welcomeLinkPadding: 'var(--welcome-link-padding)',
 			welcomeLinkPaddingTop: 'var(--welcome-link-padding-top)',
-		}
+			casesNamePadding: 'var(--cases-name-padding)',
+			casesFilterPadding: 'var(--cases-filter-padding)',
+		},
+		width: {
+			  caseWidth: 'var(--case-width)',
+		},
+		height: {
+			  caseHeight: 'var(--case-height)',
+		},
   	}
   },
   plugins: [forms, typography, aspectRatio, require("tailwindcss-animate")],

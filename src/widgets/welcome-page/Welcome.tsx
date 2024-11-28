@@ -15,13 +15,8 @@ const Welcome = () => {
         <div className={`p-welcomeWrapper pb-welcomeWrapperBottom w-full `}>
             <div className="video-background">
 
-
-                    <video autoPlay muted loop id="myVideo" className={theme == 'dark' ? '' : 'hidden'}>
+                    <video autoPlay muted loop id="myVideo" className={theme == 'dark' ? '' : 'invert'}>
                         <source src="/header-big.mp4" type="video/mp4"/>
-                    </video>
-
-                    <video autoPlay muted loop id="myVideo" className={theme == 'dark' ? 'hidden' : ''}>
-                        <source src="/header-big-white.mp4" type="video/mp4"/>
                     </video>
 
             </div>
