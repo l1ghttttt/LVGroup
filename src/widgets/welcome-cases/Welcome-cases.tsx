@@ -56,7 +56,7 @@ const WelcomeCases = () => {
             </ul>
             <ul className={`bg-background flex items-start flex-wrap justify-start relative ml-[-1px] mb-[-1px]`}>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="">
+                    <Link href="/">
                         {typeof window !== "undefined" && (
                             <video autoPlay muted loop id="myVideo"
                                    className="absolute top-0 left-0 w-full h-full object-cover">
@@ -68,14 +68,14 @@ const WelcomeCases = () => {
                                 Кейс
                             </p>
                             <p className={`relative z-25 text-caseTextSize text-white leading-caseTextLeading font-railway`}>
-                                Редизайн и разработка сайта для автосервиса "Ламарк-Центр"
+                                Редизайн и разработка сайта для автосервиса &quot;Ламарк-Центр&quot;
                             </p>
                         </div>
                     </Link>
                 </li>
 
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="">
+                    <Link href="/">
                         <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/2.jpg" alt=""/>
                         <div className={`bg-amber-100 w-full h-full p-caseContentPadding`}>
                             <p className={`mb-[12px] relative z-25 text-black font-railway font-semibold transform-[translate3d(0, 0, 0)] flex items-baseline justify-start text-[15px]`}>Кейс</p>
@@ -86,73 +86,73 @@ const WelcomeCases = () => {
                     </Link>
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="">
+                    <Link href="/">
                         <video autoPlay muted loop id="myVideo">
                             <source src="/3.mp4" type="video/mp4"/>
                         </video>
                         <div className={`bg-amber-100 w-full h-full p-caseContentPadding`}>
                             <p className={`mb-[12px] relative z-25 text-white font-railway font-semibold transform-[translate3d(0, 0, 0)] flex items-baseline justify-start text-[15px]`}>Кейс</p>
                             <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                +250% прибыли отдела продаж ГК "ВостокАвтоМаш"
+                                +250% прибыли отдела продаж ГК &quot;ВостокАвтоМаш&quot;
                             </p>
                         </div>
                     </Link>
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="">
+                    <Link href="/">
                         <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/4.jpg" alt=""/>
                         <div className={`bg-amber-100 w-full h-full p-caseContentPadding`}>
                             <p className={`mb-[12px] relative z-25 text-black font-railway font-semibold transform-[translate3d(0, 0, 0)] flex items-baseline justify-start text-[15px]`}>Кейс</p>
                             <p className={`relative z-25 text-black text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                "Зубная Фея": от 5000 лидов в отсчете и отсутствия клиентов до реальных показателей
+                                &quot;Зубная Фея&quot;: от 5000 лидов в отсчете и отсутствия клиентов до реальных показателей
                             </p>
                         </div>
                     </Link>
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="">
+                    <Link href="/">
                         <video autoPlay muted loop id="myVideo">
                             <source src="/5.mp4" type="video/mp4"/>
                         </video>
                         <div className={`bg-amber-100 w-full h-full p-caseContentPadding`}>
                             <p className={`mb-[12px] relative z-25 text-white  font-railway font-semibold transform-[translate3d(0, 0, 0)] flex items-baseline justify-start text-[15px]`}>Кейс</p>
                             <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                Обзвон-информирование граждан для партии "ЛДПР"
+                                Обзвон-информирование граждан для партии &quot;ЛДПР&quot;
                             </p>
                         </div>
                     </Link>
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="">
+                    <Link href="/">
                         <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/6.jpg" alt=""/>
                         <div className={`bg-amber-100 w-full h-full p-caseContentPadding`}>
                             <p className={`mb-[12px] relative z-25 text-white  font-railway font-semibold transform-[translate3d(0, 0, 0)] flex items-baseline justify-start text-[15px]`}>Кейс</p>
                             <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                Фирменный стиль компьютерного клуба "Бункер"
+                                Фирменный стиль компьютерного клуба &quot;Бункер&quot;
                             </p>
                         </div>
                     </Link>
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="">
+                    <Link href="/">
                         <video autoPlay muted loop id="myVideo">
                             <source src="/7.mp4" type="video/mp4"/>
                         </video>
                         <div className={`bg-amber-100 w-full h-full p-caseContentPadding`}>
                             <p className={`mb-[12px] relative z-25 text-white  font-railway font-semibold transform-[translate3d(0, 0, 0)] flex items-baseline justify-start text-[15px]`}>Кейс</p>
                             <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                Продажи, Маркетинг и HR в сети заведений "Чиллхаус"
+                                Продажи, Маркетинг и HR в сети заведений &quot;Чиллхаус&quot;
                             </p>
                         </div>
                     </Link>
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="">
+                    <Link href="/">
                         <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/8.jpg" alt=""/>
                         <div className={`bg-amber-100 w-full h-full p-caseContentPadding`}>
                             <p className={`mb-[12px] relative z-25 text-black font-railway font-semibold transform-[translate3d(0, 0, 0)] flex items-baseline justify-start text-[15px]`}>Кейс</p>
                             <p className={`relative z-25 text-black text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                SMM для кафе "Брат Бурят" с 200 до 12 000 подписчиков
+                                SMM для кафе &quot;Брат Бурят&quot; с 200 до 12 000 подписчиков
                             </p>
                         </div>
                     </Link>
