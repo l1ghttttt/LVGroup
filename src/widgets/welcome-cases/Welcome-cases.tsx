@@ -152,7 +152,7 @@ const WelcomeCases = () => {
                         <div className={`bg-amber-100 w-full h-full p-caseContentPadding`}>
                             <p className={`mb-[12px] relative z-25 text-black font-railway font-semibold transform-[translate3d(0, 0, 0)] flex items-baseline justify-start text-[15px]`}>Кейс</p>
                             <p className={`relative z-25 text-black text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                SMM для кафе "Брат Бурят" с 200 до 12 000 подписчиков
+                                SMM для кафе "Брат Бурят" с 200 до 12 000 подписчиков
                             </p>
                         </div>
                     </Link>
