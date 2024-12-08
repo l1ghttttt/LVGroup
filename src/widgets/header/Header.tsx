@@ -143,7 +143,7 @@ const components: NavbarComponent[] = [
 
 
 const Header = () => {
-    const { theme, setTheme } = useTheme();
+    const { theme } = useTheme();
     const [mounted, setMounted] = useState(false);
     useEffect(() => {
         setMounted(true);
