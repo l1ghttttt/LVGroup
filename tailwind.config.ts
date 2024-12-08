@@ -73,12 +73,17 @@ export default {
 			casesNameSize: 'var(--cases-name-size)',
 			caseTextSize: 'var(--case-text-size)',
 			seeAllSize: 'var(--see-all-size)',
+			servicesTitleSize: 'var(--services-title-size)',
+			servicesDescriptionSize: 'var(--services-description-size)',
+			serviceTitleSize: 'var(--service-title-size)',
+			serviceNameSize: 'var(--service-name-size)',
 		},
 		textColor: {
 			headerColor: 'hsl(var(--header-color))',
 			altColor: 'hsl(var(--text-inversion))',
 			welcomeColorDescr: 'hsl(var(--welcome-colorDescr))',
 			mainColor: 'hsl(var(--main-color))',
+			darkMain: 'hsl(var(--dark-main))',
 		},
 		backgroundColor: {
 			mainColor: 'hsl(var(--main-color))',
@@ -97,6 +102,8 @@ export default {
 			casesFilterPadding: 'var(--cases-filter-padding)',
 			caseContentPadding: 'var(--case-content-padding)',
 			servicesPadding: 'var(--space-m)',
+			servicePadding: 'var(--space-s)',
+			servicesTitlePadding: 'var(--app__space)',
 		},
 		width: {
 			caseWidth: 'var(--case-width)',
@@ -107,6 +114,10 @@ export default {
 		lineHeight: {
 			caseTextLeading: 'var(--case-text-leading)',
 			seeAllLeading: 'var(--see-all-leading)',
+			servicesTitleLeading: 'var(--services-title-leading)',
+			servicesDescriptionLeading: 'var(--services-description-leading)',
+			serviceTitleLeading: 'var(--service-title-leading)',
+			serviceNameLeading: 'var(--service-name-leading)',
 		}
   	}
   },

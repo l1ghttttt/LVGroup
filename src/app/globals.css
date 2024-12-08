@@ -109,7 +109,14 @@ body {
     --case-text-leading: calc(23px + var(--grid__press)*12);
     --see-all-size: 58px;
     --see-all-leading: 60px;
-
+    --services-title-size: calc(30px + var(--responsive)*30);
+    --services-title-leading: calc(35px + var(--responsive)*30);
+    --services-description-size: calc(17px + var(--responsive)*10);
+    --services-description-leading: calc(25px + var(--responsive)*15);
+    --service-title-size: calc(24px + var(--responsive)*16);
+    --service-title-leading: calc(27px + var(--responsive)*18);
+    --service-name-size: calc(14px + var(--responsive)* 8);
+    --service-name-leading: calc(16px + var(--responsive)* 8);;
 
     --card: 0 0% 100%;
     --card-foreground: 224 71.4% 4.1%;
@@ -347,6 +354,10 @@ a {
   min-height: 100%;
   transform: translate(-50%, -50%);
   object-fit: cover;
+}
+
+.services-list:nth-child(3n+1) {
+  padding-left: var(--app__space);
 }
 
 ::-webkit-scrollbar {

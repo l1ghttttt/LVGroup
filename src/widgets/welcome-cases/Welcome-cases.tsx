@@ -14,7 +14,7 @@ const WelcomeCases = () => {
     if (!mounted) return null;
 
     return (
-        <section className={`w-full h-[900px] flex flex-col bg-background`}>
+        <section className={`w-full flex flex-col bg-background`}>
             <h2 className={`p-casesNamePadding leading-none flex items-end justify-stretch w-2/3 text-casesNameSize font-medium`}>Наши проекты</h2>
             <ul className={`flex p-casesFilterPadding flex-wrap gap-2 gap-y-3`}>
                 <li>
@@ -63,7 +63,7 @@ const WelcomeCases = () => {
                                 <source src="/1.mp4" type="video/mp4"/>
                             </video>
                         )}
-                        <div className={`z-25 bg-amber-100 w-full h-full p-caseContentPadding`}>
+                        <div className={`z-25 bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`mb-[12px] relative z-25 text-white font-railway font-semibold flex items-baseline justify-start text-[15px]`}>
                                 Кейс
                             </p>
@@ -77,7 +77,7 @@ const WelcomeCases = () => {
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                     <Link href="/">
                         <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/2.jpg" alt=""/>
-                        <div className={`bg-amber-100 w-full h-full p-caseContentPadding`}>
+                        <div className={`bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`mb-[12px] relative z-25 text-black font-railway font-semibold transform-[translate3d(0, 0, 0)] flex items-baseline justify-start text-[15px]`}>Кейс</p>
                             <p className={`relative z-25 text-black text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
                                 Контекстная реклама для Dr.Mobile: 100 лидов в месяц
@@ -90,7 +90,7 @@ const WelcomeCases = () => {
                         <video autoPlay muted loop id="myVideo">
                             <source src="/3.mp4" type="video/mp4"/>
                         </video>
-                        <div className={`bg-amber-100 w-full h-full p-caseContentPadding`}>
+                        <div className={`bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`mb-[12px] relative z-25 text-white font-railway font-semibold transform-[translate3d(0, 0, 0)] flex items-baseline justify-start text-[15px]`}>Кейс</p>
                             <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
                                 +250% прибыли отдела продаж ГК &quot;ВостокАвтоМаш&quot;
@@ -101,7 +101,7 @@ const WelcomeCases = () => {
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                     <Link href="/">
                         <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/4.jpg" alt=""/>
-                        <div className={`bg-amber-100 w-full h-full p-caseContentPadding`}>
+                        <div className={`bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`mb-[12px] relative z-25 text-black font-railway font-semibold transform-[translate3d(0, 0, 0)] flex items-baseline justify-start text-[15px]`}>Кейс</p>
                             <p className={`relative z-25 text-black text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
                                 &quot;Зубная Фея&quot;: от 5000 лидов в отсчете и отсутствия клиентов до реальных показателей
@@ -114,7 +114,7 @@ const WelcomeCases = () => {
                         <video autoPlay muted loop id="myVideo">
                             <source src="/5.mp4" type="video/mp4"/>
                         </video>
-                        <div className={`bg-amber-100 w-full h-full p-caseContentPadding`}>
+                        <div className={`bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`mb-[12px] relative z-25 text-white  font-railway font-semibold transform-[translate3d(0, 0, 0)] flex items-baseline justify-start text-[15px]`}>Кейс</p>
                             <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
                                 Обзвон-информирование граждан для партии &quot;ЛДПР&quot;
@@ -125,7 +125,7 @@ const WelcomeCases = () => {
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                     <Link href="/">
                         <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/6.jpg" alt=""/>
-                        <div className={`bg-amber-100 w-full h-full p-caseContentPadding`}>
+                        <div className={`bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`mb-[12px] relative z-25 text-white  font-railway font-semibold transform-[translate3d(0, 0, 0)] flex items-baseline justify-start text-[15px]`}>Кейс</p>
                             <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
                                 Фирменный стиль компьютерного клуба &quot;Бункер&quot;
@@ -138,7 +138,7 @@ const WelcomeCases = () => {
                         <video autoPlay muted loop id="myVideo">
                             <source src="/7.mp4" type="video/mp4"/>
                         </video>
-                        <div className={`bg-amber-100 w-full h-full p-caseContentPadding`}>
+                        <div className={`bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`mb-[12px] relative z-25 text-white  font-railway font-semibold transform-[translate3d(0, 0, 0)] flex items-baseline justify-start text-[15px]`}>Кейс</p>
                             <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
                                 Продажи, Маркетинг и HR в сети заведений &quot;Чиллхаус&quot;
@@ -149,7 +149,7 @@ const WelcomeCases = () => {
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                     <Link href="/">
                         <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/8.jpg" alt=""/>
-                        <div className={`bg-amber-100 w-full h-full p-caseContentPadding`}>
+                        <div className={`bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`mb-[12px] relative z-25 text-black font-railway font-semibold transform-[translate3d(0, 0, 0)] flex items-baseline justify-start text-[15px]`}>Кейс</p>
                             <p className={`relative z-25 text-black text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
                                 SMM для кафе &quot;Брат Бурят&quot; с 200 до 12 000 подписчиков
@@ -163,7 +163,7 @@ const WelcomeCases = () => {
                             <source src="/9.mp4" type="video/mp4"/>
                         </video>
                         <div
-                            className={`bg-amber-100 p-caseContentPadding w-full h-full flex flex-col justify-between`}>
+                            className={`bg-background p-caseContentPadding w-full h-full flex flex-col justify-between`}>
                             <p className={`relative z-25 text-seeAllSize leading-seeAllLeading text-white font-railway transform-[translate3d(0, 0, 0)]`}>
                                 Посмотреть все наши проекты
                             </p>
