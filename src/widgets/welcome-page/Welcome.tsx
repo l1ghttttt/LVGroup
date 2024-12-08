@@ -2,6 +2,7 @@
 
 import React, {useEffect, useState} from 'react';
 import {useTheme} from "next-themes";
+import Link from "next/link";
 
 const Welcome = () => {
     const { theme } = useTheme();
@@ -31,12 +32,12 @@ const Welcome = () => {
                 </div>
                 <nav className={`w-2/5 max-sm:w-full p-welcomeLinkPadding pt-welcomeLinkPaddingTop`}>
                     <ul className={`flex flex-col gap-[10px]`}>
-                        <a href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Продажи</a>
-                        <a href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Маркетинг</a>
-                        <a href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Веб-разработка</a>
-                        <a href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Создание контента</a>
-                        <a href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Дизайн</a>
-                        <a href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Call-центр</a>
+                        <Link href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Продажи</Link>
+                        <Link href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Маркетинг</Link>
+                        <Link href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Веб-разработка</Link>
+                        <Link href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Создание контента</Link>
+                        <Link href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Дизайн</Link>
+                        <Link href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Call-центр</Link>
                     </ul>
                 </nav>
             </div>

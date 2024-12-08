@@ -218,9 +218,3 @@ const Header = () => {
 };
 
 export default Header;
-
-/*
-<ul>
-    <li><a className={`text-headerSize`}>Проекты</a></li>
-</ul>
-*/
