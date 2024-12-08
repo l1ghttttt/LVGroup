@@ -4,7 +4,7 @@ import React, {useEffect, useState} from 'react';
 import {useTheme} from "next-themes";
 
 const Welcome = () => {
-    const { theme, setTheme } = useTheme();
+    const { theme } = useTheme();
     const [mounted, setMounted] = useState(false);
     useEffect(() => {
         setMounted(true);
@@ -12,7 +12,7 @@ const Welcome = () => {
     //console.log(theme);
     if (!mounted) return null;
     return (
-        <div className={`p-welcomeWrapper pb-welcomeWrapperBottom w-full `}>
+        <section className={`p-welcomeWrapper pb-welcomeWrapperBottom w-full `}>
             <div className="video-background">
 
                     <video autoPlay muted loop id="myVideo" className={theme == 'dark' ? '' : 'invert'}>
@@ -40,7 +40,7 @@ const Welcome = () => {
                     </ul>
                 </nav>
             </div>
-        </div>
+        </section>
     );
 };
 

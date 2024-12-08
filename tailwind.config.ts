@@ -71,6 +71,8 @@ export default {
 			welcomeLink: 'var(--welcome-link)',
 			welcomeDescr: 'var(--welcome-link-deskr)',
 			casesNameSize: 'var(--cases-name-size)',
+			caseTextSize: 'var(--case-text-size)',
+			seeAllSize: 'var(--see-all-size)',
 		},
 		textColor: {
 			headerColor: 'hsl(var(--header-color))',
@@ -93,13 +95,19 @@ export default {
 			welcomeLinkPaddingTop: 'var(--welcome-link-padding-top)',
 			casesNamePadding: 'var(--cases-name-padding)',
 			casesFilterPadding: 'var(--cases-filter-padding)',
+			caseContentPadding: 'var(--case-content-padding)',
+			servicesPadding: 'var(--space-m)',
 		},
 		width: {
-			  caseWidth: 'var(--case-width)',
+			caseWidth: 'var(--case-width)',
 		},
 		height: {
-			  caseHeight: 'var(--case-height)',
+			caseHeight: 'var(--case-height)',
 		},
+		lineHeight: {
+			caseTextLeading: 'var(--case-text-leading)',
+			seeAllLeading: 'var(--see-all-leading)',
+		}
   	}
   },
   plugins: [forms, typography, aspectRatio, require("tailwindcss-animate")],
