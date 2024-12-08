@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import Link from "next/link";
 
@@ -46,6 +48,9 @@ const WelcomeCases = () => {
             <ul className={`bg-background flex items-start flex-wrap justify-start relative ml-[-1px] mb-[-1px]`}>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                     <Link href="">
+                        <video autoPlay muted loop id="myVideo">
+                            <source src="/1.mp4" type="video/mp4"/>
+                        </video>
                         <div className={`bg-amber-100 w-full h-full`}>
 
                         </div>
@@ -53,6 +58,7 @@ const WelcomeCases = () => {
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                     <Link href="">
+                        <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/2.jpg" alt=""/>
                         <div className={`bg-amber-100 w-full h-full`}>
 
                         </div>
@@ -60,6 +66,9 @@ const WelcomeCases = () => {
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                     <Link href="">
+                        <video autoPlay muted loop id="myVideo">
+                            <source src="/3.mp4" type="video/mp4"/>
+                        </video>
                         <div className={`bg-amber-100 w-full h-full`}>
 
                         </div>
@@ -67,6 +76,7 @@ const WelcomeCases = () => {
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                     <Link href="">
+                        <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/4.jpg" alt=""/>
                         <div className={`bg-amber-100 w-full h-full`}>
 
                         </div>
@@ -74,6 +84,9 @@ const WelcomeCases = () => {
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                     <Link href="">
+                        <video autoPlay muted loop id="myVideo">
+                            <source src="/5.mp4" type="video/mp4"/>
+                        </video>
                         <div className={`bg-amber-100 w-full h-full`}>
 
                         </div>
@@ -81,6 +94,7 @@ const WelcomeCases = () => {
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                     <Link href="">
+                        <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/6.jpg" alt=""/>
                         <div className={`bg-amber-100 w-full h-full`}>
 
                         </div>
@@ -88,6 +102,9 @@ const WelcomeCases = () => {
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                     <Link href="">
+                        <video autoPlay muted loop id="myVideo">
+                            <source src="/7.mp4" type="video/mp4"/>
+                        </video>
                         <div className={`bg-amber-100 w-full h-full`}>
 
                         </div>
@@ -95,6 +112,7 @@ const WelcomeCases = () => {
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                     <Link href="">
+                        <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/8.jpg" alt=""/>
                         <div className={`bg-amber-100 w-full h-full`}>
 
                         </div>
