@@ -3,16 +3,16 @@ import { Raleway } from 'next/font/google';
 import { Roboto } from 'next/font/google';
 import './globals.css';
 import Header from "@/widgets/header/Header";
+import Footer from "@/widgets/footer/Footer";
 
-// Подключаем шрифты Raleway и Roboto
 const raleway = Raleway({
     subsets: ['latin'],
-    weight: ['400', '700'], // Например, обычный и жирный
+    weight: ['400', '700'],
 });
 
 const roboto = Roboto({
     subsets: ['latin'],
-    weight: ['400', '700'], // Например, обычный и жирный
+    weight: ['400', '700'],
 });
 
 export const metadata = {
@@ -40,6 +40,7 @@ export default function RootLayout({
                 <main className={`flex flex-col items-center`}>
                     {children}
                 </main>
+                <Footer/>
             </ThemeProvider>
             </body>
             </html>

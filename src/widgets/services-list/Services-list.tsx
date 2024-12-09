@@ -19,7 +19,7 @@ const ServicesList = () => {
             <nav className={`flex pt-servicesPadding`}>
                 <ul className={`flex flex-wrap services-list w-full`}>
                     <li className={`w-1/3 pb-servicesPadding`}>
-                        <h2 className={`block relative text-serviceTitleSize leading-serviceTitleLeading before:absolute before:content-[''] before:w-[85%] before:h-[1px] before:top-[-20px] before:left-[2px] before:bg-[#b4b4b4]`}>Продажи</h2>
+                        <h2 className={`block relative text-serviceTitleSize leading-serviceTitleLeading before:absolute before:content-[''] before:w-[85%] before:h-[1px] before:top-[-20px] before:left-[2px] before:bg-servicesLineBg`}>Продажи</h2>
                         <nav>
                             <ul className={`duration-500 pt-servicePadding`}>
                                 <li className={`py-[10px]`}>
@@ -46,7 +46,7 @@ const ServicesList = () => {
                         </nav>
                     </li>
                     <li className={`w-1/3 pb-servicesPadding`}>
-                        <h2 className={`block relative text-serviceTitleSize leading-serviceTitleLeading before:absolute before:content-[''] before:w-[85%] before:h-[1px] before:top-[-20px] before:left-[2px] before:bg-[#b4b4b4]`}>Маркетинг</h2>
+                        <h2 className={`block relative text-serviceTitleSize leading-serviceTitleLeading before:absolute before:content-[''] before:w-[85%] before:h-[1px] before:top-[-20px] before:left-[2px] before:bg-servicesLineBg`}>Маркетинг</h2>
                         <nav>
                             <ul className={`duration-500 pt-servicePadding`}>
                                 <li className={`py-[10px]`}>
@@ -71,7 +71,7 @@ const ServicesList = () => {
                         </nav>
                     </li>
                     <li className={`w-1/3 pb-servicesPadding`}>
-                        <h2 className={`block relative text-serviceTitleSize leading-serviceTitleLeading before:absolute before:content-[''] before:w-[85%] before:h-[1px] before:top-[-20px] before:left-[2px] before:bg-[#b4b4b4]`}>Веб-разработка</h2>
+                        <h2 className={`block relative text-serviceTitleSize leading-serviceTitleLeading before:absolute before:content-[''] before:w-[85%] before:h-[1px] before:top-[-20px] before:left-[2px] before:bg-servicesLineBg`}>Веб-разработка</h2>
                         <nav>
                             <ul className={`duration-500 pt-servicePadding`}>
                                 <li className={`py-[10px]`}>
@@ -88,7 +88,7 @@ const ServicesList = () => {
                         </nav>
                     </li>
                     <li className={`w-1/3 pb-servicesPadding`}>
-                        <h2 className={`block relative text-serviceTitleSize leading-serviceTitleLeading before:absolute before:content-[''] before:w-[85%] before:h-[1px] before:top-[-20px] before:left-[2px] before:bg-[#b4b4b4]`}>Создание контента</h2>
+                        <h2 className={`block relative text-serviceTitleSize leading-serviceTitleLeading before:absolute before:content-[''] before:w-[85%] before:h-[1px] before:top-[-20px] before:left-[2px] before:bg-servicesLineBg`}>Создание контента</h2>
                         <nav>
                             <ul className={`duration-500 pt-servicePadding`}>
                                 <li className={`py-[10px]`}>
@@ -103,7 +103,7 @@ const ServicesList = () => {
                         </nav>
                     </li>
                     <li className={`w-1/3 pb-servicesPadding`}>
-                        <h2 className={`block relative text-serviceTitleSize leading-serviceTitleLeading before:absolute before:content-[''] before:w-[85%] before:h-[1px] before:top-[-20px] before:left-[2px] before:bg-[#b4b4b4]`}>Дизайн</h2>
+                        <h2 className={`block relative text-serviceTitleSize leading-serviceTitleLeading before:absolute before:content-[''] before:w-[85%] before:h-[1px] before:top-[-20px] before:left-[2px] before:bg-servicesLineBg`}>Дизайн</h2>
                         <nav>
                             <ul className={`duration-500 pt-servicePadding`}>
                                 <li className={`py-[10px]`}>
@@ -122,7 +122,7 @@ const ServicesList = () => {
                         </nav>
                     </li>
                     <li className={`w-1/3 pb-servicesPadding`}>
-                        <h2 className={`block relative text-serviceTitleSize leading-serviceTitleLeading before:absolute before:content-[''] before:w-[85%] before:h-[1px] before:top-[-20px] before:left-[2px] before:bg-[#b4b4b4]`}>Call-центр</h2>
+                        <h2 className={`block relative text-serviceTitleSize leading-serviceTitleLeading before:absolute before:content-[''] before:w-[85%] before:h-[1px] before:top-[-20px] before:left-[2px] before:bg-servicesLineBg`}>Call-центр</h2>
                         <nav>
                             <ul className={`duration-500 pt-servicePadding`}>
                                 <li className={`py-[10px]`}>

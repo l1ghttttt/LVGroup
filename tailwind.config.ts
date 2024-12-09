@@ -84,10 +84,12 @@ export default {
 			welcomeColorDescr: 'hsl(var(--welcome-colorDescr))',
 			mainColor: 'hsl(var(--main-color))',
 			darkMain: 'hsl(var(--dark-main))',
+			footerLinkColor: 'hsl(var(--footer-link-color))',
 		},
 		backgroundColor: {
 			mainColor: 'hsl(var(--main-color))',
 			darkMain: 'hsl(var(--dark-main))',
+			servicesLineBg: 'hsl(var(--services-line-bg))',
 		},
 		fontFamily: {
 			railway: 'var(--title-font)',
@@ -104,6 +106,17 @@ export default {
 			servicesPadding: 'var(--space-m)',
 			servicePadding: 'var(--space-s)',
 			servicesTitlePadding: 'var(--app__space)',
+			footerNavListPadding: 'var(--footer-space)',
+			footerNavListPaddingMaxl: 'var(--footer-nav-list-padding-maxl)',
+			footerSocialPaddingXL: 'var(--footer-social-space)',
+			footerSocialPaddingMaxl: 'var(--footer-social-padding-maxl)',
+		},
+		margin: {
+			footerNavMarginXL: 'var(--footer-nav-margin-xl)',
+			footerNavMarginMaxl: 'var(--footer-nav-margin-maxl)',
+			footerSocialMarginXL: 'var(--footer-social-margin-xl)',
+			footerSocialMarginTopMaxXL: 'var(--footer-social-marginTop-maxl)',
+			footerSocialMarginMaxXL: 'var(--footer-social-margin-maxl)',
 		},
 		width: {
 			caseWidth: 'var(--case-width)',
@@ -118,7 +131,7 @@ export default {
 			servicesDescriptionLeading: 'var(--services-description-leading)',
 			serviceTitleLeading: 'var(--service-title-leading)',
 			serviceNameLeading: 'var(--service-name-leading)',
-		}
+		},
   	}
   },
   plugins: [forms, typography, aspectRatio, require("tailwindcss-animate")],

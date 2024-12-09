@@ -150,7 +150,7 @@ const Header = () => {
     }, []);
     if (!mounted) return null;
     return (
-        <header className="header-clas w-full h-[100px] border-b-[1px] flex items-center pl-[15px] pr-[30px] gap-[30px] absolute">
+        <header className="header-clas w-full h-[100px] border-b-[1px] flex items-center pl-[15px] pr-[30px] gap-[30px] absolute max-lg:hidden">
             {/* Логотипы, которые переключаются в зависимости от темы */}
             {theme === 'dark' ? (
                 <img src="/LVGROUP_logo.svg" alt="логотип LVGroup" className="w-[170px]" />

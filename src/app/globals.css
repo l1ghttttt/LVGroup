@@ -109,6 +109,8 @@ body {
     --case-text-leading: calc(23px + var(--grid__press)*12);
     --see-all-size: 58px;
     --see-all-leading: 60px;
+    --footer-space: calc(12px + var(--responsive)*13);
+    --footer-social-space: calc(10px + var(--responsive)*14);
     --services-title-size: calc(30px + var(--responsive)*30);
     --services-title-leading: calc(35px + var(--responsive)*30);
     --services-description-size: calc(17px + var(--responsive)*10);
@@ -116,7 +118,17 @@ body {
     --service-title-size: calc(24px + var(--responsive)*16);
     --service-title-leading: calc(27px + var(--responsive)*18);
     --service-name-size: calc(14px + var(--responsive)* 8);
-    --service-name-leading: calc(16px + var(--responsive)* 8);;
+    --service-name-leading: calc(16px + var(--responsive)* 8);
+    --footer-nav-gap: calc(12px + var(--responsive)*13);
+    --footer-nav-margin-xl: calc(var(--footer-space)*-1);
+    --footer-nav-margin-maxl: calc(var(--footer-space)*-0.6) calc(var(--footer-space)*-1);
+    --footer-nav-list-padding-maxl: calc(var(--footer-space)*0.6) var(--footer-space);
+    --footer-link-color: 0 0 50%;
+    --services-line-bg: 0 0 20%;
+    --footer-social-margin-xl: calc(var(--footer-social-space)*-1);
+    --footer-social-marginTop-maxl: calc(var(--space-s) + 10px - var(--responsive)*10);
+    --footer-social-margin-maxl: calc(var(--footer-social-space)*-0.6) calc(var(--footer-social-space)*-1);
+    --footer-social-padding-maxl: calc(var(--footer-space)*0.6) var(--footer-space);
 
     --card: 0 0% 100%;
     --card-foreground: 224 71.4% 4.1%;
@@ -146,7 +158,8 @@ body {
     --text-inversion: 0 100% 0%;
     --header-color: 0 0% 71%;
     --welcome-colorDescr: 0 0% 71%;
-
+    --footer-link-color: 0 0 71%;
+    --services-line-bg: 0 0 71%;
 
     --background: 0 0% 0%;
     --foreground: 210 0% 98%;
