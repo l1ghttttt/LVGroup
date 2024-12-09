@@ -129,6 +129,13 @@ body {
     --footer-social-marginTop-maxl: calc(var(--space-s) + 10px - var(--responsive)*10);
     --footer-social-margin-maxl: calc(var(--footer-social-space)*-0.6) calc(var(--footer-social-space)*-1);
     --footer-social-padding-maxl: calc(var(--footer-space)*0.6) var(--footer-space);
+    --form__space_y: 80px;
+    --form__space_x: 120px;
+    --order-title-size: 60px;
+    --order-title-leading: 65px;
+    --order-descr-size: 25px;
+    --order-descr-leading: 30px;
+    --order-icon-margin: 22px;
 
     --card: 0 0% 100%;
     --card-foreground: 224 71.4% 4.1%;
@@ -196,6 +203,29 @@ body {
       --responsive: 1px;
     }
   }
+  @media (min-width: 1920px) {
+    :root {
+      --order-icon-margin: 22px;
+    }
+  }
+  @media (min-width: 1920px) {
+    :root {
+      --order-descr-size: 25px;
+      --order-descr-leading: 30px;
+    }
+  }
+  @media (min-width: 1920px) {
+    :root {
+      --order-title-size: 60px;
+      --order-title-leading: 65px;
+    }
+  }
+  @media (min-width: 1920px) {
+    :root {
+      --form__space_y: 80px;
+      --form__space_x: 120px;
+    }
+  }
   @media (min-width: 1200px) {
     :root {
       --grid__columns: 3;
@@ -240,15 +270,61 @@ body {
         --space-m: 140px;
       }
     }
+    @media (min-width: 1200px) and (max-width: 1919px) {
+      :root {
+        --order-title-size: calc(-6.66667px + 3.47222vw);
+        --order-title-leading: calc(11.66667px + 2.77778vw);
+      }
+    }
+    @media (min-width: 1440px) and (max-width: 1919px) {
+      :root {
+        --form__space_y: calc(-80px + 8.33333vw);
+        --form__space_x: 6.25vw;
+      }
+    }
+    @media (min-width: 1440px) and (max-width: 1919px) {
+      :root {
+        --order-descr-size: calc(5px + 1.04167vw);
+        --order-descr-leading: calc(10px + 1.04167vw);
+      }
+    }
+    @media (min-width: 1440px) and (max-width: 1919px) {
+      :root {
+        --order-icon-margin: calc(-18px + 2.08333vw);
+      }
+    }
     @media (min-width: 1280px) and (max-width: 1919px) {
       :root {
         --space-m: calc(20px + 6.25vw);
       }
     }
   }
+  @media (max-width: 1439px) {
+    :root {
+      --form__space_y: 40px;
+      --form__space_x: 90px;
+    }
+  }
+  @media (max-width: 1439px) {
+    :root {
+      --order-descr-size: 20px;
+      --order-descr-leading: 25px;
+    }
+  }
+  @media (max-width: 1439px) {
+    :root {
+      --order-icon-margin: 12px;
+    }
+  }
   @media (max-width: 1280px) {
     :root {
     --space-m: var(--space-s);
+    }
+  }
+  @media (max-width: 1199px) {
+    :root {
+      --order-title-size: 35px;
+      --order-title-leading: 45px;
     }
   }
   @media (min-width: 415px) and (max-width: 1919px) {
@@ -373,6 +449,10 @@ a {
   padding-left: var(--app__space);
 }
 
-::-webkit-scrollbar {
-  width: 0;
+.order-flex-flow {
+  flex-flow: column;
 }
+
+/*::-webkit-scrollbar {
+  width: 0;
+}*/

@@ -77,6 +77,8 @@ export default {
 			servicesDescriptionSize: 'var(--services-description-size)',
 			serviceTitleSize: 'var(--service-title-size)',
 			serviceNameSize: 'var(--service-name-size)',
+			orderTitleSize: 'var(--order-title-size)',
+			orderDescrSize: 'var(--order-descr-size)',
 		},
 		textColor: {
 			headerColor: 'hsl(var(--header-color))',
@@ -110,6 +112,8 @@ export default {
 			footerNavListPaddingMaxl: 'var(--footer-nav-list-padding-maxl)',
 			footerSocialPaddingXL: 'var(--footer-social-space)',
 			footerSocialPaddingMaxl: 'var(--footer-social-padding-maxl)',
+			formSpaceYPadding: 'var(--form__space_y)',
+			formSpaceXPadding: 'var(--form__space_x)',
 		},
 		margin: {
 			footerNavMarginXL: 'var(--footer-nav-margin-xl)',
@@ -117,6 +121,7 @@ export default {
 			footerSocialMarginXL: 'var(--footer-social-margin-xl)',
 			footerSocialMarginTopMaxXL: 'var(--footer-social-marginTop-maxl)',
 			footerSocialMarginMaxXL: 'var(--footer-social-margin-maxl)',
+			orderIconMargin: 'var(--order-icon-margin)',
 		},
 		width: {
 			caseWidth: 'var(--case-width)',
@@ -131,6 +136,8 @@ export default {
 			servicesDescriptionLeading: 'var(--services-description-leading)',
 			serviceTitleLeading: 'var(--service-title-leading)',
 			serviceNameLeading: 'var(--service-name-leading)',
+			orderTitleLeading: 'var(--order-title-leading)',
+			orderDescrLeading: 'var(--order-descr-leading)',
 		},
   	}
   },
