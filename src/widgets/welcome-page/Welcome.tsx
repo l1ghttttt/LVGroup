@@ -32,12 +32,12 @@ const Welcome = () => {
                 </div>
                 <nav className={`w-2/5 max-sm:w-full p-welcomeLinkPadding pt-welcomeLinkPaddingTop`}>
                     <ul className={`flex flex-col gap-[10px]`}>
-                        <Link href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Продажи</Link>
-                        <Link href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Маркетинг</Link>
-                        <Link href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Веб-разработка</Link>
-                        <Link href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Создание контента</Link>
-                        <Link href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Дизайн</Link>
-                        <Link href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Call-центр</Link>
+                        <Link href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Создание сайтов</Link>
+                        <Link href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Контекстная реклама</Link>
+                        <Link href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300 max-2xl:hidden`}>Создание/развитие <br/> отделов продаж</Link>
+                        <Link href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300 2xl:hidden`}>Развитие отделов продаж</Link>
+                        <Link href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>Видеосьемка</Link>
+                        <Link href="/" className={`text-welcomeLink font-medium font-railway hover:text-mainColor duration-300`}>SMM</Link>
                     </ul>
                 </nav>
             </div>

@@ -62,7 +62,8 @@ const Order = () => {
                     <nav className={`flex mt-auto w-full text-[18px] leading-[28px] max-xl:pt-[200px]`}>
                         <ul className={`flex`}>
                             <li className={`mr-[72px]`}>
-                                <Link href="/" className={`duration-300 hover:duration-150 relative block cursor-pointer text-mainColor hover:text-darkMain mb-[20px] touch-manipulation max-sm:font-medium max-sm:leading-[29px] max-sm:mb-[2px]`}>test</Link>
+                                <Link href="/" className={`duration-300 hover:duration-150 relative block cursor-pointer text-mainColor hover:text-darkMain mb-[20px] touch-manipulation max-sm:font-medium max-sm:leading-[29px] max-sm:mb-[2px]`}>Работа</Link>
+                                <Link href="/">rabota@lvgroup.ru</Link>
                             </li>
                         </ul>
                     </nav>

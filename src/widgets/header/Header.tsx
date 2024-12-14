@@ -210,7 +210,7 @@ const Header = () => {
                 <ThemeSwitcher/>
             </div>
             <button
-                className={`bg-amber-400 px-[30px] py-[10px] bg-mainColor hover:bg-darkMain rounded-[50px] font-medium tracking-wider text-altColor duration-150 `}>
+                className={`bg-amber-400 px-[30px] py-[10px] bg-mainColor hover:bg-darkMain rounded-[50px] font-semibold tracking-wider text-altColor duration-150 `}>
                 ЗАЯВКА
             </button>
         </header>
