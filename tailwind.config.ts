@@ -92,6 +92,7 @@ export default {
 			mainColor: 'hsl(var(--main-color))',
 			darkMain: 'hsl(var(--dark-main))',
 			servicesLineBg: 'hsl(var(--services-line-bg))',
+			orderBg: 'hsl(var(--order-bg))',
 		},
 		fontFamily: {
 			railway: 'var(--title-font)',
