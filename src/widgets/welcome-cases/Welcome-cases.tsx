@@ -65,7 +65,7 @@ const WelcomeCases = () => {
                         )}
                         <div className={`z-25 bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`relative z-25 text-caseTextSize text-white leading-caseTextLeading font-railway`}>
-                                Редизайн и разработка сайта для автосервиса &quot;Ламарк-Центр&quot;
+                                Редизайн и разработка сайта для <br/> автосервиса &quot;Ламарк-Центр&quot;
                             </p>
                         </div>
                     </Link>
@@ -76,7 +76,7 @@ const WelcomeCases = () => {
                         <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/2.jpg" alt=""/>
                         <div className={`bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`relative z-25 text-black text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                Контекстная реклама для Dr.Mobile: 100 лидов в месяц
+                                Контекстная реклама для Dr.Mobile: <br/> 100 лидов в месяц
                             </p>
                         </div>
                     </Link>
@@ -88,7 +88,7 @@ const WelcomeCases = () => {
                         </video>
                         <div className={`bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                +250% прибыли отдела продаж ГК &quot;ВостокАвтоМаш&quot;
+                                +250% прибыли отдела продаж <br/> ГК &quot;ВостокАвтоМаш&quot;
                             </p>
                         </div>
                     </Link>
@@ -98,7 +98,8 @@ const WelcomeCases = () => {
                         <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/4.jpg" alt=""/>
                         <div className={`bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`relative z-25 text-black text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                &quot;Зубная Фея&quot;: от 5000 лидов в отсчете и отсутствия клиентов до реальных показателей
+                                &quot;Зубная Фея&quot;: от 5000 лидов в <br/> отсчете и отсутствия клиентов <br/> до
+                                реальных показателей
                             </p>
                         </div>
                     </Link>
@@ -110,7 +111,7 @@ const WelcomeCases = () => {
                         </video>
                         <div className={`bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                Обзвон-информирование граждан для партии &quot;ЛДПР&quot;
+                                Обзвон-информирование граждан <br/> для партии &quot;ЛДПР&quot;
                             </p>
                         </div>
                     </Link>
@@ -120,7 +121,7 @@ const WelcomeCases = () => {
                         <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/6.jpg" alt=""/>
                         <div className={`bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                Фирменный стиль компьютерного клуба &quot;Бункер&quot;
+                                Фирменный стиль компьютерного <br/> клуба &quot;Бункер&quot;
                             </p>
                         </div>
                     </Link>
@@ -132,7 +133,7 @@ const WelcomeCases = () => {
                         </video>
                         <div className={`bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                Продажи, Маркетинг и HR в сети заведений &quot;Чиллхаус&quot;
+                                Продажи, Маркетинг и HR в сети <br/> заведений &quot;Чиллхаус&quot;
                             </p>
                         </div>
                     </Link>
@@ -142,7 +143,7 @@ const WelcomeCases = () => {
                         <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/8.jpg" alt=""/>
                         <div className={`bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`relative z-25 text-black text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                SMM для кафе &quot;Брат Бурят&quot; с 200 до 12 000 подписчиков
+                                SMM для кафе &quot;Брат Бурят&quot; <br/> с 200 до 12 000 подписчиков
                             </p>
                         </div>
                     </Link>
@@ -154,8 +155,8 @@ const WelcomeCases = () => {
                         </video>
                         <div
                             className={`bg-background p-caseContentPadding w-full h-full flex flex-col justify-between`}>
-                            <p className={`relative z-25 text-seeAllSize leading-seeAllLeading text-white font-railway font-semibold transform-[translate3d(0, 0, 0)]`}>
-                                Посмотреть все наши проекты
+                            <p className={`-translate-y-[0.8rem] relative z-25 text-seeAllSize leading-seeAllLeading text-white font-railway font-semibold transform-[translate3d(0, 0, 0)]`}>
+                                Посмотреть все <br/> наши проекты
                             </p>
                             <div>
                                 <button

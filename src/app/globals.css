@@ -104,10 +104,10 @@ body {
     --grid__press: 1px;
     --case-width: calc(((100% - var(--grid__columns) * 1px) / var(--grid__columns)));
     --case-height: calc(var(--grid__height)*1);
-    --case-content-padding: calc(var(--app__space)/3*2) var(--app__space);
+    --case-content-padding: calc(var(--app__space)/3*2) calc(var(--app__space) - 25px);
     --case-text-size: calc(20px + var(--grid__press)*8);
     --case-text-leading: calc(23px + var(--grid__press)*12);
-    --see-all-size: 58px;
+    --see-all-size: 44px;
     --see-all-leading: 60px;
     --footer-space: calc(12px + var(--responsive)*13);
     --footer-social-space: calc(10px + var(--responsive)*14);
@@ -378,7 +378,7 @@ body {
   @media (max-width: 414px) {
     .card-more .card__title {
       --see-all-leading: 50px;
-      --see-all-size: 48px;
+      --see-all-size: 44px;
     }
   }
 }
