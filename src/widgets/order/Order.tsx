@@ -69,6 +69,9 @@ const Order = () => {
                     </nav>
                 </div>
             </div>
+            <div className={`w-1/2 bg-orderBg h-full`}>
+
+            </div>
         </section>
 );
 };
