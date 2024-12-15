@@ -454,6 +454,6 @@ a {
   flex-flow: column;
 }
 
-/*::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0;
-}*/
+}

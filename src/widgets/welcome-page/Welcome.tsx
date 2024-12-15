@@ -17,7 +17,7 @@ const Welcome = () => {
             <div className="video-background">
 
                     <video autoPlay muted loop id="myVideo" className={theme == 'dark' ? '' : 'invert'}>
-                        <source src="/header-big.mp4" type="video/mp4"/>
+                        <source src="/animated-background.mp4" type="video/mp4"/>
                     </video>
 
             </div>
