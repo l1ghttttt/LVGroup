@@ -79,6 +79,7 @@ export default {
 			serviceNameSize: 'var(--service-name-size)',
 			orderTitleSize: 'var(--order-title-size)',
 			orderDescrSize: 'var(--order-descr-size)',
+			orderContactsSize: 'var(--order-contacts-size)',
 		},
 		textColor: {
 			headerColor: 'hsl(var(--header-color))',
@@ -123,6 +124,7 @@ export default {
 			footerSocialMarginTopMaxXL: 'var(--footer-social-marginTop-maxl)',
 			footerSocialMarginMaxXL: 'var(--footer-social-margin-maxl)',
 			orderIconMargin: 'var(--order-icon-margin)',
+			orderContactsMargin: 'var(--order-contacts-mb)',
 		},
 		width: {
 			caseWidth: 'var(--case-width)',

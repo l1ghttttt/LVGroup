@@ -137,6 +137,8 @@ body {
     --order-descr-leading: 30px;
     --order-icon-margin: 22px;
     --order-bg: 20, 84%, 58%;
+    --order-contacts-size: 35px;
+    --order-contacts-mb: 40px;
 
     --card: 0 0% 100%;
     --card-foreground: 224 71.4% 4.1%;
@@ -225,6 +227,24 @@ body {
     :root {
       --form__space_y: 80px;
       --form__space_x: 120px;
+    }
+  }
+  @media (min-width: 1920px) {
+    :root {
+      --order-contacts-size: 35px;
+      --order-contacts-mb: 40px;
+    }
+  }
+  @media (min-width: 1440px) and (max-width: 1919px) {
+    :root {
+      --order-contacts-size: calc(18px + .83333vw);
+      --order-contacts-mb: calc(10px + 1.45833vw);
+    }
+  }
+  @media (max-width: 1439px) {
+    :root {
+      --order-contacts-size: 30px;
+      --order-contacts-mb: 34px;
     }
   }
   @media (min-width: 1200px) {

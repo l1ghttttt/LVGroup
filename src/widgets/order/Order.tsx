@@ -3,6 +3,8 @@
 import React, {useEffect, useState} from 'react';
 import Link from "next/link";
 import {useTheme} from "next-themes";
+import {Input} from "@/shared/ui/input";
+import {OrderForm} from "@/components/Form/Order-form";
 
 const Order = () => {
     const { theme } = useTheme();
@@ -12,38 +14,36 @@ const Order = () => {
     }, []);
     if (!mounted) return null;
     return (
-        <section className={`w-full relative z-25 flex items-stretch h-[950px]`}>
-            <div className={`w-1/2 flex items-stretch justify-stretch shrink-[0.5] relative`}>
-                {/* Анимированный фон */}
+        <section className={`w-full relative z-25 flex items-stretch h-[950px] max-xl:flex-col`}>
+            <div className={`w-1/2 flex items-stretch justify-stretch shrink-[0.5] relative max-xl:w-full`}>
                 <div className="order-video-background absolute top-0 left-0 w-full h-full">
                     <video autoPlay muted loop id="myOrderVideo" className={theme === 'dark' ? '' : 'invert'}>
                         <source src="/order-bg.mp4" type="video/mp4"/>
                     </video>
                 </div>
-                {/* Контент поверх видео */}
                 <div
                     className={`flex flex-col items-stretch justify-start relative z-50 w-full py-formSpaceYPadding px-formSpaceXPadding`}>
                     <h3 className={`text-orderTitleSize leading-orderTitleLeading font-medium relative`}>
-                        Оставьте заявку,
+                        Нужна встреча, чтобы
                         <br/>
-                        Чтобы обсудить проект
+                        принять решение?
                     </h3>
                     <nav className={`flex`}>
                         <ul className={`flex flex-wrap mt-[47px] max-w-[700px] max-sm:flex-col`}>
                             <li className={`mr-[40px] mb-[50px] max-2xl:mr-[30px] max-2xl:mb-[30px] max-sm:mr-[20px] max-sm:mb-[20px] max-sm:w-auto`}>
                                 <Link href="/"
                                       className={`touch-manipulation text-orderDescrSize leading-orderDescrLeading flex`}>
-                                    +7 (777) 777-77-77
+                                    +7 (4212) 93-03-01
                                 </Link>
                             </li>
-                            <li className={`mr-[40px] mb-[50px] max-2xl:mr-[30px] max-2xl:mb-[30px] max-sm:mr-[20px] max-sm:mb-[20px] max-sm:w-auto`}>
+                            {/*<li className={`mr-[40px] mb-[50px] max-2xl:mr-[30px] max-2xl:mb-[30px] max-sm:mr-[20px] max-sm:mb-[20px] max-sm:w-auto`}>
                                 <Link href="/"
                                       className={`touch-manipulation text-orderDescrSize leading-orderDescrLeading flex`}>
                                     lvgroup@gmail.com
                                 </Link>
-                            </li>
+                            </li>*/}
                             <li className={`mr-[40px] mb-[50px] max-2xl:mr-[30px] max-2xl:mb-[30px] max-sm:mr-[20px] max-sm:mb-[20px] max-sm:w-auto`}>
-                                <Link href="/"
+                                <Link href="https://t.me/tvoi_dvigatel"
                                       className={`touch-manipulation text-orderDescrSize leading-orderDescrLeading flex`}>
                                     <svg
                                         className="w-6 h-6 text-gray-800 dark:text-white mr-orderIconMargin"
@@ -60,7 +60,7 @@ const Order = () => {
                                     telegram
                                 </Link>
                             </li>
-                            <li className={`mr-[40px] mb-[50px] max-2xl:mr-[30px] max-2xl:mb-[30px] max-sm:mr-[20px] max-sm:mb-[20px] max-sm:w-auto`}>
+                            {/*<li className={`mr-[40px] mb-[50px] max-2xl:mr-[30px] max-2xl:mb-[30px] max-sm:mr-[20px] max-sm:mb-[20px] max-sm:w-auto`}>
                                 <Link href="/"
                                       className={`touch-manipulation text-orderDescrSize leading-orderDescrLeading flex`}>
                                     <svg
@@ -83,29 +83,32 @@ const Order = () => {
                                     </svg>
                                     Скачать бриф
                                 </Link>
-                            </li>
+                            </li>*/}
                         </ul>
                     </nav>
-                    {/* Секция с "Работа" */}
                     <nav className={`flex mt-auto w-full text-[18px] leading-[28px] max-xl:pt-[200px]`}>
                         <ul className={`flex`}>
                             <li className={`mr-[72px]`}>
-                                <Link
-                                    href="/"
-                                    className={`duration-300 hover:duration-150 relative block cursor-pointer text-mainColor hover:text-darkMain mb-[20px] touch-manipulation max-sm:font-medium max-sm:leading-[29px] max-sm:mb-[2px]`}
-                                >
-                                    Работа
-                                </Link>
-                                <Link href="/">rabota@lvgroup.ru</Link>
+                                <p className={`text-[20px] relative leading-[35px] mb-[20px] max-sm:font-medium max-sm:leading-[29px] max-sm:mb-[15px]`}>
+                                    Наши руководители готовы лично помочь и обсудить детали.
+
+                                </p>
+                                <p className={`text-[20px] relative leading-[35px] mb-[20px] max-sm:font-medium max-sm:leading-[29px] max-sm:mb-[15px]`}>
+                                    Позвоните, чтобы договориться о встрече или заполните форму,
+                                    и мы вам обязательно перезвоним.
+                                </p>
+
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
-            <div className={`w-1/2 bg-orderBg h-full`}></div>
+            <div className={`w-1/2 bg-orderBg h-full max-xl:w-full shrink-[0.5] z-25`}>
+                    <OrderForm/>
+            </div>
         </section>
 
-    );
+);
 };
 
 export default Order;
