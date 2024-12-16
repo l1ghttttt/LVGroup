@@ -10,7 +10,7 @@ import { toast } from "@/hooks/use-toast"
 import { Button } from "@/shared/ui/button"
 import {
     Form,
-    FormControl, FormDescription,
+    FormControl,
     FormField,
     FormItem,
     FormLabel,
@@ -96,7 +96,7 @@ export function OrderForm() {
                             <FormLabel className={`text-[22px]`}>Описание</FormLabel>
                             <FormControl>
                                 <Textarea
-                                    placeholder="Tell us a little bit about yourself"
+                                    placeholder="Описание"
                                     className="resize-none"
                                     {...field}
                                 />
