@@ -1,12 +1,28 @@
-import React from 'react';
+'use client'
+
+import React, {useEffect, useState} from 'react';
 import Link from "next/link";
+import {useTheme} from "next-themes";
 
 const Order = () => {
+    const { theme } = useTheme();
+    const [mounted, setMounted] = useState(false);
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+    if (!mounted) return null;
     return (
         <section className={`w-full relative z-25 flex items-stretch h-[950px]`}>
-            <div className={`w-1/2 flex items-stretch justify-stretch shrink-[0.5]`}>
+            <div className={`w-1/2 flex items-stretch justify-stretch shrink-[0.5] relative`}>
+                {/* Анимированный фон */}
+                <div className="order-video-background absolute top-0 left-0 w-full h-full">
+                    <video autoPlay muted loop id="myOrderVideo" className={theme === 'dark' ? '' : 'invert'}>
+                        <source src="/order-bg.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+                {/* Контент поверх видео */}
                 <div
-                    className={`flex order-flex-flow items-stretch justify-start relative z-50 w-full py-formSpaceYPadding px-formSpaceXPadding`}>
+                    className={`flex flex-col items-stretch justify-start relative z-50 w-full py-formSpaceYPadding px-formSpaceXPadding`}>
                     <h3 className={`text-orderTitleSize leading-orderTitleLeading font-medium relative`}>
                         Оставьте заявку,
                         <br/>
@@ -16,8 +32,9 @@ const Order = () => {
                         <ul className={`flex flex-wrap mt-[47px] max-w-[700px] max-sm:flex-col`}>
                             <li className={`mr-[40px] mb-[50px] max-2xl:mr-[30px] max-2xl:mb-[30px] max-sm:mr-[20px] max-sm:mb-[20px] max-sm:w-auto`}>
                                 <Link href="/"
-                                      className={`touch-manipulation text-orderDescrSize leading-orderDescrLeading flex`}>+7
-                                    (777) 777-77-77</Link>
+                                      className={`touch-manipulation text-orderDescrSize leading-orderDescrLeading flex`}>
+                                    +7 (777) 777-77-77
+                                </Link>
                             </li>
                             <li className={`mr-[40px] mb-[50px] max-2xl:mr-[30px] max-2xl:mb-[30px] max-sm:mr-[20px] max-sm:mb-[20px] max-sm:w-auto`}>
                                 <Link href="/"
@@ -28,10 +45,15 @@ const Order = () => {
                             <li className={`mr-[40px] mb-[50px] max-2xl:mr-[30px] max-2xl:mb-[30px] max-sm:mr-[20px] max-sm:mb-[20px] max-sm:w-auto`}>
                                 <Link href="/"
                                       className={`touch-manipulation text-orderDescrSize leading-orderDescrLeading flex`}>
-                                    <svg className="w-6 h-6 text-gray-800 dark:text-white mr-orderIconMargin"
-                                         aria-hidden="true"
-                                         xmlns="http://www.w3.org/2000/svg" width="33" height="27" fill="currentColor"
-                                         viewBox="0 0 24 24">
+                                    <svg
+                                        className="w-6 h-6 text-gray-800 dark:text-white mr-orderIconMargin"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="33"
+                                        height="27"
+                                        fill="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
                                         <path
                                             d="m3 2 1.578 17.824L12 22l7.467-2.175L21 2H3Zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565-4.246 1.381-4.281-1.455-.288-2.932h2.024l.16 1.411 2.4.815 2.346-.763.297-3.005H7.416l-.562-6.05h10.412l-.217 2.017Z"/>
                                     </svg>
@@ -41,10 +63,15 @@ const Order = () => {
                             <li className={`mr-[40px] mb-[50px] max-2xl:mr-[30px] max-2xl:mb-[30px] max-sm:mr-[20px] max-sm:mb-[20px] max-sm:w-auto`}>
                                 <Link href="/"
                                       className={`touch-manipulation text-orderDescrSize leading-orderDescrLeading flex`}>
-                                    <svg className="w-6 h-6 text-gray-800 dark:text-white mr-orderIconMargin"
-                                         aria-hidden="true"
-                                         xmlns="http://www.w3.org/2000/svg" width="33" height="27" fill="currentColor"
-                                         viewBox="0 0 24 24">
+                                    <svg
+                                        className="w-6 h-6 text-gray-800 dark:text-white mr-orderIconMargin"
+                                        aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="33"
+                                        height="27"
+                                        fill="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
                                         <path
                                             d="M15.907 11.998 10.332 9.23a.9.9 0 0 1-.16-.037l-.018-.007v6.554c0 .017.008.034.01.051l2.388-2.974 3.355-.82Z"/>
                                         <path
@@ -54,26 +81,31 @@ const Order = () => {
                                         <path
                                             d="m19.102 16.163-.272.183c-2.557 1.74-4.169 2.64-4.698 2.935a4.083 4.083 0 0 1-2 .53 3.946 3.946 0 0 1-1.983-.535 3.788 3.788 0 0 1-1.36-1.361 3.752 3.752 0 0 1-.51-1.85 1.812 1.812 0 0 1-.043-.26V9.143c0-.024.009-.046.01-.07-.056.02-.11.043-.162.07a1.796 1.796 0 0 0-.787 1.516v6.377a10.67 10.67 0 0 0 1.113 4.27 10.11 10.11 0 0 0 8.505-.53 10.022 10.022 0 0 0 3.282-2.858 9.936 9.936 0 0 0 1.75-3.97 19.615 19.615 0 0 1-2.845 2.216Z"/>
                                     </svg>
-
-                                    Скачать бриф</Link>
+                                    Скачать бриф
+                                </Link>
                             </li>
                         </ul>
                     </nav>
+                    {/* Секция с "Работа" */}
                     <nav className={`flex mt-auto w-full text-[18px] leading-[28px] max-xl:pt-[200px]`}>
                         <ul className={`flex`}>
                             <li className={`mr-[72px]`}>
-                                <Link href="/" className={`duration-300 hover:duration-150 relative block cursor-pointer text-mainColor hover:text-darkMain mb-[20px] touch-manipulation max-sm:font-medium max-sm:leading-[29px] max-sm:mb-[2px]`}>Работа</Link>
+                                <Link
+                                    href="/"
+                                    className={`duration-300 hover:duration-150 relative block cursor-pointer text-mainColor hover:text-darkMain mb-[20px] touch-manipulation max-sm:font-medium max-sm:leading-[29px] max-sm:mb-[2px]`}
+                                >
+                                    Работа
+                                </Link>
                                 <Link href="/">rabota@lvgroup.ru</Link>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
-            <div className={`w-1/2 bg-orderBg h-full`}>
-
-            </div>
+            <div className={`w-1/2 bg-orderBg h-full`}></div>
         </section>
-);
+
+    );
 };
 
 export default Order;
