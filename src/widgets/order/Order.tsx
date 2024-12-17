@@ -102,7 +102,7 @@ const Order = () => {
                     </nav>
                 </div>
             </div>
-            <div className={`w-1/2 bg-orderBg h-full max-xl:w-full shrink-[0.5] z-25`}>
+            <div className={`w-1/2 bg-mainColor h-full max-xl:w-full shrink-[0.5] z-25`}>
                     <OrderForm/>
             </div>
         </section>
