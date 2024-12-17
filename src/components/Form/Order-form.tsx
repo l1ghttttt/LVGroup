@@ -50,7 +50,7 @@ export function OrderForm() {
             title: "You submitted the following values:",
             description: (
                 <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
+          <code className="text-background">{JSON.stringify(data, null, 2)}</code>
         </pre>
             ),
         })
@@ -59,16 +59,16 @@ export function OrderForm() {
     return (
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)}
-                  className="space-y-6 min-h-full items-stretch relative z-50 w-full py-formSpaceYPadding px-formSpaceXPadding duration-1000 text-white">
-                <h3 className={`text-orderContactsSize mb-orderContactsMargin font-semibold text-white`}>Ваши контакты</h3>
+                  className="space-y-6 min-h-full items-stretch relative z-50 w-full py-formSpaceYPadding px-formSpaceXPadding duration-300 text-background">
+                <h3 className={`text-orderContactsSize mb-orderContactsMargin font-semibold text-background`}>Ваши контакты</h3>
                 <FormField
                     control={form.control}
                     name="username"
                     render={({field}) => (
                         <FormItem>
                             <FormLabel className={`text-[22px]`}>Имя</FormLabel>
-                            <FormControl className={`text-white`}>
-                                <Input className={`text-white`} placeholder="Имя" {...field} />
+                            <FormControl className={`text-background`}>
+                                <Input className={`text-background`} placeholder="Имя" {...field} />
                             </FormControl>
                             <FormMessage/>
                         </FormItem>
@@ -80,8 +80,8 @@ export function OrderForm() {
                     render={({field}) => (
                         <FormItem>
                             <FormLabel className={`text-[22px]`}>Телефон</FormLabel>
-                            <FormControl className={`text-white`}>
-                                <Input className={`text-white`} placeholder="+7 (0000) 00-00-00" {...field} />
+                            <FormControl className={`text-background`}>
+                                <Input className={`text-background`} placeholder="+7 (0000) 00-00-00" {...field} />
                             </FormControl>
                             <FormMessage/>
                         </FormItem>
@@ -105,7 +105,7 @@ export function OrderForm() {
                         </FormItem>
                     )}
                 />
-                <Button type="submit">Отправить</Button>
+                <Button className={`rounded-[50px] px-10 py-6 text-[20px] tracking-wide bg-mainColor hover:bg-darkMain duration-300 hover:duration-150`} type="submit">Отправить</Button>
             </form>
         </Form>
     )

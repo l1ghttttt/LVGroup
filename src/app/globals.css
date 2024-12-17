@@ -139,6 +139,7 @@ body {
     --order-bg: 20, 84%, 58%;
     --order-contacts-size: 35px;
     --order-contacts-mb: 40px;
+    --bg-inversion: 0 0% 0%;
 
     --card: 0 0% 100%;
     --card-foreground: 224 71.4% 4.1%;
@@ -166,6 +167,7 @@ body {
   }
   .dark {
     --text-inversion: 0 100% 0%;
+    --bg-inversion: 0 0% 100%;
     --header-color: 0 0% 71%;
     --welcome-colorDescr: 0 0% 71%;
     --footer-link-color: 0 0 71%;

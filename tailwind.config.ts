@@ -21,6 +21,7 @@ export default {
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
+
   			primary: {
   				DEFAULT: 'hsl(var(--primary))',
   				foreground: 'hsl(var(--primary-foreground))'
@@ -94,6 +95,7 @@ export default {
 			darkMain: 'hsl(var(--dark-main))',
 			servicesLineBg: 'hsl(var(--services-line-bg))',
 			orderBg: 'hsl(var(--order-bg))',
+			altBg: 'hsl(var(--bg-inversion))',
 		},
 		fontFamily: {
 			railway: 'var(--title-font)',
