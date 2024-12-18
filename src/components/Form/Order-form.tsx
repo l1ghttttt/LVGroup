@@ -56,14 +56,11 @@ export function OrderForm() {
         })
     }
 
-    function validate(e:KeyboardEvent) {
-        const theEvent = e || window.event;
-        let key = theEvent.keyCode || theEvent.which;
-        key = String.fromCharCode( key );
-        const regex = /[0-9]|\./;
-        if( !regex.test(key) ) {
-            theEvent.returnValue = false;
-            if(theEvent.preventDefault) theEvent.preventDefault();
+    function validate(e: React.KeyboardEvent<HTMLInputElement>) {
+        const key = e.key; // Use `key` property
+        const regex = /^[0-9.]$/; // Match numbers or a dot
+        if (!regex.test(key)) {
+            e.preventDefault(); // Prevent invalid input
         }
     }
 
