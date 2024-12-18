@@ -93,7 +93,7 @@ export function OrderForm() {
                         <FormItem>
                             <FormLabel className={`text-[22px]`}>Телефон</FormLabel>
                             <FormControl className={`text-background`}>
-                                <Input className={`text-background`} onKeyPress={validate}
+                                <Input className={`text-background`} onKeyDown={validate}
                                        placeholder="+7 (0000) 00-00-00" {...field} />
                             </FormControl>
                             <FormMessage/>
