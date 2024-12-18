@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from "next/link";
+import Script from "next/script";
 
 const Footer = () => {
     return (
@@ -82,6 +83,7 @@ const Footer = () => {
                     </li>
                 </ul>
             </nav>
+            <Script src={`https://www.google.com/recaptcha/api.js`} defer={true}/>
         </footer>
     );
 };

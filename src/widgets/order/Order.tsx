@@ -13,7 +13,7 @@ const Order = () => {
     }, []);
     if (!mounted) return null;
     return (
-        <section className={`w-full z-25 flex items-stretch h-[950px] max-xl:flex-col`}>
+        <section className={`w-full z-25 flex items-stretch max-xl:flex-col`}>
             <div className={`w-1/2 flex items-stretch justify-stretch shrink-[0.5] relative max-xl:w-full`}>
                 <div className="order-video-background absolute top-0 left-0 w-full h-full">
                     <video autoPlay muted loop id="myOrderVideo" className={theme === 'dark' ? '' : 'invert'}>
@@ -96,7 +96,7 @@ const Order = () => {
                     </nav>
                 </div>
             </div>
-            <div className={`w-1/2 bg-altBg h-full max-xl:w-full shrink-[0.5] z-25`}>
+            <div className={`w-1/2 bg-altBg max-xl:w-full shrink-[0.5] z-25 `}>
                     <OrderForm/>
             </div>
         </section>

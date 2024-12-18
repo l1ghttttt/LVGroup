@@ -20,19 +20,19 @@ import { Input } from "@/shared/ui/input"
 import { Textarea } from "@/shared/ui/textarea"
 
 const FormSchema = z.object({
-    username: z.string().min(2, {
-        message: "Username must be at least 2 characters.",
+    username: z.string().min(1, {
+        message: "Введите имя",
     }),
-    phone: z.string().min(2, {
-        message: "Username must be at least 2 characters.",
+    phone: z.string().min(1, {
+        message: "Введите телефон",
     }),
     bio: z
         .string()
-        .min(10, {
-            message: "Bio must be at least 10 characters.",
+        .min(1, {
+            message: "Введите Описание",
         })
-        .max(160, {
-            message: "Bio must not be longer than 30 characters.",
+        .max(800, {
+            message: "Максимум 800 символов",
         }),
 })
 
@@ -56,11 +56,23 @@ export function OrderForm() {
         })
     }
 
+    function validate(e:any) {
+        let theEvent = e || window.event;
+        let key = theEvent.keyCode || theEvent.which;
+        key = String.fromCharCode( key );
+        let regex = /[0-9]|\./;
+        if( !regex.test(key) ) {
+            theEvent.returnValue = false;
+            if(theEvent.preventDefault) theEvent.preventDefault();
+        }
+    }
+
     return (
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)}
-                  className="space-y-6 min-h-full items-stretch relative z-50 w-full py-formSpaceYPadding px-formSpaceXPadding duration-300 text-background">
-                <h3 className={`text-orderContactsSize mb-orderContactsMargin font-semibold text-background`}>Ваши контакты</h3>
+                  className="space-y-6 min-h-full items-stretch relative z-50 w-full py-formSpaceYPadding px-formSpaceXPadding duration-300 text-background mb-[50px]">
+                <h3 className={`text-orderContactsSize mb-orderContactsMargin font-semibold text-background`}>Ваши
+                    контакты</h3>
                 <FormField
                     control={form.control}
                     name="username"
@@ -81,17 +93,19 @@ export function OrderForm() {
                         <FormItem>
                             <FormLabel className={`text-[22px]`}>Телефон</FormLabel>
                             <FormControl className={`text-background`}>
-                                <Input className={`text-background`} placeholder="+7 (0000) 00-00-00" {...field} />
+                                <Input className={`text-background`} onKeyPress={validate}
+                                       placeholder="+7 (0000) 00-00-00" {...field} />
                             </FormControl>
                             <FormMessage/>
                         </FormItem>
                     )}
                 />
-                <h3 className={`text-orderContactsSize mb-orderContactsMargin font-semibold`}>Расскажите про вашу задачу</h3>
+                <h3 className={`text-orderContactsSize mb-orderContactsMargin font-semibold`}>Расскажите про вашу
+                    задачу</h3>
                 <FormField
                     control={form.control}
                     name="bio"
-                    render={({ field }) => (
+                    render={({field}) => (
                         <FormItem>
                             <FormLabel className={`text-[22px]`}>Описание</FormLabel>
                             <FormControl>
@@ -101,11 +115,14 @@ export function OrderForm() {
                                     {...field}
                                 />
                             </FormControl>
-                            <FormMessage />
+                            <FormMessage/>
                         </FormItem>
                     )}
                 />
-                <Button className={`rounded-[50px] px-10 py-6 text-[20px] tracking-wide bg-mainColor hover:bg-darkMain duration-300 hover:duration-150`} type="submit">Отправить</Button>
+                <div className="g-recaptcha" data-sitekey="6LcHvZ8qAAAAAPcsVxxP3LUyUVRMBwKpMD-ApTjg"></div>
+                <Button
+                    className={`rounded-[50px] px-10 py-6 text-[20px] tracking-wide bg-mainColor hover:bg-darkMain duration-300 hover:duration-150`}
+                    type="submit">Отправить</Button>
             </form>
         </Form>
     )
