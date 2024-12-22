@@ -4,8 +4,6 @@ import { Button } from "@/shared/ui/button"
 import React, {useEffect, useState} from "react";
 import {useTheme} from "next-themes";
 import {ThemeSwitcher} from "@/shared/ui/themeSwitcher";
-import {NavigationMenuContent, NavigationMenuItem, NavigationMenuTrigger} from "@/shared/ui/navigation-menu";
-import ListItem from "@/shared/ui/ListItem";
 
 interface NavbarComponent {
     trigger: string;
@@ -147,7 +145,22 @@ export default function BurgerHeader() {
                 <Sheet>
                     <SheetTrigger asChild>
                         <Button variant="outline" size="icon">
-                            <MenuIcon className="h-6 w-6"/>
+                            <svg
+                                className={`h-6 w-6`}
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            >
+                                <line x1="4" x2="20" y1="12" y2="12"/>
+                                <line x1="4" x2="20" y1="6" y2="6"/>
+                                <line x1="4" x2="20" y1="18" y2="18"/>
+                            </svg>
                             <span className="sr-only">Toggle navigation menu</span>
                         </Button>
                     </SheetTrigger>
@@ -155,7 +168,7 @@ export default function BurgerHeader() {
                         <nav className={`w-full flex flex-col gap-[16px] `}>
                             <h3 className={`text-[26px] text-headerColor`}>Главная</h3>
                             {components.map((component) => (
-                                <h3 className={`text-[26px] text-headerColor`}>{component.trigger}</h3>
+                                <h3 key={component.trigger} className={`text-[26px] text-headerColor`}>{component.trigger}</h3>
                             ))}
                         </nav>
                         <div className={`absolute bottom-[5%] left-[5%]`}>
@@ -178,46 +191,5 @@ export default function BurgerHeader() {
                     </button>
                 </div>
         </header>
-    )
-}
-
-function MenuIcon(props: any) {
-    return (
-        <svg
-            {...props}
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-        >
-            <line x1="4" x2="20" y1="12" y2="12" />
-            <line x1="4" x2="20" y1="6" y2="6" />
-            <line x1="4" x2="20" y1="18" y2="18" />
-        </svg>
-    )
-}
-
-
-function MountainIcon(props:any) {
-    return (
-        <svg
-            {...props}
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-        >
-            <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-        </svg>
     )
 }
