@@ -4,6 +4,7 @@ import { Roboto } from 'next/font/google';
 import './globals.css';
 import Header from "@/widgets/header/Header";
 import Footer from "@/widgets/footer/Footer";
+import BurgerHeader from "@/widgets/burger-header/Burger-header";
 
 const raleway = Raleway({
     subsets: ['latin'],
@@ -37,6 +38,7 @@ export default function RootLayout({
                 disableTransitionOnChange
             >
                 <Header/>
+                <BurgerHeader/>
                 <main className={`flex flex-col items-center`}>
                     {children}
                 </main>

@@ -77,7 +77,7 @@ body {
     --text-font: Roboto, sans-serif;
     --text-header: 20px;
     --border-color: 0 0% 44%;
-    --header-color: 0 0% 29%;
+    --header-color: 0 0% 15%;
     --main-color: 20 92% 50%;
     --dark-main: 20 92% 40%;
     --background: 0 0% 100%;
@@ -168,7 +168,7 @@ body {
   .dark {
     --text-inversion: 0 100% 0%;
     --bg-inversion: 0 0% 100%;
-    --header-color: 0 0% 71%;
+    --header-color: 0 0% 85%;
     --welcome-colorDescr: 0 0% 71%;
     --footer-link-color: 0 0 71%;
     --services-line-bg: 0 0 71%;
@@ -199,12 +199,12 @@ body {
     --chart-5: 340 75% 55%;
   }
   @media (min-width: 2560px) {
-    .welcome__link {
+    :root {
       --welcome-link: 60px;
     }
   }
   @media (min-width: 1920px) {
-    .app {
+    :root {
       --responsive: 1px;
     }
   }
@@ -283,7 +283,7 @@ body {
     }
   }
   @media (min-width: 600px) and (max-width: 2559px) {
-    .welcome__link {
+    :root {
       --welcome-link: calc(28.65306px + 1.22449vw);
     }
   }
@@ -328,6 +328,11 @@ body {
       --form__space_x: 90px;
     }
   }
+  @media (max-width: 1470px) {
+    :root {
+      --welcome-link-padding: 0 0 0 var(--app__space);
+    }
+  }
   @media (max-width: 1439px) {
     :root {
       --order-descr-size: 20px;
@@ -337,6 +342,7 @@ body {
   @media (max-width: 1439px) {
     :root {
       --order-icon-margin: 12px;
+
     }
   }
   @media (max-width: 1280px) {
@@ -350,8 +356,13 @@ body {
       --order-title-leading: 45px;
     }
   }
+  @media (max-width: 768px) {
+    :root {
+      --welcome-wrapper: calc(30px) 0;
+    }
+  }
   @media (min-width: 415px) and (max-width: 1919px) {
-    .app {
+    :root {
       --responsive: calc(-0.27575px + 0.06645vw);
     }
   }
@@ -362,8 +373,13 @@ body {
     }
   }
   @media (max-width: 1199px) {
-    .hello__services {
+    :root {
       --welcome-link-padding-top: 0;
+    }
+  }
+  @media (max-width: 800px) {
+    :root {
+      --form__space_x: 40px;
     }
   }
   @media (max-width: 679px) {
@@ -371,6 +387,11 @@ body {
       --grid__columns: 1;
       --grid__height: calc(201.66667px + 54.16667vw);
       --case-content-padding: var(--app__space);
+    }
+  }
+  @media (max-width: 640px) {
+    :root {
+      --welcome-link-padding-top: calc(40px + var(--responsive)*40);
     }
   }
   @media (max-width: 679px) {
@@ -388,17 +409,18 @@ body {
     }
   }
   @media (max-width: 599px) {
-    .welcome__link {
+    :root {
       --welcome-link: 36px;
     }
   }
   @media (max-width: 414px) {
-    .app {
+    :root {
       --responsive: 0px;
+      --form__space_x: 15px;
     }
   }
   @media (max-width: 414px) {
-    .card-more .card__title {
+    :root {
       --see-all-leading: 50px;
       --see-all-size: 44px;
     }

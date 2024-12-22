@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const ServicesList = () => {
     return (
-        <section className="w-full bg-background py-servicesPadding">
+        <section className="w-full bg-background py-servicesPadding max-xl:hidden">
             <div className={`w-full flex gap-[3px]`}>
                 <div
                     className={`w-2/3 text-servicesTitleSize leading-servicesTitleLeading pl-servicesTitlePadding pr-[15%]`}>

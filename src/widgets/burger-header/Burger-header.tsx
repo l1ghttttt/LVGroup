@@ -1,16 +1,11 @@
 'use client'
-
-import React, {useEffect, useState} from 'react';
-import {
-    NavigationMenu, NavigationMenuContent,
-    NavigationMenuItem, NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTrigger, navigationMenuTriggerStyle
-} from "@/shared/ui/navigation-menu";
-import ListItem from '@/shared/ui/ListItem';
-import Link from "next/link";
+import { Sheet, SheetTrigger, SheetContent } from "@/shared/ui/sheet"
+import { Button } from "@/shared/ui/button"
+import React, {useEffect, useState} from "react";
 import {useTheme} from "next-themes";
 import {ThemeSwitcher} from "@/shared/ui/themeSwitcher";
+import {NavigationMenuContent, NavigationMenuItem, NavigationMenuTrigger} from "@/shared/ui/navigation-menu";
+import ListItem from "@/shared/ui/ListItem";
 
 interface NavbarComponent {
     trigger: string;
@@ -140,9 +135,7 @@ const components: NavbarComponent[] = [
     },
 ];
 
-
-
-const Header = () => {
+export default function BurgerHeader() {
     const { theme } = useTheme();
     const [mounted, setMounted] = useState(false);
     useEffect(() => {
@@ -150,70 +143,81 @@ const Header = () => {
     }, []);
     if (!mounted) return null;
     return (
-        <header className="header-clas w-full h-[100px] border-b-[1px] flex items-center pl-[15px] pr-[30px] gap-[25px] absolute max-2xl:hidden">
-            {theme === 'dark' ? (
-                <img src="/LVGROUP_logo.svg" alt="логотип LVGroup" className="w-[150px]" />
-            ) : (
-                <img src="/LVGROUP_logo-black.svg" alt="логотип LVGroup" className="w-[150px]" />
-            )}
-            <nav className="flex items-center gap-3">
-                <NavigationMenu>
-                    <NavigationMenuList className="flex-wrap">
+        <header className="header-clas flex h-[100px] border-b-[1px] w-full pl-[15px] pr-[30px] gap-[25px] items-center 2xl:hidden max-sm:gap-[10px] max-sm:pr-[15px] max-sm:pl-[10px]">
+                <Sheet>
+                    <SheetTrigger asChild>
+                        <Button variant="outline" size="icon">
+                            <MenuIcon className="h-6 w-6"/>
+                            <span className="sr-only">Toggle navigation menu</span>
+                        </Button>
+                    </SheetTrigger>
+                    <SheetContent side="left">
+                        <nav className={`w-full flex flex-col gap-[16px] `}>
+                            <h3 className={`text-[26px] text-headerColor`}>Главная</h3>
+                            {components.map((component) => (
+                                <h3 className={`text-[26px] text-headerColor`}>{component.trigger}</h3>
+                            ))}
+                        </nav>
+                        <div className={`absolute bottom-[5%] left-[5%]`}>
+                            <ThemeSwitcher/>
+                        </div>
 
+                    </SheetContent>
+                </Sheet>
 
-                        <NavigationMenuItem>
-                            <Link href="/" legacyBehavior passHref>
-                                <NavigationMenuLink
-                                    className={`text-headerColor !text-[18px] ` + navigationMenuTriggerStyle()}>
-                                    Проекты
-                                </NavigationMenuLink>
-                            </Link>
-                        </NavigationMenuItem>
+                {theme === 'dark' ? (
+                    <img src="/LVGROUP_logo.svg" alt="логотип LVGroup" className="w-[150px] max-sm:w-[130px]"/>
+                ) : (
+                    <img src="/LVGROUP_logo-black.svg" alt="логотип LVGroup" className="w-[150px] max-sm:w-[130px]"/>
+                )}
 
-
-                        {components.map((component) => (
-                            <NavigationMenuItem key={component.trigger}>
-                                <NavigationMenuTrigger
-                                    className={`text-[18px] text-headerColor `}>{component.trigger}</NavigationMenuTrigger>
-                                <NavigationMenuContent>
-                                    <ul className="grid w-[500px] gap-3 p-4 md:w-[600px] md:grid-cols-2 lg:w-[700px] ">
-                                        {component.values.map((subcomponent) => (
-                                            <ListItem
-                                                key={subcomponent.title}
-                                                title={subcomponent.title}
-                                                href={subcomponent.href}
-                                            >
-                                                {subcomponent.description}
-                                            </ListItem>
-                                        ))}
-                                    </ul>
-                                </NavigationMenuContent>
-                            </NavigationMenuItem>
-                        ))}
-
-
-                        <NavigationMenuItem>
-                            <Link href="/" legacyBehavior passHref>
-                                <NavigationMenuLink
-                                    className={`text-headerColor !text-[18px] font-medium ` + navigationMenuTriggerStyle()}>
-                                    Контакты
-                                </NavigationMenuLink>
-                            </Link>
-                        </NavigationMenuItem>
-
-
-                    </NavigationMenuList>
-                </NavigationMenu>
-            </nav>
-            <div className={`ml-auto`}>
-                <ThemeSwitcher/>
-            </div>
-            <button
-                className={`bg-mainColor px-[30px] py-[10px] hover:bg-darkMain rounded-[50px] font-semibold tracking-wider text-altColor duration-150 `}>
-                ЗАЯВКА
-            </button>
+                <div className="ml-auto flex items-center space-x-4">
+                    <button
+                        className={`bg-mainColor px-[30px] py-[10px] hover:bg-darkMain rounded-[50px] font-semibold tracking-wider text-altColor duration-150 `}>
+                        ЗАЯВКА
+                    </button>
+                </div>
         </header>
-    );
-};
+    )
+}
 
-export default Header;
+function MenuIcon(props: any) {
+    return (
+        <svg
+            {...props}
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        >
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+        </svg>
+    )
+}
+
+
+function MountainIcon(props:any) {
+    return (
+        <svg
+            {...props}
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        >
+            <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
+        </svg>
+    )
+}

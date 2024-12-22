@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className={``}>
             <nav className={`2xl:h-[160px] 2xl:flex 2xl:items-stretch 2xl:justify-between bg-background px-servicePadding max-2xl:py-servicePadding`}>
-                <ul className={`flex items-stretch justify-start flex-wrap 2xl:mx-footerNavMarginXL max-2xl:m-footerNavMarginMaxl`}>
+                <ul className={`flex items-stretch justify-start flex-wrap 2xl:mx-footerNavMarginXL max-2xl:m-footerNavMarginMaxl max-sm:justify-around`}>
                     <li className={`flex items-center justify-center 2xl:px-footerNavListPadding max-2xl:p-footerNavListPaddingMaxl`}>
                         <Link href="/"
                               className={`duration-300 hover:duration-150 transition-all hover:text-footerLinkColor`}>Проекты</Link>

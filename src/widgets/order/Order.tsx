@@ -81,7 +81,7 @@ const Order = () => {
                     </nav>
                     <nav className={`flex mt-auto w-full text-[18px] leading-[28px] max-xl:pt-[200px]`}>
                         <ul className={`flex`}>
-                            <li className={`mr-[72px]`}>
+                            <li className={`mr-[72px] max-xl:mr-[36px] max-sm:mr-0`}>
                                 <p className={`text-[20px] relative leading-[35px] mb-[20px] max-sm:font-medium max-sm:leading-[29px] max-sm:mb-[15px]`}>
                                     Наши руководители готовы лично помочь и обсудить детали.
 
