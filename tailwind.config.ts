@@ -21,7 +21,6 @@ export default {
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
-
   			primary: {
   				DEFAULT: 'hsl(var(--primary))',
   				foreground: 'hsl(var(--primary-foreground))'
@@ -66,84 +65,109 @@ export default {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
-		fontSize: {
-			headerSize: 'var(--text-header)',
-			mainZag: 'var(--mainZag)',
-			welcomeLink: 'var(--welcome-link)',
-			welcomeDescr: 'var(--welcome-link-deskr)',
-			casesNameSize: 'var(--cases-name-size)',
-			caseTextSize: 'var(--case-text-size)',
-			seeAllSize: 'var(--see-all-size)',
-			servicesTitleSize: 'var(--services-title-size)',
-			servicesDescriptionSize: 'var(--services-description-size)',
-			serviceTitleSize: 'var(--service-title-size)',
-			serviceNameSize: 'var(--service-name-size)',
-			orderTitleSize: 'var(--order-title-size)',
-			orderDescrSize: 'var(--order-descr-size)',
-			orderContactsSize: 'var(--order-contacts-size)',
-		},
-		textColor: {
-			headerColor: 'hsl(var(--header-color))',
-			altColor: 'hsl(var(--text-inversion))',
-			welcomeColorDescr: 'hsl(var(--welcome-colorDescr))',
-			mainColor: 'hsl(var(--main-color))',
-			darkMain: 'hsl(var(--dark-main))',
-			footerLinkColor: 'hsl(var(--footer-link-color))',
-		},
-		backgroundColor: {
-			mainColor: 'hsl(var(--main-color))',
-			darkMain: 'hsl(var(--dark-main))',
+		borderColor: {
 			servicesLineBg: 'hsl(var(--services-line-bg))',
-			orderBg: 'hsl(var(--order-bg))',
-			altBg: 'hsl(var(--bg-inversion))',
 		},
-		fontFamily: {
-			railway: 'var(--title-font)',
-		},
-		padding: {
-			welcomePadding: 'var(--welcome-pl)',
-			welcomeWrapper: 'var(--welcome-wrapper)',
-			welcomeWrapperBottom: 'var(--welcome-wrapper-bottom)',
-			welcomeLinkPadding: 'var(--welcome-link-padding)',
-			welcomeLinkPaddingTop: 'var(--welcome-link-padding-top)',
-			casesNamePadding: 'var(--cases-name-padding)',
-			casesFilterPadding: 'var(--cases-filter-padding)',
-			caseContentPadding: 'var(--case-content-padding)',
-			servicesPadding: 'var(--space-m)',
-			servicePadding: 'var(--space-s)',
-			servicesTitlePadding: 'var(--app__space)',
-			footerNavListPadding: 'var(--footer-space)',
-			footerNavListPaddingMaxl: 'var(--footer-nav-list-padding-maxl)',
-			footerSocialPaddingXL: 'var(--footer-social-space)',
-			footerSocialPaddingMaxl: 'var(--footer-social-padding-maxl)',
-			formSpaceYPadding: 'var(--form__space_y)',
-			formSpaceXPadding: 'var(--form__space_x)',
-		},
-		margin: {
-			footerNavMarginXL: 'var(--footer-nav-margin-xl)',
-			footerNavMarginMaxl: 'var(--footer-nav-margin-maxl)',
-			footerSocialMarginXL: 'var(--footer-social-margin-xl)',
-			footerSocialMarginTopMaxXL: 'var(--footer-social-marginTop-maxl)',
-			footerSocialMarginMaxXL: 'var(--footer-social-margin-maxl)',
-			orderIconMargin: 'var(--order-icon-margin)',
-			orderContactsMargin: 'var(--order-contacts-mb)',
-		},
-		width: {
-			caseWidth: 'var(--case-width)',
-		},
-		height: {
-			caseHeight: 'var(--case-height)',
-		},
-		lineHeight: {
-			caseTextLeading: 'var(--case-text-leading)',
-			seeAllLeading: 'var(--see-all-leading)',
-			servicesTitleLeading: 'var(--services-title-leading)',
-			servicesDescriptionLeading: 'var(--services-description-leading)',
-			serviceTitleLeading: 'var(--service-title-leading)',
-			serviceNameLeading: 'var(--service-name-leading)',
-			orderTitleLeading: 'var(--order-title-leading)',
-			orderDescrLeading: 'var(--order-descr-leading)',
-		},
+  		fontSize: {
+  			headerSize: 'var(--text-header)',
+  			mainZag: 'var(--mainZag)',
+  			welcomeLink: 'var(--welcome-link)',
+  			welcomeDescr: 'var(--welcome-link-deskr)',
+  			casesNameSize: 'var(--cases-name-size)',
+  			caseTextSize: 'var(--case-text-size)',
+  			seeAllSize: 'var(--see-all-size)',
+  			servicesTitleSize: 'var(--services-title-size)',
+  			servicesDescriptionSize: 'var(--services-description-size)',
+  			serviceTitleSize: 'var(--service-title-size)',
+  			serviceNameSize: 'var(--service-name-size)',
+  			orderTitleSize: 'var(--order-title-size)',
+  			orderDescrSize: 'var(--order-descr-size)',
+  			orderContactsSize: 'var(--order-contacts-size)'
+  		},
+  		textColor: {
+  			headerColor: 'hsl(var(--header-color))',
+  			altColor: 'hsl(var(--text-inversion))',
+  			welcomeColorDescr: 'hsl(var(--welcome-colorDescr))',
+  			mainColor: 'hsl(var(--main-color))',
+  			darkMain: 'hsl(var(--dark-main))',
+  			footerLinkColor: 'hsl(var(--footer-link-color))'
+  		},
+  		backgroundColor: {
+  			mainColor: 'hsl(var(--main-color))',
+  			darkMain: 'hsl(var(--dark-main))',
+  			servicesLineBg: 'hsl(var(--services-line-bg))',
+  			orderBg: 'hsl(var(--order-bg))',
+  			altBg: 'hsl(var(--bg-inversion))'
+  		},
+  		fontFamily: {
+  			railway: 'var(--title-font)'
+  		},
+  		padding: {
+  			welcomePadding: 'var(--welcome-pl)',
+  			welcomeWrapper: 'var(--welcome-wrapper)',
+  			welcomeWrapperBottom: 'var(--welcome-wrapper-bottom)',
+  			welcomeLinkPadding: 'var(--welcome-link-padding)',
+  			welcomeLinkPaddingTop: 'var(--welcome-link-padding-top)',
+  			casesNamePadding: 'var(--cases-name-padding)',
+  			casesFilterPadding: 'var(--cases-filter-padding)',
+  			caseContentPadding: 'var(--case-content-padding)',
+  			servicesPadding: 'var(--space-m)',
+  			servicePadding: 'var(--space-s)',
+  			servicesTitlePadding: 'var(--app__space)',
+  			footerNavListPadding: 'var(--footer-space)',
+  			footerNavListPaddingMaxl: 'var(--footer-nav-list-padding-maxl)',
+  			footerSocialPaddingXL: 'var(--footer-social-space)',
+  			footerSocialPaddingMaxl: 'var(--footer-social-padding-maxl)',
+  			formSpaceYPadding: 'var(--form__space_y)',
+  			formSpaceXPadding: 'var(--form__space_x)'
+  		},
+  		margin: {
+  			footerNavMarginXL: 'var(--footer-nav-margin-xl)',
+  			footerNavMarginMaxl: 'var(--footer-nav-margin-maxl)',
+  			footerSocialMarginXL: 'var(--footer-social-margin-xl)',
+  			footerSocialMarginTopMaxXL: 'var(--footer-social-marginTop-maxl)',
+  			footerSocialMarginMaxXL: 'var(--footer-social-margin-maxl)',
+  			orderIconMargin: 'var(--order-icon-margin)',
+  			orderContactsMargin: 'var(--order-contacts-mb)'
+  		},
+  		width: {
+  			caseWidth: 'var(--case-width)'
+  		},
+  		height: {
+  			caseHeight: 'var(--case-height)'
+  		},
+  		lineHeight: {
+  			caseTextLeading: 'var(--case-text-leading)',
+  			seeAllLeading: 'var(--see-all-leading)',
+  			servicesTitleLeading: 'var(--services-title-leading)',
+  			servicesDescriptionLeading: 'var(--services-description-leading)',
+  			serviceTitleLeading: 'var(--service-title-leading)',
+  			serviceNameLeading: 'var(--service-name-leading)',
+  			orderTitleLeading: 'var(--order-title-leading)',
+  			orderDescrLeading: 'var(--order-descr-leading)'
+  		},
+  		keyframes: {
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			}
+  		},
+  		animation: {
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
+  		}
   	}
   },
   plugins: [forms, typography, aspectRatio, require("tailwindcss-animate")],
