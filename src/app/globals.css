@@ -356,11 +356,7 @@ body {
       --order-title-leading: 45px;
     }
   }
-  @media (max-width: 768px) {
-    :root {
-      --welcome-wrapper: calc(30px) 0;
-    }
-  }
+
   @media (min-width: 415px) and (max-width: 1919px) {
     :root {
       --responsive: calc(-0.27575px + 0.06645vw);

@@ -141,7 +141,7 @@ export default function BurgerHeader() {
     }, []);
     if (!mounted) return null;
     return (
-        <header className="header-clas flex h-[100px] border-b-[1px] w-full pl-[15px] pr-[30px] gap-[25px] items-center 2xl:hidden max-sm:gap-[10px] max-sm:pr-[15px] max-sm:pl-[10px]">
+        <header className="header-clas absolute flex h-[100px] border-b-[1px] w-full pl-[15px] pr-[30px] gap-[25px] items-center 2xl:hidden max-sm:gap-[10px] max-sm:pr-[15px] max-sm:pl-[10px]">
                 <Sheet>
                     <SheetTrigger asChild>
                         <Button variant="outline" size="icon">

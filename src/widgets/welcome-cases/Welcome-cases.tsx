@@ -15,7 +15,7 @@ const WelcomeCases = () => {
 
     return (
         <section className={`w-full flex flex-col bg-background`}>
-            <h2 className={`p-casesNamePadding leading-none flex items-end justify-stretch w-2/3 text-casesNameSize font-medium`}>Наши проекты</h2>
+            <h2 className={`p-casesNamePadding leading-none flex items-end justify-stretch sm:w-2/3 text-casesNameSize font-medium`}>Наши проекты</h2>
             <ul className={`flex p-casesFilterPadding flex-wrap gap-2 gap-y-3`}>
                 <li>
                     <button
@@ -155,8 +155,14 @@ const WelcomeCases = () => {
                         </video>
                         <div
                             className={`bg-background p-caseContentPadding w-full h-full flex flex-col justify-between`}>
-                            <p className={`-translate-y-[0.8rem] relative z-25 text-seeAllSize leading-seeAllLeading text-white font-railway font-semibold transform-[translate3d(0, 0, 0)]`}>
+                            <p className={`max-2xl:hidden -translate-y-[0.8rem] relative z-25 text-seeAllSize leading-seeAllLeading text-white font-railway font-semibold transform-[translate3d(0, 0, 0)]`}>
                                 Посмотреть все <br/> наши проекты
+                            </p>
+                            <p className={`max-xl:hidden 2xl:hidden -translate-y-[0.8rem] relative z-25 text-seeAllSize leading-seeAllLeading text-white font-railway font-semibold transform-[translate3d(0, 0, 0)]`}>
+                                Посмотреть все наши проекты
+                            </p>
+                            <p className={`xl:hidden relative z-25 text-seeAllSize leading-seeAllLeading text-white font-railway font-semibold transform-[translate3d(0, 0, 0)]`}>
+                                Посмотреть все наши проекты
                             </p>
                             <div>
                                 <button
