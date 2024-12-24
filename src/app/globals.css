@@ -212,7 +212,7 @@ body {
       --form__space_x: 120px;
       --order-contacts-size: 35px;
       --order-contacts-mb: 40px;
-      --text-header: 24px;
+      --text-header: 22px;
       --heading-level: calc(var(--heading-level_max)* 1px);
       --heading-size: calc(var(--heading-size_max)* 1px);
     }
