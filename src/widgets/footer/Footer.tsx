@@ -40,7 +40,7 @@ const Footer = () => {
                               className={`duration-300 hover:duration-150 transition-all hover:text-footerLinkColor`}>Контакты</Link>
                     </li>
                 </ul>
-                <ul className={`flex items-stretch justify-start 2xl:mx-footerNavMarginXL max-2xl:mt-footerSocialMarginTopMaxXL max-2xl:m-footerSocialMarginMaxXL max-sm:justify-between`}>
+                <ul className={`flex items-stretch justify-start 2xl:mx-footerNavMarginXL max-2xl:mt-footerSocialMarginTopMaxXL max-2xl:m-footerSocialMarginMaxXL max-sm:justify-around`}>
                     <li className={`flex `}>
                         <Link href="https://www.youtube.com/@Dvigatel"
                               target={`_blank`}

@@ -4,6 +4,7 @@ import { Button } from "@/shared/ui/button"
 import React, {useEffect, useState} from "react";
 import {useTheme} from "next-themes";
 import {ThemeSwitcher} from "@/shared/ui/themeSwitcher";
+import { usePathname } from "next/navigation";
 
 interface NavbarComponent {
     trigger: string;
@@ -136,12 +137,38 @@ const components: NavbarComponent[] = [
 export default function BurgerHeader() {
     const { theme } = useTheme();
     const [mounted, setMounted] = useState(false);
+    const pathname = usePathname(); // Используем usePathname вместо useRouter
+
+    const stickyRoutes = ["/case", "/page2"];
+    const isSticky = stickyRoutes.includes(pathname);
+
+    const [lastScroll, setLastScroll] = useState(0);
+    const [isHidden, setIsHidden] = useState(false);
+
     useEffect(() => {
         setMounted(true);
     }, []);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScroll = window.scrollY;
+
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                setIsHidden(true);
+            } else if (currentScroll < lastScroll) {
+                setIsHidden(false);
+            }
+            setLastScroll(currentScroll);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [lastScroll]);
+
     if (!mounted) return null;
+
     return (
-        <header className="header-clas absolute flex h-[100px] border-b-[1px] w-full pl-[15px] pr-[30px] gap-[25px] items-center 2xl:hidden max-sm:gap-[10px] max-sm:pr-[15px] max-sm:pl-[10px]">
+        <header className={`header-clas absolute flex h-[100px] border-b-[1px] w-full pl-[15px] pr-[30px] gap-[25px] items-center 2xl:hidden max-sm:gap-[10px] max-sm:pr-[15px] max-sm:pl-[10px] top-0 ${isSticky ? "sticky duration-500 transform bg-background z-100" : "absolute"} ${isHidden && isSticky ? "-translate-y-full" : "translate-y-0"}`}>
                 <Sheet>
                     <SheetTrigger asChild>
                         <Button variant="outline" size="icon">

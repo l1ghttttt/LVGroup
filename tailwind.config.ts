@@ -82,8 +82,10 @@ export default {
   			serviceNameSize: 'var(--service-name-size)',
   			orderTitleSize: 'var(--order-title-size)',
   			orderDescrSize: 'var(--order-descr-size)',
-  			orderContactsSize: 'var(--order-contacts-size)'
-  		},
+  			orderContactsSize: 'var(--order-contacts-size)',
+			customerTitleSize: 'var(--heading-size)',
+			customerClientSize: 'var(--heading-size-client)',
+		},
   		textColor: {
   			headerColor: 'hsl(var(--header-color))',
   			altColor: 'hsl(var(--text-inversion))',
@@ -128,10 +130,12 @@ export default {
   			footerSocialMarginTopMaxXL: 'var(--footer-social-marginTop-maxl)',
   			footerSocialMarginMaxXL: 'var(--footer-social-margin-maxl)',
   			orderIconMargin: 'var(--order-icon-margin)',
-  			orderContactsMargin: 'var(--order-contacts-mb)'
+  			orderContactsMargin: 'var(--order-contacts-mb)',
+			CustomerTitleMargin: 'var(--app__space)',
   		},
   		width: {
-  			caseWidth: 'var(--case-width)'
+  			caseWidth: 'var(--case-width)',
+			customerTitleWidth: 'var(--customer-title-width)'
   		},
   		height: {
   			caseHeight: 'var(--case-height)'
@@ -144,7 +148,9 @@ export default {
   			serviceTitleLeading: 'var(--service-title-leading)',
   			serviceNameLeading: 'var(--service-name-leading)',
   			orderTitleLeading: 'var(--order-title-leading)',
-  			orderDescrLeading: 'var(--order-descr-leading)'
+  			orderDescrLeading: 'var(--order-descr-leading)',
+			customerTitleLeading: 'var(--heading-level)',
+			customerClientLeading: 'var(--heading-level-client)',
   		},
   		keyframes: {
   			'accordion-down': {

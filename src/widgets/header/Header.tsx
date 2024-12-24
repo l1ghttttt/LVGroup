@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import {
     NavigationMenu, NavigationMenuContent,
     NavigationMenuItem, NavigationMenuLink,
@@ -9,8 +9,9 @@ import {
 } from "@/shared/ui/navigation-menu";
 import ListItem from '@/shared/ui/ListItem';
 import Link from "next/link";
-import {useTheme} from "next-themes";
-import {ThemeSwitcher} from "@/shared/ui/themeSwitcher";
+import { useTheme } from "next-themes";
+import { ThemeSwitcher } from "@/shared/ui/themeSwitcher";
+import { usePathname } from "next/navigation";
 
 interface NavbarComponent {
     trigger: string;
@@ -142,29 +143,57 @@ const components: NavbarComponent[] = [
 
 
 
-const Header = () => {
+const Header: React.FC = () => {
     const { theme } = useTheme();
     const [mounted, setMounted] = useState(false);
+    const pathname = usePathname(); // Используем usePathname вместо useRouter
+
+    const stickyRoutes = ["/case", "/page2"];
+    const isSticky = stickyRoutes.includes(pathname);
+
+    const [lastScroll, setLastScroll] = useState(0);
+    const [isHidden, setIsHidden] = useState(false);
+
     useEffect(() => {
         setMounted(true);
     }, []);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScroll = window.scrollY;
+
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                setIsHidden(true);
+            } else if (currentScroll < lastScroll) {
+                setIsHidden(false);
+            }
+            setLastScroll(currentScroll);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [lastScroll]);
+
     if (!mounted) return null;
+
     return (
-        <header className="header-clas w-full h-[100px] border-b-[1px] flex items-center pl-[15px] pr-[30px] gap-[25px] absolute max-2xl:hidden">
-            {theme === 'dark' ? (
-                <img src="/LVGROUP_logo.svg" alt="логотип LVGroup" className="w-[150px]" />
-            ) : (
-                <img src="/LVGROUP_logo-black.svg" alt="логотип LVGroup" className="w-[150px]" />
-            )}
+        <header className= {` header-clas w-full h-[100px] border-b-[1px] flex items-center pl-[15px] pr-[30px] gap-[25px] max-2xl:hidden top-0 ${isSticky ? "sticky duration-500 transform bg-background z-100" : "absolute"} ${isHidden && isSticky  ? "-translate-y-full" : "translate-y-0"}`}>
+            <Link href={`/`}>
+                {theme === 'dark' ? (
+                    <img src="/LVGROUP_logo.svg" alt="логотип LVGroup" className="w-[150px]" />
+                ) : (
+                    <img src="/LVGROUP_logo-black.svg" alt="логотип LVGroup" className="w-[150px]" />
+                )}
+            </Link>
             <nav className="flex items-center gap-3">
                 <NavigationMenu>
                     <NavigationMenuList className="flex-wrap">
 
 
                         <NavigationMenuItem>
-                            <Link href="/" legacyBehavior passHref>
+                            <Link href="/case" legacyBehavior passHref>
                                 <NavigationMenuLink
-                                    className={`text-headerColor !text-[18px] ` + navigationMenuTriggerStyle()}>
+                                    className={`text-headerColor !text-headerSize leading-[27px] ` + navigationMenuTriggerStyle()}>
                                     Проекты
                                 </NavigationMenuLink>
                             </Link>
@@ -174,7 +203,7 @@ const Header = () => {
                         {components.map((component) => (
                             <NavigationMenuItem key={component.trigger}>
                                 <NavigationMenuTrigger
-                                    className={`text-[18px] text-headerColor `}>{component.trigger}</NavigationMenuTrigger>
+                                    className={`!text-headerSize  text-headerColor `}>{component.trigger}</NavigationMenuTrigger>
                                 <NavigationMenuContent>
                                     <ul className="grid w-[500px] gap-3 p-4 md:w-[600px] md:grid-cols-2 lg:w-[700px] ">
                                         {component.values.map((subcomponent) => (
@@ -195,7 +224,7 @@ const Header = () => {
                         <NavigationMenuItem>
                             <Link href="/" legacyBehavior passHref>
                                 <NavigationMenuLink
-                                    className={`text-headerColor !text-[18px] font-medium ` + navigationMenuTriggerStyle()}>
+                                    className={`text-headerColor !text-headerSize leading-[27px]` + navigationMenuTriggerStyle()}>
                                     Контакты
                                 </NavigationMenuLink>
                             </Link>

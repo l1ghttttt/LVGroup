@@ -37,12 +37,12 @@ export default function RootLayout({
                 enableSystem
                 disableTransitionOnChange
             >
-                <Header/>
-                <BurgerHeader/>
+                <Header />
+                <BurgerHeader />
                 <main className={`flex flex-col items-center`}>
                     {children}
                 </main>
-                <Footer/>
+                <Footer />
             </ThemeProvider>
             </body>
             </html>
