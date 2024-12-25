@@ -80,7 +80,7 @@ body {
     --welcome-link-padding: 0 var(--app__space);
     --welcome-link-padding-top: calc(8px + var(--responsive)*10);
     --welcome-link-deskr: calc(15px + var(--responsive)*10);
-    --welcome-colorDescr: 0 0% 40%;
+    --welcome-colorDescr: 0 0% 20%;
     --cases-name-padding: calc(var(--space-s)*2) var(--app__space) 0;
     --cases-filter-padding: calc(var(--space-s)*1) var(--app__space) calc(var(--space-s)*0.8);
     --cases-name-size: calc(30px + var(--responsive)*50);
@@ -165,7 +165,7 @@ body {
     --text-inversion: 0 100% 0%;
     --bg-inversion: 0 0% 100%;
     --header-color: 0 0% 85%;
-    --welcome-colorDescr: 0 0% 71%;
+    --welcome-colorDescr: 0 0% 80%;
     --footer-link-color: 0 0 71%;
     --services-line-bg: 0 0 71%;
 

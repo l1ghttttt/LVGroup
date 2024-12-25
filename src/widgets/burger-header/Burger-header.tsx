@@ -5,6 +5,7 @@ import React, {useEffect, useState} from "react";
 import {useTheme} from "next-themes";
 import {ThemeSwitcher} from "@/shared/ui/themeSwitcher";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 interface NavbarComponent {
     trigger: string;
@@ -17,7 +18,7 @@ const components: NavbarComponent[] = [
         values: [
             {
                 title: "Аудит отдела продаж",
-                href: "/",
+                href: "/case",
                 description: "Оценка эффективности",
             },
             {
@@ -168,15 +169,15 @@ export default function BurgerHeader() {
     if (!mounted) return null;
 
     return (
-        <header className={`header-clas absolute flex h-[100px] border-b-[1px] w-full pl-[15px] pr-[30px] gap-[25px] items-center 2xl:hidden max-sm:gap-[10px] max-sm:pr-[15px] max-sm:pl-[10px] top-0 ${isSticky ? "sticky duration-500 transform bg-background z-100" : "absolute"} ${isHidden && isSticky ? "-translate-y-full" : "translate-y-0"}`}>
+        <header className={`header-clas justify-between absolute flex h-[100px] border-b-[1px] w-full pl-[15px] pr-[30px] gap-[25px] items-center 2xl:hidden max-sm:gap-[10px] max-sm:pr-[15px] max-sm:pl-[10px] top-0 ${isSticky ? "sticky duration-500 transform bg-background z-100" : "absolute"} ${isHidden && isSticky ? "-translate-y-full" : "translate-y-0"}`}>
                 <Sheet>
                     <SheetTrigger asChild>
-                        <Button variant="outline" size="icon">
+                        <Button variant="ghost" size="icon">
                             <svg
-                                className={`h-6 w-6`}
+                                className={` scale-[2] `}
                                 xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
+                                width="35"
+                                height="35"
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
@@ -193,30 +194,33 @@ export default function BurgerHeader() {
                     </SheetTrigger>
                     <SheetContent side="left">
                         <nav className={`w-full flex flex-col gap-[16px] `}>
-                            <h3 className={`text-[26px] text-headerColor`}>Главная</h3>
+                            <Link href={`/`} className={`text-[26px] text-headerColor`}>Главная</Link>
                             {components.map((component) => (
-                                <h3 key={component.trigger} className={`text-[26px] text-headerColor`}>{component.trigger}</h3>
+                                <Link key={component.trigger} href={component.values[0].href}
+                                    className={`text-[26px] text-headerColor`}>{component.trigger}</Link>
                             ))}
                         </nav>
-                        <div className={`absolute bottom-[5%] left-[5%]`}>
-                            <ThemeSwitcher/>
+                        <div className={`absolute bottom-[20px] flex justify-between w-[calc(100%-25px)] pr-[20px]`}>
+                            <div className="flex items-center space-x-4">
+                                <button
+                                    className={`bg-mainColor px-[30px] py-[10px] hover:bg-darkMain rounded-[50px] font-semibold tracking-wider text-altColor duration-150 `}>
+                                    ЗАЯВКА
+                                </button>
+                            </div>
+                            <div className={``}>
+                                <ThemeSwitcher/>
+                            </div>
                         </div>
+
 
                     </SheetContent>
                 </Sheet>
 
-                {theme === 'dark' ? (
-                    <img src="/LVGROUP_logo.svg" alt="логотип LVGroup" className="w-[150px] max-sm:w-[130px]"/>
-                ) : (
-                    <img src="/LVGROUP_logo-black.svg" alt="логотип LVGroup" className="w-[150px] max-sm:w-[130px]"/>
-                )}
-
-                <div className="ml-auto flex items-center space-x-4">
-                    <button
-                        className={`bg-mainColor px-[30px] py-[10px] hover:bg-darkMain rounded-[50px] font-semibold tracking-wider text-altColor duration-150 `}>
-                        ЗАЯВКА
-                    </button>
-                </div>
+            {theme === 'dark' ? (
+                <img src="/LVGROUP_logo.svg" alt="логотип LVGroup" className="w-[150px] max-sm:w-[130px]"/>
+            ) : (
+                <img src="/LVGROUP_logo-black.svg" alt="логотип LVGroup" className="w-[150px] max-sm:w-[130px]"/>
+            )}
         </header>
     )
 }
