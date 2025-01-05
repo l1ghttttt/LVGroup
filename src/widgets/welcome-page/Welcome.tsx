@@ -16,7 +16,7 @@ const Welcome = () => {
         <section className={`p-welcomeWrapper pb-welcomeWrapperBottom w-full `}>
             <div className="video-background">
 
-                    <video autoPlay muted loop id="myVideo" className={theme == 'dark' ? '' : 'invert'}>
+                    <video autoPlay muted loop playsInline id="myVideo" className={theme == 'dark' ? '' : 'invert'}>
                         <source src="/animated-background.mp4" type="video/mp4"/>
                     </video>
 

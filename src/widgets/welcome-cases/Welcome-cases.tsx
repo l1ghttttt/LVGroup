@@ -58,7 +58,7 @@ const WelcomeCases = () => {
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                     <Link href="/">
                         {typeof window !== "undefined" && (
-                            <video autoPlay muted loop id="myVideo"
+                            <video autoPlay muted loop playsInline id="myVideo"
                                    className="absolute top-0 left-0 w-full h-full object-cover">
                                 <source src="/1.mp4" type="video/mp4"/>
                             </video>
@@ -83,7 +83,7 @@ const WelcomeCases = () => {
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                     <Link href="/">
-                        <video autoPlay muted loop id="myVideo">
+                        <video autoPlay muted loop playsInline id="myVideo">
                             <source src="/3.mp4" type="video/mp4"/>
                         </video>
                         <div className={`bg-background w-full h-full p-caseContentPadding`}>
@@ -106,7 +106,7 @@ const WelcomeCases = () => {
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                     <Link href="/">
-                        <video autoPlay muted loop id="myVideo">
+                        <video autoPlay muted loop playsInline id="myVideo">
                             <source src="/5.mp4" type="video/mp4"/>
                         </video>
                         <div className={`bg-background w-full h-full p-caseContentPadding`}>
@@ -128,7 +128,7 @@ const WelcomeCases = () => {
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                     <Link href="/">
-                        <video autoPlay muted loop id="myVideo">
+                        <video autoPlay muted loop playsInline id="myVideo">
                             <source src="/7.mp4" type="video/mp4"/>
                         </video>
                         <div className={`bg-background w-full h-full p-caseContentPadding`}>
@@ -150,7 +150,7 @@ const WelcomeCases = () => {
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                     <div className={`w-full h-full`}>
-                        <video autoPlay muted loop id="myVideo" className={`pointer-events-none`}>
+                        <video autoPlay muted loop playsInline id="myVideo" className={`pointer-events-none`}>
                             <source src="/9.mp4" type="video/mp4"/>
                         </video>
                         <div
