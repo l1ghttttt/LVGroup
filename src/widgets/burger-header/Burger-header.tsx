@@ -18,7 +18,7 @@ const components: NavbarComponent[] = [
         values: [
             {
                 title: "Аудит отдела продаж",
-                href: "/case",
+                href: "/cases",
                 description: "Оценка эффективности",
             },
             {

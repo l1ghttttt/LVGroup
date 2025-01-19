@@ -191,7 +191,7 @@ const Header: React.FC = () => {
 
 
                         <NavigationMenuItem>
-                            <Link href="/case" legacyBehavior passHref>
+                            <Link href="/cases" legacyBehavior passHref>
                                 <NavigationMenuLink
                                     className={`text-headerColor !text-headerSize leading-[27px] ` + navigationMenuTriggerStyle()}>
                                     Проекты

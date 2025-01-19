@@ -15,11 +15,9 @@ const Welcome = () => {
     return (
         <section className={`p-welcomeWrapper pb-welcomeWrapperBottom w-full `}>
             <div className="video-background">
-
                     <video autoPlay muted loop playsInline id="myVideo" className={theme == 'dark' ? '' : 'invert'}>
                         <source src="/animated-background.mp4" type="video/mp4"/>
                     </video>
-
             </div>
             <div className={`flex w-full px-welcomePadding gap-[6px] max-xl:gap-[3px] relative max-sm:flex-col`}>
                 <div className={`w-2/3 max-2xl:w-1/2 flex flex-col justify-between max-sm:w-full`}>
