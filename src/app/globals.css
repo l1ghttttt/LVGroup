@@ -136,6 +136,9 @@ body {
     --heading-size: calc(var(--heading-size_max)* 1px);
     --heading-level-client: calc(var(--heading-level) / 1.6);
     --heading-size-client: calc(var(--heading-size) / 1.6);
+    --detail__bar: calc(25px + 12.5vw);
+    --detail__space: calc(var(--detail__bar) + var(--app__space)* 2);
+    --right-CustomerLogo: calc(100% + var(--app__space));
 
     --card: 0 0% 100%;
     --card-foreground: 224 71.4% 4.1%;
@@ -194,6 +197,28 @@ body {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+
+
+
+  @media (min-width: 1024px) and (max-width: 1599px) {
+    :root {
+      --detail__space: calc(22.22222px + 17.36111vw);
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .detail {
+      --detail__space: var(--app__space);
+    }
+  }
+
+
+
+
+
+
+
+
   @media (min-width: 2560px) {
     :root {
       --welcome-link: 60px;
@@ -436,4 +461,17 @@ a {
 
 ::-webkit-scrollbar {
   width: 0;
+}
+
+@media (min-width: 1921px) {
+  .customer-spacing {
+    max-width: 956px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1536px) {
+  .CustomerImage {
+    right: calc(100% + var(--app__space));
+  }
 }

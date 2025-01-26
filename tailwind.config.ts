@@ -132,10 +132,15 @@ export default {
   			orderIconMargin: 'var(--order-icon-margin)',
   			orderContactsMargin: 'var(--order-contacts-mb)',
 			CustomerTitleMargin: 'var(--app__space)',
+			CustomerSpacingMargin: 'var(--detail__space)',
   		},
+		right: {
+			CustomerLogoRight: 'var(--right-CustomerLogo)'
+		},
   		width: {
   			caseWidth: 'var(--case-width)',
-			customerTitleWidth: 'var(--customer-title-width)'
+			customerTitleWidth: 'var(--customer-title-width)',
+			customerImageWidth: 'var(--detail__bar)',
   		},
   		height: {
   			caseHeight: 'var(--case-height)'
