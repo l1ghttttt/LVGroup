@@ -237,7 +237,7 @@ body {
       --form__space_x: 120px;
       --order-contacts-size: 35px;
       --order-contacts-mb: 40px;
-      --text-header: 22px;
+      --text-header: 20px;
       --heading-level: calc(var(--heading-level_max)* 1px);
       --heading-size: calc(var(--heading-size_max)* 1px);
     }
@@ -474,4 +474,15 @@ a {
   .CustomerImage {
     right: calc(100% + var(--app__space));
   }
+}
+
+.customerList::before {
+  content: "";
+  position: absolute;
+  top: calc(1em - 3px);
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: currentColor;
 }
