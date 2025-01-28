@@ -210,7 +210,7 @@ body {
   }
 
   @media (max-width: 1023px) {
-    .detail {
+    :root {
       --detail__space: var(--app__space);
     }
   }
@@ -471,6 +471,8 @@ a {
     max-width: 956px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -497,4 +499,10 @@ a {
 
 .stack-layout {
   grid-template-columns: 50px 1fr;
+}
+@media (max-width: 1280px) {
+  .stack-grid {
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+  }
 }
