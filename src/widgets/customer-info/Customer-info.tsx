@@ -1,7 +1,18 @@
-import React from 'react';
+'use client'
+
+import React, {useEffect, useState} from 'react';
 import Image from "next/image";
 
 const CustomerInfo = () => {
+
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    if (!mounted) return null;
+
     return (
         <section className="w-full">
             <div className=" mb-CustomerTitleMargin flex flex-col">
@@ -56,19 +67,19 @@ const CustomerInfo = () => {
                         </li>
                     </ul>
                 </div>
-
+                <h4 className={`text-customerClientSize leading-customerClientLeading customer-spacing w-full px-CustomerSpacingPadding`}><span
+                    className={`text-mainColor`}>Наш</span> клиент и <span
+                    className={`text-mainColor`}>его</span> задача</h4>
                 <div
-                    className={`my-0 mx-CustomerSpacingMargin customer-spacing relative max-sm:mx-[20px] flex flex-col items-center`}>
-                    <h4 className={`text-customerClientSize leading-customerClientLeading`}><span
-                        className={`text-mainColor`}>Наш</span> клиент и <span
-                        className={`text-mainColor`}>его</span> задача</h4>
-                    <div className={`w-full flex gap-[50px] mt-[40px] items-center max-sm:flex-col`}>
+                    className={`my-0 mx-CustomerSpacingMargin customer-spacing relative max-sm:mx-[20px] flex flex-col items-center mt-[40px]`}>
+
+                    <div className={`w-full flex gap-[30px] items-center max-sm:flex-col`}>
                         <Image
                             className={`w-[250px] 2xl:absolute 2xl:top-0 2xl:w-customerImageWidth pr-[20px] max-2xl:hidden max-sm:mb-0 max-sm:block max-sm:w-3/4 h-auto CustomerImage`}
                             src={`/lamark-logo.jpg`}
                             alt={`лого заказчика`}
                             width={250} height={250}/>
-                        <div className={`flex flex-col gap-[10px] justify-start text-[20px]`}>
+                        <div className={`flex flex-col gap-[10px] justify-start text-[21px]`}>
                             <p>
                                 <span className={`text-mainColor font-bold mb-[20px]`}>Ламарк-Центр</span> - автосервис,
                                 который работает с 1998 года, партнерами и клиентами стали уже более 15 000
@@ -84,10 +95,39 @@ const CustomerInfo = () => {
                             </p>
 
                         </div>
+
+                        <aside className={`absolute top-0 left-full !!! w-stackWidth and ml-stackMargin`}>
+                            <p className={`text-[15px] leading-[15px] border-t-[1px] border-stack pt-[10px] mb-[9px]`}>Технологии
+                                в проекте</p>
+                            <ul className={`flex flex-col`}>
+                                <li className={`grid stack-layout items-center h-fit py-[10px] px-0 text-[18px] leading-[21px]`}>
+                                    <Image src={'/Vue.png'} alt={'stack icon'} width={`25`} height={`25`}
+                                           className={`w-auto grayscale`}/>
+                                    <p>Vue</p>
+                                </li>
+                                <li className={`grid stack-layout items-center h-fit py-[10px] px-0 text-[18px] leading-[21px]`}>
+                                    <Image src={'/AntDesign.png'} alt={'stack icon'} width={`25`} height={`25`}
+                                           className={`w-auto grayscale`}/>
+                                    <p>Ant Design</p>
+                                </li>
+                                <li className={`grid stack-layout items-center h-fit py-[10px] px-0 text-[18px] leading-[21px]`}>
+                                    <Image src={'/nginx.png'} alt={'stack icon'} width={`25`} height={`25`}
+                                           className={`w-auto grayscale`}/>
+                                    <p>Nginx</p>
+                                </li>
+                                <li className={`grid stack-layout items-center h-fit py-[10px] px-0 text-[18px] leading-[21px]`}>
+                                    <Image src={'/jQuery.png'} alt={'stack icon'} width={`25`} height={`25`}
+                                           className={`w-auto grayscale`}/>
+                                    <p>jQuery</p>
+                                </li>
+                            </ul>
+                        </aside>
+
+
                     </div>
-                    <div className={`w-full flex gap-[50px] mt-[100px] items-start justify-center flex-col`}>
+                    <div className={`w-full flex gap-[30px] mt-[100px] items-start justify-center flex-col`}>
                         <h2 className={`text-customerClientSize text-mainColor`}>Переработка наполнения и дизайна</h2>
-                        <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[20px]`}>
+                        <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px]`}>
                             <p>
                                 Исследовав целевую аудиторию клиента, мы выявили, что большинство посетителей пользуются
                                 мобильной версией сайта, а именно 81% от всего траффика.
@@ -133,25 +173,31 @@ const CustomerInfo = () => {
                         <div className={`w-1/3 pr-[30px]`}>
                             <div
                                 className={`rounded-b-[3%] rounded-t-[3%] border-y-[30px] border-y-foreground border-y-solid border-x-solid border-x-[5px] border-x-foreground w-full`}>
-                                <video loop muted autoPlay playsInline>
-                                    <source src="/video-1.mp4" type="video/mp4"/>
-                                </video>
+                                {typeof window !== "undefined" && (
+                                    <video loop muted autoPlay playsInline>
+                                        <source src="/video-1.mp4" type="video/mp4"/>
+                                    </video>
+                                )}
                             </div>
                         </div>
                         <div className={`w-1/3 pr-[30px]`}>
                             <div
                                 className={`rounded-b-[3%] rounded-t-[3%] border-y-[30px] border-y-foreground border-y-solid border-x-solid border-x-[5px] border-x-foreground w-full`}>
-                                <video loop muted autoPlay playsInline>
-                                    <source src="/video-2.mp4" type="video/mp4"/>
-                                </video>
+                                {typeof window !== "undefined" && (
+                                    <video loop muted autoPlay playsInline>
+                                        <source src="/video-2.mp4" type="video/mp4"/>
+                                    </video>
+                                )}
                             </div>
                         </div>
                         <div className={`w-1/3 pr-[30px]`}>
                             <div
                                 className={`rounded-b-[3%] rounded-t-[3%] border-y-[30px] border-y-foreground border-y-solid border-x-solid border-x-[5px] border-x-foreground w-full`}>
-                                <video loop muted autoPlay playsInline>
-                                    <source src="/video-3.mp4" type="video/mp4"/>
-                                </video>
+                                {typeof window !== "undefined" && (
+                                    <video loop muted autoPlay playsInline>
+                                        <source src="/video-3.mp4" type="video/mp4"/>
+                                    </video>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -160,9 +206,9 @@ const CustomerInfo = () => {
                                height={900}/>
                     </div>
 
-                    <div className={`w-full flex gap-[50px] mt-[100px] items-start justify-center flex-col`}>
+                    <div className={`w-full flex gap-[30px] mt-[100px] items-start justify-center flex-col`}>
                         <h2 className={`text-customerClientSize text-mainColor`}>Разработка</h2>
-                        <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[20px]`}>
+                        <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px]`}>
                             <p>
                                 Помимо полностью адаптивного сайта мы не забыли о современном дизайне, выдержанном в
                                 фирменных цветах брендбука клиента. Цифры, ценности и миссия компании позволяют
@@ -182,9 +228,9 @@ const CustomerInfo = () => {
                             </p>
                         </div>
                     </div>
-                    <div className={`w-full flex gap-[50px] mt-[100px] items-start justify-center flex-col`}>
+                    <div className={`w-full flex gap-[30px] mt-[100px] items-start justify-center flex-col`}>
                         <h2 className={`text-customerClientSize text-mainColor`}>Дополнительные сервисы</h2>
-                        <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[20px]`}>
+                        <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px]`}>
                             <p>
                                 Для повышения конверсии сайта настроили и подключили следующие сервисы:
                             </p>
@@ -209,9 +255,9 @@ const CustomerInfo = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className={`w-full flex gap-[50px] mt-[100px] items-start justify-center flex-col`}>
+                    <div className={`w-full flex gap-[30px] mt-[100px] items-start justify-center flex-col`}>
                         <h2 className={`text-customerClientSize text-mainColor`}>Результаты</h2>
-                        <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[20px]`}>
+                        <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px]`}>
                             <ul className={`flex flex-col gap-[5px] `}>
                                 <li className={`pl-[25px] relative customerList `}><p
                                     className={`my-[20px]`}>Разработали сайт и его полностью адаптированную версию для
@@ -232,15 +278,18 @@ const CustomerInfo = () => {
                     <div className={`w-full flex flex-col gap-[25px] mt-[100px] items-start`}>
                         <h2 className={`text-customerClientSize text-mainColor`}>Отзыв клиента</h2>
                         <div className={`h-[1px] bg-foreground w-full`}></div>
-                        <p className={`w-3/4 text-[22px]`}><span className={`text-[30px] font-semibold`}>" </span>Обратились за
+                        <p className={`w-3/4 text-[22px]`}><span
+                            className={`text-[30px] font-semibold leading-[20px]`}>" </span>Обратились за
                             созданием сайта в компанию "Двигатель". Ребята отнеслись креативно, с подходом и душой. Все
                             продумали, все отсняли, что нужно доработали и дописали. Еще нас тронуло, как ребята болеют
                             за проект - нам постоянно все напоминали, как-будто им нужен сайт еще больше, чем нам.
-                            Большое спасибо от всего "Ламарк-центра"!<span className={`text-[30px] font-semibold`}> "</span></p>
+                            Большое спасибо от всего "Ламарк-центра"!<span
+                                className={`text-[30px] font-semibold leading-[20px]`}> "</span></p>
                         <div className={`h-[1px] bg-foreground w-full`}></div>
                         <div className={`w-full flex justify-end`}>
                             <div className={`flex gap-[10px]`}>
-                                <Image className={`rounded-[50%]`} src={`/lamark-director.png`} alt={`фото клиента`} width={75} height={75}/>
+                                <Image className={`rounded-[50%]`} src={`/lamark-director.png`} alt={`фото клиента`}
+                                       width={75} height={75}/>
                                 <div className={`flex flex-col justify-around`}>
                                     <p className={`mb-0`}>Маркина Ирина,</p>
                                     <p>Директор "Ламарк-Центр"</p>

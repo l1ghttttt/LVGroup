@@ -21,7 +21,7 @@ const Order = () => {
                     </video>
                 </div>
                 <div
-                    className={`flex flex-col items-stretch justify-start relative z-50 w-full py-formSpaceYPadding px-formSpaceXPadding`}>
+                    className={`flex flex-col items-stretch justify-start relative w-full py-formSpaceYPadding px-formSpaceXPadding`}>
                     <h3 className={`text-orderTitleSize leading-orderTitleLeading font-medium relative`}>
                         Нужна встреча, чтобы
                         <br/>

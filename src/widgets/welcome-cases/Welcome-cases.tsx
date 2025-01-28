@@ -56,7 +56,7 @@ const WelcomeCases = () => {
             </ul>
             <ul className={`bg-background flex items-start flex-wrap justify-start relative ml-[-1px] mb-[-1px]`}>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="/">
+                    <Link href="/lamark-center">
                         {typeof window !== "undefined" && (
                             <video autoPlay muted loop playsInline id="myVideo"
                                    className="absolute top-0 left-0 w-full h-full object-cover">

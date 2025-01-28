@@ -65,7 +65,7 @@ body {
     --text-header: 20px;
     --border-color: 0 0% 44%;
     --header-color: 0 0% 15%;
-    --main-color: 20 92% 50%;
+    --main-color: 20 90% 50%;
     --dark-main: 20 92% 40%;
     --background: 0 0% 100%;
     --foreground: 224 71.4% 4.1%;
@@ -139,6 +139,8 @@ body {
     --detail__bar: calc(25px + 12.5vw);
     --detail__space: calc(var(--detail__bar) + var(--app__space)* 2);
     --right-CustomerLogo: calc(100% + var(--app__space));
+    --stack-width: calc(-35.45741px + 15.77287vw);
+    --stack-margin: calc(-77.72871px + 7.88644vw);
 
     --card: 0 0% 100%;
     --card-foreground: 224 71.4% 4.1%;
@@ -171,6 +173,7 @@ body {
     --welcome-colorDescr: 0 0% 80%;
     --footer-link-color: 0 0 71%;
     --services-line-bg: 0 0 71%;
+    --main-color: 20 100% 50%;
 
     --background: 0 0% 0%;
     --foreground: 210 0% 98%;
@@ -466,7 +469,8 @@ a {
 @media (min-width: 1921px) {
   .customer-spacing {
     max-width: 956px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -485,4 +489,12 @@ a {
   height: 5px;
   border-radius: 50%;
   background-color: currentColor;
+}
+
+.border-stack {
+  border-color: hsl(var(--main-color));
+}
+
+.stack-layout {
+  grid-template-columns: 50px 1fr;
 }

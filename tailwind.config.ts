@@ -121,7 +121,8 @@ export default {
   			footerSocialPaddingXL: 'var(--footer-social-space)',
   			footerSocialPaddingMaxl: 'var(--footer-social-padding-maxl)',
   			formSpaceYPadding: 'var(--form__space_y)',
-  			formSpaceXPadding: 'var(--form__space_x)'
+  			formSpaceXPadding: 'var(--form__space_x)',
+			CustomerSpacingPadding: 'var(--detail__space)',
   		},
   		margin: {
   			footerNavMarginXL: 'var(--footer-nav-margin-xl)',
@@ -133,6 +134,7 @@ export default {
   			orderContactsMargin: 'var(--order-contacts-mb)',
 			CustomerTitleMargin: 'var(--app__space)',
 			CustomerSpacingMargin: 'var(--detail__space)',
+			stackMargin: 'var(--stack-margin)',
   		},
 		right: {
 			CustomerLogoRight: 'var(--right-CustomerLogo)'
@@ -141,6 +143,7 @@ export default {
   			caseWidth: 'var(--case-width)',
 			customerTitleWidth: 'var(--customer-title-width)',
 			customerImageWidth: 'var(--detail__bar)',
+			stackWidth: 'var(--stack-width)',
   		},
   		height: {
   			caseHeight: 'var(--case-height)'

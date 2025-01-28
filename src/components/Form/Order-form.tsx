@@ -67,7 +67,7 @@ export function OrderForm() {
     return (
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)}
-                  className="space-y-6 min-h-full items-stretch relative z-50 w-full py-formSpaceYPadding px-formSpaceXPadding duration-300 text-background mb-[50px]">
+                  className="space-y-6 min-h-full items-stretch relative w-full py-formSpaceYPadding px-formSpaceXPadding duration-300 text-background mb-[50px]">
                 <h3 className={`text-orderContactsSize mb-orderContactsMargin font-semibold text-background`}>Ваши
                     контакты</h3>
                 <FormField
