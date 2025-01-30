@@ -74,7 +74,7 @@ const Lamark = () => {
                                 </ul>
                             </aside>
 
-                            <div className={`flex flex-col gap-[10px] justify-start text-[21px]`}>
+                            <div className={`flex flex-col gap-[10px] justify-start text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
                                 <p>
                                     Политическая партия <span className={`text-mainColor font-bold mb-[20px]`}> ЛДПР </span> – Либерально-демократическая партия России. К нам обратилось Хабаровское региональное отделение партии
                                 </p>
@@ -84,9 +84,9 @@ const Lamark = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className={`w-full flex gap-[30px] mt-[100px] max-lg:mt-[50px] items-start justify-center flex-col`}>
+                        <div className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
                             <h2 className={`text-customerClientSize text-mainColor`}>Подробнее о задаче</h2>
-                            <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px]`}>
+                            <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
                                 <p>
                                     Кратчайшие сроки означали – 2 дня на обзвон и 2 дня для организации и брифинга сотрудников, которые должны были предоставляться с нашей стороны.
                                 </p>
@@ -98,13 +98,13 @@ const Lamark = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className={`w-[80vw] max-sm:w-[90vw] flex mt-[100px] max-lg:mt-[50px] rounded-b-[3%] rounded-t-[3%] border-x-[40px] border-x-foreground border-y-[15px] border-y-foreground`}>
+                        <div className={`w-[80vw] max-sm:w-[90vw] flex mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] rounded-b-[3%] rounded-t-[3%] border-x-[40px] border-x-foreground border-y-[15px] border-y-foreground`}>
                             <Image className={`w-full h-auto`} src={`/LDPRPicture.jpg`} alt={`сайт после`} width={1600}
                                    height={900}/>
                         </div>
-                        <div className={`w-full flex gap-[30px] mt-[100px] max-lg:mt-[50px] items-start justify-center flex-col`}>
+                        <div className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
                             <h2 className={`text-customerClientSize text-mainColor`}>Результаты</h2>
-                            <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px]`}>
+                            <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
                                 <ul className={`flex flex-col gap-[5px] `}>
                                     <li className={`pl-[25px] relative customerList `}><p
                                         className={`my-[20px]`}>Качественный обзвон получилось достичь за счет 2 компонентов - сотрудники были с большим опытом продаж и обзвонов, а также были погружены в специфику. Это позволило оставить максимально лояльное впечатление о заказчике – call-центр мог ответить на вопросы о кандидатах партии, ее программе и целях, если вопросы были еще «глубже», то людей оперативно и корректно передавали заказчику.</p></li>

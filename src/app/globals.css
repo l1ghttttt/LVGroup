@@ -134,8 +134,8 @@ body {
     --heading-level_min: 41;
     --heading-level: calc(var(--heading-level_max)* 1px);
     --heading-size: calc(var(--heading-size_max)* 1px);
-    --heading-level-client: calc(var(--heading-level) / 1.6);
-    --heading-size-client: calc(var(--heading-size) / 1.6);
+    --heading-level-client: calc(var(--heading-level) / 1.4);
+    --heading-size-client: calc(var(--heading-size) / 1.4);
     --detail__bar: calc(25px + 12.5vw);
     --detail__space: calc(var(--detail__bar) + var(--app__space)* 2);
     --right-CustomerLogo: calc(100% + var(--app__space));

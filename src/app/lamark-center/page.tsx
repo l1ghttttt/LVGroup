@@ -111,7 +111,7 @@ const Ldpr = () => {
                                 </ul>
                             </aside>
 
-                            <div className={`flex flex-col gap-[10px] justify-start text-[21px]`}>
+                            <div className={`flex flex-col gap-[10px] justify-start text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
                                 <p>
                                     <span className={`text-mainColor font-bold mb-[20px]`}>Ламарк-Центр</span> -
                                     автосервис,
@@ -134,10 +134,10 @@ const Ldpr = () => {
                             </div>
                         </div>
                         <div
-                            className={`w-full flex gap-[30px] mt-[100px] max-lg:mt-[50px] items-start justify-center flex-col`}>
+                            className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
                             <h2 className={`text-customerClientSize text-mainColor`}>Переработка наполнения и
                                 дизайна</h2>
-                            <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px]`}>
+                            <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
                                 <p>
                                     Исследовав целевую аудиторию клиента, мы выявили, что большинство посетителей
                                     пользуются
@@ -189,7 +189,7 @@ const Ldpr = () => {
                         </div>
 
                         <div
-                            className={`w-full flex justify-between mt-[100px] max-lg:mt-[50px] max-sm:flex-col max-sm:items-center`}>
+                            className={`w-full flex justify-between mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] max-sm:flex-col max-sm:items-center`}>
                             <div className={`w-1/3 pr-[30px] max-sm:w-3/5 max-sm:p-0 max-sm:mb-[25px]`}>
                                 <div
                                     className={`rounded-b-[3%] rounded-t-[3%] border-y-[30px] border-y-foreground border-y-solid border-x-solid border-x-[5px] border-x-foreground w-full`}>
@@ -222,15 +222,15 @@ const Ldpr = () => {
                             </div>
                         </div>
                         <div
-                            className={`w-[80vw] max-sm:w-[90vw] flex mt-[100px] max-lg:mt-[50px] rounded-b-[3%] rounded-t-[3%] border-x-[40px] border-x-foreground border-y-[15px] border-y-foreground`}>
+                            className={`w-[80vw] max-sm:w-[90vw] flex mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] rounded-b-[3%] rounded-t-[3%] border-x-[40px] border-x-foreground border-y-[15px] border-y-foreground`}>
                             <Image className={`w-full h-auto`} src={`/lamarkScreen.png`} alt={`сайт после`} width={1600}
                                    height={900}/>
                         </div>
 
                         <div
-                            className={`w-full flex gap-[30px] mt-[100px] max-lg:mt-[50px] items-start justify-center flex-col`}>
+                            className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
                             <h2 className={`text-customerClientSize text-mainColor`}>Разработка</h2>
-                            <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px]`}>
+                            <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
                                 <p>
                                     Помимо полностью адаптивного сайта мы не забыли о современном дизайне, выдержанном в
                                     фирменных цветах брендбука клиента. Цифры, ценности и миссия компании позволяют
@@ -254,9 +254,9 @@ const Ldpr = () => {
                             </div>
                         </div>
                         <div
-                            className={`w-full flex gap-[30px] mt-[100px] max-lg:mt-[50px] items-start justify-center flex-col`}>
+                            className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
                             <h2 className={`text-customerClientSize text-mainColor`}>Дополнительные сервисы</h2>
-                            <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px]`}>
+                            <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
                                 <p>
                                     Для повышения конверсии сайта настроили и подключили следующие сервисы:
                                 </p>
@@ -284,9 +284,9 @@ const Ldpr = () => {
                             </div>
                         </div>
                         <div
-                            className={`w-full flex gap-[30px] mt-[100px] max-lg:mt-[50px] items-start justify-center flex-col`}>
+                            className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
                             <h2 className={`text-customerClientSize text-mainColor`}>Результаты</h2>
-                            <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px]`}>
+                            <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
                                 <ul className={`flex flex-col gap-[5px] `}>
                                     <li className={`pl-[25px] relative customerList `}><p
                                         className={`my-[20px]`}>Разработали сайт и его полностью адаптированную версию
@@ -309,7 +309,7 @@ const Ldpr = () => {
                             </div>
                         </div>
 
-                        <div className={`w-full flex flex-col gap-[25px] mt-[100px] max-lg:mt-[50px] items-start`}>
+                        <div className={`w-full flex flex-col gap-[25px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start`}>
                             <h2 className={`text-customerClientSize text-mainColor`}>Отзыв клиента</h2>
                             <div className={`h-[1px] bg-foreground w-full`}></div>
                             <p className={`w-3/4 text-[22px] max-md:w-full`}><span
