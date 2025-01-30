@@ -141,6 +141,8 @@ body {
     --right-CustomerLogo: calc(100% + var(--app__space));
     --stack-width: calc(-35.45741px + 15.77287vw);
     --stack-margin: calc(-77.72871px + 7.88644vw);
+    --customer-infography-size: 122px;
+    --customer-infography-small-size: calc(var(--customer-infography-size) / 4);
 
     --card: 0 0% 100%;
     --card-foreground: 224 71.4% 4.1%;
@@ -202,20 +204,36 @@ body {
   }
 
 
-
   @media (min-width: 1024px) and (max-width: 1599px) {
     :root {
       --detail__space: calc(22.22222px + 17.36111vw);
     }
   }
-
   @media (max-width: 1023px) {
     :root {
       --detail__space: var(--app__space);
     }
   }
-
-
+  @media (max-width: 1920px) {
+    :root {
+      --customer-infography-size: calc(-53.33333px + 9.02778vw);
+    }
+  }
+  @media (max-width: 1200px) {
+    :root {
+      --customer-infography-size: calc(-27.77143px + 8.57143vw);
+    }
+  }
+  @media (max-width: 1024px) {
+    :root {
+      --customer-infography-size: calc(38.63744px + 3.5545vw);
+    }
+  }
+  @media (max-width: 600px) {
+    :root {
+      --customer-infography-size: calc(-12.85714px + 32.14286vw);
+    }
+  }
 
 
 

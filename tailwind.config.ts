@@ -85,6 +85,8 @@ export default {
   			orderContactsSize: 'var(--order-contacts-size)',
 			customerTitleSize: 'var(--heading-size)',
 			customerClientSize: 'var(--heading-size-client)',
+			customerInfographySize: 'var(--customer-infography-size)',
+			customerInfographySmallSize: 'var(--customer-infography-small-size)',
 		},
   		textColor: {
   			headerColor: 'hsl(var(--header-color))',
@@ -159,6 +161,8 @@ export default {
   			orderDescrLeading: 'var(--order-descr-leading)',
 			customerTitleLeading: 'var(--heading-level)',
 			customerClientLeading: 'var(--heading-level-client)',
+			customerInfographyLeading: 'var(--customer-infography-size)',
+			customerInfographySmallLeading: 'var(--customer-infography-small-size)',
   		},
   		keyframes: {
   			'accordion-down': {
