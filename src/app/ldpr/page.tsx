@@ -98,8 +98,8 @@ const Lamark = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className={`w-[80vw] max-sm:w-[90vw] flex mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] rounded-b-[3%] rounded-t-[3%] border-x-[40px] border-x-foreground border-y-[15px] border-y-foreground`}>
-                            <Image className={`w-full h-auto`} src={`/LDPRPicture.jpg`} alt={`сайт после`} width={1600}
+                        <div className={`w-[80vw] max-sm:w-[90vw] flex mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px]`}>
+                            <Image className={`w-full h-auto rounded-[50px] border-[13px] border-foreground`} src={`/LDPRPicture.jpg`} alt={`сайт после`} width={1600}
                                    height={900}/>
                         </div>
                         <div className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>

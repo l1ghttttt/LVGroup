@@ -192,9 +192,9 @@ const Ldpr = () => {
                             className={`w-full flex justify-between mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] max-sm:flex-col max-sm:items-center`}>
                             <div className={`w-1/3 pr-[30px] max-sm:w-3/5 max-sm:p-0 max-sm:mb-[25px]`}>
                                 <div
-                                    className={`rounded-b-[3%] rounded-t-[3%] border-y-[30px] border-y-foreground border-y-solid border-x-solid border-x-[5px] border-x-foreground w-full`}>
+                                    className={`w-full `}>
                                     {typeof window !== "undefined" && (
-                                        <video loop muted autoPlay playsInline>
+                                        <video loop muted autoPlay playsInline className={`rounded-[30px] border-[8px] border-foreground`}>
                                             <source src="/video-1.mp4" type="video/mp4"/>
                                         </video>
                                     )}
@@ -202,9 +202,9 @@ const Ldpr = () => {
                             </div>
                             <div className={`w-1/3 pr-[30px] max-sm:w-3/5 max-sm:p-0 max-sm:mb-[25px]`}>
                                 <div
-                                    className={`rounded-b-[3%] rounded-t-[3%] border-y-[30px] border-y-foreground border-y-solid border-x-solid border-x-[5px] border-x-foreground w-full`}>
+                                    className={`w-full`}>
                                     {typeof window !== "undefined" && (
-                                        <video loop muted autoPlay playsInline>
+                                        <video loop muted autoPlay playsInline className={`rounded-[30px] border-[8px] border-foreground`}>
                                             <source src="/video-2.mp4" type="video/mp4"/>
                                         </video>
                                     )}
@@ -212,9 +212,9 @@ const Ldpr = () => {
                             </div>
                             <div className={`w-1/3 pr-[30px] max-sm:w-3/5 max-sm:p-0`}>
                                 <div
-                                    className={`rounded-b-[3%] rounded-t-[3%] border-y-[30px] border-y-foreground border-y-solid border-x-solid border-x-[5px] border-x-foreground w-full`}>
+                                    className={`w-full`}>
                                     {typeof window !== "undefined" && (
-                                        <video loop muted autoPlay playsInline>
+                                        <video loop muted autoPlay playsInline className={`rounded-[30px] border-[8px] border-foreground`}>
                                             <source src="/video-3.mp4" type="video/mp4"/>
                                         </video>
                                     )}
@@ -222,8 +222,8 @@ const Ldpr = () => {
                             </div>
                         </div>
                         <div
-                            className={`w-[80vw] max-sm:w-[90vw] flex mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] rounded-b-[3%] rounded-t-[3%] border-x-[40px] border-x-foreground border-y-[15px] border-y-foreground`}>
-                            <Image className={`w-full h-auto`} src={`/lamarkScreen.png`} alt={`сайт после`} width={1600}
+                            className={`w-[80vw] max-sm:w-[90vw] flex mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px]`}>
+                            <Image className={`w-full h-auto rounded-[50px] border-[13px] border-foreground`} src={`/lamarkScreen.png`} alt={`сайт после`} width={1600}
                                    height={900}/>
                         </div>
 
