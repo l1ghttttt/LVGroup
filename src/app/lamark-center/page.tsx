@@ -17,7 +17,7 @@ const Ldpr = () => {
     return (
         <>
             <section className="w-full">
-                <div className=" mb-CustomerTitleMargin flex flex-col">
+                <div className="flex flex-col">
                     <div className={`p-servicesTitlePadding`}>
                         <div className={`flex justify-between`}>
                             <h2 className={`max-sm:w-full text-customerTitleSize leading-customerTitleLeading`}>Редизайн
@@ -111,7 +111,8 @@ const Ldpr = () => {
                                 </ul>
                             </aside>
 
-                            <div className={`flex flex-col gap-[10px] justify-start text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
+                            <div
+                                className={`flex flex-col gap-[10px] justify-start text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
                                 <p>
                                     <span className={`text-mainColor font-bold mb-[20px]`}>Ламарк-Центр</span> -
                                     автосервис,
@@ -137,7 +138,8 @@ const Ldpr = () => {
                             className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
                             <h2 className={`text-customerClientSize text-mainColor`}>Переработка наполнения и
                                 дизайна</h2>
-                            <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
+                            <div
+                                className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
                                 <p>
                                     Исследовав целевую аудиторию клиента, мы выявили, что большинство посетителей
                                     пользуются
@@ -194,7 +196,8 @@ const Ldpr = () => {
                                 <div
                                     className={`w-full `}>
                                     {typeof window !== "undefined" && (
-                                        <video loop muted autoPlay playsInline className={`rounded-[30px] border-[8px] border-foreground`}>
+                                        <video loop muted autoPlay playsInline
+                                               className={`rounded-[30px] border-[8px] border-foreground`}>
                                             <source src="/video-1.mp4" type="video/mp4"/>
                                         </video>
                                     )}
@@ -204,7 +207,8 @@ const Ldpr = () => {
                                 <div
                                     className={`w-full`}>
                                     {typeof window !== "undefined" && (
-                                        <video loop muted autoPlay playsInline className={`rounded-[30px] border-[8px] border-foreground`}>
+                                        <video loop muted autoPlay playsInline
+                                               className={`rounded-[30px] border-[8px] border-foreground`}>
                                             <source src="/video-2.mp4" type="video/mp4"/>
                                         </video>
                                     )}
@@ -214,7 +218,8 @@ const Ldpr = () => {
                                 <div
                                     className={`w-full`}>
                                     {typeof window !== "undefined" && (
-                                        <video loop muted autoPlay playsInline className={`rounded-[30px] border-[8px] border-foreground`}>
+                                        <video loop muted autoPlay playsInline
+                                               className={`rounded-[30px] border-[8px] border-foreground`}>
                                             <source src="/video-3.mp4" type="video/mp4"/>
                                         </video>
                                     )}
@@ -223,14 +228,16 @@ const Ldpr = () => {
                         </div>
                         <div
                             className={`w-[80vw] max-sm:w-[90vw] flex mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px]`}>
-                            <Image className={`w-full h-auto rounded-[50px] border-[13px] border-foreground`} src={`/lamarkScreen.png`} alt={`сайт после`} width={1600}
+                            <Image className={`w-full h-auto rounded-[50px] border-[13px] border-foreground`}
+                                   src={`/lamarkScreen.png`} alt={`сайт после`} width={1600}
                                    height={900}/>
                         </div>
 
                         <div
                             className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
                             <h2 className={`text-customerClientSize text-mainColor`}>Разработка</h2>
-                            <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
+                            <div
+                                className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
                                 <p>
                                     Помимо полностью адаптивного сайта мы не забыли о современном дизайне, выдержанном в
                                     фирменных цветах брендбука клиента. Цифры, ценности и миссия компании позволяют
@@ -256,7 +263,8 @@ const Ldpr = () => {
                         <div
                             className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
                             <h2 className={`text-customerClientSize text-mainColor`}>Дополнительные сервисы</h2>
-                            <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
+                            <div
+                                className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
                                 <p>
                                     Для повышения конверсии сайта настроили и подключили следующие сервисы:
                                 </p>
@@ -286,7 +294,8 @@ const Ldpr = () => {
                         <div
                             className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
                             <h2 className={`text-customerClientSize text-mainColor`}>Результаты</h2>
-                            <div className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
+                            <div
+                                className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
                                 <ul className={`flex flex-col gap-[5px] `}>
                                     <li className={`pl-[25px] relative customerList `}><p
                                         className={`my-[20px]`}>Разработали сайт и его полностью адаптированную версию
@@ -309,33 +318,96 @@ const Ldpr = () => {
                             </div>
                         </div>
 
-                        <div className={`w-full flex flex-col gap-[25px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start`}>
+                        <div
+                            className={`w-full flex flex-col gap-[25px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start`}>
                             <h2 className={`text-customerClientSize text-mainColor`}>Отзыв клиента</h2>
                             <div className={`h-[1px] bg-foreground w-full`}></div>
-                            <p className={`w-3/4 text-[22px] max-md:w-full`}><span
-                                className={`text-[30px] font-semibold leading-[20px]`}>&quot; </span>Обратились за
-                                созданием сайта в компанию &quot;Двигатель&quot;. Ребята отнеслись креативно, с подходом
-                                и душой. Все
-                                продумали, все отсняли, что нужно доработали и дописали. Еще нас тронуло, как ребята
-                                болеют
-                                за проект - нам постоянно все напоминали, как-будто им нужен сайт еще больше, чем нам.
-                                Большое спасибо от всего &quot;Ламарк-центра&quot;!<span
-                                    className={`text-[30px] font-semibold leading-[20px]`}> &quot;</span></p>
-                            <div className={`h-[1px] bg-foreground w-full`}></div>
-                            <div className={`w-full flex justify-end`}>
-                                <div className={`flex gap-[10px]`}>
-                                    <Image className={`rounded-[50%]`} src={`/lamark-director.png`} alt={`фото клиента`}
-                                           width={75} height={75}/>
-                                    <div className={`flex flex-col justify-around`}>
-                                        <p className={`mb-0`}>Маркина Ирина,</p>
-                                        <p>Директор &quot;Ламарк-Центр&quot;</p>
+
+
+                            <div className={`w-full flex  max-lg:gap-[20px] max-lg:mt-[20px] gap-[40px]`}>
+
+
+                                <div className={`flex w-2/6 flex-col justify-between pt-3`}>
+                                    <Image className={`rotate-180`} src={'/arrows.png'} alt={`arrows`} width={50}
+                                           height={50}/>
+                                    <div className={`w-full flex justify-start`}>
+                                        <div className={`flex gap-[10px]`}>
+                                            <Image className={`rounded-[50%]`} src={`/lamark-director.png`}
+                                                   alt={`фото клиента`}
+                                                   width={75} height={75}/>
+                                            <div className={`flex flex-col justify-center`}>
+                                                <p className={`mb-[5px] text-[14px]`}>Маркина Ирина</p>
+                                                <p className={`text-[12px] text-gray-500`}>Директор &quot;Ламарк-Центр&quot;</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+
+
+                                <div className={`flex w-4/6`}>
+                                    <p className={`w-full text-[22px] max-md:w-full  mb-[25px]`}><span
+                                        className={`text-[30px] font-semibold leading-[20px]`}>&quot; </span>Обратились
+                                        за
+                                        созданием сайта в компанию &quot;Двигатель&quot;. Ребята отнеслись креативно, с
+                                        подходом
+                                        и душой. Все
+                                        продумали, все отсняли, что нужно доработали и дописали. Еще нас тронуло, как
+                                        ребята
+                                        болеют
+                                        за проект - нам постоянно все напоминали, как-будто им нужен сайт еще больше,
+                                        чем нам.
+                                        Большое спасибо от всего &quot;Ламарк-центра&quot;!<span
+                                            className={`text-[30px] font-semibold leading-[20px]`}> &quot;</span></p>
+                                </div>
+
+
                             </div>
+
+                            <div className={`h-[1px] bg-foreground w-full`}></div>
+                            <div className={`h-[1px] bg-foreground w-full mt-[30px]`}></div>
+
                         </div>
                     </div>
                 </div>
             </section>
+            <ul className={`flex p-casesFilterPadding pl-0 flex-wrap gap-2 gap-y-3`}>
+                <li>
+                    <button
+                        className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                        Продажи
+                    </button>
+                </li>
+                <li>
+                    <button
+                        className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                        Маркетинг
+                    </button>
+                </li>
+                <li>
+                    <button
+                        className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                        Веб-разработка
+                    </button>
+                </li>
+                <li>
+                    <button
+                        className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                        Создание контента
+                    </button>
+                </li>
+                <li>
+                    <button
+                        className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                        Дизайн
+                    </button>
+                </li>
+                <li>
+                    <button
+                        className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                        Call-центр
+                    </button>
+                </li>
+            </ul>
             <Order/>
         </>
     );
