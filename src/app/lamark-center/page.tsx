@@ -8,12 +8,12 @@ import BeforeAfterSlider from "@/widgets/Before-after/Before-after";
 const Ldpr = () => {
 
     const firstImage = {
-        imageUrl: './site-before.jpg',
+        imageUrl: './site-after.jpg',
         alt: 'First Image',
     };
 
     const secondImage = {
-        imageUrl: './site-after.jpg',
+        imageUrl: './site-before.jpg',
         alt: 'Second Image',
     };
 
