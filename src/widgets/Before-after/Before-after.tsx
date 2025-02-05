@@ -177,7 +177,9 @@ export default function BeforeAfterSlider({
     useEffect(() => {
         if (observer) {
             if (!isReady) return;
-            observer.observe(refContainer.current as HTMLDivElement);
+            if (observer && refContainer.current) {
+                observer.observe(refContainer.current as HTMLDivElement);
+            }
         }
     }, [isReady]);
     /**
@@ -203,7 +205,9 @@ export default function BeforeAfterSlider({
 
     const setSliderModeProxy = (newMode: MODE) => {
         setSliderMode(newMode);
-        onChangeMode && onChangeMode(newMode);
+        if (onChangeMode) {
+            onChangeMode(newMode);
+        }
     }
 
     useInit(
