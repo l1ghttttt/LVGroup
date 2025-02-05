@@ -260,9 +260,11 @@ export default function BeforeAfterSlider({
             }
             const X = e.pageX - containerPosition.left;
             const newPosition = normalizeNewPosition(X, imagesWidth) / imagesWidth * 100;
-            onChangePercentPosition
-                ? onChangePercentPosition(newPosition)
-                : setDelimiterPosition(newPosition);
+            if (onChangePercentPosition) {
+                onChangePercentPosition(newPosition);
+            } else {
+                setDelimiterPosition(newPosition);
+            }
         }
     }
 
