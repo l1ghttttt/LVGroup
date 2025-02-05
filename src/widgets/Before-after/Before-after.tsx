@@ -129,7 +129,7 @@ export default function BeforeAfterSlider({
                                               onChangeMode,
                                           }: Props) {
     const classNames = ['before-after-slider'];
-    className && classNames.push(className);
+    if (className) classNames.push(className);
 
     const refContainer = useRef<HTMLDivElement>(null);
     const firstImageRef = useRef<HTMLImageElement>(null);
@@ -159,7 +159,9 @@ export default function BeforeAfterSlider({
         threshold: [0.0, observerVisiblePercent],
     };
     const observerCallback = function(entries: IntersectionObserverEntry[]) {
-        if (!observer || !onVisible) return;
+        if (!observer || !onVisible) {
+            return;
+        }
         entries.forEach(entry => {
             if (entry.intersectionRatio > observerVisiblePercent) {
                 observer.disconnect();
@@ -249,7 +251,9 @@ export default function BeforeAfterSlider({
 
     const onMoveHandler = (e: React.Touch | React.MouseEvent) => {
         if (sliderMode === MODE.MOVE) {
-            if (!imagesWidth) return;
+            if (!imagesWidth) {
+                return;
+            }
             const X = e.pageX - containerPosition.left;
             const newPosition = normalizeNewPosition(X, imagesWidth) / imagesWidth * 100;
             onChangePercentPosition
