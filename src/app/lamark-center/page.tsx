@@ -3,8 +3,19 @@
 import React, {useEffect, useState} from 'react';
 import Order from "@/widgets/order/Order";
 import Image from "next/image";
+import BeforeAfterSlider from "@/widgets/Before-after/Before-after";
 
 const Ldpr = () => {
+
+    const firstImage = {
+        imageUrl: './site-before.jpg',
+        alt: 'First Image',
+    };
+
+    const secondImage = {
+        imageUrl: './site-after.jpg',
+        alt: 'Second Image',
+    };
 
     const [mounted, setMounted] = useState(false);
 
@@ -135,6 +146,14 @@ const Ldpr = () => {
                             </div>
                         </div>
                         <div
+                            className={`rounded-[20px] border-[8px] border-black w-[90%] mt-[45px] max-lg:gap-[20px] relative`}>
+                            <BeforeAfterSlider firstImage={firstImage} secondImage={secondImage} className={``}
+                                               delimiterColor={`black`}/>
+                            <p className={`absolute bottom-[-3px] left-0 text-[18px] font-railway text-mainColor bg-black p-[8px] rounded-tr-[7px]`}>Было</p>
+                            <p className={`absolute bottom-[-3px] right-0 text-[18px] font-railway text-mainColor bg-black p-[8px] rounded-tl-[7px]`}>Стало</p>
+                        </div>
+
+                        <div
                             className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
                             <h2 className={`text-customerClientSize text-mainColor`}>Переработка наполнения и
                                 дизайна</h2>
@@ -228,9 +247,7 @@ const Ldpr = () => {
                         </div>
                         <div
                             className={`w-[80vw] max-sm:w-[90vw] flex mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px]`}>
-                            <Image className={`w-full h-auto rounded-[50px] border-[13px] border-foreground`}
-                                   src={`/lamarkScreen.png`} alt={`сайт после`} width={1600}
-                                   height={900}/>
+
                         </div>
 
                         <div
