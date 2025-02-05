@@ -3,7 +3,7 @@
 import React, {useEffect, useState} from 'react';
 import Order from "@/widgets/order/Order";
 import Image from "next/image";
-import BeforeAfterSlider from "@/widgets/Before-after/Before-after";
+import BeforeAfterSlider from "@/widgets/before-after/Before-after";
 
 const Ldpr = () => {
 

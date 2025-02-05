@@ -94,7 +94,7 @@ const WelcomeCases = () => {
                     </Link>
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="/">
+                    <Link href="/tooth-fairy">
                         <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/4.jpg" alt=""/>
                         <div className={`bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`relative z-25 text-black text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
