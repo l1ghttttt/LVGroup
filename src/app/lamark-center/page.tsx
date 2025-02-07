@@ -87,7 +87,7 @@ const Ldpr = () => {
                     <div
                         className={`my-0 mx-CustomerSpacingMargin customer-spacing relative max-sm:mx-[20px] flex flex-col items-center mt-[40px]`}>
 
-                        <div className={`w-full flex gap-[30px] items-center max-xl:flex-col`}>
+                        <div className={`w-full flex gap-[30px] items-center max-xl:flex-col mb-[75px] max-lg:mb-[0px]`}>
                             <Image
                                 className={`w-[250px] 2xl:absolute 2xl:top-0 2xl:w-customerImageWidth pr-[20px] max-2xl:hidden max-sm:mb-0 max-sm:block max-sm:w-3/4 h-auto CustomerImage max-sm:pr-0`}
                                 src={`/lamark-logo.jpg`}
@@ -146,7 +146,7 @@ const Ldpr = () => {
                             </div>
                         </div>
                         <div
-                            className={`rounded-[20px] border-[8px] border-black w-[90%] max-md:w-[95vw] mt-[45px] max-lg:gap-[20px] relative`}>
+                            className={`rounded-[20px] border-[8px] border-black w-[70vw] mt-[45px] max-lg:gap-[20px] relative max-lg:w-[90%] max-sm:w-[95vw]`}>
                             <BeforeAfterSlider firstImage={firstImage} secondImage={secondImage} delimiterColor={`black`}/>
                             <p className={`absolute bottom-[-3px] left-0 text-[16px] max-md:text-[12px] font-railway text-mainColor bg-black p-[8px] max-md:p-[6px] rounded-tr-[7px]`}>Было</p>
                             <p className={`absolute bottom-[-3px] right-0 text-[16px] max-md:text-[12px] font-railway text-mainColor bg-black p-[8px] max-md:p-[6px] rounded-tl-[7px]`}>Стало</p>
