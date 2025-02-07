@@ -142,7 +142,7 @@ body {
     --stack-width: calc(-35.45741px + 15.77287vw);
     --stack-margin: calc(-77.72871px + 7.88644vw);
     --customer-infography-size: 122px;
-    --customer-infography-small-size: calc(var(--customer-infography-size) / 4);
+    --customer-infography-small-size: calc(var(--customer-infography-size) / 3);
 
     --card: 0 0% 100%;
     --card-foreground: 224 71.4% 4.1%;

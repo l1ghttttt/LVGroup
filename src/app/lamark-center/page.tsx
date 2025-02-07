@@ -361,8 +361,7 @@ const Ldpr = () => {
 
 
                                 <div className={`flex w-4/6 max-md:w-full`}>
-                                    <p className={`w-full text-[22px] max-lg:text-[18px] max-sm:text-[16px] max-md:w-full mb-[25px] max-md:mb-0`}><span
-                                        className={`text-[30px] font-semibold leading-[20px]`}>&quot; </span>Обратились
+                                    <p className={`w-full text-[22px] max-xl:text-[18px] max-sm:text-[16px] max-md:w-full mb-[25px] max-md:mb-0`}>Обратились
                                         за
                                         созданием сайта в компанию &quot;Двигатель&quot;. Ребята отнеслись креативно, с
                                         подходом
@@ -372,8 +371,7 @@ const Ldpr = () => {
                                         болеют
                                         за проект - нам постоянно все напоминали, как-будто им нужен сайт еще больше,
                                         чем нам.
-                                        Большое спасибо от всего &quot;Ламарк-центра&quot;!<span
-                                            className={`text-[30px] font-semibold leading-[20px]`}> &quot;</span></p>
+                                        Большое спасибо от всего &quot;Ламарк-центра&quot;!</p>
                                 </div>
 
 

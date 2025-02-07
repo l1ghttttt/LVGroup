@@ -16,16 +16,16 @@ const Lamark = () => {
 
     return (
         <>
-            <section className="w-full">
-                <div className="flex flex-col">
+            <section className={`w-full`}>
+                <div className={`flex flex-col`}>
                     <div className={`p-servicesTitlePadding`}>
                         <div className={`flex justify-between`}>
-                            <h2 className={`max-sm:w-full text-customerTitleSize leading-customerTitleLeading`}>Обзвон-информирование
-                                граждан
-                                <br/> для партии &quot;ЛДПР&quot;</h2>
+                            <h2 className={`max-sm:w-full text-customerTitleSize leading-customerTitleLeading`}>&quot;Зубная
+                                Фея&quot;: от 5000 лидов в отчете <br/> и отсутствия клиентов
+                                до <br/> реальных показателей</h2>
                             <Image
-                                className={`w-[150px] h-[150px] 2xl:hidden max-2xl:mr-[35px] max-lg:mr-[5px] max-sm:mb-0 max-sm:hidden`}
-                                src={`/LDPR.jpg`}
+                                className={`border-black border-[6px] rounded-[10px] w-[150px] h-[150px] 2xl:hidden max-2xl:mr-[35px] max-lg:mr-[5px] max-sm:mb-0 max-sm:hidden`}
+                                src={`/ToothFairyLogo.jpg`}
                                 alt={`лого заказчика`}
                                 width={180} height={180}/>
                         </div>
@@ -34,19 +34,19 @@ const Lamark = () => {
                             <li>
                                 <button
                                     className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                                    Удаленный Call-центр
+                                    Контекстная реклама
                                 </button>
                             </li>
                             <li>
                                 <button
                                     className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                                    Удаленный Call-центр
+                                    Маркетинговые исследования
                                 </button>
                             </li>
                             <li>
                                 <button
                                     className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                                    Call-центр
+                                    Реклама
                                 </button>
                             </li>
                         </ul>
@@ -58,12 +58,12 @@ const Lamark = () => {
                         className={`my-0 mx-CustomerSpacingMargin customer-spacing relative max-sm:mx-[20px] flex flex-col items-center mt-[40px]`}>
                         <div className={`w-full flex gap-[30px] items-center max-xl:flex-col`}>
                             <Image
-                                className={`w-[250px] 2xl:absolute 2xl:top-0 2xl:w-customerImageWidth pr-[20px] max-2xl:hidden max-sm:mb-0 max-sm:block max-sm:w-3/4 h-auto CustomerImage max-sm:pr-0`}
-                                src={`/LDPR.jpg`}
+                                className={`border-black border-[6px] rounded-[10px] w-[250px] 2xl:absolute 2xl:top-0 2xl:w-customerImageWidth pr-[20px] max-2xl:hidden max-sm:mb-0 max-sm:block max-sm:w-3/4 h-auto CustomerImage max-sm:pr-0`}
+                                src={`/ToothFairyLogo.jpg`}
                                 alt={`лого заказчика`}
                                 width={250} height={250}/>
 
-                            <aside
+                            {/*<aside
                                 className={`absolute top-0 left-full w-stackWidth ml-stackMargin  max-xl:static max-xl:w-full max-xl:ml-0`}>
                                 <p className={`text-[15px] leading-[15px] border-t-[1px] border-stack pt-[10px] mb-[9px]`}>Технологии
                                     в проекте</p>
@@ -74,23 +74,28 @@ const Lamark = () => {
                                         <p>GoogleDocs</p>
                                     </li>
                                 </ul>
-                            </aside>
+                            </aside>*/}
 
                             <div
                                 className={`flex flex-col gap-[10px] justify-start text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
                                 <p>
-                                    Политическая партия <span
-                                    className={`text-mainColor font-bold mb-[20px]`}> ЛДПР </span> –
-                                    Либерально-демократическая партия России. К нам обратилось Хабаровское региональное
-                                    отделение партии
+                                    <span className={`text-mainColor font-bold mb-[20px]`}> Зубная Фея </span> – это
+                                    семейная стоматология в г. Хабаровске для детей и взрослых, предлагающая клиентам
+                                    профессиональные услуги лучших стоматологов города. Они проводят безболезненное и
+                                    безопасное лечение с помощью современного оборудования по наиболее доступным ценам в
+                                    регионе.
                                 </p>
                                 <p>
-                                    К нам клиент обратился со следующей задачей: <br/>
-                                    В кратчайшие сроки организовать удаленный обзвон базы потенциальных избирателей в
-                                    размере 3-5 тысяч человек. От обзвонов «роботом» клиент отказался, т.к. было важно
-                                    качественная проработка базы и «живое» общение.
+                                    К нам клиент обратился с задачей – обеспечить стабильный поток клиентов посредством
+                                    контекстной рекламы с понятными, прозрачными и реальными отчетами по итогам каждого
+                                    месяца работ.
                                 </p>
                             </div>
+                        </div>
+                        <div className={`w-[99vw] max-2xl:w-[100vw] flex mt-[100px] max-lg:mt-[30px] overflow-hidden`}>
+                            <Image className={`w-full aspect-[16/6]`}
+                                   src={`/ToothFairyPicture1.jpg`} alt={`картинка`} width={1600}
+                                   height={900}/>
                         </div>
                         <div
                             className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
@@ -98,24 +103,52 @@ const Lamark = () => {
                             <div
                                 className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
                                 <p>
-                                    Кратчайшие сроки означали – 2 дня на обзвон и 2 дня для организации и брифинга
-                                    сотрудников, которые должны были предоставляться с нашей стороны.
+                                    У клиники уже был опыт ведения контекстной рекламы. Предыдущие специалисты
+                                    предоставляли отчеты с 5000 конверсий/месяц, но по факту новых клиентов не было
+                                    вообще.
                                 </p>
                                 <p>
-                                    Сценарий разговора у заказчика был уже готов и включал всего 2 вопроса, со своей
-                                    стороны мы собрали всю первичную информацию о кандидатах и партии, предвосхищая
-                                    возможные вопросы потенциальных избирателей.
+                                    Настоящую причину мы узнать не сможем никогда, т.к. недобросовестный исполнитель
+                                    отказался давать доступ в рекламный кабинет клиента, сославшись на секретность
+                                    собственных наработок. Однако, мы можем предположить, что конверсии были настроены
+                                    на промежуточные действия клиентов, например, переход между страницами сайта,
+                                    нажатие кнопки «оставить заявку», а не итоговый экран после заполненной формы и тому
+                                    подобное. Как следствие, рекламная компания качественно не обучалась, бюджет
+                                    тратился впустую.
                                 </p>
                                 <p>
-                                    Для удобства взаимодействия с заказчиком и менеджерами call-центра была создана
-                                    отчетная таблица в GoogleDocs – клиент сразу мог отслеживать работу в реальном
-                                    времени и при необходимости оперативно подключаться.
+                                    Более того – на формах обратной связи были обязательными поля – ФИО, почта, телефон,
+                                    время приема, комментарии и опционально выбор врача. Естественно конверсия по
+                                    заполнению таких форм была нулевая.
                                 </p>
                             </div>
                         </div>
+
+                        <div
+                            className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
+                            <h2 className={`text-customerClientSize text-mainColor`}>Подготовка к рекламной
+                                компании</h2>
+                            <div
+                                className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
+                                <p>
+                                    На старте работ мы проанализировали сайт заказчика, привели его в соответствие по
+                                    требованиям к мед. учреждениям, совместно проработали УТП для целевой аудитории.
+                                </p>
+                                <p>
+                                    Подключили сервис для глубокого анализа работы контекстной рекламы, а также обратный
+                                    звонок для увеличения конверсии входящего клиентского потока на сайте.
+                                </p>
+                                <p>
+                                    Наша цель – стабильный поток качественных конверсий по стоимости лида в районе 1000
+                                    рублей.
+                                </p>
+                            </div>
+                        </div>
+
+
                         <div className={`w-[80vw] max-sm:w-[90vw] flex mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px]`}>
                             <Image className={`w-full h-auto rounded-[50px] border-[13px] border-foreground`}
-                                   src={`/LDPRPicture.jpg`} alt={`сайт после`} width={1600}
+                                   src={`/ToothFairyPicture.jpg`} alt={`картинка`} width={1600}
                                    height={900}/>
                         </div>
                         <div
@@ -125,17 +158,13 @@ const Lamark = () => {
                                 className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
                                 <ul className={`flex flex-col gap-[5px] `}>
                                     <li className={`pl-[25px] relative customerList `}><p
-                                        className={`my-[20px]`}>Качественный обзвон получилось достичь за счет 2
-                                        компонентов - сотрудники были с большим опытом продаж и обзвонов, а также были
-                                        погружены в специфику. Это позволило оставить максимально лояльное впечатление о
-                                        заказчике – call-центр мог ответить на вопросы о кандидатах партии, ее программе
-                                        и целях, если вопросы были еще «глубже», то людей оперативно и корректно
-                                        передавали заказчику.</p></li>
+                                        className={`my-[20px]`}>Зубная фея на данный момент получает порядка 50-60
+                                        качественных лидов в месяц, естественно такие заявки окупают затраты на
+                                        контекстную рекламу, а также позволяют подключать дополнительные направления
+                                        траффика – например, наружную рекламу и SMM.</p></li>
                                     <li className={`pl-[25px] relative customerList `}><p
-                                        className={`my-[20px]`}>Помимо переданных отчетов мы также предоставили
-                                        заказчику несколько наших «эталонных» записей разговоров и свои коррективы
-                                        скрипта для дальнейшего и еще более эффективного обзвона баз избирателей
-                                        собственными силами партии.</p></li>
+                                        className={`my-[20px]`}>Помимо контекстной рекламы взяли в работу направление
+                                        SMM и обязательно об этом расскажем в отдельном кейсе!</p></li>
                                     <li className={`pl-[25px] relative customerList `}><p
                                         className={`my-[20px]`}>Хотелось бы также отметить, что мы абсолютно нейтрально
                                         относимся к вопросам политики и работаем с любой партией, если конечно их
@@ -152,40 +181,40 @@ const Lamark = () => {
                         <ul className={`w-full relative flex items-start justify-start flex-wrap mx-[-30px] my-[45px] max-sm:mx-0 max-sm:block`}>
                             <li className={`w-1/3 px-[30px] shrink-0 max-sm:w-full max-sm:p-0 max-sm:mb-[20px] max-lg:w-1/2 max-lg:mb-[30px]`}>
                                 <div className={`text-[18px] leading-[20px] mb-[11px]`}>
-                                    Продолжительность
+                                    CTR
                                 </div>
                                 <div className={`border-b-[1px] flex items-baseline pb-[15px] max-sm:pb-[20px]`}>
                                     <div
-                                        className={`text-mainColor text-customerInfographySize leading-customerInfographyLeading`}>2
+                                        className={`text-mainColor text-customerInfographySize leading-customerInfographyLeading`}>4.78
                                     </div>
                                     <div
-                                        className={` text-mainColor text-customerInfographySmallSize mx-[10px] leading-customerInfographySmallLeading`}>дня
+                                        className={` text-mainColor text-customerInfographySmallSize mx-[10px] leading-customerInfographySmallLeading`}>%
                                     </div>
                                 </div>
                             </li>
                             <li className={`w-1/3 px-[30px] shrink-0 max-sm:w-full max-sm:p-0 max-sm:mb-[20px] max-lg:w-1/2 max-lg:mb-[30px]`}>
                                 <div className={`text-[18px] leading-[20px] mb-[11px]`}>
-                                    Обзвон вели
+                                    Всего конверсий
                                 </div>
                                 <div className={`border-b-[1px] flex items-baseline pb-[15px] max-sm:pb-[20px]`}>
                                     <div
-                                        className={`text-mainColor text-customerInfographySize leading-customerInfographyLeading`}>4
+                                        className={`text-mainColor text-customerInfographySize leading-customerInfographyLeading`}>47
                                     </div>
                                     <div
-                                        className={` text-mainColor text-customerInfographySmallSize mx-[10px] leading-customerInfographySmallLeading`}>специалиста
+                                        className={` text-mainColor text-customerInfographySmallSize mx-[10px] leading-customerInfographySmallLeading`}>штук
                                     </div>
                                 </div>
                             </li>
                             <li className={`w-1/3 px-[30px] shrink-0 max-sm:w-full max-sm:p-0 max-sm:mb-[20px] max-lg:w-1/2 max-lg:mb-[30px]`}>
                                 <div className={`text-[18px] leading-[20px] mb-[11px]`}>
-                                    Обработали
+                                    Цена лида
                                 </div>
                                 <div className={`border-b-[1px] flex items-baseline pb-[15px] max-sm:pb-[20px]`}>
                                     <div
-                                        className={`text-mainColor text-customerInfographySize leading-customerInfographyLeading`}>3105
+                                        className={`text-mainColor text-customerInfographySize leading-customerInfographyLeading`}>986.8
                                     </div>
                                     <div
-                                        className={` text-mainColor text-customerInfographySmallSize mx-[10px] leading-customerInfographySmallLeading`}>людей
+                                        className={` text-mainColor text-customerInfographySmallSize mx-[10px] leading-customerInfographySmallLeading`}>руб
                                     </div>
                                 </div>
                             </li>
