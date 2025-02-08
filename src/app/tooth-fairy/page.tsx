@@ -24,7 +24,7 @@ const Lamark = () => {
                                 Фея&quot;: от 5000 лидов в отчете <br/> и отсутствия клиентов
                                 до <br/> реальных показателей</h2>
                             <Image
-                                className={`border-black border-[6px] rounded-[10px] w-[150px] h-[150px] 2xl:hidden max-2xl:mr-[35px] max-lg:mr-[5px] max-sm:mb-0 max-sm:hidden`}
+                                className={`w-[150px] h-[150px] 2xl:hidden max-2xl:mr-[35px] max-lg:mr-[5px] max-sm:mb-0 max-sm:hidden`}
                                 src={`/ToothFairyLogo.jpg`}
                                 alt={`лого заказчика`}
                                 width={180} height={180}/>
@@ -58,7 +58,7 @@ const Lamark = () => {
                         className={`my-0 mx-CustomerSpacingMargin customer-spacing relative max-sm:mx-[20px] flex flex-col items-center mt-[40px]`}>
                         <div className={`w-full flex gap-[30px] items-center max-xl:flex-col`}>
                             <Image
-                                className={`border-black border-[6px] rounded-[10px] w-[250px] 2xl:absolute 2xl:top-0 2xl:w-customerImageWidth pr-[20px] max-2xl:hidden max-sm:mb-0 max-sm:block max-sm:w-3/4 h-auto CustomerImage max-sm:pr-0`}
+                                className={`w-[250px] 2xl:absolute 2xl:top-0 2xl:w-customerImageWidth pr-[20px] max-2xl:hidden max-sm:mb-0 max-sm:block max-sm:w-3/4 h-auto CustomerImage max-sm:pr-0`}
                                 src={`/ToothFairyLogo.jpg`}
                                 alt={`лого заказчика`}
                                 width={250} height={250}/>
@@ -163,15 +163,11 @@ const Lamark = () => {
                                         контекстную рекламу, а также позволяют подключать дополнительные направления
                                         траффика – например, наружную рекламу и SMM.</p></li>
                                     <li className={`pl-[25px] relative customerList `}><p
-                                        className={`my-[20px]`}>Помимо контекстной рекламы взяли в работу направление
-                                        SMM и обязательно об этом расскажем в отдельном кейсе!</p></li>
-                                    <li className={`pl-[25px] relative customerList `}><p
-                                        className={`my-[20px]`}>Хотелось бы также отметить, что мы абсолютно нейтрально
-                                        относимся к вопросам политики и работаем с любой партией, если конечно их
-                                        действия не противоречат нашему законодательству :)</p></li>
-                                    <li className={`pl-[25px] relative customerList `}><p
                                         className={`my-[20px]`}>Установили
                                         дополнительные сервисы для улучшения эффективности контекстной рекламы.</p></li>
+                                    <li className={`pl-[25px] relative customerList `}><p
+                                        className={`my-[20px]`}>Помимо контекстной рекламы взяли в работу направление
+                                        SMM и обязательно об этом расскажем в отдельном кейсе!</p></li>
                                     <li className={`pl-[25px] relative customerList `}><p
                                         className={`my-[20px]`}>Полностью
                                         решили все задачи клиента, которые были поставлены на старте проекта.</p></li>

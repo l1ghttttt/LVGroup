@@ -141,9 +141,6 @@ const Lamark = () => {
                                         относимся к вопросам политики и работаем с любой партией, если конечно их
                                         действия не противоречат нашему законодательству :)</p></li>
                                     <li className={`pl-[25px] relative customerList `}><p
-                                        className={`my-[20px]`}>Установили
-                                        дополнительные сервисы для улучшения эффективности контекстной рекламы.</p></li>
-                                    <li className={`pl-[25px] relative customerList `}><p
                                         className={`my-[20px]`}>Полностью
                                         решили все задачи клиента, которые были поставлены на старте проекта.</p></li>
                                 </ul>
@@ -172,7 +169,7 @@ const Lamark = () => {
                                         className={`text-mainColor text-customerInfographySize leading-customerInfographyLeading`}>4
                                     </div>
                                     <div
-                                        className={` text-mainColor text-customerInfographySmallSize mx-[10px] leading-customerInfographySmallLeading`}>специалиста
+                                        className={` text-mainColor text-customerInfographySmallSize mx-[10px] leading-customerInfographySmallLeading`}>эксперта
                                     </div>
                                 </div>
                             </li>
