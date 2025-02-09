@@ -92,7 +92,7 @@ const Lamark = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className={`w-[99vw] max-2xl:w-[100vw] flex mt-[100px] max-lg:mt-[30px] overflow-hidden`}>
+                        <div className={`w-[98vw] max-2xl:w-[100vw] flex mt-[100px] max-lg:mt-[30px] overflow-hidden`}>
                             <Image className={`w-full aspect-[16/6] object-cover`}
                                    src={`/ToothFairyPicture1.jpg`} alt={`картинка`} width={1600}
                                    height={900}/>
@@ -123,6 +123,340 @@ const Lamark = () => {
                                 </p>
                             </div>
                         </div>
+
+
+
+                        <div className={`w-[80vw] max-xl:w-[90vw] flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col max-lg:hidden`}>
+                            <ul className={`flex gap-[19px] w-full max-md:flex-col max-md:gap-[9px]`}>
+                                <li className={`flex md:flex-col flex-1 h-[275px] justify-around`}>
+
+                                    <p className={`font-normal text-[24px] max-xl:text-[20px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex items-end`}>
+
+                                    </p>
+
+                                    <div
+                                        className={`flex gap-[19px] items-center max-md:flex-col max-md:gap-[5px]`}>
+
+                                        <div
+                                            className={`w-[60px] h-[60px] max-md:w-[50px] max-md:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
+                                            <p className={`font-normal text-[32px] max-md:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center`}>1</p>
+                                        </div>
+
+                                        <div
+                                            className={`relative flex-1 max-md:border-t-[0px] h-[2px] max-md:h-auto max-md:min-h-[26px] max-md:w-[2px]`}>
+                                            <div className={`customBorder`}></div>
+                                        </div>
+                                    </div>
+
+                                    <p className={`font-normal text-[24px] max-xl:text-[20px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex flex-col items-start align-text-top`}>
+                                        10 038 показов
+                                    </p>
+                                </li>
+                                <li className={`flex md:flex-col flex-1 h-[275px] justify-around`}>
+
+                                    <p className={`font-normal text-[24px] max-xl:text-[20px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex items-end align-text-bottom`}>
+                                        480 кликов
+                                    </p>
+
+                                    <div
+                                        className={`flex gap-[19px] items-center max-md:flex-col max-md:gap-[5px]`}>
+
+                                        <div
+                                            className={`w-[60px] h-[60px] max-md:w-[50px] max-md:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
+                                            <p className={`font-normal text-[32px] max-md:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center`}>2</p>
+                                        </div>
+
+                                        <div
+                                            className={`relative flex-1 max-md:border-t-[0px] h-[2px] max-md:h-auto max-md:min-h-[26px] max-md:w-[2px]`}>
+                                            <div className={`customBorder`}></div>
+                                        </div>
+
+                                    </div>
+
+                                    <p className={`font-normal text-[24px] max-xl:text-[20px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex items-start w-[125%]`}>
+
+                                    </p>
+                                </li>
+                                <li className={`flex md:flex-col flex-1 h-[275px] justify-around`}>
+
+                                    <p className={`font-normal text-[24px] max-xl:text-[20px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex items-end`}>
+
+                                    </p>
+
+                                    <div
+                                        className={`flex gap-[19px] items-center max-md:flex-col max-md:gap-[5px]`}>
+
+                                        <div
+                                            className={`w-[60px] h-[60px] max-md:w-[50px] max-md:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
+                                            <p className={`font-normal text-[32px] max-md:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center`}>3</p>
+                                        </div>
+
+                                        <div
+                                            className={`relative flex-1 max-md:border-t-[0px] h-[2px] max-md:h-auto max-md:min-h-[26px] max-md:w-[2px]`}>
+                                            <div className={`customBorder`}></div>
+                                        </div>
+                                    </div>
+
+                                    <p className={`font-normal text-[24px] max-xl:text-[20px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex items-start w-[125%]`}>
+                                        4.78% CTR
+                                    </p>
+                                </li>
+                                <li className={`flex md:flex-col flex-1 h-[275px] justify-around`}>
+
+                                    <p className={`font-normal text-[24px] max-xl:text-[20px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex items-end`}>
+                                        46.379 руб. <br/> расход
+                                    </p>
+
+                                    <div
+                                        className={`flex gap-[19px] items-center max-md:flex-col max-md:gap-[5px]`}>
+
+                                        <div
+                                            className={`w-[60px] h-[60px] max-md:w-[50px] max-md:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
+                                            <p className={`font-normal text-[32px] max-md:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center`}>4</p>
+                                        </div>
+
+                                        <div
+                                            className={`relative flex-1 max-md:border-t-[0px] h-[2px] max-md:h-auto max-md:min-h-[26px] max-md:w-[2px]`}>
+                                            <div className={`customBorder`}></div>
+                                        </div>
+                                    </div>
+
+                                    <p className={`font-normal text-[24px] max-xl:text-[20px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex items-start w-[125%]`}>
+
+                                    </p>
+
+                                </li>
+                                <li className={`flex md:flex-col flex-1 h-[275px] justify-around`}>
+
+                                    <p className={`font-normal text-[24px] max-xl:text-[20px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex items-end`}>
+
+                                    </p>
+
+                                    <div
+                                        className={`flex gap-[19px] items-center max-md:flex-col max-md:gap-[5px]`}>
+
+                                        <div
+                                            className={`w-[60px] h-[60px] max-md:w-[50px] max-md:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
+                                            <p className={`font-normal text-[32px] max-md:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center`}>5</p>
+                                        </div>
+
+                                        <div
+                                            className={`relative flex-1 max-md:border-t-[0px] h-[2px] max-md:h-auto max-md:min-h-[26px] max-md:w-[2px]`}>
+                                            <div className={`customBorder`}></div>
+                                        </div>
+                                    </div>
+
+                                    <p className={`font-normal text-[24px] max-xl:text-[20px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex items-start w-[125%]`}>
+                                        96.6 руб. <br/> цена клика
+                                    </p>
+                                </li>
+                                <li className={`flex md:flex-col flex-1 h-[275px] justify-around`}>
+
+                                    <p className={`font-normal text-[24px] max-xl:text-[20px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex items-end`}>
+                                        986.7 руб. <br/> цена цели
+                                    </p>
+
+                                    <div
+                                        className={`flex gap-[19px] items-center max-md:flex-col max-md:gap-[5px]`}>
+
+                                        <div
+                                            className={`w-[60px] h-[60px] max-md:w-[50px] max-md:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
+                                            <p className={`font-normal text-[32px] max-md:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center`}>6</p>
+                                        </div>
+
+                                        <div
+                                            className={`relative flex-1 max-md:border-t-[0px] h-[2px] max-md:h-auto max-md:min-h-[26px] max-md:w-[2px]`}>
+                                            <div className={`customBorder`}></div>
+                                        </div>
+                                    </div>
+
+                                    <p className={`font-normal text-[24px] max-xl:text-[20px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex items-start w-[125%]`}>
+                                    </p>
+                                </li>
+                                <li className={`flex md:flex-col flex-1 h-[275px] justify-around`}>
+
+                                    <p className={`font-normal text-[24px] max-xl:text-[20px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex items-end`}>
+                                    </p>
+
+                                    <div
+                                        className={`flex gap-[19px] items-center max-md:flex-col max-md:gap-[5px]`}>
+
+                                        <div
+                                            className={`w-[60px] h-[60px] max-md:w-[50px] max-md:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
+                                            <p className={`font-normal text-[32px] max-md:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center`}>7</p>
+                                        </div>
+                                    </div>
+
+                                    <p className={`font-normal text-[24px] max-xl:text-[20px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex items-start w-[125%]`}>
+                                        1 заявка <br/>
+                                        7 колбэков <br/>
+                                        39 звонков
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className={`w-[80vw] max-xl:w-[90vw] flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col lg:hidden`}>
+                            <ul className={`flex gap-[19px] w-full max-lg:flex-col max-lg:gap-[9px]`}>
+                                <li className={`flex lg:flex-col gap-[10px] flex-1`}>
+
+                                    <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
+
+                                        <div
+                                            className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
+                                            <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center`}>
+                                                1
+                                            </p>
+                                        </div>
+
+                                        <div
+                                            className={`relative flex-1 max-lg:border-t-[0px] h-[2px] max-lg:h-auto max-lg:min-h-[26px] max-lg:w-[2px]`}>
+                                            <div className={`customBorder`}></div>
+                                        </div>
+
+                                    </div>
+
+                                    <p className={`font-normal text-[24px] max-md:text-[22px] max-sm:text-[20px] leading-[22px] pt-[15px] max-sm:pt-[10px]`}>
+                                        10 038 показов
+                                    </p>
+
+                                </li>
+                                <li className={`flex lg:flex-col gap-[10px] flex-1`}>
+
+                                    <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
+
+                                        <div
+                                            className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
+                                            <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center`}>
+                                                2
+                                            </p>
+                                        </div>
+
+                                        <div
+                                            className={`relative flex-1 max-lg:border-t-[0px] h-[2px] max-lg:h-auto max-lg:min-h-[26px] max-lg:w-[2px]`}>
+                                            <div className={`customBorder`}></div>
+                                        </div>
+
+                                    </div>
+
+                                    <p className={`font-normal text-[24px] max-md:text-[22px] max-sm:text-[20px] leading-[22px] pt-[15px] max-sm:pt-[10px]`}>
+                                        480 кликов
+                                    </p>
+
+                                </li>
+                                <li className={`flex lg:flex-col gap-[10px] flex-1`}>
+
+                                    <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
+
+                                        <div
+                                            className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
+                                            <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center`}>
+                                                3
+                                            </p>
+                                        </div>
+
+                                        <div
+                                            className={`relative flex-1 max-lg:border-t-[0px] h-[2px] max-lg:h-auto max-lg:min-h-[26px] max-lg:w-[2px]`}>
+                                            <div className={`customBorder`}></div>
+                                        </div>
+
+                                    </div>
+
+                                    <p className={`font-normal text-[24px] max-md:text-[22px] max-sm:text-[20px] leading-[22px] pt-[15px] max-sm:pt-[10px]`}>
+                                        4.78% CTR
+                                    </p>
+
+                                </li>
+                                <li className={`flex lg:flex-col gap-[10px] flex-1`}>
+
+                                    <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
+
+                                        <div
+                                            className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
+                                            <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center`}>
+                                                4
+                                            </p>
+                                        </div>
+
+                                        <div
+                                            className={`relative flex-1 max-lg:border-t-[0px] h-[2px] max-lg:h-auto max-lg:min-h-[26px] max-lg:w-[2px]`}>
+                                            <div className={`customBorder`}></div>
+                                        </div>
+
+                                    </div>
+
+                                    <p className={`font-normal text-[24px] max-md:text-[22px] max-sm:text-[20px] leading-[22px] pt-[15px] max-sm:pt-[10px]`}>
+                                        46.379 руб. расход
+                                    </p>
+
+                                </li>
+                                <li className={`flex lg:flex-col gap-[10px] flex-1`}>
+
+                                    <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
+
+                                        <div
+                                            className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
+                                            <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center`}>
+                                                5
+                                            </p>
+                                        </div>
+
+                                        <div
+                                            className={`relative flex-1 max-lg:border-t-[0px] h-[2px] max-lg:h-auto max-lg:min-h-[26px] max-lg:w-[2px]`}>
+                                            <div className={`customBorder`}></div>
+                                        </div>
+
+                                    </div>
+
+                                    <p className={`font-normal text-[24px] max-md:text-[22px] max-sm:text-[20px] leading-[22px] pt-[15px] max-sm:pt-[10px]`}>
+                                        96.6 руб. цена клика
+                                    </p>
+
+                                </li>
+                                <li className={`flex lg:flex-col gap-[10px] flex-1`}>
+
+                                    <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
+
+                                        <div
+                                            className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
+                                            <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center`}>
+                                                6
+                                            </p>
+                                        </div>
+
+                                        <div
+                                            className={`relative flex-1 max-lg:border-t-[0px] h-[2px] max-lg:h-auto max-lg:min-h-[26px] max-lg:w-[2px]`}>
+                                            <div className={`customBorder`}></div>
+                                        </div>
+
+                                    </div>
+
+                                    <p className={`font-normal text-[24px] max-md:text-[22px] max-sm:text-[20px] leading-[22px] pt-[15px] max-sm:pt-[10px]`}>
+                                        986.7 руб. цена цели
+                                    </p>
+
+                                </li>
+                                <li className={`flex lg:flex-col gap-[10px] flex-1`}>
+
+                                    <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
+
+                                        <div
+                                            className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
+                                            <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center`}>
+                                                7
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                    <p className={`font-normal text-[24px] max-md:text-[22px] max-sm:text-[20px] leading-[22px] pt-[15px] max-sm:pt-[10px]`}>
+                                        1 заявка, 7 колбэков , 39 звонков
+                                    </p>
+
+                                </li>
+                            </ul>
+                        </div>
+
 
                         <div
                             className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
