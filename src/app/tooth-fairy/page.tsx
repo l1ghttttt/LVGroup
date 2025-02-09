@@ -155,10 +155,29 @@ const Lamark = () => {
                         <div
                             className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
                             <h2 className={`text-customerClientSize text-mainColor`}>Результаты</h2>
+                            <div
+                                className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
+                                <ul className={`flex flex-col gap-[5px] `}>
+                                    <li className={`pl-[25px] relative customerList `}><p
+                                        className={`my-[20px]`}>Зубная фея на данный момент получает порядка 50-60
+                                        качественных лидов в месяц, естественно такие заявки окупают затраты на
+                                        контекстную рекламу, а также позволяют подключать дополнительные направления
+                                        траффика – например, наружную рекламу и SMM.</p></li>
+                                    <li className={`pl-[25px] relative customerList `}><p
+                                        className={`my-[20px]`}>Установили
+                                        дополнительные сервисы для улучшения эффективности контекстной рекламы.</p></li>
+                                    <li className={`pl-[25px] relative customerList `}><p
+                                        className={`my-[20px]`}>Помимо контекстной рекламы взяли в работу направление
+                                        SMM и обязательно об этом расскажем в отдельном кейсе!</p></li>
+                                    <li className={`pl-[25px] relative customerList `}><p
+                                        className={`my-[20px]`}>Полностью
+                                        решили все задачи клиента, которые были поставлены на старте проекта.</p></li>
+                                </ul>
+                            </div>
                         </div>
 
                         <div
-                            className={`w-[80vw] max-xl:w-[90vw] flex gap-[30px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col max-lg:hidden`}>
+                            className={`w-[80vw] max-xl:w-[90vw] flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col max-lg:hidden`}>
                             <ul className={`flex gap-[19px] w-full max-md:flex-col max-md:gap-[9px]`}>
                                 <li className={`flex md:flex-col flex-1 h-[275px] justify-around`}>
 
@@ -329,12 +348,11 @@ const Lamark = () => {
                         </div>
 
                         <div
-                            className={`w-[80vw] max-xl:w-[90vw] flex gap-[30px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col lg:hidden`}>
+                            className={`w-[80vw] max-xl:w-[90vw] flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col lg:hidden`}>
                             <ul className={`flex gap-[19px] w-full max-lg:flex-col max-lg:gap-[9px]`}>
                                 <li className={`flex lg:flex-col gap-[10px] flex-1`}>
 
-                                    <div
-                                        className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
+                                    <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
 
                                         <div
                                             className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
@@ -357,8 +375,7 @@ const Lamark = () => {
                                 </li>
                                 <li className={`flex lg:flex-col gap-[10px] flex-1`}>
 
-                                    <div
-                                        className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
+                                    <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
 
                                         <div
                                             className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
@@ -381,8 +398,7 @@ const Lamark = () => {
                                 </li>
                                 <li className={`flex lg:flex-col gap-[10px] flex-1`}>
 
-                                    <div
-                                        className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
+                                    <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
 
                                         <div
                                             className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
@@ -405,8 +421,7 @@ const Lamark = () => {
                                 </li>
                                 <li className={`flex lg:flex-col gap-[10px] flex-1`}>
 
-                                    <div
-                                        className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
+                                    <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
 
                                         <div
                                             className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
@@ -429,8 +444,7 @@ const Lamark = () => {
                                 </li>
                                 <li className={`flex lg:flex-col gap-[10px] flex-1`}>
 
-                                    <div
-                                        className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
+                                    <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
 
                                         <div
                                             className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
@@ -453,8 +467,7 @@ const Lamark = () => {
                                 </li>
                                 <li className={`flex lg:flex-col gap-[10px] flex-1`}>
 
-                                    <div
-                                        className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
+                                    <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
 
                                         <div
                                             className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
@@ -477,8 +490,7 @@ const Lamark = () => {
                                 </li>
                                 <li className={`flex lg:flex-col gap-[10px] flex-1`}>
 
-                                    <div
-                                        className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
+                                    <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
 
                                         <div
                                             className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
@@ -495,30 +507,6 @@ const Lamark = () => {
 
                                 </li>
                             </ul>
-                        </div>
-
-
-                        <div
-                            className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
-                            <div
-                                className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
-                                <ul className={`flex flex-col gap-[5px] `}>
-                                    <li className={`pl-[25px] relative customerList `}><p
-                                        className={`my-[20px]`}>Зубная фея на данный момент получает порядка 50-60
-                                        качественных лидов в месяц, естественно такие заявки окупают затраты на
-                                        контекстную рекламу, а также позволяют подключать дополнительные направления
-                                        траффика – например, наружную рекламу и SMM.</p></li>
-                                    <li className={`pl-[25px] relative customerList `}><p
-                                        className={`my-[20px]`}>Установили
-                                        дополнительные сервисы для улучшения эффективности контекстной рекламы.</p></li>
-                                    <li className={`pl-[25px] relative customerList `}><p
-                                        className={`my-[20px]`}>Помимо контекстной рекламы взяли в работу направление
-                                        SMM и обязательно об этом расскажем в отдельном кейсе!</p></li>
-                                    <li className={`pl-[25px] relative customerList `}><p
-                                        className={`my-[20px]`}>Полностью
-                                        решили все задачи клиента, которые были поставлены на старте проекта.</p></li>
-                                </ul>
-                            </div>
                         </div>
 
 
