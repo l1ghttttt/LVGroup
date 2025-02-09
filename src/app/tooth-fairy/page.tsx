@@ -125,8 +125,60 @@ const Lamark = () => {
                         </div>
 
 
+                        <div
+                            className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
+                            <h2 className={`text-customerClientSize text-mainColor`}>Подготовка к рекламной
+                                компании</h2>
+                            <div
+                                className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
+                                <p>
+                                    На старте работ мы проанализировали сайт заказчика, привели его в соответствие по
+                                    требованиям к мед. учреждениям, совместно проработали УТП для целевой аудитории.
+                                </p>
+                                <p>
+                                    Подключили сервис для глубокого анализа работы контекстной рекламы, а также обратный
+                                    звонок для увеличения конверсии входящего клиентского потока на сайте.
+                                </p>
+                                <p>
+                                    Наша цель – стабильный поток качественных конверсий по стоимости лида в районе 1000
+                                    рублей.
+                                </p>
+                            </div>
+                        </div>
 
-                        <div className={`w-[80vw] max-xl:w-[90vw] flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col max-lg:hidden`}>
+
+                        <div className={`w-[80vw] max-sm:w-[90vw] flex mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px]`}>
+                            <Image className={`w-full h-auto rounded-[50px] border-[13px] border-foreground`}
+                                   src={`/ToothFairyPicture.jpg`} alt={`картинка`} width={1600}
+                                   height={900}/>
+                        </div>
+                        <div
+                            className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
+                            <h2 className={`text-customerClientSize text-mainColor`}>Результаты</h2>
+                            <div
+                                className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
+                                <ul className={`flex flex-col gap-[5px] `}>
+                                    <li className={`pl-[25px] relative customerList `}><p
+                                        className={`my-[20px]`}>Зубная фея на данный момент получает порядка 50-60
+                                        качественных лидов в месяц, естественно такие заявки окупают затраты на
+                                        контекстную рекламу, а также позволяют подключать дополнительные направления
+                                        траффика – например, наружную рекламу и SMM.</p></li>
+                                    <li className={`pl-[25px] relative customerList `}><p
+                                        className={`my-[20px]`}>Установили
+                                        дополнительные сервисы для улучшения эффективности контекстной рекламы.</p></li>
+                                    <li className={`pl-[25px] relative customerList `}><p
+                                        className={`my-[20px]`}>Помимо контекстной рекламы взяли в работу направление
+                                        SMM и обязательно об этом расскажем в отдельном кейсе!</p></li>
+                                    <li className={`pl-[25px] relative customerList `}><p
+                                        className={`my-[20px]`}>Полностью
+                                        решили все задачи клиента, которые были поставлены на старте проекта.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div
+                            className={`w-[80vw] max-xl:w-[90vw] flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col max-lg:hidden`}>
                             <ul className={`flex gap-[19px] w-full max-md:flex-col max-md:gap-[9px]`}>
                                 <li className={`flex md:flex-col flex-1 h-[275px] justify-around`}>
 
@@ -296,7 +348,8 @@ const Lamark = () => {
                             </ul>
                         </div>
 
-                        <div className={`w-[80vw] max-xl:w-[90vw] flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col lg:hidden`}>
+                        <div
+                            className={`w-[80vw] max-xl:w-[90vw] flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col lg:hidden`}>
                             <ul className={`flex gap-[19px] w-full max-lg:flex-col max-lg:gap-[9px]`}>
                                 <li className={`flex lg:flex-col gap-[10px] flex-1`}>
 
@@ -458,56 +511,6 @@ const Lamark = () => {
                         </div>
 
 
-                        <div
-                            className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
-                            <h2 className={`text-customerClientSize text-mainColor`}>Подготовка к рекламной
-                                компании</h2>
-                            <div
-                                className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
-                                <p>
-                                    На старте работ мы проанализировали сайт заказчика, привели его в соответствие по
-                                    требованиям к мед. учреждениям, совместно проработали УТП для целевой аудитории.
-                                </p>
-                                <p>
-                                    Подключили сервис для глубокого анализа работы контекстной рекламы, а также обратный
-                                    звонок для увеличения конверсии входящего клиентского потока на сайте.
-                                </p>
-                                <p>
-                                    Наша цель – стабильный поток качественных конверсий по стоимости лида в районе 1000
-                                    рублей.
-                                </p>
-                            </div>
-                        </div>
-
-
-                        <div className={`w-[80vw] max-sm:w-[90vw] flex mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px]`}>
-                            <Image className={`w-full h-auto rounded-[50px] border-[13px] border-foreground`}
-                                   src={`/ToothFairyPicture.jpg`} alt={`картинка`} width={1600}
-                                   height={900}/>
-                        </div>
-                        <div
-                            className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
-                            <h2 className={`text-customerClientSize text-mainColor`}>Результаты</h2>
-                            <div
-                                className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
-                                <ul className={`flex flex-col gap-[5px] `}>
-                                    <li className={`pl-[25px] relative customerList `}><p
-                                        className={`my-[20px]`}>Зубная фея на данный момент получает порядка 50-60
-                                        качественных лидов в месяц, естественно такие заявки окупают затраты на
-                                        контекстную рекламу, а также позволяют подключать дополнительные направления
-                                        траффика – например, наружную рекламу и SMM.</p></li>
-                                    <li className={`pl-[25px] relative customerList `}><p
-                                        className={`my-[20px]`}>Установили
-                                        дополнительные сервисы для улучшения эффективности контекстной рекламы.</p></li>
-                                    <li className={`pl-[25px] relative customerList `}><p
-                                        className={`my-[20px]`}>Помимо контекстной рекламы взяли в работу направление
-                                        SMM и обязательно об этом расскажем в отдельном кейсе!</p></li>
-                                    <li className={`pl-[25px] relative customerList `}><p
-                                        className={`my-[20px]`}>Полностью
-                                        решили все задачи клиента, которые были поставлены на старте проекта.</p></li>
-                                </ul>
-                            </div>
-                        </div>
                         <ul className={`w-full relative flex items-start justify-start flex-wrap mx-[-30px] my-[45px] max-sm:mx-0 max-sm:block`}>
                             <li className={`w-1/3 px-[30px] shrink-0 max-sm:w-full max-sm:p-0 max-sm:mb-[20px] max-lg:w-1/2 max-lg:mb-[30px]`}>
                                 <div className={`text-[18px] leading-[20px] mb-[11px]`}>
