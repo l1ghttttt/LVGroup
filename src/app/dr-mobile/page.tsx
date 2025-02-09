@@ -509,7 +509,7 @@ const DrMobile = () => {
                                         className={`text-mainColor text-customerInfographySize leading-customerInfographyLeading`}>124
                                     </div>
                                     <div
-                                        className={` text-mainColor text-customerInfographySmallSize mx-[10px] leading-customerInfographySmallLeading`}>штуки
+                                        className={` text-mainColor text-customerInfographySmallSize mx-[10px] leading-customerInfographySmallLeading big-hidden`}>штуки
                                     </div>
                                 </div>
                             </li>
