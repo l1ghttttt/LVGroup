@@ -80,7 +80,7 @@ const ToothFairy = () => {
                             </div>
                         </div>
                         <div className={`w-[100vw] max-2xl:w-[100vw] flex mt-[100px] max-lg:mt-[30px] overflow-hidden`}>
-                            <Image className={`w-full aspect-[16/6] object-cover`}
+                            <Image className={`w-full aspect-[16/6] max-sm:aspect-[16/9] object-cover`}
                                    src={`/ToothFairyPicture1.jpg`} alt={`картинка`} width={1600}
                                    height={900}/>
                         </div>

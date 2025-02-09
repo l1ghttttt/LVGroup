@@ -80,7 +80,7 @@ const DrMobile = () => {
                         <div
                             className={`w-[100vw] max-2xl:w-[100vw] flex mt-[100px] max-lg:mt-[30px] overflow-hidden overflow-x-hidden`}>
                             <Image
-                                className={`w-full aspect-[16/6] object-cover max-w-full overflow-hidden overflow-x-hidden`}
+                                className={`w-full aspect-[16/6] max-sm:aspect-[16/9] object-cover max-w-full overflow-hidden overflow-x-hidden`}
                                 src={`/DrMobilePicture1.jpg`} alt={`картинка`} width={1600}
                                 height={900}/>
                         </div>
@@ -129,7 +129,7 @@ const DrMobile = () => {
                         <div
                             className={`w-[100vw] max-2xl:w-[100vw] flex mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] overflow-hidden overflow-x-hidden`}>
                             <Image
-                                className={`w-full aspect-[16/6] object-cover max-w-full overflow-hidden overflow-x-hidden`}
+                                className={`w-full aspect-[16/6] max-sm:aspect-[16/9] object-cover max-w-full overflow-hidden overflow-x-hidden`}
                                 src={`/DrMobilePicture.jpg`} alt={`картинка`} width={1600}
                                 height={900}/>
                         </div>
@@ -153,8 +153,8 @@ const DrMobile = () => {
                         </div>
 
                         <div
-                            className={`w-[80vw] max-xl:w-[90vw] flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col max-lg:hidden`}>
-                            <ul className={`flex gap-[19px] w-full max-md:flex-col max-md:gap-[9px]`}>
+                            className={`w-[80vw] max-xl:w-[90vw] flex gap-[30px] mt-[45px] items-start justify-center flex-col max-lg:hidden`}>
+                            <ul className={`flex gap-[19px] w-full`}>
                                 <li className={`flex md:flex-col flex-1 h-[275px] justify-around`}>
 
                                     <p className={`font-normal text-[24px] max-xl:text-[20px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex items-end`}>
@@ -324,8 +324,8 @@ const DrMobile = () => {
                         </div>
 
                         <div
-                            className={`w-[80vw] max-xl:w-[90vw] flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col lg:hidden`}>
-                            <ul className={`flex gap-[19px] w-full max-lg:flex-col max-lg:gap-[9px]`}>
+                            className={`w-[90vw] flex gap-[20px] mt-[20px] items-start justify-center flex-col lg:hidden`}>
+                            <ul className={`flex w-full flex-col gap-[9px]`}>
                                 <li className={`flex lg:flex-col gap-[10px] flex-1`}>
 
                                     <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
