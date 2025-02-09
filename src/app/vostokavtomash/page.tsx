@@ -64,7 +64,9 @@ const VostokAvtoMash = () => {
                             <div
                                 className={`flex flex-col gap-[10px] justify-start text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
                                 <p>
-                                    <span className={`text-mainColor font-bold mb-[20px]`}> ВостокАвтоМаш </span> – Это Хабаровская компания, занимающаяся производством и монтажом металлоконструкций, резервуаров, емкостей любых размеров и сложностей, вплоть до контейнерных АЗС.
+                                    <span className={`text-mainColor font-bold mb-[20px]`}> ВостокАвтоМаш </span> – Это
+                                    Хабаровская компания, занимающаяся производством и монтажом металлоконструкций,
+                                    резервуаров, емкостей любых размеров и сложностей, вплоть до контейнерных АЗС.
                                 </p>
                                 <p>
                                     К нам клиент обратился с несколькими задачами: <br/>
@@ -99,7 +101,9 @@ const VostokAvtoMash = () => {
                                     самообучения».
                                 </p>
                                 <p>
-                                    Также в ходе аудита действующего отдела продаж были выявлены «зоны роста» в рамках работы с CRM Bitrix24, отчетностью и направлением «холодного обзвона» потенциальных клиентов компании.
+                                    Также в ходе аудита действующего отдела продаж были выявлены «зоны роста» в рамках
+                                    работы с CRM Bitrix24, отчетностью и направлением «холодного обзвона» потенциальных
+                                    клиентов компании.
                                 </p>
                             </div>
                         </div>
@@ -131,7 +135,10 @@ const VostokAvtoMash = () => {
                                         </div>
 
                                         <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
-                                            Разработка всей необходимой документации по Отделам продаж клиента: должностные инструкции, мотивация сотрудников, процедура ввода в должность, формы отчетности и руководства по работе отдела продаж со всеми скриптами обзвонов, презентаций и необходимыми материалами.
+                                            Разработка всей необходимой документации по Отделам продаж клиента:
+                                            должностные инструкции, мотивация сотрудников, процедура ввода в должность,
+                                            формы отчетности и руководства по работе отдела продаж со всеми скриптами
+                                            обзвонов, презентаций и необходимыми материалами.
                                         </p>
 
                                     </li>
@@ -155,7 +162,9 @@ const VostokAvtoMash = () => {
                                         </div>
 
                                         <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
-                                            Описание всего бизнес-процесса «подбора персонала» в компании заказчика, поиск HR-менеджера, обучение/передача и контроль работы всего инструментария.
+                                            Описание всего бизнес-процесса «подбора персонала» в компании заказчика,
+                                            поиск HR-менеджера, обучение/передача и контроль работы всего
+                                            инструментария.
                                         </p>
 
                                     </li>
@@ -203,7 +212,8 @@ const VostokAvtoMash = () => {
                                         </div>
 
                                         <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
-                                            «Полевое сопровождение» и обучение отдела продаж, внедрение инструментария/контроль выполнения поставленных планов продаж.
+                                            «Полевое сопровождение» и обучение отдела продаж, внедрение
+                                            инструментария/контроль выполнения поставленных планов продаж.
                                         </p>
 
                                     </li>
@@ -227,7 +237,9 @@ const VostokAvtoMash = () => {
                                         </div>
 
                                         <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
-                                            Работа с действующим отделом продаж, доработка всей существующей документации отдела продаж, «полевое сопровождение», выявление и устранение «слабых зон» и доведение до поставленных результатов.
+                                            Работа с действующим отделом продаж, доработка всей существующей
+                                            документации отдела продаж, «полевое сопровождение», выявление и устранение
+                                            «слабых зон» и доведение до поставленных результатов.
                                         </p>
 
                                     </li>
@@ -246,7 +258,8 @@ const VostokAvtoMash = () => {
                                         </div>
 
                                         <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
-                                            Срез знаний сотрудников отделов продаж и руководства, анализ полученных результатов по проекту
+                                            Срез знаний сотрудников отделов продаж и руководства, анализ полученных
+                                            результатов по проекту
                                         </p>
 
                                     </li>
@@ -330,6 +343,51 @@ const VostokAvtoMash = () => {
                                 </div>
                             </li>
                         </ul>
+
+
+                        <div
+                            className={`w-full flex flex-col gap-[25px] mt-[45px] max-lg:gap-[20px]  max-md:justify-end max-lg:mt-[20px] items-start`}>
+                            <h2 className={`text-customerClientSize text-mainColor`}>Отзыв клиента</h2>
+                            <div className={`h-[1px] bg-foreground w-full`}></div>
+
+
+                            <div
+                                className={`w-full flex max-lg:gap-[20px] max-lg:mt-[10px] max-md:gap-0 max-md:flex-col`}>
+
+
+                                <div
+                                    className={`flex w-2/6 max-md:w-full flex-col justify-between pt-3 max-md:order-2 max-md:pt-2`}>
+                                    <Image className={`rotate-180 max-md:hidden`} src={'/arrows.png'} alt={`arrows`}
+                                           width={50}
+                                           height={50}/>
+                                    <div className={`w-full flex justify-start max-md:justify-end`}>
+                                        <div className={`flex gap-[10px]`}>
+                                            <Image className={`rounded-[50%] max-md:w-[60px] max-md:h-[60px]`}
+                                                   src={`/VostokAvtoMashDirector.jpg`}
+                                                   alt={`фото клиента`}
+                                                   width={75} height={75}/>
+                                            <div className={`flex flex-col justify-center`}>
+                                                <p className={`mb-[5px] text-[14px]`}>Фирсов Светозар</p>
+                                                <p className={`text-[12px] text-gray-500`}>Генеральный директор &quot;ВостокАвтоМаш&quot;</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div className={`flex w-4/6 max-md:w-full`}>
+                                    <p className={`w-full text-[22px] max-xl:text-[18px] max-sm:text-[16px] max-md:w-full mb-[25px] max-md:mb-0`}>Компания &quot;LV GROUP&quot; сама вышла на нас с помощью холодного обзвона, что сразу нас сильно подкупило.
+                                        Благодаря команде &quot;LV GROUP&quot; мы стали группой компаний и расширились до 3-ех направлений и оборота в 500млн/год.
+                                        Особенно полезным лично для себе могу выделить ввод ежедневной отчетности и единого формата ежедневных/еженедельных планерок отдела продаж.</p>
+                                </div>
+
+
+                            </div>
+
+                            <div className={`h-[1px] bg-foreground w-full`}></div>
+                            <div className={`h-[1px] bg-foreground w-full mt-[30px]`}></div>
+                        </div>
+
                     </div>
                 </div>
             </section>
