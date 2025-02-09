@@ -5,7 +5,7 @@ import Order from "@/widgets/order/Order";
 import Image from "next/image";
 import BeforeAfterSlider from "@/widgets/before-after/Before-after";
 
-const Ldpr = () => {
+const Lamark = () => {
 
     const firstImage = {
         imageUrl: './site-after.jpg',
@@ -42,7 +42,7 @@ const Ldpr = () => {
                                 width={180} height={180}/>
                         </div>
 
-                        <ul className={`flex p-casesFilterPadding pl-0 flex-wrap gap-2 gap-y-3`}>
+                        <ul className={`flex p-casesFilterPadding px-[15px] flex-wrap gap-2 gap-y-3`}>
                             <li>
                                 <button
                                     className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
@@ -427,4 +427,4 @@ const Ldpr = () => {
     );
 };
 
-export default Ldpr;
+export default Lamark;
