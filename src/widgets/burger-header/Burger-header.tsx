@@ -195,6 +195,7 @@ export default function BurgerHeader() {
                     <SheetContent side="left">
                         <nav className={`w-full flex flex-col gap-[16px] `}>
                             <Link href={`/`} className={`text-[26px] text-headerColor`}>Главная</Link>
+                            <Link href={`/cases`} className={`text-[26px] text-headerColor`}>Проекты</Link>
                             {components.map((component) => (
                                 <Link key={component.trigger} href={component.values[0].href}
                                     className={`text-[26px] text-headerColor`}>{component.trigger}</Link>
