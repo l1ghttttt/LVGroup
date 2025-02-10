@@ -20,8 +20,7 @@ const DrMobile = () => {
                 <div className={`flex flex-col`}>
                     <div className={`p-servicesTitlePadding`}>
                         <div className={`flex justify-between`}>
-                            <h2 className={`max-sm:w-full text-customerTitleSize leading-customerTitleLeading`}>Контекстная реклама для &quot;Dr. Mobile&quot;: <br/> 100 лидов в месяц
-                                до <br/> реальных показателей</h2>
+                            <h2 className={`max-sm:w-full text-customerTitleSize leading-customerTitleLeading`}>Контекстная реклама для &quot;Dr. Mobile&quot;: <br/> 100 лидов в месяц</h2>
                             <Image
                                 className={`w-[150px] h-[150px] 2xl:hidden max-2xl:mr-[35px] max-lg:mr-[5px] max-sm:mb-0 max-sm:hidden`}
                                 src={`/DrMobileLogo.jpg`}
@@ -509,7 +508,7 @@ const DrMobile = () => {
                                         className={`text-mainColor text-customerInfographySize leading-customerInfographyLeading`}>124
                                     </div>
                                     <div
-                                        className={` text-mainColor text-customerInfographySmallSize mx-[10px] leading-customerInfographySmallLeading big-hidden`}>штуки
+                                        className={` text-mainColor text-customerInfographySmallSize mx-[10px] leading-customerInfographySmallLeading`}>
                                     </div>
                                 </div>
                             </li>
