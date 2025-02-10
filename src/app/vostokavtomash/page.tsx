@@ -82,7 +82,7 @@ const VostokAvtoMash = () => {
                             className={`w-[100vw] max-2xl:w-[100vw] flex mt-[100px] max-lg:mt-[30px] overflow-hidden overflow-x-hidden`}>
                             <Image
                                 className={`w-full aspect-[16/6] max-sm:aspect-[16/9] object-cover max-w-full overflow-hidden overflow-x-hidden`}
-                                src={`/DrMobilePicture1.jpg`} alt={`картинка`} width={1600}
+                                src={`/VostokAvtoMashPicture.jpg`} alt={`картинка`} width={1600}
                                 height={900}/>
                         </div>
                         <div
