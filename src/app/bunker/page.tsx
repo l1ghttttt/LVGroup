@@ -5,7 +5,7 @@ import Order from "@/widgets/order/Order";
 import Image from "next/image";
 
 const Bunker = () => {
-
+    useEffect(() => window.document.scrollingElement?.scrollTo(0, 0), [])
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
@@ -20,7 +20,8 @@ const Bunker = () => {
                 <div className={`flex flex-col`}>
                     <div className={`p-servicesTitlePadding`}>
                         <div className={`flex justify-between`}>
-                            <h2 className={`max-sm:w-full text-customerTitleSize leading-customerTitleLeading`}>Фирменный стиль <br/> компьютерного клуба &quot;Бункер&quot;</h2>
+                            <h2 className={`max-sm:w-full text-customerTitleSize leading-customerTitleLeading`}>Фирменный
+                                стиль <br/> компьютерного клуба &quot;Бункер&quot;</h2>
                             <Image
                                 className={`w-[150px] h-[150px] 2xl:hidden max-2xl:mr-[35px] max-lg:mr-[5px] max-sm:mb-0 max-sm:hidden`}
                                 src={`/BunkerLogo.png`}
