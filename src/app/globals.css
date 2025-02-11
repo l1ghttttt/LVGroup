@@ -526,6 +526,9 @@ a {
     grid-column-gap: 30px;
     grid-row-gap: 10px;
   }
+  .case-gallery img:hover {
+    width: 34%;
+  }
 }
 
 
@@ -598,14 +601,14 @@ a {
 
 .case-gallery {
   width: 100vw;
-  height: 300px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .case-gallery img {
-  width: 10%;
+  width: 11%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -616,5 +619,11 @@ a {
 }
 
 .case-gallery img:hover {
-  width: 25%;
+  width: 33%;
+}
+
+@media (max-width: 1280px) {
+  .case-gallery img:hover {
+    width: 34%;
+  }
 }
