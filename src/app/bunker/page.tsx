@@ -103,7 +103,7 @@ const Bunker = () => {
                         <div
                             className={`w-[100vw] max-2xl:w-[100vw] flex mt-[45px] max-lg:mt-[20px] overflow-hidden overflow-x-hidden`}>
                             <Image
-                                className={`w-full aspect-[16/6] max-sm:aspect-[16/9] object-cover max-w-full overflow-hidden overflow-x-hidden`}
+                                className={`w-full aspect-[16/6] max-sm:aspect-[16/9] object-fill max-w-full overflow-hidden overflow-x-hidden`}
                                 src={`/BunkerPicture2.jpg`} alt={`картинка`} width={1600}
                                 height={900}/>
                         </div>
@@ -143,9 +143,33 @@ const Bunker = () => {
                             </div>
                         </div>
 
+                        <div className='case-gallery mt-[45px] max-lg:mt-[20px]'>
+                            <Image className={`w-full h-auto`}
+                                   src={`/BunkerPicture4.jpg`} alt={`сайт после`} width={1600}
+                                   height={900}/>
+                            <Image className={`w-full h-auto`}
+                                   src={`/BunkerPicture5.jpg`} alt={`сайт после`} width={1600}
+                                   height={900}/>
+                            <Image className={`w-full h-auto`}
+                                   src={`/BunkerPicture6.jpg`} alt={`сайт после`} width={1600}
+                                   height={900}/>
+                            <Image className={`w-full h-auto`}
+                                   src={`/BunkerPicture7.jpg`} alt={`сайт после`} width={1600}
+                                   height={900}/>
+                            <Image className={`w-full h-auto`}
+                                   src={`/BunkerPicture8.jpg`} alt={`сайт после`} width={1600}
+                                   height={900}/>
+                            <Image className={`w-full h-auto`}
+                                   src={`/BunkerPicture9.jpg`} alt={`сайт после`} width={1600}
+                                   height={900}/>
+                            <Image className={`w-full h-auto`}
+                                   src={`/BunkerPicture10.jpg`} alt={`сайт после`} width={1600}
+                                   height={900}/>
+                        </div>
+                        {/*
                         <div
                             className={`w-[100vw] max-2xl:w-[100vw] flex mt-[45px] max-lg:mt-[20px] overflow-hidden overflow-x-hidden`}>
-                            <Image
+                        <Image
                                 className={`w-full aspect-[16/8] max-sm:aspect-[16/9] object-cover max-w-full overflow-hidden overflow-x-hidden`}
                                 src={`/BunkerPicture4.jpg`} alt={`картинка`} width={1600}
                                 height={900}/>
@@ -193,6 +217,8 @@ const Bunker = () => {
                                 src={`/BunkerPicture10.jpg`} alt={`картинка`} width={1600}
                                 height={900}/>
                         </div>
+
+                        */}
 
 
                         <div
