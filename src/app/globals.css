@@ -612,7 +612,7 @@ a {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
-  border: 2px solid #fff;
+  border: 2px solid hsl(var(--background));
   transition: all ease-out 0.5s;
   cursor: pointer;
   overflow: hidden;
