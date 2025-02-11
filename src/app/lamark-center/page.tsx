@@ -6,7 +6,7 @@ import Image from "next/image";
 import BeforeAfterSlider from "@/widgets/before-after/Before-after";
 
 const Lamark = () => {
-
+    useEffect(() => window.document.scrollingElement?.scrollTo(0, 0), [])
     const firstImage = {
         imageUrl: './site-after.jpg',
         alt: 'First Image',

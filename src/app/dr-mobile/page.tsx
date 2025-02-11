@@ -5,7 +5,7 @@ import Order from "@/widgets/order/Order";
 import Image from "next/image";
 
 const DrMobile = () => {
-
+    useEffect(() => window.document.scrollingElement?.scrollTo(0, 0), [])
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
