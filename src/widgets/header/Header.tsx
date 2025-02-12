@@ -74,12 +74,12 @@ const components: NavbarComponent[] = [
         values: [
             {
                 title: "Создание сайтов",
-                href: "/",
+                href: "/web-development/website-creation",
                 description: "Полный цикл разработки",
             },
             {
                 title: "Техническая поддержка",
-                href: "/",
+                href: "/web-development/",
                 description: "Оперативные решения задач",
             },
         ],
@@ -148,7 +148,7 @@ const Header: React.FC = () => {
     const [mounted, setMounted] = useState(false);
     const pathname = usePathname(); // Используем usePathname вместо useRouter
 
-    const stickyRoutes = ["/lamark-center", "/ldpr", "/tooth-fairy", "/dr-mobile", "/vostokavtomash", "/bunker"];
+    const stickyRoutes = ["/lamark-center", "/ldpr", "/tooth-fairy", "/dr-mobile", "/vostokavtomash", "/bunker", "/web-development/website-creation"];
     const isSticky = stickyRoutes.includes(pathname);
 
     const [lastScroll, setLastScroll] = useState(0);
@@ -177,7 +177,7 @@ const Header: React.FC = () => {
     if (!mounted) return null;
 
     return (
-        <header className= {`z-[3] header-clas w-full h-[100px] border-b-[1px] flex items-center pl-[15px] pr-[30px] gap-[25px] max-2xl:hidden top-0 ${isSticky ? "sticky duration-500 transform bg-background z-100" : "absolute"} ${isHidden && isSticky  ? "-translate-y-full" : "translate-y-0"}`}>
+        <header className= {`z-[3] header-clas w-full h-[100px] ${isSticky ? 'border-b-0' : 'border-b-[1px]'}  flex items-center pl-[15px] pr-[30px] gap-[25px] max-2xl:hidden top-0 ${isSticky ? "sticky duration-500 transform bg-background z-100" : "absolute"} ${isHidden && isSticky  ? "-translate-y-full" : "translate-y-0"}`}>
             <Link href={`/`}>
                 {theme === 'dark' ? (
                     <img src="/LVGROUP_logo.svg" alt="логотип LVGroup" className="w-[150px]" />

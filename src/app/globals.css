@@ -86,6 +86,7 @@ body {
     --cases-name-size: calc(30px + var(--responsive)*50);
     --space-s: calc(25px + var(--responsive)*35);
     --space-m: 140px;
+    --space-l: 210px;
     --grid__columns: 3;
     --grid__height: calc(56.66667px + 28.61111vw);
     --grid__press: 1px;
@@ -143,6 +144,18 @@ body {
     --stack-margin: calc(-77.72871px + 7.88644vw);
     --customer-infography-size: 122px;
     --customer-infography-small-size: calc(var(--customer-infography-size) / 3);
+    --website-creating-padding-bottom: calc(40.69767px + 4.65116vw);
+    --website-creating-padding-top: calc(0.53156px + 8.30565vw);
+    --website-creating-welcome-padding-x: var(--space-s);
+    --website-creating-welcome-heading-width: calc(33.33333% - var(--app__space)/3);
+    --website-creating-welcome-heading-size: calc(-60px + 8.33333vw);
+    --website-creating-welcome-descr-width: calc(66.66667% - var(--app__space)*2/3);
+    --website-creating-welcome-descr-padding: 0;
+    --website-creating-welcome-descr-margin: 0;
+    --website-creating-welcome-descr-margin-top: calc(41.95804px + 13.98601vw);
+    --website-creating-welcome-descr-leading: calc(31.87179px + .51282vw);
+    --website-creating-welcome-descr-size: calc(18.06527px + .4662vw);
+
 
     --card: 0 0% 100%;
     --card-foreground: 224 71.4% 4.1%;
@@ -217,11 +230,13 @@ body {
   @media (max-width: 1920px) {
     :root {
       --customer-infography-size: calc(-53.33333px + 9.02778vw);
+      --space-l: calc(105px + 5.46875vw);
     }
   }
   @media (max-width: 1200px) {
     :root {
       --customer-infography-size: calc(-27.77143px + 8.57143vw);
+      --space-l: var(--space-s)
     }
   }
   @media (max-width: 1024px) {
@@ -243,6 +258,9 @@ body {
   @media (min-width: 2560px) {
     :root {
       --welcome-link: 60px;
+      --website-creating-welcome-descr-margin-top: 400px;
+      --website-creating-welcome-descr-leading: 45px;
+      --website-creating-welcome-descr-size: 30px;
     }
   }
 
@@ -285,6 +303,7 @@ body {
       --grid__press: calc(-1.66667px + 0.13889vw);
       --order-title-size: calc(-6.66667px + 3.47222vw);
       --order-title-leading: calc(11.66667px + 2.77778vw);
+      --website-creating-welcome-descr-margin: var(--app__space);
     }
   }
 
@@ -339,6 +358,7 @@ body {
     :root {
       --order-title-size: 35px;
       --order-title-leading: 45px;
+      --website-creating-welcome-heading-size: 40px;
     }
   }
 
@@ -376,6 +396,11 @@ body {
       --see-all-size: 44px;
       --heading-level: calc(var(--heading-level_min)* 1px);
       --heading-size: calc(var(--heading-size_min)* 1px);
+      --website-creating-padding-bottom: 60px;
+      --website-creating-padding-top: 35px;
+      --website-creating-welcome-descr-margin-top: 100px;
+      --website-creating-welcome-descr-leading: 34px;
+      --website-creating-welcome-descr-size: 20px;
     }
   }
 
@@ -491,6 +516,13 @@ a {
     margin-right: auto;
     padding-left: 0;
     padding-right: 0;
+    --website-creating-padding-bottom: 130px;
+    --website-creating-padding-top: 160px;
+    --website-creating-welcome-padding-x: var(--space-l);
+    --website-creating-welcome-heading-width: calc(33.33333% - var(--app__space));
+    --website-creating-welcome-heading-size: 85px;
+    --website-creating-welcome-descr-width: 66.66667%;
+    --website-creating-welcome-descr-padding: 0 var(--app__space);
   }
   .big-hidden {
     display: none;

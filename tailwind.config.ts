@@ -87,6 +87,8 @@ export default {
 			customerClientSize: 'var(--heading-size-client)',
 			customerInfographySize: 'var(--customer-infography-size)',
 			customerInfographySmallSize: 'var(--customer-infography-small-size)',
+			WebsiteCreatingWelcomeHeadingSize: 'var(--website-creating-welcome-heading-size)',
+			WebsiteCreatingWelcomeDescrSize: 'var(--website-creating-welcome-descr-size)',
 		},
   		textColor: {
   			headerColor: 'hsl(var(--header-color))',
@@ -125,6 +127,10 @@ export default {
   			formSpaceYPadding: 'var(--form__space_y)',
   			formSpaceXPadding: 'var(--form__space_x)',
 			CustomerSpacingPadding: 'var(--detail__space)',
+			WebsiteCreatingWelcomePaddingX: 'var(--website-creating-welcome-padding-x)',
+			WebsiteCreatingWelcomePaddingBottom: 'var(--website-creating-padding-bottom)',
+			WebsiteCreatingWelcomePaddingTop: 'var(--website-creating-padding-top)',
+			WebsiteCreatingWelcomeDescrPadding: 'var(--website-creating-welcome-descr-padding)',
   		},
   		margin: {
   			footerNavMarginXL: 'var(--footer-nav-margin-xl)',
@@ -137,6 +143,8 @@ export default {
 			CustomerTitleMargin: 'var(--app__space)',
 			CustomerSpacingMargin: 'var(--detail__space)',
 			stackMargin: 'var(--stack-margin)',
+			WebsiteCreatingWelcomeDescrMargin: 'var(--website-creating-welcome-descr-margin)',
+			WebsiteCreatingWelcomeDescrMarginTop: 'var(--website-creating-welcome-descr-margin-top)',
   		},
 		right: {
 			CustomerLogoRight: 'var(--right-CustomerLogo)'
@@ -146,6 +154,8 @@ export default {
 			customerTitleWidth: 'var(--customer-title-width)',
 			customerImageWidth: 'var(--detail__bar)',
 			stackWidth: 'var(--stack-width)',
+			WebsiteCreatingWelcomeHeadingWidth: 'var(--website-creating-welcome-heading-width)',
+			WebsiteCreatingWelcomeDescrWidth: 'var(--website-creating-welcome-descr-width)',
   		},
   		height: {
   			caseHeight: 'var(--case-height)'
@@ -163,6 +173,7 @@ export default {
 			customerClientLeading: 'var(--heading-level-client)',
 			customerInfographyLeading: 'var(--customer-infography-size)',
 			customerInfographySmallLeading: 'var(--customer-infography-small-size)',
+			WebsiteCreatingWelcomeDescrLeading: 'var(--website-creating-welcome-descr-leading)',
   		},
   		keyframes: {
   			'accordion-down': {
