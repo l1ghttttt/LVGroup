@@ -155,7 +155,11 @@ body {
     --website-creating-welcome-descr-margin-top: calc(41.95804px + 13.98601vw);
     --website-creating-welcome-descr-leading: calc(31.87179px + .51282vw);
     --website-creating-welcome-descr-size: calc(18.06527px + .4662vw);
-
+    --ordered-list-width: calc(66.66667%);
+    --ordered-list-heading-margin: calc(8.55814px + 3.72093vw);
+    --ordered-list-descr-size: calc(18.89701px + .26578vw);
+    --ordered-list-descr-leading: calc(33.4485px + .13289vw);
+    --ordered-list-descr-margin: calc(43.45515px + 3.98671vw);
 
     --card: 0 0% 100%;
     --card-foreground: 224 71.4% 4.1%;
@@ -231,6 +235,7 @@ body {
     :root {
       --customer-infography-size: calc(-53.33333px + 9.02778vw);
       --space-l: calc(105px + 5.46875vw);
+      --ordered-list-heading-margin: 80px;
     }
   }
   @media (max-width: 1200px) {
@@ -242,6 +247,7 @@ body {
   @media (max-width: 1024px) {
     :root {
       --customer-infography-size: calc(38.63744px + 3.5545vw);
+      --ordered-list-width: 100%;
     }
   }
   @media (max-width: 600px) {
@@ -279,6 +285,9 @@ body {
       --text-header: 20px;
       --heading-level: calc(var(--heading-level_max)* 1px);
       --heading-size: calc(var(--heading-size_max)* 1px);
+      --ordered-list-descr-size: 24px;
+      --ordered-list-descr-leading: 36px;
+      --ordered-list-descr-margin: 120px;
     }
   }
 
@@ -401,6 +410,10 @@ body {
       --website-creating-welcome-descr-margin-top: 100px;
       --website-creating-welcome-descr-leading: 34px;
       --website-creating-welcome-descr-size: 20px;
+      --ordered-list-heading-margin: 24px;
+      --ordered-list-descr-size: 20px;
+      --ordered-list-descr-leading: 34px;
+      --ordered-list-descr-margin: 60px;
     }
   }
 
@@ -523,6 +536,7 @@ a {
     --website-creating-welcome-heading-size: 85px;
     --website-creating-welcome-descr-width: 66.66667%;
     --website-creating-welcome-descr-padding: 0 var(--app__space);
+    --ordered-list-width: 66.66667%;
   }
   .big-hidden {
     display: none;
@@ -659,3 +673,26 @@ a {
     width: 34%;
   }
 }
+
+@media (min-width: 769px) {
+  .website-creating-list-item {
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - var(--app__space)));
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: var(--app__space);
+    margin-bottom: var(--app__space);
+  }
+  .website-creating-list-item-number {
+    grid-row: 1;
+    grid-column: 1/span 2;
+  }
+  .website-creating-list-item-heading {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .website-creating-list-item-descr {
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+  }
+}
+

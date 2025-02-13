@@ -1,14 +1,24 @@
-import React from 'react';
+'use client'
+
+import React, {useEffect, useState} from 'react';
 import Image from "next/image";
+import {useTheme} from "next-themes";
 
 const WebsiteCreationWelcome = () => {
+    const { theme } = useTheme();
+    const [mounted, setMounted] = useState(false);
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+    //console.log(theme);
+    if (!mounted) return null;
     return (
         <section className={`relative object-cover w-full`}>
-            <Image src={'/WebsiteCreating.jpg'} alt={`background`} width={1920} height={800} className={`w-full h-full absolute z-[-1] object-cover`}/>
+            <Image src={'/WebsiteCreating3.jpeg'} alt={`background`} width={1920} height={800} className={`w-full h-full absolute z-[-1] object-cover ${theme == 'dark' ? '' : 'invert'}`}/>
             <div
                 className={`w-full px-WebsiteCreatingWelcomePaddingX flex max-xl:block pb-WebsiteCreatingWelcomePaddingBottom pt-WebsiteCreatingWelcomePaddingTop overflow-hidden`}>
                 <h1 className={`xl:WebsiteCreatingWelcomeHeadingWidth`}>
-                    <div className={`leading-[1.1] text-WebsiteCreatingWelcomeHeadingSize`}>
+                    <div className={`leading-[1.1] text-WebsiteCreatingWelcomeHeadingSize text-mainColor font-railway`}>
                         Создание сайтов
                     </div>
                 </h1>

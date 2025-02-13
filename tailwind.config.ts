@@ -89,6 +89,7 @@ export default {
 			customerInfographySmallSize: 'var(--customer-infography-small-size)',
 			WebsiteCreatingWelcomeHeadingSize: 'var(--website-creating-welcome-heading-size)',
 			WebsiteCreatingWelcomeDescrSize: 'var(--website-creating-welcome-descr-size)',
+			OrderedListDescrSize: 'var(--ordered-list-descr-size)',
 		},
   		textColor: {
   			headerColor: 'hsl(var(--header-color))',
@@ -145,6 +146,8 @@ export default {
 			stackMargin: 'var(--stack-margin)',
 			WebsiteCreatingWelcomeDescrMargin: 'var(--website-creating-welcome-descr-margin)',
 			WebsiteCreatingWelcomeDescrMarginTop: 'var(--website-creating-welcome-descr-margin-top)',
+			OrderedListHeadingMargin: 'var(--ordered-list-heading-margin)',
+			OrderedListDescrMargin: 'var(--ordered-list-descr-margin)',
   		},
 		right: {
 			CustomerLogoRight: 'var(--right-CustomerLogo)'
@@ -156,6 +159,7 @@ export default {
 			stackWidth: 'var(--stack-width)',
 			WebsiteCreatingWelcomeHeadingWidth: 'var(--website-creating-welcome-heading-width)',
 			WebsiteCreatingWelcomeDescrWidth: 'var(--website-creating-welcome-descr-width)',
+			OrderedListWidth: 'var(--ordered-list-width)',
   		},
   		height: {
   			caseHeight: 'var(--case-height)'
@@ -174,6 +178,7 @@ export default {
 			customerInfographyLeading: 'var(--customer-infography-size)',
 			customerInfographySmallLeading: 'var(--customer-infography-small-size)',
 			WebsiteCreatingWelcomeDescrLeading: 'var(--website-creating-welcome-descr-leading)',
+			OrderedListDescrLeading: 'var(--ordered-list-descr-leading)',
   		},
   		keyframes: {
   			'accordion-down': {
