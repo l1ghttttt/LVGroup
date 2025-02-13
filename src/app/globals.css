@@ -160,6 +160,7 @@ body {
     --ordered-list-descr-size: calc(18.89701px + .26578vw);
     --ordered-list-descr-leading: calc(33.4485px + .13289vw);
     --ordered-list-descr-margin: calc(43.45515px + 3.98671vw);
+    --ordered-list-item-margin: calc(51.72757px + 1.99336vw);
 
     --card: 0 0% 100%;
     --card-foreground: 224 71.4% 4.1%;
@@ -288,6 +289,7 @@ body {
       --ordered-list-descr-size: 24px;
       --ordered-list-descr-leading: 36px;
       --ordered-list-descr-margin: 120px;
+      --ordered-list-item-margin: 90px;
     }
   }
 
@@ -414,6 +416,7 @@ body {
       --ordered-list-descr-size: 20px;
       --ordered-list-descr-leading: 34px;
       --ordered-list-descr-margin: 60px;
+      --ordered-list-item-margin: 60px;
     }
   }
 

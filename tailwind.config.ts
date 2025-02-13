@@ -148,6 +148,7 @@ export default {
 			WebsiteCreatingWelcomeDescrMarginTop: 'var(--website-creating-welcome-descr-margin-top)',
 			OrderedListHeadingMargin: 'var(--ordered-list-heading-margin)',
 			OrderedListDescrMargin: 'var(--ordered-list-descr-margin)',
+			OrderedListItemMargin: 'var(--ordered-list-item-margin)',
   		},
 		right: {
 			CustomerLogoRight: 'var(--right-CustomerLogo)'
