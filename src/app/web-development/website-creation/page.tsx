@@ -3,6 +3,7 @@ import WebsiteCreationWelcome from "@/widgets/website-creation-welcome/Website-c
 import OrderedList from "@/widgets/ordered-list/Ordered-list";
 import WelcomeCases from "@/widgets/welcome-cases/Welcome-cases";
 import Order from "@/widgets/order/Order";
+import OwnFeatures from "@/widgets/own-features/Own-features";
 
 const WebsiteCreation = () => {
     return (
@@ -11,7 +12,7 @@ const WebsiteCreation = () => {
             <div className={`bg-background`}>
                 <OrderedList/>
                 <WelcomeCases/>
-                <h2 className={`h-[200px] mt-[150px] text-center`}>Что вы получаете, работая с нами</h2>
+                <OwnFeatures/>
                 <Order/>
             </div>
 

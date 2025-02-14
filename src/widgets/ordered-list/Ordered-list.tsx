@@ -3,7 +3,7 @@ import React from 'react';
 const OrderedList = () => {
     return (
         <section className={`px-WebsiteCreatingWelcomePaddingX w-full flex flex-col items-center`}>
-            <div className={`xl:flex xl:items-start xl:justify-start flex-col w-OrderedListWidth max-w-[1200px] mt-[150px] xl:[100px] max-md:[50px]`}>
+            <div className={`xl:flex xl:items-start xl:justify-start flex-col w-OrderedListWidth max-w-[1200px] mt-[150px]`}>
                 <h2 className={`mb-OrderedListHeadingMargin font-normal text-customerTitleSize leading-customerTitleLeading`}>Как
                     мы работаем</h2>
                 <div className={`w-full xl:shrink-0`}>
