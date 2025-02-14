@@ -8,10 +8,13 @@ const WebsiteCreation = () => {
     return (
         <main className={`w-full flex flex-col items-center`}>
             <WebsiteCreationWelcome/>
-            <OrderedList/>
-            <WelcomeCases/>
-            <h2 className={`h-[200px] mt-[150px] text-center`}>Что вы получаете, работая с нами</h2>
-            <Order/>
+            <div className={`bg-background`}>
+                <OrderedList/>
+                <WelcomeCases/>
+                <h2 className={`h-[200px] mt-[150px] text-center`}>Что вы получаете, работая с нами</h2>
+                <Order/>
+            </div>
+
         </main>
     );
 };

@@ -8,12 +8,11 @@ const OrderedList = () => {
                     мы работаем</h2>
                 <div className={`w-full xl:shrink-0`}>
                     <p className={`max-w-[1200px] text-OrderedListDescrSize leading-OrderedListDescrLeading flex flex-col justify-start items-stretch flow mb-OrderedListDescrMargin`}>
-                        Идем от формулирования ожиданий к будущему дизайну к внедрению и адаптации разработанного
-                        фирменного стиля на все группы носителей.
+                        От вашей идеи до пошагового плана реализации совместного и успешного проекта.
                     </p>
                 </div>
                 <ul>
-                    <li className={`website-creating-list-item mt-OrderedListItemMargin`}>
+                    <li className={`website-creating-list-item`}>
                         <div
                             className={`text-[16px] pb-[12px] mb-[12px] border-b-[1px] border-solid border-foreground website-creating-list-item-number `}>01
                         </div>

@@ -154,7 +154,7 @@ body {
     --website-creating-welcome-descr-margin: 0;
     --website-creating-welcome-descr-margin-top: calc(41.95804px + 13.98601vw);
     --website-creating-welcome-descr-leading: calc(31.87179px + .51282vw);
-    --website-creating-welcome-descr-size: calc(18.06527px + .4662vw);
+    --website-creating-welcome-descr-size: calc(16.30097px + 0.45307vw);
     --ordered-list-width: calc(66.66667%);
     --ordered-list-heading-margin: calc(8.55814px + 3.72093vw);
     --ordered-list-descr-size: calc(18.89701px + .26578vw);
@@ -290,6 +290,7 @@ body {
       --ordered-list-descr-leading: 36px;
       --ordered-list-descr-margin: 120px;
       --ordered-list-item-margin: 90px;
+      --website-creating-welcome-descr-size: 25px;
     }
   }
 
@@ -369,7 +370,7 @@ body {
     :root {
       --order-title-size: 35px;
       --order-title-leading: 45px;
-      --website-creating-welcome-heading-size: 40px;
+      --website-creating-welcome-heading-size: 50px;
     }
   }
 
@@ -411,12 +412,12 @@ body {
       --website-creating-padding-top: 35px;
       --website-creating-welcome-descr-margin-top: 100px;
       --website-creating-welcome-descr-leading: 34px;
-      --website-creating-welcome-descr-size: 20px;
       --ordered-list-heading-margin: 24px;
       --ordered-list-descr-size: 20px;
       --ordered-list-descr-leading: 34px;
       --ordered-list-descr-margin: 60px;
       --ordered-list-item-margin: 60px;
+      --website-creating-welcome-descr-size: 18px;
     }
   }
 
