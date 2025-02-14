@@ -1,7 +1,6 @@
 'use client'
 
 import React, {useEffect, useState} from 'react';
-import Image from "next/image";
 import {useTheme} from "next-themes";
 
 const WebsiteCreationWelcome = () => {
@@ -10,7 +9,6 @@ const WebsiteCreationWelcome = () => {
     useEffect(() => {
         setMounted(true);
     }, []);
-    //console.log(theme);
     if (!mounted) return null;
     return (
         <section className={`relative object-cover w-full`}>
