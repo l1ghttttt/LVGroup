@@ -74,12 +74,12 @@ const components: NavbarComponent[] = [
         values: [
             {
                 title: "Создание сайтов",
-                href: "/web-development/website-creation",
+                href: "/website-creation",
                 description: "Полный цикл разработки",
             },
             {
                 title: "Техническая поддержка",
-                href: "/web-development/",
+                href: "/tech-support",
                 description: "Оперативные решения задач",
             },
         ],
