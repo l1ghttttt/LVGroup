@@ -54,7 +54,7 @@ const components: NavbarComponent[] = [
             },
             {
                 title: "SMM",
-                href: "/",
+                href: "/SMM",
                 description: "Продвижение в соц. сетях",
             },
             {
@@ -148,7 +148,7 @@ const Header: React.FC = () => {
     const [mounted, setMounted] = useState(false);
     const pathname = usePathname(); // Используем usePathname вместо useRouter
 
-    const stickyRoutes = ["/lamark-center", "/ldpr", "/tooth-fairy", "/dr-mobile", "/vostokavtomash", "/bunker", "/web-development/website-creation"];
+    const stickyRoutes = ["/lamark-center", "/ldpr", "/tooth-fairy", "/dr-mobile", "/vostokavtomash", "/bunker", "/website-creation", "/tech-support", "/SMM"];
     const isSticky = stickyRoutes.includes(pathname);
 
     const [lastScroll, setLastScroll] = useState(0);
