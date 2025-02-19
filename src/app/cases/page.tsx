@@ -78,7 +78,7 @@ const Cases = () => {
                         </Link>
                     </li>
                     <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                        <Link href="/">
+                        <Link href="/chill-house">
                             <video autoPlay muted loop playsInline id="myVideo">
                                 <source src="/7.mp4" type="video/mp4"/>
                             </video>
@@ -198,7 +198,7 @@ const Cases = () => {
                         </Link>
                     </li>
                     <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                        <Link href="/">
+                        <Link href="/chill-house">
                             <video autoPlay muted loop playsInline id="myVideo">
                                 <source src="/7.mp4" type="video/mp4"/>
                             </video>
@@ -318,7 +318,7 @@ const Cases = () => {
                         </Link>
                     </li>
                     <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                        <Link href="/">
+                        <Link href="/chill-house">
                             <video autoPlay muted loop playsInline id="myVideo">
                                 <source src="/7.mp4" type="video/mp4"/>
                             </video>

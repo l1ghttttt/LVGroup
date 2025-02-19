@@ -563,6 +563,12 @@ a {
   background-color: currentColor;
 }
 
+.conclusion {
+  position: absolute;
+  top: calc(1em - 20px);
+  left: calc(1em - 20px);
+}
+
 .border-stack {
   border-color: hsl(var(--main-color));
 }
