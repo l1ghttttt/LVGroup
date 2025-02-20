@@ -3,8 +3,10 @@
 import React, {useEffect, useState} from 'react';
 import Order from "@/widgets/order/Order";
 import Image from "next/image";
+import {useTheme} from "next-themes";
 
 const ChillHouse = () => {
+    const { theme } = useTheme();
     useEffect(() => window.document.scrollingElement?.scrollTo(0, 0), [])
     const [mounted, setMounted] = useState(false);
 
@@ -26,7 +28,7 @@ const ChillHouse = () => {
                             <h2 className={`max-sm:w-full text-customerTitleSize leading-customerTitleLeading lg:hidden`}>Продажи,
                                 Маркетинг, HR и операционное управление в сети кальянных <span className={`whitespace-nowrap`}>&quot;Чилл Хаус&quot;</span></h2>
                             <Image
-                                className={`w-[150px] h-[150px] 2xl:hidden max-2xl:mr-[35px] max-lg:mr-[5px] max-sm:mb-0 max-sm:hidden`}
+                                className={`w-[150px] h-[150px] 2xl:hidden max-2xl:mr-[35px] max-lg:mr-[5px] max-sm:mb-0 max-sm:hidden ${theme == 'dark' ? 'invert' : ''}`}
                                 src={`/ChillHouseLogoMin.png`}
                                 alt={`лого заказчика`}
                                 width={180} height={180}/>
@@ -72,7 +74,7 @@ const ChillHouse = () => {
                         className={`my-0 mx-CustomerSpacingMargin customer-spacing relative max-sm:mx-[20px] flex flex-col items-center mt-[40px]`}>
                         <div className={`w-full flex gap-[30px] items-center max-xl:flex-col`}>
                             <Image
-                                className={`w-[250px] 2xl:absolute 2xl:top-0 2xl:w-customerImageWidth pr-[20px] max-2xl:hidden max-sm:mb-0 max-sm:block max-sm:w-3/4 h-auto CustomerImage max-sm:pr-0`}
+                                className={`w-[250px] 2xl:absolute 2xl:top-0 2xl:w-customerImageWidth pr-[20px] max-2xl:hidden max-sm:mb-0 max-sm:block max-sm:w-3/4 h-auto CustomerImage max-sm:pr-0 ${theme == 'dark' ? 'invert' : ''}`}
                                 src={`/ChillHouseLogo.png`}
                                 alt={`лого заказчика`}
                                 width={250} height={250}/>
