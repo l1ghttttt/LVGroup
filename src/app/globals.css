@@ -683,6 +683,47 @@ a {
   }
 }
 
+
+
+.case-gallery-vertical {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.case-gallery-vertical img {
+  width: 25%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all ease-out 0.5s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.case-gallery-vertical img:hover {
+  scale: 1.03;
+  z-index: 2;
+}
+
+@media (max-width: 1280px) {
+  .case-gallery-vertical img:hover {
+    width: 34%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 769px) {
   .website-creating-list-item {
     display: grid;

@@ -417,27 +417,24 @@ const ChillHouse = () => {
 
                         </div>
 
-                        <div className='case-gallery mt-[45px] max-lg:mt-[20px] max-xl:hidden'>
+                        <div className='case-gallery-vertical mt-[45px] max-lg:mt-[20px] max-xl:hidden'>
                             <Image className={`w-full h-auto`}
-                                   src={`/BunkerPicture4.jpg`} alt={`сайт после`} width={1600}
+                                   src={`/ChillHousePicture1.jpg`} alt={`сайт после`} width={1600}
                                    height={900}/>
                             <Image className={`w-full h-auto`}
-                                   src={`/BunkerPicture5.jpg`} alt={`сайт после`} width={1600}
+                                   src={`/ChillHousePicture2.jpg`} alt={`сайт после`} width={1600}
                                    height={900}/>
                             <Image className={`w-full h-auto`}
-                                   src={`/BunkerPicture6.jpg`} alt={`сайт после`} width={1600}
+                                   src={`/ChillHousePicture3.jpg`} alt={`сайт после`} width={1600}
                                    height={900}/>
                             <Image className={`w-full h-auto`}
-                                   src={`/BunkerPicture7.jpg`} alt={`сайт после`} width={1600}
+                                   src={`/ChillHousePicture4.jpg`} alt={`сайт после`} width={1600}
                                    height={900}/>
                             <Image className={`w-full h-auto`}
-                                   src={`/BunkerPicture8.jpg`} alt={`сайт после`} width={1600}
+                                   src={`/ChillHousePicture5.jpg`} alt={`сайт после`} width={1600}
                                    height={900}/>
                             <Image className={`w-full h-auto`}
-                                   src={`/BunkerPicture9.jpg`} alt={`сайт после`} width={1600}
-                                   height={900}/>
-                            <Image className={`w-full h-auto`}
-                                   src={`/BunkerPicture10.jpg`} alt={`сайт после`} width={1600}
+                                   src={`/ChillHousePicture6.jpg`} alt={`сайт после`} width={1600}
                                    height={900}/>
                         </div>
 
@@ -445,57 +442,43 @@ const ChillHouse = () => {
                             <div
                                 className={`max-xl:w-[50vw] max-sm:w-[100vw] max-2xl:w-[100vw] flex overflow-hidden overflow-x-hidden`}>
                                 <Image
-                                    className={`w-full aspect-[16/8] max-sm:aspect-[16/9] object-cover max-w-full overflow-hidden overflow-x-hidden`}
-                                    src={`/BunkerPicture4.jpg`} alt={`картинка`} width={1600}
+                                    className={`w-full object-cover max-w-full overflow-hidden overflow-x-hidden`}
+                                    src={`/ChillHousePicture1.jpg`} alt={`картинка`} width={1600}
                                     height={900}/>
                             </div>
                             <div
                                 className={`max-xl:w-[50vw] max-sm:w-[100vw] max-2xl:w-[100vw] flex overflow-hidden overflow-x-hidden`}>
                                 <Image
-                                    className={`w-full aspect-[16/8] max-sm:aspect-[16/9] object-cover max-w-full overflow-hidden overflow-x-hidden`}
-                                    src={`/BunkerPicture5.jpg`} alt={`картинка`} width={1600}
+                                    className={`w-full object-cover max-w-full overflow-hidden overflow-x-hidden`}
+                                    src={`/ChillHousePicture2.jpg`} alt={`картинка`} width={1600}
                                     height={900}/>
                             </div>
                             <div
                                 className={`max-xl:w-[50vw] max-sm:w-[100vw] max-2xl:w-[100vw] flex overflow-hidden overflow-x-hidden`}>
                                 <Image
-                                    className={`w-full aspect-[16/8] max-sm:aspect-[16/9] object-cover max-w-full overflow-hidden overflow-x-hidden`}
-                                    src={`/BunkerPicture6.jpg`} alt={`картинка`} width={1600}
+                                    className={`w-full object-cover max-w-full overflow-hidden overflow-x-hidden`}
+                                    src={`/ChillHousePicture3.jpg`} alt={`картинка`} width={1600}
                                     height={900}/>
                             </div>
                             <div
                                 className={`max-xl:w-[50vw] max-sm:w-[100vw] max-2xl:w-[100vw] flex overflow-hidden overflow-x-hidden`}>
                                 <Image
-                                    className={`w-full aspect-[16/8] max-sm:aspect-[16/9] object-cover max-w-full overflow-hidden overflow-x-hidden`}
-                                    src={`/BunkerPicture7.jpg`} alt={`картинка`} width={1600}
+                                    className={`w-full object-cover max-w-full overflow-hidden overflow-x-hidden`}
+                                    src={`/ChillHousePicture4.jpg`} alt={`картинка`} width={1600}
                                     height={900}/>
                             </div>
                             <div
                                 className={`max-xl:w-[50vw] max-sm:w-[100vw] max-2xl:w-[100vw] flex overflow-hidden overflow-x-hidden`}>
                                 <Image
-                                    className={`w-full aspect-[16/8] max-sm:aspect-[16/9] object-cover max-w-full overflow-hidden overflow-x-hidden`}
-                                    src={`/BunkerPicture8.jpg`} alt={`картинка`} width={1600}
+                                    className={`w-full object-cover max-w-full overflow-hidden overflow-x-hidden`}
+                                    src={`/ChillHousePicture5.jpg`} alt={`картинка`} width={1600}
                                     height={900}/>
                             </div>
                             <div
                                 className={`max-xl:w-[50vw] max-sm:w-[100vw] max-2xl:w-[100vw] flex overflow-hidden overflow-x-hidden`}>
                                 <Image
-                                    className={`w-full aspect-[16/8] max-sm:aspect-[16/9] object-cover max-w-full overflow-hidden overflow-x-hidden`}
-                                    src={`/BunkerPicture9.jpg`} alt={`картинка`} width={1600}
-                                    height={900}/>
-                            </div>
-                            <div
-                                className={`max-xl:w-[50vw] max-sm:w-[100vw] max-2xl:w-[100vw] flex overflow-hidden overflow-x-hidden`}>
-                                <Image
-                                    className={`w-full aspect-[16/8] max-sm:aspect-[16/9] object-cover max-w-full overflow-hidden overflow-x-hidden`}
-                                    src={`/BunkerPicture10.jpg`} alt={`картинка`} width={1600}
-                                    height={900}/>
-                            </div>
-                            <div
-                                className={`max-xl:w-[50vw] max-sm:w-[100vw] max-2xl:w-[100vw] flex overflow-hidden overflow-x-hidden`}>
-                                <Image
-                                    className={`w-full aspect-[16/8] max-sm:aspect-[16/9] object-cover max-w-full overflow-hidden overflow-x-hidden`}
-                                    src={`/BunkerPicture11.jpg`} alt={`картинка`} width={1600}
+                                    className={`w-full object-cover max-w-full overflow-hidden overflow-x-hidden`}
+                                    src={`/ChillHousePicture6.jpg`} alt={`картинка`} width={1600}
                                     height={900}/>
                             </div>
                         </div>
