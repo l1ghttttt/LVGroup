@@ -363,7 +363,7 @@ const Lamark = () => {
                                 <div className={`flex w-4/6 max-md:w-full`}>
                                     <p className={`w-full text-[22px] max-xl:text-[18px] max-sm:text-[16px] max-md:w-full mb-[25px] max-md:mb-0`}>Обратились
                                         за
-                                        созданием сайта в компанию &quot;Двигатель&quot;. Ребята отнеслись креативно, с
+                                        созданием сайта в компанию &quot;LVGroup&quot;. Ребята отнеслись креативно, с
                                         подходом
                                         и душой. Все
                                         продумали, все отсняли, что нужно доработали и дописали. Еще нас тронуло, как

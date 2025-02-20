@@ -27,7 +27,7 @@ const ChillHouse = () => {
                                 Маркетинг, HR и операционное управление в сети кальянных <span className={`whitespace-nowrap`}>&quot;Чилл Хаус&quot;</span></h2>
                             <Image
                                 className={`w-[150px] h-[150px] 2xl:hidden max-2xl:mr-[35px] max-lg:mr-[5px] max-sm:mb-0 max-sm:hidden`}
-                                src={`/VostokAvtoMashLogo.jpg`}
+                                src={`/ChillHouseLogoMin.png`}
                                 alt={`лого заказчика`}
                                 width={180} height={180}/>
                         </div>
@@ -73,7 +73,7 @@ const ChillHouse = () => {
                         <div className={`w-full flex gap-[30px] items-center max-xl:flex-col`}>
                             <Image
                                 className={`w-[250px] 2xl:absolute 2xl:top-0 2xl:w-customerImageWidth pr-[20px] max-2xl:hidden max-sm:mb-0 max-sm:block max-sm:w-3/4 h-auto CustomerImage max-sm:pr-0`}
-                                src={`/VostokAvtoMashLogo.jpg`}
+                                src={`/ChillHouseLogo.png`}
                                 alt={`лого заказчика`}
                                 width={250} height={250}/>
 
@@ -103,7 +103,7 @@ const ChillHouse = () => {
                             className={`w-[100vw] max-2xl:w-[100vw] flex mt-[100px] max-lg:mt-[30px] overflow-hidden overflow-x-hidden`}>
                             <Image
                                 className={`w-full aspect-[16/6] max-sm:aspect-[16/9] object-cover max-w-full overflow-hidden overflow-x-hidden`}
-                                src={`/VostokAvtoMashPicture.jpg`} alt={`картинка`} width={1600}
+                                src={`/ChillHousePicture.jpg`} alt={`картинка`} width={1600}
                                 height={900}/>
                         </div>
                         <div
