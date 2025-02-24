@@ -39,14 +39,14 @@ const CreateSalesment = () => {
                     </p>*/}
                         <div
                             className={`w-full max-w-[900px] text-WebsiteCreatingWelcomeDescrSize leading-[1.25] mt-WebsiteCreatingWelcomeDescrMarginTop`}>
-                            LV Group – это не просто хорошие бизнес-тренеры, HR-ы или «продажники» - работая с нами, вы получаете все необходимые услуги в одном месте от нашей команды.
+                            LV Group – это не просто хорошие бизнес-тренеры, HR-ы или &quot;продажники&quot; - работая с нами, вы получаете все необходимые услуги в одном месте от нашей команды.
                         </div>
                     </div>
                 </div>
             </section>
             <div className={`bg-background`}>
                 <section className={`h-[1000px] felx justify-center items-center text-[30px]`}>
-                    <h3>Раздел "Как мы рабоатем"</h3>
+                    <h3>Раздел &quot;Как мы рабоатем&quot;</h3>
                 </section>
                 <section className={`w-full flex flex-col bg-background`}>
                     <h2 className={`p-casesNamePadding leading-none flex items-end justify-stretch sm:w-2/3 text-casesNameSize font-medium`}>Наши
@@ -242,7 +242,7 @@ const CreateSalesment = () => {
                                 <div
                                     className={`flex flex-col justify-start gap-[20px] h-full pt-[20px] max-xl:justify-around`}>
                                     <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px]`}>Поможем выполнить поставленный результат</h3>
-                                    <p className={`text-[18px] leading-[28px] website-creating-list-item-descr max-sm:mt-0  max-md:mt-[10px] max-2xl:text-[16px] max-md:text-[15px] max-sm:text-[14px] max-sm:leading-[22px]`}>Проведем аудит, устраним "зоны роста", обучим персонал, а также дадим гарантии.</p>
+                                    <p className={`text-[18px] leading-[28px] website-creating-list-item-descr max-sm:mt-0  max-md:mt-[10px] max-2xl:text-[16px] max-md:text-[15px] max-sm:text-[14px] max-sm:leading-[22px]`}>Проведем аудит, устраним &quot;зоны роста&quot;, обучим персонал, а также дадим гарантии.</p>
                                 </div>
                             </li>
                             <li className={`w-[45%] max-xl:w-full gap-[20px] flex items-center xl:h-[200px]`}>
