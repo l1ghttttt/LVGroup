@@ -3,7 +3,7 @@
 import React, {useEffect, useState} from 'react';
 import {useTheme} from "next-themes";
 import Link from "next/link";
-import {CiBookmarkCheck, CiBoxList, CiCalendar, CiDiscount1, CiGrid32, CiMonitor} from "react-icons/ci";
+import {CiBoxList} from "react-icons/ci";
 import {OrderForm} from "@/components/Form/Order-form";
 import Image from "next/image";
 
@@ -46,7 +46,7 @@ const CreateSalesment = () => {
             </section>
             <div className={`bg-background`}>
                 <section className={`h-[1000px] felx justify-center items-center text-[30px]`}>
-                    <h3>Раздел &quot;Как мы рабоатем&quot;</h3>
+                    <h3>Раздел &quot;Как мы работаем&quot;</h3>
                 </section>
                 <section className={`w-full flex flex-col bg-background`}>
                     <h2 className={`p-casesNamePadding leading-none flex items-end justify-stretch sm:w-2/3 text-casesNameSize font-medium`}>Наши
