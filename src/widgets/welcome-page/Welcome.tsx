@@ -52,16 +52,16 @@ const Welcome = () => {
                 <nav
                     className={`w-1/2 max-2xl:w-1/2 max-sm:w-full p-welcomeLinkPadding pt-welcomeLinkPaddingTop max-sm:pl-0`}>
                     <ul className={`flex flex-col gap-[10px] max-lg:gap-[7px]`}>
-                        <Link href="/" className={`text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 max-md:hidden max-sm:inline`}>Создание сайтов</Link>
-                        <Link href="/" className={`text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 md:hidden max-sm:hidden`}>Cайты</Link>
+                        <Link href="/website-creation" className={`text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 max-md:hidden max-sm:inline`}>Создание сайтов</Link>
+                        <Link href="/website-creation" className={`text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 md:hidden max-sm:hidden`}>Cайты</Link>
                         <Link href="/" className={`text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 max-lg:hidden  max-sm:inline`}>Контекстная реклама</Link>
                         <Link href="/" className={`text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 lg:hidden max-sm:hidden`}>Реклама</Link>
-                        <Link href="/" className={`text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 max-2xl:hidden`}>Создание/развитие <br/> отделов продаж</Link>
-                        <Link href="/" className={`text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 2xl:hidden max-xl:hidden`}>Развитие отделов продаж</Link>
-                        <Link href="/" className={`text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 xl:hidden max-md:hidden max-sm:inline`}>Развитие продаж</Link>
-                        <Link href="/" className={`text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 md:hidden  max-sm:hidden`}>Продажи</Link>
+                        <Link href="/create-salesment" className={`text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 max-2xl:hidden`}>Создание/развитие <br/> отделов продаж</Link>
+                        <Link href="/create-salesment" className={`text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 2xl:hidden max-xl:hidden`}>Развитие отделов продаж</Link>
+                        <Link href="/create-salesment" className={`text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 xl:hidden max-md:hidden max-sm:inline`}>Развитие продаж</Link>
+                        <Link href="/create-salesment" className={`text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 md:hidden  max-sm:hidden`}>Продажи</Link>
                         <Link href="/" className={`text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300`}>Видеосьемка</Link>
-                        <Link href="/" className={`text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300`}>SMM</Link>
+                        <Link href="/SMM" className={`text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300`}>SMM</Link>
                     </ul>
                 </nav>
             </div>

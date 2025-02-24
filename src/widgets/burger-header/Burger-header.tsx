@@ -18,12 +18,12 @@ const components: NavbarComponent[] = [
         values: [
             {
                 title: "Аудит отдела продаж",
-                href: "/cases",
+                href: "/",
                 description: "Оценка эффективности",
             },
             {
                 title: "Создание/развитие отделов продаж",
-                href: "/",
+                href: "/create-salesment",
                 description: "Достижение новых высот",
             },
             {
@@ -140,7 +140,7 @@ export default function BurgerHeader() {
     const [mounted, setMounted] = useState(false);
     const pathname = usePathname(); // Используем usePathname вместо useRouter
 
-    const stickyRoutes = ["/lamark-center", "/ldpr", "/tooth-fairy", "/dr-mobile", "/vostokavtomash", "/bunker", "/website-creation", "/tech-support", "/SMM", "/chill-house"];
+    const stickyRoutes = ["/lamark-center", "/ldpr", "/tooth-fairy", "/dr-mobile", "/vostokavtomash", "/bunker", "/website-creation", "/tech-support", "/SMM", "/chill-house", "/create-salesment"];
     const isSticky = stickyRoutes.includes(pathname);
 
     const [lastScroll, setLastScroll] = useState(0);
