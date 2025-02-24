@@ -3,7 +3,6 @@
 import React, {useEffect, useState} from 'react';
 import {useTheme} from "next-themes";
 import Link from "next/link";
-import {CiBoxList} from "react-icons/ci";
 import {OrderForm} from "@/components/Form/Order-form";
 import Image from "next/image";
 
