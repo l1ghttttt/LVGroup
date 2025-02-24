@@ -226,7 +226,7 @@ const CreateSalesment = () => {
                             <li className={`w-[45%] max-xl:w-full gap-[20px] flex items-center xl:h-[200px]`}>
                                 <div
                                     className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center`}>
-                                    <Image src={"/SalesmentIcon1.svg"} alt={"Features icon"} width={100} height={100} className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px]`}/>
+                                    <Image src={"/SalesmentIcon1.svg"} alt={"Features icon"} width={100} height={100} className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] ${theme == 'dark' ? '' : 'invert'}`}/>
                                 </div>
                                 <div
                                     className={`flex flex-col justify-start gap-[20px] h-full pt-[20px] max-xl:justify-around`}>
@@ -237,7 +237,7 @@ const CreateSalesment = () => {
                             <li className={`w-[45%] max-xl:w-full gap-[20px] flex items-center xl:h-[200px]`}>
                                 <div
                                     className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center`}>
-                                    <Image src={"/SalesmentIcon2.svg"} alt={"Features icon"} width={100} height={100} className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px]`}/>
+                                    <Image src={"/SalesmentIcon2.svg"} alt={"Features icon"} width={100} height={100} className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] ${theme == 'dark' ? '' : 'invert'}`}/>
                                 </div>
                                 <div
                                     className={`flex flex-col justify-start gap-[20px] h-full pt-[20px] max-xl:justify-around`}>
@@ -248,7 +248,7 @@ const CreateSalesment = () => {
                             <li className={`w-[45%] max-xl:w-full gap-[20px] flex items-center xl:h-[200px]`}>
                                 <div
                                     className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center`}>
-                                    <Image src={"/SalesmentIcon3.svg"} alt={"Features icon"} width={100} height={100} className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px]`}/>
+                                    <Image src={"/SalesmentIcon3.svg"} alt={"Features icon"} width={100} height={100} className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] ${theme == 'dark' ? '' : 'invert'}`}/>
                                 </div>
                                 <div
                                     className={`flex flex-col justify-start gap-[20px] h-full pt-[20px] max-xl:justify-around`}>
@@ -259,8 +259,7 @@ const CreateSalesment = () => {
                             <li className={`w-[45%] max-xl:w-full gap-[20px] flex items-center xl:h-[200px]`}>
                                 <div
                                     className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center`}>
-                                    <CiBoxList size={100}
-                                               className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px]`}/>
+                                    <Image src={"/SalesmentIcon3.svg"} alt={"Features icon"} width={100} height={100} className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] ${theme == 'dark' ? '' : 'invert'}`}/>
                                 </div>
                                 <div
                                     className={`flex flex-col justify-start gap-[20px] h-full pt-[20px] max-xl:justify-around`}>
