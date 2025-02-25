@@ -258,12 +258,12 @@ const CreateSalesment = () => {
                             <li className={`w-[45%] max-xl:w-full gap-[20px] flex items-center xl:h-[200px]`}>
                                 <div
                                     className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center`}>
-                                    <Image src={"/SalesmentIcon3.svg"} alt={"Features icon"} width={100} height={100} className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] ${theme == 'dark' ? '' : 'invert'}`}/>
+                                    <Image src={"/SalesmentIcon4.svg"} alt={"Features icon"} width={100} height={100} className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] ${theme == 'dark' ? '' : 'invert'}`}/>
                                 </div>
                                 <div
                                     className={`flex flex-col justify-start gap-[20px] h-full pt-[20px] max-xl:justify-around`}>
-                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px]`}>Блок #4</h3>
-                                    <p className={`text-[18px] leading-[28px] website-creating-list-item-descr max-sm:mt-0  max-md:mt-[10px] max-2xl:text-[16px] max-md:text-[15px] max-sm:text-[14px] max-sm:leading-[22px]`}>Описание блока #4.</p>
+                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px]`}>Дальнейшее сопровождение</h3>
+                                    <p className={`text-[18px] leading-[28px] website-creating-list-item-descr max-sm:mt-0  max-md:mt-[10px] max-2xl:text-[16px] max-md:text-[15px] max-sm:text-[14px] max-sm:leading-[22px]`}>Оперативно подключимся к решению новых задач и открытию новых направлений бизнеса.</p>
                                 </div>
                             </li>
                         </ul>
