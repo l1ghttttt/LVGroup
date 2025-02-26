@@ -286,76 +286,76 @@ const TechnicalSupport = () => {
                             вы получаете, работая с нами</h2>
                     </div>
                     <div className={`w-full flex justify-center`}>
-                        <ul className={`flex flex-wrap w-[90%] max-xl:w-[75%] max-md:w-full justify-between gap-y-[40px]`}>
+                        <ul className={`flex flex-wrap w-[90%] max-xl:w-[75%] max-md:w-full justify-between gap-y-[40px] max-xl:gap-y-[75px]`}>
                             <li className={`w-[45%] max-xl:w-full gap-[20px] flex items-center xl:h-[200px]`}>
                                 <div
-                                    className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center`}>
+                                    className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center flex-shrink-0`}>
                                     <CiMonitor size={100}
                                                className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px]`}/>
                                 </div>
                                 <div
                                     className={`flex flex-col justify-start gap-[20px] h-full pt-[20px] max-xl:justify-around`}>
-                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px]`}>Качественные специалисты</h3>
+                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px] font-semibold`}>Качественные специалисты</h3>
                                     <p className={`text-[18px] leading-[28px] website-creating-list-item-descr max-sm:mt-0  max-md:mt-[10px] max-2xl:text-[16px] max-md:text-[15px] max-sm:text-[14px] max-sm:leading-[22px]`}>Над каждым проектом работает целая команда специалистов: дизайнеры, видеографы, копирайтеры, stories-мейкеры и менеджеры проектов, а не один SMM-специалист, который делает все, но значительно менее качественно.</p>
                                 </div>
                             </li>
                             <li className={`w-[45%] max-xl:w-full gap-[20px] flex items-center xl:h-[200px]`}>
                                 <div
-                                    className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center`}>
+                                    className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center flex-shrink-0`}>
                                     <CiGrid32 size={100}
                                               className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px]`}/>
                                 </div>
                                 <div
                                     className={`flex flex-col justify-start gap-[20px] h-full pt-[20px] max-xl:justify-around`}>
-                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px]`}>Работа по стратегии с четкими целями и задачами</h3>
+                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px] font-semibold`}>Работа по стратегии с четкими целями и задачами</h3>
                                     <p className={`text-[18px] leading-[28px] website-creating-list-item-descr max-sm:mt-0  max-md:mt-[10px] max-2xl:text-[16px] max-md:text-[15px] max-sm:text-[14px] max-sm:leading-[22px]`}>Все наши специалисты нацелены на результат - мы не работаем с соцсетями по принципу «что-то делается, но не понятно для чего».</p>
                                 </div>
                             </li>
                             <li className={`w-[45%] max-xl:w-full gap-[20px] flex items-center xl:h-[200px]`}>
                                 <div
-                                    className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center`}>
+                                    className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center flex-shrink-0`}>
                                     <CiBookmarkCheck size={100}
                                                      className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px]`}/>
                                 </div>
                                 <div
                                     className={`flex flex-col justify-start gap-[20px] h-full pt-[20px] max-xl:justify-around`}>
-                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px]`}>Прозрачная и понятная отчетность</h3>
+                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px] font-semibold`}>Прозрачная и понятная отчетность</h3>
                                     <p className={`text-[18px] leading-[28px] website-creating-list-item-descr max-sm:mt-0 max-md:mt-[10px] max-2xl:text-[16px] max-md:text-[15px] max-sm:text-[14px] max-sm:leading-[22px]`}>Сформируем и расшифруем клиенту статистику по каждому месяцу – выявим зоны роста и самые эффективные инструменты.</p>
                                 </div>
                             </li>
                             <li className={`w-[45%] max-xl:w-full gap-[20px] flex items-center xl:h-[200px]`}>
                                 <div
-                                    className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center`}>
+                                    className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center flex-shrink-0`}>
                                     <CiBoxList size={100}
                                                className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px]`}/>
                                 </div>
                                 <div
                                     className={`flex flex-col justify-start gap-[20px] h-full pt-[20px] max-xl:justify-around`}>
-                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px]`}>Решим все дополнительные задачи маркетинга</h3>
+                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px] font-semibold`}>Решим все дополнительные задачи маркетинга</h3>
                                     <p className={`text-[18px] leading-[28px] website-creating-list-item-descr max-sm:mt-0  max-md:mt-[10px] max-2xl:text-[16px] max-md:text-[15px] max-sm:text-[14px] max-sm:leading-[22px]`}>Новый фирменный стиль, съемка блюд food-фотографом или баннер для наружной рекламы? – все задачи будут решены с минимальным участием собственника бизнеса.</p>
                                 </div>
                             </li>
                             <li className={`w-[45%] max-xl:w-full gap-[20px] flex items-center xl:h-[200px]`}>
                                 <div
-                                    className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center`}>
+                                    className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center flex-shrink-0`}>
                                     <CiDiscount1 size={100}
                                                  className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px]`}/>
                                 </div>
                                 <div
                                     className={`flex flex-col justify-start gap-[20px] h-full pt-[20px] max-xl:justify-around`}>
-                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px]`}>Честное продвижение</h3>
+                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px] font-semibold`}>Честное продвижение</h3>
                                     <p className={`text-[18px] leading-[28px] website-creating-list-item-descr max-sm:mt-0  max-md:mt-[10px] max-2xl:text-[16px] max-md:text-[15px] max-sm:text-[14px] max-sm:leading-[22px]`}>Лучше 500 активных подписчиков, чем 10000 накрученных инстаграм-ботов.</p>
                                 </div>
                             </li>
                             <li className={`w-[45%] max-xl:w-full gap-[20px] flex items-center xl:h-[200px]`}>
                                 <div
-                                    className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center`}>
+                                    className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center flex-shrink-0`}>
                                     <CiCalendar size={100}
                                                 className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px]`}/>
                                 </div>
                                 <div
                                     className={`flex flex-col justify-start gap-[20px] h-full pt-[20px] max-xl:justify-around`}>
-                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px]`}>Глубокое погружение в вашу тематику</h3>
+                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px] font-semibold`}>Глубокое погружение в вашу тематику</h3>
                                     <p className={`text-[18px] leading-[28px] website-creating-list-item-descr max-sm:mt-0  max-md:mt-[10px] max-2xl:text-[16px] max-md:text-[15px] max-sm:text-[14px] max-sm:leading-[22px]`}>Будь-то бурятская культура, стоматология или автосервис – наши специалисты вникают в каждую нишу и предлагают самые эффективные инструменты продвижения.</p>
                                 </div>
                             </li>
