@@ -5,6 +5,7 @@ import {useTheme} from "next-themes";
 import Link from "next/link";
 import {OrderForm} from "@/components/Form/Order-form";
 import Image from "next/image";
+import {PiArrowBendDownLeftBold} from "react-icons/pi";
 
 const CreateSalesment = () => {
     const { theme } = useTheme();
@@ -67,7 +68,7 @@ const CreateSalesment = () => {
 
                                 <div
                                     className={`relative flex-1 max-md:border-t-[0px] h-[2px] max-md:h-auto max-md:min-h-[26px] max-md:w-[2px]`}>
-                                    <div className={`customBorder`}></div>
+                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
                                 </div>
                             </div>
 
@@ -93,7 +94,7 @@ const CreateSalesment = () => {
 
                                 <div
                                     className={`relative flex-1 max-md:border-t-[0px] h-[2px] max-md:h-auto max-md:min-h-[26px] max-md:w-[2px]`}>
-                                    <div className={`customBorder`}></div>
+                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
                                 </div>
 
                             </div>
@@ -119,7 +120,7 @@ const CreateSalesment = () => {
 
                                 <div
                                     className={`relative flex-1 max-md:border-t-[0px] h-[2px] max-md:h-auto max-md:min-h-[26px] max-md:w-[2px]`}>
-                                    <div className={`customBorder`}></div>
+                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
                                 </div>
                             </div>
 
@@ -164,15 +165,13 @@ const CreateSalesment = () => {
                                 <div
                                     className={`w-[150px] h-[150px] max-xl:w-[125px] max-xl:h-[125px] p-[4px] max-sm:p-[3px]`}>
                                     <div className={`w-[150px] h-[150px]  flex justify-center items-center`}>
-                                        <div className={`border-solid border-[5px] border-[#F2590D] rounded-full w-[75px] h-[75px]`}>
-
-                                        </div>
+                                        <PiArrowBendDownLeftBold className={`text-[#F2590D] -translate-x-[40%] -translate-y-[10%] max-xl:-translate-y-[30%] w-[75px] h-[75px]`}/>
                                     </div>
                                 </div>
 
                                 <div
                                     className={`flex-1 max-md:border-t-[0px] w-[150px] rotate-90 max-xl:-translate-y-[30px] h-[2px] max-md:h-auto max-md:min-h-[26px] max-md:w-[2px] absolute -top-1/3`}>
-                                    <div className={`customBorder`}></div>
+                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
                                 </div>
 
                             </div>
@@ -200,7 +199,7 @@ const CreateSalesment = () => {
 
                                 <div
                                     className={`relative flex-1 max-md:border-t-[0px] h-[2px] max-md:h-auto max-md:min-h-[26px] max-md:w-[2px]`}>
-                                    <div className={`customBorder`}></div>
+                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
                                 </div>
 
                             </div>
@@ -226,7 +225,7 @@ const CreateSalesment = () => {
 
                                 <div
                                     className={`relative flex-1 max-md:border-t-[0px] h-[2px] max-md:h-auto max-md:min-h-[26px] max-md:w-[2px]`}>
-                                    <div className={`customBorder`}></div>
+                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
                                 </div>
 
                             </div>
@@ -254,7 +253,7 @@ const CreateSalesment = () => {
 
                                 <div
                                     className={`relative flex-1 max-md:border-t-[0px] h-[2px] max-md:h-auto max-md:min-h-[26px] max-md:w-[2px]`}>
-                                    <div className={`customBorder`}></div>
+                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
                                 </div>
                             </div>
 
@@ -282,7 +281,7 @@ const CreateSalesment = () => {
 
                                 <div
                                     className={`relative flex-1 max-lg:border-t-[0px] h-[2px] max-lg:h-auto max-lg:min-h-[26px] max-lg:w-[2px]`}>
-                                    <div className={`customBorder`}></div>
+                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
                                 </div>
 
                             </div>
@@ -305,7 +304,7 @@ const CreateSalesment = () => {
 
                                 <div
                                     className={`relative flex-1 max-lg:border-t-[0px] h-[2px] max-lg:h-auto max-lg:min-h-[26px] max-lg:w-[2px]`}>
-                                    <div className={`customBorder`}></div>
+                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
                                 </div>
 
                             </div>
@@ -328,7 +327,7 @@ const CreateSalesment = () => {
 
                                 <div
                                     className={`relative flex-1 max-lg:border-t-[0px] h-[2px] max-lg:h-auto max-lg:min-h-[26px] max-lg:w-[2px]`}>
-                                    <div className={`customBorder`}></div>
+                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
                                 </div>
 
                             </div>
@@ -351,7 +350,7 @@ const CreateSalesment = () => {
 
                                 <div
                                     className={`relative flex-1 max-lg:border-t-[0px] h-[2px] max-lg:h-auto max-lg:min-h-[26px] max-lg:w-[2px]`}>
-                                    <div className={`customBorder`}></div>
+                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
                                 </div>
 
                             </div>
@@ -374,7 +373,7 @@ const CreateSalesment = () => {
 
                                 <div
                                     className={`relative flex-1 max-lg:border-t-[0px] h-[2px] max-lg:h-auto max-lg:min-h-[26px] max-lg:w-[2px]`}>
-                                    <div className={`customBorder`}></div>
+                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
                                 </div>
 
                             </div>
@@ -397,7 +396,7 @@ const CreateSalesment = () => {
 
                                 <div
                                     className={`relative flex-1 max-lg:border-t-[0px] h-[2px] max-lg:h-auto max-lg:min-h-[26px] max-lg:w-[2px]`}>
-                                    <div className={`customBorder`}></div>
+                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
                                 </div>
 
                             </div>
