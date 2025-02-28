@@ -746,3 +746,6 @@ a {
   }
 }
 
+.list-item-full {
+  grid-template-columns: none;
+}

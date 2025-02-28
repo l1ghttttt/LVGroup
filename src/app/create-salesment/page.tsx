@@ -5,7 +5,6 @@ import {useTheme} from "next-themes";
 import Link from "next/link";
 import {OrderForm} from "@/components/Form/Order-form";
 import Image from "next/image";
-import {PiArrowBendDownLeftBold} from "react-icons/pi";
 
 const CreateSalesment = () => {
     const { theme } = useTheme();
@@ -47,385 +46,72 @@ const CreateSalesment = () => {
             <div className={`bg-background flex flex-col items-center`}>
 
 
-                <div
-                    className={`w-[80vw] translate-x-[6vw] max-xl:w-[90vw] flex gap-[30px] mt-[45px] max-xl:my-[80px] items-start justify-center flex-col max-lg:hidden`}>
-                    <ul className={`flex gap-[19px] w-full`}>
-                        <li className={`flex md:flex-col flex-1 h-[275px] justify-around`}>
-
-
-                            <p className={`font-normal text-[20px] max-2xl:text-[17px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex -translate-x-[27%] flex-shrink-0 text-center items-end align-text-bottom font-railway mb-[15px]`}>
-                                Встреча и планирование реализации проекта
+                <section className={`px-WebsiteCreatingWelcomePaddingX w-full flex flex-col items-center`}>
+                    <div
+                        className={`xl:flex xl:items-start xl:justify-start flex-col w-OrderedListWidth max-w-[1200px] mt-[150px]`}>
+                        <h2 className={`mb-OrderedListHeadingMargin font-normal text-customerTitleSize leading-customerTitleLeading`}>Как
+                            мы работаем</h2>
+                        <div className={`w-full xl:shrink-0`}>
+                            <p className={`max-w-[1200px] text-OrderedListDescrSize leading-OrderedListDescrLeading flex flex-col justify-start items-stretch flow mb-OrderedListDescrMargin`}>
+                                От вашей идеи до пошагового плана реализации совместного и успешного проекта.
                             </p>
-
-                            <div
-                                className={`flex gap-[19px] items-center max-md:flex-col max-md:gap-[5px]`}>
-
+                        </div>
+                        <ul>
+                            <li className={`website-creating-list-item list-item-full `}>
                                 <div
-                                    className={`w-[150px] h-[150px] max-xl:w-[125px] max-xl:h-[125px] p-[4px] max-sm:p-[3px]`}>
-                                    <Image src={'/salesment-step1.svg'} alt={'icon'} width={256} height={256}
-                                           className={`z-10 w-full h-full`}/>
+                                    className={`text-[16px] pb-[12px] mb-[12px] border-b-[1px] border-solid border-foreground website-creating-list-item-number  `}>01
                                 </div>
-
+                                <p className={`block text-[30px] leading-[40px] website-creating-list-item-heading font-railway`}>Встреча
+                                    и планирование реализации проекта</p>
+                                <p className={`block text-[20px] leading-[34px] website-creating-list-item-descr  max-md:mt-[10px]`}></p>
+                            </li>
+                            <li className={`website-creating-list-item list-item-full mt-OrderedListItemMargin`}>
                                 <div
-                                    className={`relative flex-1 max-md:border-t-[0px] h-[2px] max-md:h-auto max-md:min-h-[26px] max-md:w-[2px]`}>
-                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
+                                    className={`text-[16px] pb-[12px] mb-[12px] border-b-[1px] border-solid border-foreground website-creating-list-item-number `}>02
                                 </div>
-                            </div>
-
-                            <p className={`font-normal text-[20px] max-2xl:text-[17px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex -translate-x-[27%] flex-shrink-0 text-center items-end`}>
-
-                            </p>
-
-                        </li>
-                        <li className={`flex md:flex-col flex-1 h-[275px] justify-around`}>
-
-                            <p className={`font-normal text-[20px] max-2xl:text-[17px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex -translate-x-[27%] flex-shrink-0 text-center items-end align-text-bottom font-railway mb-[15px]`}>
-                                Проведение вводного аудита
-                            </p>
-
-                            <div
-                                className={`flex gap-[19px] items-center max-md:flex-col max-md:gap-[5px]`}>
-
+                                <p className={`block text-[30px] leading-[40px] website-creating-list-item-heading font-railway`}>Проведение
+                                    вводного аудита</p>
+                                <p className={`block text-[20px] leading-[34px] website-creating-list-item-descr  max-md:mt-[10px]`}></p>
+                            </li>
+                            <li className={`website-creating-list-item list-item-full mt-OrderedListItemMargin`}>
                                 <div
-                                    className={`w-[150px] h-[150px] max-xl:w-[125px] max-xl:h-[125px] p-[4px] max-sm:p-[3px]`}>
-                                    <Image src={'/salesment-step2.svg'} alt={'icon'} width={256} height={256}
-                                           className={`z-10 w-full h-full`}/>
+                                    className={`text-[16px] pb-[12px] mb-[12px] border-b-[1px] border-solid border-foreground website-creating-list-item-number `}>03
                                 </div>
-
+                                <p className={`block text-[30px] leading-[40px] website-creating-list-item-heading font-railway`}>Создание
+                                    и согласование плана по реализации проекта</p>
+                                <p className={`block text-[20px] leading-[34px] website-creating-list-item-descr  max-md:mt-[10px]`}></p>
+                            </li>
+                            <li className={`website-creating-list-item list-item-full mt-OrderedListItemMargin`}>
                                 <div
-                                    className={`relative flex-1 max-md:border-t-[0px] h-[2px] max-md:h-auto max-md:min-h-[26px] max-md:w-[2px]`}>
-                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
+                                    className={`text-[16px] pb-[12px] mb-[12px] border-b-[1px] border-solid border-foreground website-creating-list-item-number `}>04
                                 </div>
-
-                            </div>
-
-                            <p className={`font-normal text-[20px] max-2xl:text-[17px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex -translate-x-[27%] flex-shrink-0 text-center items-start w-[125%]`}>
-
-                            </p>
-                        </li>
-                        <li className={`flex md:flex-col flex-1 h-[275px] justify-around`}>
-
-                            <p className={`font-normal text-[20px] max-2xl:text-[17px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex -translate-x-[27%] flex-shrink-0 text-center items-end align-text-bottom font-railway mb-[15px]`}>
-                                Создание и согласование плана по реализации проекта
-                            </p>
-
-                            <div
-                                className={`flex gap-[19px] items-center max-md:flex-col max-md:gap-[5px]`}>
-
+                                <p className={`block text-[30px] leading-[40px] website-creating-list-item-heading font-railway`}>Разработка/доработка всех регламентов и документов отдела продаж</p>
+                                <p className={`block text-[20px] leading-[34px] website-creating-list-item-descr  max-md:mt-[10px]`}></p>
+                            </li>
+                            <li className={`website-creating-list-item list-item-full mt-OrderedListItemMargin`}>
                                 <div
-                                    className={`w-[150px] h-[150px] max-xl:w-[125px] max-xl:h-[125px] p-[4px] max-sm:p-[3px]`}>
-                                    <Image src={'/salesment-step3.svg'} alt={'icon'} width={256} height={256}
-                                           className={`z-10 w-full h-full`}/>
+                                    className={`text-[16px] pb-[12px] mb-[12px] border-b-[1px] border-solid border-foreground website-creating-list-item-number `}>05
                                 </div>
+                                <p className={`block text-[30px] leading-[40px] website-creating-list-item-heading font-railway`}>Набор/добор команды при необходимости, контроль внедрения всех инструментов в компании заказчика</p>
 
+                            </li>
+                            <li className={`website-creating-list-item list-item-full mt-OrderedListItemMargin`}>
                                 <div
-                                    className={`relative flex-1 max-md:border-t-[0px] h-[2px] max-md:h-auto max-md:min-h-[26px] max-md:w-[2px]`}>
-                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
+                                    className={`text-[16px] pb-[12px] mb-[12px] border-b-[1px] border-solid border-foreground website-creating-list-item-number `}>06
                                 </div>
-                            </div>
-
-                            <p className={`font-normal text-[20px] max-2xl:text-[17px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex -translate-x-[27%] flex-shrink-0 text-center items-end`}>
-
-                            </p>
-                        </li>
-                        <li className={`flex md:flex-col flex-1 h-[275px] justify-around`}>
-
-                            <p className={`font-normal text-[20px] max-2xl:text-[17px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex -translate-x-[27%] flex-shrink-0 text-center items-end align-text-bottom font-railway mb-[15px]`}>
-                            Разработка/доработка всех регламентов и документов отдела продаж
-                            </p>
-
-                            <div
-                                className={`flex gap-[19px] items-center max-md:flex-col max-md:gap-[5px]`}>
-
+                                <p className={`block text-[30px] leading-[40px] website-creating-list-item-heading font-railway`}>Выполнение поставленного денежного показателя, как итог успешной реализации проекта</p>
+                                <p className={`block text-[20px] leading-[34px] website-creating-list-item-descr  max-md:mt-[10px]`}></p>
+                            </li>
+                            <li className={`website-creating-list-item list-item-full mt-OrderedListItemMargin`}>
                                 <div
-                                    className={`w-[150px] h-[150px] max-xl:w-[125px] max-xl:h-[125px] p-[4px] max-sm:p-[3px]`}>
-                                    <Image src={'/salesment-step4.svg'} alt={'icon'} width={256} height={256}
-                                           className={`z-10 w-full h-full`}/>
+                                    className={`text-[16px] pb-[12px] mb-[12px] border-b-[1px] border-solid border-foreground website-creating-list-item-number `}>07
                                 </div>
-                            </div>
-
-                            <p className={`font-normal text-[20px] max-2xl:text-[17px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex -translate-x-[27%] flex-shrink-0 text-center items-start w-[125%]`}>
-
-                            </p>
-
-                        </li>
-                    </ul>
-                    <ul className={`flex gap-[19px] w-full flex-row-reverse`}>
-
-
-                        <li className={`flex md:flex-col flex-1 h-[275px] justify-around`}>
-
-                            <p className={`font-normal text-[20px] max-2xl:text-[17px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex -translate-x-[27%] flex-shrink-0 text-center items-end`}>
-
-                            </p>
-
-                            <div
-                                className={`flex gap-[19px] items-center max-md:flex-col max-md:gap-[5px] relative`}>
-
-                                <div
-                                    className={`w-[150px] h-[150px] max-xl:w-[125px] max-xl:h-[125px] p-[4px] max-sm:p-[3px]`}>
-                                    <div className={`w-[150px] h-[150px]  flex justify-center items-center`}>
-                                        <PiArrowBendDownLeftBold className={`text-[#F2590D] -translate-x-[40%] -translate-y-[10%] max-xl:-translate-y-[30%] w-[75px] h-[75px]`}/>
-                                    </div>
-                                </div>
-
-                                <div
-                                    className={`flex-1 max-md:border-t-[0px] w-[150px] rotate-90 max-xl:-translate-y-[30px] h-[2px] max-md:h-auto max-md:min-h-[26px] max-md:w-[2px] absolute -top-1/3`}>
-                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
-                                </div>
-
-                            </div>
-
-                            <p className={`font-normal text-[20px] max-2xl:text-[17px] max-lg:text-[16px] text-transparent leading-[30px] pr-[10px]  flex -translate-x-[27%] flex-shrink-0 text-center flex-col items-start align-text-top font-railway mt-[15px]`}>
-                                Дальнейшая помощь заказчику в новых проектах
-                            </p>
-                        </li>
-
-
-                        <li className={`flex md:flex-col flex-1 h-[275px] justify-around`}>
-
-                            <p className={`font-normal text-[20px] max-2xl:text-[17px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex -translate-x-[27%] flex-shrink-0 text-center items-end`}>
-
-                            </p>
-
-                            <div
-                                className={`flex gap-[19px] items-center max-md:flex-col max-md:gap-[5px]`}>
-
-                                <div
-                                    className={`w-[150px] h-[150px] max-xl:w-[125px] max-xl:h-[125px] p-[4px] max-sm:p-[3px]`}>
-                                    <Image src={'/salesment-step5.svg'} alt={'icon'} width={256} height={256}
-                                           className={`z-10 w-full h-full`}/>
-                                </div>
-
-                                <div
-                                    className={`relative flex-1 max-md:border-t-[0px] h-[2px] max-md:h-auto max-md:min-h-[26px] max-md:w-[2px]`}>
-                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
-                                </div>
-
-                            </div>
-
-                            <p className={`font-normal text-[20px] max-2xl:text-[17px] max-lg:text-[16px] leading-[30px] pr-[10px]  flex -translate-x-[27%] flex-shrink-0 text-center flex-col items-start align-text-top font-railway mt-[15px]`}>
-                                Дальнейшая помощь заказчику в новых проектах
-                            </p>
-                        </li>
-                        <li className={`flex md:flex-col flex-1 h-[275px] justify-around`}>
-
-                            <p className={`font-normal text-[20px] max-2xl:text-[17px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex -translate-x-[27%] flex-shrink-0 text-center items-start w-[125%]`}>
-
-                            </p>
-
-                            <div
-                                className={`flex gap-[19px] items-center max-md:flex-col max-md:gap-[5px]`}>
-
-                                <div
-                                    className={`w-[150px] h-[150px] max-xl:w-[125px] max-xl:h-[125px] p-[4px] max-sm:p-[3px]`}>
-                                    <Image src={'/salesment-step6.svg'} alt={'icon'} width={256} height={256}
-                                           className={`z-10 w-full h-full`}/>
-                                </div>
-
-                                <div
-                                    className={`relative flex-1 max-md:border-t-[0px] h-[2px] max-md:h-auto max-md:min-h-[26px] max-md:w-[2px]`}>
-                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
-                                </div>
-
-                            </div>
-
-
-                            <p className={`font-normal text-[20px] max-2xl:text-[17px] max-lg:text-[16px] leading-[30px] pr-[10px]  flex -translate-x-[27%] flex-shrink-0 text-center flex-col items-start align-text-top font-railway mt-[15px]`}>
-                                Выполнение поставленного денежного плана, как итог успешной реализации проекта
-                            </p>
-
-                        </li>
-                        <li className={`flex md:flex-col flex-1 h-[275px] justify-around`}>
-
-                            <p className={`font-normal text-[20px] max-2xl:text-[17px] max-lg:text-[16px] leading-[30px] pr-[10px] h-[90px] flex -translate-x-[27%] flex-shrink-0 text-center items-end`}>
-
-                            </p>
-
-                            <div
-                                className={`flex gap-[19px] items-center max-md:flex-col max-md:gap-[5px]`}>
-
-                                <div
-                                    className={`w-[150px] h-[150px] max-xl:w-[125px] max-xl:h-[125px] p-[4px] max-sm:p-[3px]`}>
-                                    <Image src={'/salesment-step7.svg'} alt={'icon'} width={256} height={256}
-                                           className={`z-10 w-full h-full`}/>
-                                </div>
-
-                                <div
-                                    className={`relative flex-1 max-md:border-t-[0px] h-[2px] max-md:h-auto max-md:min-h-[26px] max-md:w-[2px]`}>
-                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
-                                </div>
-                            </div>
-
-                            <p className={`font-normal text-[20px] max-2xl:text-[17px] max-lg:text-[16px] leading-[30px] pr-[10px]  flex -translate-x-[27%] flex-shrink-0 text-center flex-col items-start align-text-top font-railway mt-[15px]`}>
-                                Набор/добор команды при необходимости, контроль внедрения инструментов в компании
-                                заказчика
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div
-                    className={`w-[90vw] flex gap-[20px] mt-[20px] items-start justify-center flex-col lg:hidden`}>
-                    <ul className={`flex w-full flex-col gap-[9px]`}>
-                        <li className={`flex lg:flex-col gap-[10px] flex-1`}>
-
-                            <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
-
-                                <div
-                                    className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
-                                    <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center select-none`}>
-                                        1
-                                    </p>
-                                </div>
-
-                                <div
-                                    className={`relative flex-1 max-lg:border-t-[0px] h-[2px] max-lg:h-auto max-lg:min-h-[26px] max-lg:w-[2px]`}>
-                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
-                                </div>
-
-                            </div>
-
-                            <p className={`font-normal text-[24px] max-md:text-[22px] max-sm:text-[20px] leading-[22px] pt-[15px] max-sm:pt-[10px]`}>
-                                69 048 показов
-                            </p>
-
-                        </li>
-                        <li className={`flex lg:flex-col gap-[10px] flex-1`}>
-
-                            <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
-
-                                <div
-                                    className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
-                                    <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center select-none`}>
-                                        2
-                                    </p>
-                                </div>
-
-                                <div
-                                    className={`relative flex-1 max-lg:border-t-[0px] h-[2px] max-lg:h-auto max-lg:min-h-[26px] max-lg:w-[2px]`}>
-                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
-                                </div>
-
-                            </div>
-
-                            <p className={`font-normal text-[24px] max-md:text-[22px] max-sm:text-[20px] leading-[22px] pt-[15px] max-sm:pt-[10px]`}>
-                                1 277 кликов
-                            </p>
-
-                        </li>
-                        <li className={`flex lg:flex-col gap-[10px] flex-1`}>
-
-                            <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
-
-                                <div
-                                    className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
-                                    <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center select-none`}>
-                                        3
-                                    </p>
-                                </div>
-
-                                <div
-                                    className={`relative flex-1 max-lg:border-t-[0px] h-[2px] max-lg:h-auto max-lg:min-h-[26px] max-lg:w-[2px]`}>
-                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
-                                </div>
-
-                            </div>
-
-                            <p className={`font-normal text-[24px] max-md:text-[22px] max-sm:text-[20px] leading-[22px] pt-[15px] max-sm:pt-[10px]`}>
-                                1.85% CTR
-                            </p>
-
-                        </li>
-                        <li className={`flex lg:flex-col gap-[10px] flex-1`}>
-
-                            <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
-
-                                <div
-                                    className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
-                                    <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center select-none`}>
-                                        4
-                                    </p>
-                                </div>
-
-                                <div
-                                    className={`relative flex-1 max-lg:border-t-[0px] h-[2px] max-lg:h-auto max-lg:min-h-[26px] max-lg:w-[2px]`}>
-                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
-                                </div>
-
-                            </div>
-
-                            <p className={`font-normal text-[24px] max-md:text-[22px] max-sm:text-[20px] leading-[22px] pt-[15px] max-sm:pt-[10px]`}>
-                                60.515 руб. расход
-                            </p>
-
-                        </li>
-                        <li className={`flex lg:flex-col gap-[10px] flex-1`}>
-
-                            <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
-
-                                <div
-                                    className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
-                                    <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center select-none`}>
-                                        5
-                                    </p>
-                                </div>
-
-                                <div
-                                    className={`relative flex-1 max-lg:border-t-[0px] h-[2px] max-lg:h-auto max-lg:min-h-[26px] max-lg:w-[2px]`}>
-                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
-                                </div>
-
-                            </div>
-
-                            <p className={`font-normal text-[24px] max-md:text-[22px] max-sm:text-[20px] leading-[22px] pt-[15px] max-sm:pt-[10px]`}>
-                                47.4 руб. цена клика
-                            </p>
-
-                        </li>
-                        <li className={`flex lg:flex-col gap-[10px] flex-1`}>
-
-                            <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
-
-                                <div
-                                    className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
-                                    <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center select-none`}>
-                                        6
-                                    </p>
-                                </div>
-
-                                <div
-                                    className={`relative flex-1 max-lg:border-t-[0px] h-[2px] max-lg:h-auto max-lg:min-h-[26px] max-lg:w-[2px]`}>
-                                    <div className={`customBorder ${theme == 'dark' ? 'invert' : ''}`}></div>
-                                </div>
-
-                            </div>
-
-                            <p className={`font-normal text-[24px] max-md:text-[22px] max-sm:text-[20px] leading-[22px] pt-[15px] max-sm:pt-[10px]`}>
-                                488.1 руб. цена цели
-                            </p>
-
-                        </li>
-                        <li className={`flex lg:flex-col gap-[10px] flex-1`}>
-
-                            <div className={`flex gap-[19px] items-center max-lg:flex-col max-lg:gap-[5px]`}>
-
-                                <div
-                                    className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
-                                    <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center select-none`}>
-                                        7
-                                    </p>
-                                </div>
-
-                            </div>
-
-                            <p className={`font-normal text-[24px] max-md:text-[22px] max-sm:text-[20px] leading-[22px] pt-[15px] max-sm:pt-[10px]`}>
-                                18 заявок, 35 колбэков , 71 звонок
-                            </p>
-
-                        </li>
-                    </ul>
-                </div>
+                                <p className={`block text-[30px] leading-[40px] website-creating-list-item-heading font-railway`}>Дальнейшая помощь заказчику в новых проектах, аудитах отдела продаж и дополнительных обучениях</p>
+                                <p className={`block text-[20px] leading-[34px] website-creating-list-item-descr  max-md:mt-[10px]`}></p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
 
 
                 <section className={`w-full flex flex-col bg-background`}>
@@ -606,45 +292,59 @@ const CreateSalesment = () => {
                             <li className={`w-[45%] max-xl:w-full gap-[20px] flex items-center xl:h-[200px]`}>
                                 <div
                                     className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center flex-shrink-0`}>
-                                    <Image src={"/SalesmentIcon1.svg"} alt={"Features icon"} width={100} height={100} className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] ${theme == 'dark' ? '' : 'invert'}`}/>
+                                    <Image src={"/SalesmentIcon1.svg"} alt={"Features icon"} width={100} height={100}
+                                           className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] ${theme == 'dark' ? '' : 'invert'}`}/>
                                 </div>
                                 <div
                                     className={`flex flex-col justify-start gap-[20px] h-full pt-[20px] max-xl:justify-around`}>
-                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px] font-semibold`}>Покажем, как действовать</h3>
-                                    <p className={`text-[18px] leading-[28px] website-creating-list-item-descr max-sm:mt-0  max-md:mt-[10px] max-2xl:text-[16px] max-md:text-[15px] max-sm:text-[14px] max-sm:leading-[22px]`}>Мы дадим и поможем внедрить проверенные на практике инструменты продаж.</p>
+                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px] font-semibold`}>Покажем,
+                                        как действовать</h3>
+                                    <p className={`text-[18px] leading-[28px] website-creating-list-item-descr max-sm:mt-0  max-md:mt-[10px] max-2xl:text-[16px] max-md:text-[15px] max-sm:text-[14px] max-sm:leading-[22px]`}>Мы
+                                        дадим и поможем внедрить проверенные на практике инструменты продаж.</p>
                                 </div>
                             </li>
                             <li className={`w-[45%] max-xl:w-full gap-[20px] flex items-center xl:h-[200px]`}>
                                 <div
                                     className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center flex-shrink-0`}>
-                                    <Image src={"/SalesmentIcon2.svg"} alt={"Features icon"} width={100} height={100} className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] ${theme == 'dark' ? '' : 'invert'}`}/>
+                                    <Image src={"/SalesmentIcon2.svg"} alt={"Features icon"} width={100} height={100}
+                                           className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] ${theme == 'dark' ? '' : 'invert'}`}/>
                                 </div>
                                 <div
                                     className={`flex flex-col justify-start gap-[20px] h-full pt-[20px] max-xl:justify-around`}>
-                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px] font-semibold`}>Поможем выполнить поставленный результат</h3>
-                                    <p className={`text-[18px] leading-[28px] website-creating-list-item-descr max-sm:mt-0  max-md:mt-[10px] max-2xl:text-[16px] max-md:text-[15px] max-sm:text-[14px] max-sm:leading-[22px]`}>Проведем аудит, устраним &quot;зоны роста&quot;, обучим персонал, а также дадим гарантии.</p>
+                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px] font-semibold`}>Поможем
+                                        выполнить поставленный результат</h3>
+                                    <p className={`text-[18px] leading-[28px] website-creating-list-item-descr max-sm:mt-0  max-md:mt-[10px] max-2xl:text-[16px] max-md:text-[15px] max-sm:text-[14px] max-sm:leading-[22px]`}>Проведем
+                                        аудит, устраним &quot;зоны роста&quot;, обучим персонал, а также дадим
+                                        гарантии.</p>
                                 </div>
                             </li>
                             <li className={`w-[45%] max-xl:w-full gap-[20px] flex items-center xl:h-[200px]`}>
                                 <div
                                     className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center flex-shrink-0`}>
-                                    <Image src={"/SalesmentIcon3.svg"} alt={"Features icon"} width={100} height={100} className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] ${theme == 'dark' ? '' : 'invert'}`}/>
+                                    <Image src={"/SalesmentIcon3.svg"} alt={"Features icon"} width={100} height={100}
+                                           className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] ${theme == 'dark' ? '' : 'invert'}`}/>
                                 </div>
                                 <div
                                     className={`flex flex-col justify-start gap-[20px] h-full pt-[20px] max-xl:justify-around`}>
-                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px] font-semibold`}>Мы знаем, как определить ваших конкурентов</h3>
-                                    <p className={`text-[18px] leading-[28px] website-creating-list-item-descr max-sm:mt-0 max-md:mt-[10px] max-2xl:text-[16px] max-md:text-[15px] max-sm:text-[14px] max-sm:leading-[22px]`}>Не важно какая сфера бизнеса - все разработанные инструменты дадут результат и сделают вас №1 в своей нише.</p>
+                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px] font-semibold`}>Мы
+                                        знаем, как определить ваших конкурентов</h3>
+                                    <p className={`text-[18px] leading-[28px] website-creating-list-item-descr max-sm:mt-0 max-md:mt-[10px] max-2xl:text-[16px] max-md:text-[15px] max-sm:text-[14px] max-sm:leading-[22px]`}>Не
+                                        важно какая сфера бизнеса - все разработанные инструменты дадут результат и
+                                        сделают вас №1 в своей нише.</p>
                                 </div>
                             </li>
                             <li className={`w-[45%] max-xl:w-full gap-[20px] flex items-center xl:h-[200px]`}>
                                 <div
                                     className={`w-[100px] h-[100px] max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] max-md:flex max-md:items-center flex-shrink-0`}>
-                                    <Image src={"/SalesmentIcon4.svg"} alt={"Features icon"} width={100} height={100} className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] ${theme == 'dark' ? '' : 'invert'}`}/>
+                                    <Image src={"/SalesmentIcon4.svg"} alt={"Features icon"} width={100} height={100}
+                                           className={`max-md:w-[85px] max-md:h-[85px] max-sm:w-[50px] max-sm:h-[50px] ${theme == 'dark' ? '' : 'invert'}`}/>
                                 </div>
                                 <div
                                     className={`flex flex-col justify-start gap-[20px] h-full pt-[20px] max-xl:justify-around`}>
-                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px] font-semibold`}>Дальнейшее сопровождение</h3>
-                                    <p className={`text-[18px] leading-[28px] website-creating-list-item-descr max-sm:mt-0  max-md:mt-[10px] max-2xl:text-[16px] max-md:text-[15px] max-sm:text-[14px] max-sm:leading-[22px]`}>Оперативно подключимся к решению новых задач и открытию новых направлений бизнеса.</p>
+                                    <h3 className={`text-mainColor text-[28px] leading-[40px] website-creating-list-item-heading font-railway max-2xl:text-[26px] max-md:text-[24px] max-sm:text-[22px] max-md:leading-[32px] font-semibold`}>Дальнейшее
+                                        сопровождение</h3>
+                                    <p className={`text-[18px] leading-[28px] website-creating-list-item-descr max-sm:mt-0  max-md:mt-[10px] max-2xl:text-[16px] max-md:text-[15px] max-sm:text-[14px] max-sm:leading-[22px]`}>Оперативно
+                                        подключимся к решению новых задач и открытию новых направлений бизнеса.</p>
                                 </div>
                             </li>
                         </ul>
