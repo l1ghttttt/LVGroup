@@ -237,10 +237,13 @@ const Header: React.FC = () => {
             <div className={`ml-auto`}>
                 <ThemeSwitcher/>
             </div>
-            <button
-                className={`bg-mainColor px-[30px] py-[10px] hover:bg-darkMain rounded-[50px] font-semibold tracking-wider text-altColor duration-150 `}>
-                ЗАЯВКА
-            </button>
+            <Link href={`#order-section`}>
+                <button
+                    className={`bg-mainColor px-[30px] py-[10px] hover:bg-darkMain rounded-[50px] font-semibold tracking-wider text-altColor duration-150 `}>
+                    ЗАЯВКА
+                </button>
+            </Link>
+
         </header>
     );
 };

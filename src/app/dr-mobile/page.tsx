@@ -23,7 +23,7 @@ const DrMobile = () => {
                             <h2 className={`max-sm:w-full text-customerTitleSize leading-customerTitleLeading`}>Контекстная реклама для &quot;Dr. Mobile&quot;: <br/> 100 лидов в месяц</h2>
                             <Image
                                 className={`w-[150px] h-[150px] 2xl:hidden max-2xl:mr-[35px] max-lg:mr-[5px] max-sm:mb-0 max-sm:hidden`}
-                                src={`/DrMobileLogo.jpg`}
+                                src={`/DrMobileLogo.png`}
                                 alt={`лого заказчика`}
                                 width={180} height={180}/>
                         </div>
@@ -31,19 +31,19 @@ const DrMobile = () => {
                         <ul className={`flex p-casesFilterPadding pl-0 flex-wrap gap-2 gap-y-3`}>
                             <li>
                                 <button
-                                    className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                                    className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                                     Контекстная реклама
                                 </button>
                             </li>
                             <li>
                                 <button
-                                    className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                                    className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                                     Маркетинговые исследования
                                 </button>
                             </li>
                             <li>
                                 <button
-                                    className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                                    className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                                     Реклама
                                 </button>
                             </li>
@@ -57,7 +57,7 @@ const DrMobile = () => {
                         <div className={`w-full flex gap-[30px] items-center max-xl:flex-col`}>
                             <Image
                                 className={`w-[250px] 2xl:absolute 2xl:top-0 2xl:w-customerImageWidth pr-[20px] max-2xl:hidden max-sm:mb-0 max-sm:block max-sm:w-3/4 h-auto CustomerImage max-sm:pr-0`}
-                                src={`/DrMobileLogo.jpg`}
+                                src={`/DrMobileLogo.png`}
                                 alt={`лого заказчика`}
                                 width={250} height={250}/>
 
@@ -532,19 +532,19 @@ const DrMobile = () => {
             <ul className={`px-[15px] flex p-casesFilterPadding flex-wrap gap-2 gap-y-3`}>
                 <li>
                     <button
-                        className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                        className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                         Удаленный Call-центр
                     </button>
                 </li>
                 <li>
                     <button
-                        className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                        className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                         Удаленный Call-центр
                     </button>
                 </li>
                 <li>
                     <button
-                        className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                        className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                         Call-центр
                     </button>
                 </li>

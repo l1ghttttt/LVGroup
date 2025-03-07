@@ -37,31 +37,31 @@ const ChillHouse = () => {
                         <ul className={`flex p-casesFilterPadding pl-0 flex-wrap gap-2 gap-y-3`}>
                             <li>
                                 <button
-                                    className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                                    className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                                     Отдел продаж
                                 </button>
                             </li>
                             <li>
                                 <button
-                                    className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                                    className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                                     Создание контента
                                 </button>
                             </li>
                             <li>
                                 <button
-                                    className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                                    className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                                     Обучение
                                 </button>
                             </li>
                             <li>
                                 <button
-                                    className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                                    className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                                     SMM
                                 </button>
                             </li>
                             <li>
                                 <button
-                                    className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                                    className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                                     Дизайн
                                 </button>
                             </li>
@@ -146,13 +146,13 @@ const ChillHouse = () => {
                                             </div>
 
                                             <div
-                                                className={`relative flex-1 border-t-[0px] min-h-[65px] w-[2px]`}>
+                                                className={`relative flex-1 border-t-[0px] min-h-[40px] w-[2px]`}>
                                                 <div className={`customBorder-y`}></div>
                                             </div>
 
                                         </div>
 
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
+                                        <p className={`font-normal text-[18px] max-md:text-[18px] max-sm:text-[14px] lg:leading-[24px] leading-[18px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
                                             Разработка руководства по подбору персонала во всей сети заведений. Передача
                                             инструментов закрепленному менеджеру и управляющим. Итог задачи – закрытие
                                             всех вакансий силами ответственных за задачу сотрудников предприятия, а
@@ -174,13 +174,13 @@ const ChillHouse = () => {
                                             </div>
 
                                             <div
-                                                className={`relative flex-1 border-t-[0px] min-h-[65px] w-[2px]`}>
+                                                className={`relative flex-1 border-t-[0px] min-h-[40px] w-[2px]`}>
                                                 <div className={`customBorder-y`}></div>
                                             </div>
 
                                         </div>
 
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
+                                        <p className={`font-normal text-[18px] max-md:text-[18px] max-sm:text-[14px] lg:leading-[24px] leading-[18px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
                                             Разработка скриптов приема входящих звонков, презентации сети заведений
                                             гостям, регламент передачи броней на другие предприятия в случае
                                             невозможности посадки. Для контроля качества подключить запись звонков во
@@ -201,13 +201,13 @@ const ChillHouse = () => {
                                             </div>
 
                                             <div
-                                                className={`relative flex-1 border-t-[0px] min-h-[65px] w-[2px]`}>
+                                                className={`relative flex-1 border-t-[0px] min-h-[40px] w-[2px]`}>
                                                 <div className={`customBorder-y`}></div>
                                             </div>
 
                                         </div>
 
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
+                                        <p className={`font-normal text-[18px] max-md:text-[18px] max-sm:text-[14px] lg:leading-[24px] leading-[18px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
                                             Для вновь принятых сотрудников, разработка – анкеты, плана обучения,
                                             итогового среза знаний, пакета документов для передачи в бухгалтерию для
                                             оформления кандидатов по трудовому договору.
@@ -227,13 +227,13 @@ const ChillHouse = () => {
                                             </div>
 
                                             <div
-                                                className={`relative flex-1 border-t-[0px] min-h-[65px] w-[2px]`}>
+                                                className={`relative flex-1 border-t-[0px] min-h-[40px] w-[2px]`}>
                                                 <div className={`customBorder-y`}></div>
                                             </div>
 
                                         </div>
 
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
+                                        <p className={`font-normal text-[18px] max-md:text-[18px] max-sm:text-[14px] lg:leading-[24px] leading-[18px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
                                             Разработать презентацию всей сети заведений, меню, тейбл-тенты с актуальными
                                             акциями заведений на столах.
                                         </p>
@@ -252,13 +252,13 @@ const ChillHouse = () => {
                                             </div>
 
                                             <div
-                                                className={`relative flex-1 border-t-[0px] min-h-[65px] w-[2px]`}>
+                                                className={`relative flex-1 border-t-[0px] min-h-[40px] w-[2px]`}>
                                                 <div className={`customBorder-y`}></div>
                                             </div>
 
                                         </div>
 
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
+                                        <p className={`font-normal text-[18px] max-md:text-[18px] max-sm:text-[14px] lg:leading-[24px] leading-[18px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
                                             Проработать все справочники и внести информацию о сети заведений на всех
                                             информационных площадках (т.к. контекстная реклама кальянной индустрии
                                             запрещена).
@@ -278,13 +278,13 @@ const ChillHouse = () => {
                                             </div>
 
                                             <div
-                                                className={`relative flex-1 border-t-[0px] min-h-[65px] w-[2px]`}>
+                                                className={`relative flex-1 border-t-[0px] min-h-[40px] w-[2px]`}>
                                                 <div className={`customBorder-y`}></div>
                                             </div>
 
                                         </div>
 
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
+                                        <p className={`font-normal text-[18px] max-md:text-[18px] max-sm:text-[14px] lg:leading-[24px] leading-[18px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
                                             Разработать формы отчетности для управляющих, внедрить еженедельные планерки
                                             в формате Цель - Задача - Дедлайн - Итог.
                                         </p>
@@ -303,13 +303,13 @@ const ChillHouse = () => {
                                             </div>
 
                                             <div
-                                                className={`relative flex-1 border-t-[0px] min-h-[65px] w-[2px]`}>
+                                                className={`relative flex-1 border-t-[0px] min-h-[40px] w-[2px]`}>
                                                 <div className={`customBorder-y`}></div>
                                             </div>
 
                                         </div>
 
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
+                                        <p className={`font-normal text-[18px] max-md:text-[18px] max-sm:text-[14px] lg:leading-[24px] leading-[18px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
                                             Подключить iiko wallet, RFM-анализ, рассылки с push-уведомлениями гостям о
                                             новых предложениях, обучить работе с программой управленческий состав
                                             компании.
@@ -329,13 +329,13 @@ const ChillHouse = () => {
                                             </div>
 
                                             <div
-                                                className={`relative flex-1 border-t-[0px] min-h-[65px] w-[2px]`}>
+                                                className={`relative flex-1 border-t-[0px] min-h-[40px] w-[2px]`}>
                                                 <div className={`customBorder-y`}></div>
                                             </div>
 
                                         </div>
 
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
+                                        <p className={`font-normal text-[18px] max-md:text-[18px] max-sm:text-[14px] lg:leading-[24px] leading-[18px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
                                             Для звонков сервиса – разработать скрипт, должностную инструкцию менеджера,
                                             регламент работы с социальными сетями и форму отчетности собственнику.
                                         </p>
@@ -354,13 +354,13 @@ const ChillHouse = () => {
                                             </div>
 
                                             <div
-                                                className={`relative flex-1 border-t-[0px] min-h-[65px] w-[2px]`}>
+                                                className={`relative flex-1 border-t-[0px] min-h-[40px] w-[2px]`}>
                                                 <div className={`customBorder-y`}></div>
                                             </div>
 
                                         </div>
 
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
+                                        <p className={`font-normal text-[18px] max-md:text-[18px] max-sm:text-[14px] lg:leading-[24px] leading-[18px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
                                             Создать форму отчетности для контроля сервиса в заведениях для
                                             ответственного менеджера.
                                         </p>
@@ -379,13 +379,13 @@ const ChillHouse = () => {
                                             </div>
 
                                             <div
-                                                className={`relative flex-1 border-t-[0px] min-h-[65px] w-[2px]`}>
+                                                className={`relative flex-1 border-t-[0px] min-h-[40px] w-[2px]`}>
                                                 <div className={`customBorder-y`}></div>
                                             </div>
 
                                         </div>
 
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
+                                        <p className={`font-normal text-[18px] max-md:text-[18px] max-sm:text-[14px] lg:leading-[24px] leading-[18px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
                                             Провести срез знаний у действующих сотрудников сети и выявить зоны роста, а
                                             также запланировать график обучения по всем предприятиям.
                                         </p>
@@ -405,7 +405,7 @@ const ChillHouse = () => {
 
                                         </div>
 
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
+                                        <p className={`font-normal text-[18px] max-md:text-[18px] max-sm:text-[14px] lg:leading-[24px] leading-[18px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
                                             Создать на одном из предприятий компьютерный клуб «под ключ» - подключение
                                             программного обеспечения LANGAME и RentalGames, оснащение компьютерами и
                                             периферией, столами, освещением и лицензионным софтом. Проработать вопросы с
@@ -645,31 +645,31 @@ const ChillHouse = () => {
             <ul className={`px-[15px] flex p-casesFilterPadding flex-wrap gap-2 gap-y-3`}>
                 <li>
                     <button
-                        className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                        className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                         Отдел продаж
                     </button>
                 </li>
                 <li>
                     <button
-                        className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                        className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                         Создание контента
                     </button>
                 </li>
                 <li>
                     <button
-                        className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                        className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                         Обучение
                     </button>
                 </li>
                 <li>
                     <button
-                        className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                        className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                         SMM
                     </button>
                 </li>
                 <li>
                     <button
-                        className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                        className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                         Дизайн
                     </button>
                 </li>

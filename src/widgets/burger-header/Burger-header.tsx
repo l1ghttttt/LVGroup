@@ -203,10 +203,12 @@ export default function BurgerHeader() {
                         </nav>
                         <div className={`absolute bottom-[20px] flex justify-between w-[calc(100%-25px)] pr-[20px]`}>
                             <div className="flex items-center space-x-4">
-                                <button
-                                    className={`bg-mainColor px-[30px] py-[10px] hover:bg-darkMain rounded-[50px] font-semibold tracking-wider text-altColor duration-150 `}>
-                                    ЗАЯВКА
-                                </button>
+                                <Link href={`#order-section`}>
+                                    <button
+                                        className={`bg-mainColor px-[30px] py-[10px] hover:bg-darkMain rounded-[50px] font-semibold tracking-wider text-altColor duration-150 `}>
+                                        ЗАЯВКА
+                                    </button>
+                                </Link>
                             </div>
                             <div className={``}>
                                 <ThemeSwitcher/>

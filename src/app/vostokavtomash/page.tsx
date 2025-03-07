@@ -3,11 +3,12 @@
 import React, {useEffect, useState} from 'react';
 import Order from "@/widgets/order/Order";
 import Image from "next/image";
+import {useTheme} from "next-themes";
 
 const VostokAvtoMash = () => {
+    const { theme } = useTheme();
     useEffect(() => window.document.scrollingElement?.scrollTo(0, 0), [])
     const [mounted, setMounted] = useState(false);
-
     useEffect(() => {
         setMounted(true);
     }, []);
@@ -23,7 +24,7 @@ const VostokAvtoMash = () => {
                             <h2 className={`max-sm:w-full text-customerTitleSize leading-customerTitleLeading`}>+250% прибыли отдела продаж <br/> группы компаний &quot;ВостокАвтоМаш&quot;</h2>
                             <Image
                                 className={`w-[150px] h-[150px] 2xl:hidden max-2xl:mr-[35px] max-lg:mr-[5px] max-sm:mb-0 max-sm:hidden`}
-                                src={`/VostokAvtoMashLogo.jpg`}
+                                src={`/VostokAvtoMashLogo.png`}
                                 alt={`лого заказчика`}
                                 width={180} height={180}/>
                         </div>
@@ -31,19 +32,19 @@ const VostokAvtoMash = () => {
                         <ul className={`flex p-casesFilterPadding pl-0 flex-wrap gap-2 gap-y-3`}>
                             <li>
                                 <button
-                                    className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                                    className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                                     Отдел продаж
                                 </button>
                             </li>
                             <li>
                                 <button
-                                    className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                                    className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                                     Маркетинговые исследования
                                 </button>
                             </li>
                             <li>
                                 <button
-                                    className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                                    className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                                     Обучение
                                 </button>
                             </li>
@@ -57,7 +58,7 @@ const VostokAvtoMash = () => {
                         <div className={`w-full flex gap-[30px] items-center max-xl:flex-col`}>
                             <Image
                                 className={`w-[250px] 2xl:absolute 2xl:top-0 2xl:w-customerImageWidth pr-[20px] max-2xl:hidden max-sm:mb-0 max-sm:block max-sm:w-3/4 h-auto CustomerImage max-sm:pr-0`}
-                                src={`/VostokAvtoMashLogo.jpg`}
+                                src={`/VostokAvtoMashLogo.png`}
                                 alt={`лого заказчика`}
                                 width={250} height={250}/>
 
@@ -362,7 +363,7 @@ const VostokAvtoMash = () => {
                                            height={50}/>
                                     <div className={`w-full flex justify-start max-md:justify-end`}>
                                         <div className={`flex gap-[10px]`}>
-                                            <Image className={`rounded-[50%] max-md:w-[60px] max-md:h-[60px]`}
+                                            <Image className={`rounded-[50%] max-md:w-[60px] max-md:h-[60px] ${theme == 'dark' ? 'invert' : ''}`}
                                                    src={`/VostokAvtoMashDirector.jpg`}
                                                    alt={`фото клиента`}
                                                    width={75} height={75}/>
@@ -394,19 +395,19 @@ const VostokAvtoMash = () => {
             <ul className={`px-[15px] flex p-casesFilterPadding flex-wrap gap-2 gap-y-3`}>
                 <li>
                     <button
-                        className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                        className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                         Отдел продаж
                     </button>
                 </li>
                 <li>
                     <button
-                        className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                        className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                         Маркетинговые исследования
                     </button>
                 </li>
                 <li>
                     <button
-                        className={`text-[18px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                        className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                         Обучение
                     </button>
                 </li>
