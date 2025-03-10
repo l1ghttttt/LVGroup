@@ -28,7 +28,7 @@ const BratBuryat = () => {
                             <h2 className={`max-sm:w-full text-customerTitleSize leading-customerTitleLeading lg:hidden`}>SMM для кафе <span
                                 className={`whitespace-nowrap`}>&quot;Брат Бурят&quot;</span> <br/> с 200 до 12 000 подписчиков</h2>
                             <Image
-                                className={`w-[150px] h-[150px] 2xl:hidden max-2xl:mr-[35px] max-lg:mr-[5px] max-sm:mb-0 max-sm:hidden ${theme == 'dark' ? 'invert' : ''}`}
+                                className={`w-[150px] h-[150px] 2xl:hidden max-2xl:mr-[35px] max-lg:mr-[5px] max-sm:mb-0 max-sm:hidden`}
                                 src={`/BratBuryatLogo.jpg`}
                                 alt={`лого заказчика`}
                                 width={180} height={180}/>
@@ -62,7 +62,7 @@ const BratBuryat = () => {
                         className={`my-0 mx-CustomerSpacingMargin customer-spacing relative max-sm:mx-[20px] flex flex-col items-center mt-[40px]`}>
                         <div className={`w-full flex gap-[30px] items-center max-xl:flex-col`}>
                             <Image
-                                className={`w-[250px] 2xl:absolute 2xl:top-0 2xl:w-customerImageWidth pr-[20px] max-2xl:hidden max-sm:mb-0 max-sm:block max-sm:w-3/4 h-auto CustomerImage max-sm:pr-0 ${theme == 'dark' ? 'invert' : ''}`}
+                                className={`w-[250px] 2xl:absolute 2xl:top-0 2xl:w-customerImageWidth pr-[20px] max-2xl:hidden max-sm:mb-0 max-sm:block max-sm:w-3/4 h-auto CustomerImage max-sm:pr-0 `}
                                 src={`/BratBuryatLogo.jpg`}
                                 alt={`лого заказчика`}
                                 width={250} height={250}/>
