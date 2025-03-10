@@ -3,11 +3,9 @@
 import React, {useEffect, useState} from 'react';
 import Order from "@/widgets/order/Order";
 import Image from "next/image";
-import {useTheme} from "next-themes";
 import Link from "next/link";
 
 const BratBuryat = () => {
-    const { theme } = useTheme();
     useEffect(() => window.document.scrollingElement?.scrollTo(0, 0), [])
     const [mounted, setMounted] = useState(false);
 
