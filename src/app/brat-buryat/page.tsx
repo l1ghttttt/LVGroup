@@ -4,6 +4,7 @@ import React, {useEffect, useState} from 'react';
 import Order from "@/widgets/order/Order";
 import Image from "next/image";
 import {useTheme} from "next-themes";
+import Link from "next/link";
 
 const BratBuryat = () => {
     const { theme } = useTheme();
@@ -28,7 +29,7 @@ const BratBuryat = () => {
                                 className={`whitespace-nowrap`}>&quot;Брат Бурят&quot;</span> <br/> с 200 до 12 000 подписчиков</h2>
                             <Image
                                 className={`w-[150px] h-[150px] 2xl:hidden max-2xl:mr-[35px] max-lg:mr-[5px] max-sm:mb-0 max-sm:hidden ${theme == 'dark' ? 'invert' : ''}`}
-                                src={`/ChillHouseLogoMin.png`}
+                                src={`/BratBuryatLogo.jpg`}
                                 alt={`лого заказчика`}
                                 width={180} height={180}/>
                         </div>
@@ -37,19 +38,7 @@ const BratBuryat = () => {
                             <li>
                                 <button
                                     className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                                    Отдел продаж
-                                </button>
-                            </li>
-                            <li>
-                                <button
-                                    className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                                     Создание контента
-                                </button>
-                            </li>
-                            <li>
-                                <button
-                                    className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                                    Обучение
                                 </button>
                             </li>
                             <li>
@@ -74,51 +63,87 @@ const BratBuryat = () => {
                         <div className={`w-full flex gap-[30px] items-center max-xl:flex-col`}>
                             <Image
                                 className={`w-[250px] 2xl:absolute 2xl:top-0 2xl:w-customerImageWidth pr-[20px] max-2xl:hidden max-sm:mb-0 max-sm:block max-sm:w-3/4 h-auto CustomerImage max-sm:pr-0 ${theme == 'dark' ? 'invert' : ''}`}
-                                src={`/ChillHouseLogo.png`}
+                                src={`/BratBuryatLogo.jpg`}
                                 alt={`лого заказчика`}
                                 width={250} height={250}/>
 
                             <div
                                 className={`flex flex-col gap-[10px] justify-start text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
                                 <p>
-                                    <span className={`text-mainColor font-bold mb-[20px]`}> Чилл Хаус </span> – это сеть
-                                    из 4-ех кальянных, отличающихся по своей атмосфере и интерьеру. Философия всей сети
-                                    не ограничивается только кальянами, в первую очередь – это про качественный отдых
-                                    каждого гостя!
+                                    Кафе <span
+                                    className={`text-mainColor font-bold mb-[20px]`}> &quot;Брат Бурят&quot; </span> –
+                                    это кафе бурятской кухни в современном исполнении. Здесь можно встретить как
+                                    традиционные бурятские блюда, так и давно полюбившуюся классику, вроде салата цезарь
+                                    или греческого.
                                 </p>
                                 <p>
-                                    К нам клиент обратился с несколькими задачами: <br/>
-                                    1. Необходимо прописать, научить и внедрить качественную проработку каждого гостя
-                                    сети заведений – входящие звонки, прием заказа, презентация сети и звонки «сервиса»
-                                    с приглашением в новое заведение сети.<br/>
-                                    2. Подключить и настроить работу с iiko – в рамках формирование общей базы гостей,
-                                    RFM-анализа и рассылок, подключить iiko Wallet. <br/>
-                                    3. Закрыть вопрос с подбором персонала для всей сети заведений – научить набирать
-                                    персонал управляющих, закрыть все вакансии на предприятиях. <br/>
-                                    4. Сделать так, чтобы задачи собственника, переданные управляющим, контролировались
-                                    и выполнялись.
+                                    Клиент только открылся, столкнулся с некачественным исполнителем продвижения в
+                                    социальных сетях, который за 2 месяца выложил 2 поста. Перед нами стояла задача
+                                    рассказать о бурятской кухне, культуре, познакомить многих потенциальных гостей с
+                                    ней, так как большинство никогда о ней не слышали. Для тех, кто знаком с этой кухней
+                                    – донести, что в кафе вся рецептура соответствует традициям, что можно поесть здесь
+                                    прямо как на родине.
                                 </p>
                             </div>
                         </div>
-                        <div className={`w-[100vw] flex mt-[100px] max-lg:mt-[30px] overflow-hidden overflow-x-hidden`}>
-                            <video autoPlay muted loop playsInline className={`w-[100vw] max-w-full overflow-hidden overflow-x-hidden`}>
-                                <source src="/Brat-buryat-mockup.mp4" type="video/mp4"/>
-                            </video>
+
+
+                        <div
+                            className={`w-[100vw] max-2xl:w-[100vw] flex mt-[100px] max-lg:mt-[30px] overflow-hidden overflow-x-hidden`}>
+                            <Image
+                                className={`w-full aspect-[16/7] max-sm:aspect-[16/9] object-cover max-w-full overflow-hidden overflow-x-hidden`}
+                                src={`/BratBuryatPicture1.jpg`} alt={`картинка`} width={1600}
+                                height={900}/>
                         </div>
+
+
                         <div
                             className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
-                        <h2 className={`text-customerClientSize text-mainColor`}>Подробнее о задаче</h2>
+                            <h2 className={`text-customerClientSize text-mainColor`}>Стратегия</h2>
                             <div
                                 className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
                                 <p>
-                                    Помимо озвученных задач, встал вопрос с оформлением презентации всей сети заведений,
-                                    которую можно размещать на всевозможных площадках и отправлять гостям в
-                                    мессенджерах.
+                                    К продвижению в социальных сетях наша команда всегда подходит комплексно, поэтому
+                                    помимо регулярной выкладки постов и сторис были задействованы таргетированная
+                                    реклама, работа с лидерами мнений, участие в мероприятиях города, регулярная съемка
+                                    reels и реклама в популярных пабликах.
                                 </p>
                                 <p>
-                                    Также в ходе &quot;полевой&quot; работы встал вопрос с качественным обучением и
-                                    вводом в должность новых сотрудников сети заведений – не было единого плана обучения
-                                    и итогового среза знаний, а также должностных инструкций и прописанных регламентов.
+                                    Мы с клиентом решили вести статистику каждого канала – усиливать самые эффективные
+                                    инструменты - это позволит качественно распределять рекламные бюджеты и получать
+                                    отличный результат.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div className={`w-[100vw] flex mt-[100px] max-lg:mt-[30px] overflow-hidden overflow-x-hidden`}>
+                            <video autoPlay muted loop playsInline
+                                   className={`w-[100vw] max-w-full overflow-hidden overflow-x-hidden`}>
+                                <source src="/Brat-buryat-mockup.mp4" type="video/mp4"/>
+                            </video>
+                        </div>
+
+
+                        <div
+                            className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
+                            <h2 className={`text-customerClientSize text-mainColor`}>Контент</h2>
+                            <div
+                                className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
+                                <p>
+                                    Ключевые тематики контента:
+                                </p>
+                                <p>
+                                    -Блюда бурятской кухни в современном исполнении.
+                                </p>
+                                <p>
+                                    -Традиции народа Бурятии.
+                                </p>
+                                <p>
+                                    -Элементы интерьера кафе и как в них отражена культура Бурятии.
+                                </p>
+                                <p>
+                                    -Внутренняя кухня кафе, смешные ситуации, корпоративная культура.
                                 </p>
                             </div>
                         </div>
@@ -126,360 +151,61 @@ const BratBuryat = () => {
 
                         <div
                             className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
-                            <h2 className={`text-customerClientSize text-mainColor`}>План работы</h2>
-
-                            <div className={`w-full flex gap-[20px] items-start justify-center flex-col`}>
-                                <ul className={`flex w-full flex-col gap-[5px]`}>
-                                    <li className={`flex gap-[20px] flex-1`}>
-
-                                        <div
-                                            className={`flex items-center flex-col gap-[5px]`}>
-
-                                            <div
-                                                className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
-                                                <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center select-none`}>
-                                                    1
-                                                </p>
-                                            </div>
-
-                                            <div
-                                                className={`relative flex-1 border-t-[0px] min-h-[65px] w-[2px]`}>
-                                                <div className={`customBorder-y`}></div>
-                                            </div>
-
-                                        </div>
-
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
-                                            Разработка руководства по подбору персонала во всей сети заведений. Передача
-                                            инструментов закрепленному менеджеру и управляющим. Итог задачи – закрытие
-                                            всех вакансий силами ответственных за задачу сотрудников предприятия, а
-                                            также ежедневная отчетность собственнику по воронке подбора кандидатов
-                                            (сколько обзвонено, сколько назначено собеседований, сколько вышло на
-                                            стажировку, сколько вышло на работу).
-                                        </p>
-                                    </li>
-                                    <li className={`flex gap-[20px] flex-1`}>
-
-                                        <div
-                                            className={`flex items-center flex-col gap-[5px]`}>
-
-                                            <div
-                                                className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
-                                                <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center select-none`}>
-                                                    2
-                                                </p>
-                                            </div>
-
-                                            <div
-                                                className={`relative flex-1 border-t-[0px] min-h-[65px] w-[2px]`}>
-                                                <div className={`customBorder-y`}></div>
-                                            </div>
-
-                                        </div>
-
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
-                                            Разработка скриптов приема входящих звонков, презентации сети заведений
-                                            гостям, регламент передачи броней на другие предприятия в случае
-                                            невозможности посадки. Для контроля качества подключить запись звонков во
-                                            всей сети заведений и создать форму отчетности для управляющих.
-                                        </p>
-
-                                    </li>
-                                    <li className={`flex gap-[20px] flex-1`}>
-
-                                        <div
-                                            className={`flex items-center flex-col gap-[5px]`}>
-
-                                            <div
-                                                className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
-                                                <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center select-none`}>
-                                                    3
-                                                </p>
-                                            </div>
-
-                                            <div
-                                                className={`relative flex-1 border-t-[0px] min-h-[65px] w-[2px]`}>
-                                                <div className={`customBorder-y`}></div>
-                                            </div>
-
-                                        </div>
-
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
-                                            Для вновь принятых сотрудников, разработка – анкеты, плана обучения,
-                                            итогового среза знаний, пакета документов для передачи в бухгалтерию для
-                                            оформления кандидатов по трудовому договору.
-                                        </p>
-
-                                    </li>
-                                    <li className={`flex gap-[20px] flex-1`}>
-
-                                        <div
-                                            className={`flex items-center flex-col gap-[5px]`}>
-
-                                            <div
-                                                className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
-                                                <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center select-none`}>
-                                                    4
-                                                </p>
-                                            </div>
-
-                                            <div
-                                                className={`relative flex-1 border-t-[0px] min-h-[65px] w-[2px]`}>
-                                                <div className={`customBorder-y`}></div>
-                                            </div>
-
-                                        </div>
-
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
-                                            Разработать презентацию всей сети заведений, меню, тейбл-тенты с актуальными
-                                            акциями заведений на столах.
-                                        </p>
-
-                                    </li>
-                                    <li className={`flex gap-[20px] flex-1`}>
-
-                                        <div
-                                            className={`flex items-center flex-col gap-[5px]`}>
-
-                                            <div
-                                                className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
-                                                <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center select-none`}>
-                                                    5
-                                                </p>
-                                            </div>
-
-                                            <div
-                                                className={`relative flex-1 border-t-[0px] min-h-[65px] w-[2px]`}>
-                                                <div className={`customBorder-y`}></div>
-                                            </div>
-
-                                        </div>
-
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
-                                            Проработать все справочники и внести информацию о сети заведений на всех
-                                            информационных площадках (т.к. контекстная реклама кальянной индустрии
-                                            запрещена).
-                                        </p>
-
-                                    </li>
-                                    <li className={`flex gap-[20px] flex-1`}>
-
-                                        <div
-                                            className={`flex items-center flex-col gap-[5px]`}>
-
-                                            <div
-                                                className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
-                                                <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center select-none`}>
-                                                    6
-                                                </p>
-                                            </div>
-
-                                            <div
-                                                className={`relative flex-1 border-t-[0px] min-h-[65px] w-[2px]`}>
-                                                <div className={`customBorder-y`}></div>
-                                            </div>
-
-                                        </div>
-
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
-                                            Разработать формы отчетности для управляющих, внедрить еженедельные планерки
-                                            в формате Цель - Задача - Дедлайн - Итог.
-                                        </p>
-
-                                    </li>
-                                    <li className={`flex gap-[20px] flex-1`}>
-
-                                        <div
-                                            className={`flex items-center flex-col gap-[5px]`}>
-
-                                            <div
-                                                className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
-                                                <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center select-none`}>
-                                                    7
-                                                </p>
-                                            </div>
-
-                                            <div
-                                                className={`relative flex-1 border-t-[0px] min-h-[65px] w-[2px]`}>
-                                                <div className={`customBorder-y`}></div>
-                                            </div>
-
-                                        </div>
-
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
-                                            Подключить iiko wallet, RFM-анализ, рассылки с push-уведомлениями гостям о
-                                            новых предложениях, обучить работе с программой управленческий состав
-                                            компании.
-                                        </p>
-
-                                    </li>
-                                    <li className={`flex gap-[20px] flex-1`}>
-
-                                        <div
-                                            className={`flex items-center flex-col gap-[5px]`}>
-
-                                            <div
-                                                className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
-                                                <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center select-none`}>
-                                                    8
-                                                </p>
-                                            </div>
-
-                                            <div
-                                                className={`relative flex-1 border-t-[0px] min-h-[65px] w-[2px]`}>
-                                                <div className={`customBorder-y`}></div>
-                                            </div>
-
-                                        </div>
-
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
-                                            Для звонков сервиса – разработать скрипт, должностную инструкцию менеджера,
-                                            регламент работы с социальными сетями и форму отчетности собственнику.
-                                        </p>
-
-                                    </li>
-                                    <li className={`flex gap-[20px] flex-1`}>
-
-                                        <div
-                                            className={`flex items-center flex-col gap-[5px]`}>
-
-                                            <div
-                                                className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
-                                                <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center select-none`}>
-                                                    9
-                                                </p>
-                                            </div>
-
-                                            <div
-                                                className={`relative flex-1 border-t-[0px] min-h-[65px] w-[2px]`}>
-                                                <div className={`customBorder-y`}></div>
-                                            </div>
-
-                                        </div>
-
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
-                                            Создать форму отчетности для контроля сервиса в заведениях для
-                                            ответственного менеджера.
-                                        </p>
-
-                                    </li>
-                                    <li className={`flex gap-[20px] flex-1`}>
-
-                                        <div
-                                            className={`flex items-center flex-col gap-[5px]`}>
-
-                                            <div
-                                                className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
-                                                <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center select-none`}>
-                                                    10
-                                                </p>
-                                            </div>
-
-                                            <div
-                                                className={`relative flex-1 border-t-[0px] min-h-[65px] w-[2px]`}>
-                                                <div className={`customBorder-y`}></div>
-                                            </div>
-
-                                        </div>
-
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
-                                            Провести срез знаний у действующих сотрудников сети и выявить зоны роста, а
-                                            также запланировать график обучения по всем предприятиям.
-                                        </p>
-
-                                    </li>
-                                    <li className={`flex gap-[20px] flex-1`}>
-
-                                        <div
-                                            className={`flex items-center flex-col gap-[5px]`}>
-
-                                            <div
-                                                className={`w-[60px] h-[60px] max-lg:w-[50px] max-lg:h-[50px] max-sm:w-[40px] max-sm:h-[40px] rounded-full bg-gradient-to-br from-background to-[#FF9966] p-[4px] max-sm:p-[3px]`}>
-                                                <p className={`font-normal text-[32px] max-lg:text-[24px] max-sm:text-[20px] leading-none bg-background w-full h-full rounded-full flex justify-center items-center select-none`}>
-                                                    11
-                                                </p>
-                                            </div>
-
-                                        </div>
-
-                                        <p className={`font-normal text-[22px] max-md:text-[18px] max-sm:text-[16px] lg:leading-[34px] leading-[22px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
-                                            Создать на одном из предприятий компьютерный клуб «под ключ» - подключение
-                                            программного обеспечения LANGAME и RentalGames, оснащение компьютерами и
-                                            периферией, столами, освещением и лицензионным софтом. Проработать вопросы с
-                                            электрикой, сантехникой, ремонтом помещения, камерами, сервером и
-                                            провайдерами услуг сети.
-                                        </p>
-
+                            <h2 className={`text-customerClientSize text-mainColor`}>Instagram
+                                без &quot;таргета&quot;</h2>
+                            <div
+                                className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
+                                <p>
+                                    Таргетированная реклама давала очень хорошие результаты, когда ее отключили мы
+                                    сделали максимальный упор на регулярную съемку reels – 5 в месяц, также
+                                    дополнительно мы выкладывали каждый ролик на Youtube и Tik-Tok.
+                                </p>
+                                <p>
+                                    В итоге это дало отличные результаты – с постоянной периодичностью ролики набирали
+                                    большие охваты, самый лучший результат – это <span
+                                    className={`text-mainColor font-bold mb-[20px]`}> 915 000 </span> просмотров на
+                                    одном ролике!
+                                </p>
+                                <p>
+                                    Помимо этого, мы проводили коллаборации с партнерами, в рамках конкурсов,
+                                    видеороликов и совместных предложениях для гостей.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div
+                            className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col relative`}>
+                            <h2 className={`text-customerClientSize text-mainColor`}>Фирменный стиль</h2>
+                            <div
+                                className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
+                                <p>
+                                    Работая с клиентом, мы столкнулись с тем, что все рекламные материалы – будь то
+                                    вывеска, меню или тейбл-тенты выполнены в разном стиле без единой общей концепции,
+                                    поэтому был также разработан фирменный стиль и переработан существующий логотип в
+                                    угоду современным тенденциям и интерьеру нового места.
+                                </p>
+                            </div>
+
+
+                            <aside
+                                className={`absolute top-0 left-full w-stackWidth ml-stackMargin  max-xl:static max-xl:w-full max-xl:ml-0`}>
+                                <p className={`text-[15px] leading-[15px] border-t-[1px] border-stack pt-[10px] mb-[9px]`}>Cмотрите
+                                    услугу</p>
+                                <ul className={`flex flex-col max-xl:flex-row flex-wrap stack-grid`}>
+                                    <li className={`items-center py-[10px] px-0 text-[18px] leading-[21px]`}>
+                                        <Link href={"/"}>Фирменный стиль кафе <span
+                                            className={`whitespace-nowrap`}>&quot;Брат Бурят&quot;</span></Link>
                                     </li>
                                 </ul>
-                            </div>
-
+                            </aside>
                         </div>
 
-                        <div className='case-gallery-vertical mt-[45px] max-lg:mt-[20px] max-xl:hidden'>
-                            <Image className={`w-full h-auto`}
-                                   src={`/ChillHousePicture1.jpg`} alt={`сайт после`} width={1600}
-                                   height={900}/>
-                            <Image className={`w-full h-auto`}
-                                   src={`/ChillHousePicture2.jpg`} alt={`сайт после`} width={1600}
-                                   height={900}/>
-                            <Image className={`w-full h-auto`}
-                                   src={`/ChillHousePicture3.jpg`} alt={`сайт после`} width={1600}
-                                   height={900}/>
-                            <Image className={`w-full h-auto`}
-                                   src={`/ChillHousePicture4.jpg`} alt={`сайт после`} width={1600}
-                                   height={900}/>
-                            <Image className={`w-full h-auto`}
-                                   src={`/ChillHousePicture5.jpg`} alt={`сайт после`} width={1600}
-                                   height={900}/>
-                            <Image className={`w-full h-auto`}
-                                   src={`/ChillHousePicture6.jpg`} alt={`сайт после`} width={1600}
-                                   height={900}/>
-                        </div>
-
-                        <div className={`w-[100vw] xl:hidden flex flex-wrap mt-[45px] max-lg:mt-[20px]`}>
-                            <div
-                                className={`max-xl:w-[50vw] max-sm:w-[100vw] max-2xl:w-[100vw] flex overflow-hidden overflow-x-hidden`}>
-                                <Image
-                                    className={`w-full object-cover max-w-full overflow-hidden overflow-x-hidden`}
-                                    src={`/ChillHousePicture1.jpg`} alt={`картинка`} width={1600}
-                                    height={900}/>
-                            </div>
-                            <div
-                                className={`max-xl:w-[50vw] max-sm:w-[100vw] max-2xl:w-[100vw] flex overflow-hidden overflow-x-hidden`}>
-                                <Image
-                                    className={`w-full object-cover max-w-full overflow-hidden overflow-x-hidden`}
-                                    src={`/ChillHousePicture2.jpg`} alt={`картинка`} width={1600}
-                                    height={900}/>
-                            </div>
-                            <div
-                                className={`max-xl:w-[50vw] max-sm:w-[100vw] max-2xl:w-[100vw] flex overflow-hidden overflow-x-hidden`}>
-                                <Image
-                                    className={`w-full object-cover max-w-full overflow-hidden overflow-x-hidden`}
-                                    src={`/ChillHousePicture3.jpg`} alt={`картинка`} width={1600}
-                                    height={900}/>
-                            </div>
-                            <div
-                                className={`max-xl:w-[50vw] max-sm:w-[100vw] max-2xl:w-[100vw] flex overflow-hidden overflow-x-hidden`}>
-                                <Image
-                                    className={`w-full object-cover max-w-full overflow-hidden overflow-x-hidden`}
-                                    src={`/ChillHousePicture4.jpg`} alt={`картинка`} width={1600}
-                                    height={900}/>
-                            </div>
-                            <div
-                                className={`max-xl:w-[50vw] max-sm:w-[100vw] max-2xl:w-[100vw] flex overflow-hidden overflow-x-hidden`}>
-                                <Image
-                                    className={`w-full object-cover max-w-full overflow-hidden overflow-x-hidden`}
-                                    src={`/ChillHousePicture5.jpg`} alt={`картинка`} width={1600}
-                                    height={900}/>
-                            </div>
-                            <div
-                                className={`max-xl:w-[50vw] max-sm:w-[100vw] max-2xl:w-[100vw] flex overflow-hidden overflow-x-hidden`}>
-                                <Image
-                                    className={`w-full object-cover max-w-full overflow-hidden overflow-x-hidden`}
-                                    src={`/ChillHousePicture6.jpg`} alt={`картинка`} width={1600}
-                                    height={900}/>
-                            </div>
+                        <div className={`w-[100vw] flex mt-[100px] max-lg:mt-[30px] overflow-hidden overflow-x-hidden`}>
+                            <video autoPlay muted loop playsInline
+                                   className={`w-[100vw] max-w-full overflow-hidden overflow-x-hidden`}>
+                                <source src="/BratBuryatMenu.mp4" type="video/mp4"/>
+                            </video>
                         </div>
 
 
@@ -490,22 +216,15 @@ const BratBuryat = () => {
                                 className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
                                 <ul className={`flex flex-col gap-[5px] `}>
                                     <li className={`pl-[25px] relative customerList `}><p
-                                        className={`my-[20px]`}>По итогам работы в 10 месяцев были закрыты все
-                                        поставленные задачи и открыт компьютерный клуб в одном из заведений сети.
-                                        Закрыли все вакансии сети заведений – кальянные мастера, раннеры (сотрудники
-                                        кухни), был найден эффективный управляющий для одного из заведений.</p></li>
+                                        className={`my-[20px]`}>С 2019 года мы работаем с кафе «Брат Бурят» - за это
+                                        время аккаунт вырос до 12000 подписчиков.</p></li>
                                     <li className={`pl-[25px] relative customerList `}><p
-                                        className={`my-[20px]`}>Интересно было увидеть, что наша работа по отделам
-                                        продаж может быть также направлена на «тестирование ниши» - заказчик с нашей
-                                        помощью проверил гипотезы по новым направлениям деятельности, а по
-                                        неэффективному направлению просто перераспределил менеджеров на другие
-                                        направления.</p></li>
+                                        className={`my-[20px]`}>Повысилась узнаваемость бренда и главного блюда
+                                        бурятской кухни – бууз. Количество отзывов о кафе на площадке 2ГИС – более
+                                        1200.</p></li>
                                     <li className={`pl-[25px] relative customerList `}><p
-                                        className={`my-[20px]`}>Все регламенты, скрипты и руководства были загружены на
-                                        общий диск компании для эффективной работы сотрудников сети.</p></li>
-                                    <li className={`pl-[25px] relative customerList `}><p
-                                        className={`my-[20px]`}>Все отчетные формы сформированы на диске для ежедневной,
-                                        еженедельной отчетности перед собственником компании.</p></li>
+                                        className={`my-[20px]`}>Помимо SMM направления был создан сайт и запущена
+                                        контекстная реклама, с результатом более 250 заказов в месяц.</p></li>
                                 </ul>
                             </div>
                         </div>
@@ -513,40 +232,43 @@ const BratBuryat = () => {
                         <ul className={`w-full relative flex items-end justify-start flex-wrap mx-[-30px] my-[45px] max-sm:mx-0 max-sm:block`}>
                             <li className={`w-1/3 px-[30px] shrink-0 max-sm:w-full max-sm:p-0 max-sm:mb-[20px] max-lg:w-1/2 max-lg:mb-[30px]`}>
                                 <div className={`text-[18px] leading-[20px] mb-[11px]`}>
-                                    Новые гости <span className={`whitespace-nowrap`}>(в мес.)</span>
+                                    Подписчиков ДО
                                 </div>
                                 <div className={`border-b-[1px] flex items-baseline pb-[15px] max-sm:pb-[20px]`}>
                                     <div
-                                        className={`text-mainColor text-customerInfographySize leading-customerInfographyLeading`}>100
+                                        className={`text-mainColor text-customerInfographySize leading-customerInfographyLeading`}>200
                                     </div>
                                     <div
-                                        className={` text-mainColor text-customerInfographySmallSize mx-[10px] leading-customerInfographySmallLeading big-hidden`}>Гостей
+                                        className={` text-mainColor text-customerInfographySmallSize mx-[10px] leading-customerInfographySmallLeading big-hidden`}>
                                     </div>
                                 </div>
                             </li>
                             <li className={`w-1/3 px-[30px] shrink-0 max-sm:w-full max-sm:p-0 max-sm:mb-[20px] max-lg:w-1/2 max-lg:mb-[30px]`}>
                                 <div className={`text-[18px] leading-[20px] mb-[11px]`}>
-                                    Подбор <span className={`whitespace-nowrap`}>(в мес.)</span>
+                                    Подписчиков ПОСЛЕ
                                 </div>
                                 <div className={`border-b-[1px] flex items-baseline pb-[15px] max-sm:pb-[20px]`}>
                                     <div
-                                        className={`text-mainColor text-customerInfographySize leading-customerInfographyLeading`}>5
+                                        className={`text-mainColor text-customerInfographySize leading-customerInfographyLeading big-hidden`}>12000
                                     </div>
                                     <div
-                                        className={` text-mainColor text-customerInfographySmallSize mx-[10px] leading-customerInfographySmallLeading`}>стажеров
+                                        className={`text-mainColor text-customerInfographySize leading-customerInfographyLeading big-nohidden`}>12
+                                    </div>
+                                    <div
+                                        className={` text-mainColor text-customerInfographySmallSize mx-[10px] leading-customerInfographySmallLeading big-nohidden`}>тыс.
                                     </div>
                                 </div>
                             </li>
                             <li className={`w-1/3 px-[30px] shrink-0 max-sm:w-full max-sm:p-0 max-sm:mb-[20px] max-lg:w-1/2 max-lg:mb-[30px]`}>
                                 <div className={`text-[18px] leading-[20px] mb-[11px]`}>
-                                    Рост оборота
+                                    Охваты Instagram в месяц
                                 </div>
                                 <div className={`border-b-[1px] flex items-baseline pb-[15px] max-sm:pb-[20px]`}>
                                     <div
-                                        className={`text-mainColor text-customerInfographySize leading-customerInfographyLeading`}>50
+                                        className={`text-mainColor text-customerInfographySize leading-customerInfographyLeading`}>64227
                                     </div>
                                     <div
-                                        className={` text-mainColor text-customerInfographySmallSize mx-[10px] leading-customerInfographySmallLeading`}>%
+                                        className={` text-mainColor text-customerInfographySmallSize mx-[10px] leading-customerInfographySmallLeading`}>
                                     </div>
                                 </div>
                             </li>
@@ -561,79 +283,19 @@ const BratBuryat = () => {
                                 <ul className={`flex flex-col gap-[5px] `}>
                                     <li className={`pl-[25px] relative`}>
                                         <p className={`text-[16px] conclusion`}>01</p>
-                                        <p className={`my-[20px]`}>Занесение сети заведений во все справочники дало
-                                            отличный приток приезжих гостей, которые часто пользуются Zoon, DVHAB,
-                                            Яндекс-Гугл картами, TripAdvisor итд, а не только привычный многим 2ГИС.</p>
+                                        <p className={`my-[20px]`}>Комплексный подход к продвижению клиента, включающий
+                                            SMM, контекстную рекламу, маркетинговое сопровождение привели к качественным
+                                            результатам, несмотря на отключение таргетированной рекламы в Instagram.</p>
                                     </li>
                                     <li className={`pl-[25px] relative`}>
                                         <p className={`text-[16px] conclusion`}>02</p>
-                                        <p className={`my-[20px]`}>Правильное позиционирование заведений не только как
-                                            кальянные, привело поток гостей, любящих настольные игры, фильмы, покер,
-                                            игры на
-                                            PS и т.д.</p>
-                                    </li>
-                                    <li className={`pl-[25px] relative`}>
-                                        <p className={`text-[16px] conclusion`}>03</p>
-                                        <p className={`my-[20px]`}>Было действительно интересно включиться в задачи
-                                            «стройки» - правильная постановка задач и контроль дали отличные результаты
-                                            быстрого открытия нового направления - компьютерного клуба.</p>
-                                    </li>
-                                    <li className={`pl-[25px] relative`}>
-                                        <p className={`text-[16px] conclusion`}>04</p>
-                                        <p className={`my-[20px]`}>Качественное обучение и контроль сотрудников компании
-                                            увеличили лояльность гостей и, конечно же, выручку всей сети.</p>
+                                        <p className={`my-[20px]`}>Разработанный фирменный стиль значительно упростил
+                                            работу клиента – любые рекламные материалы стали быстрее разрабатываться,
+                                            соответствовать общей концепции и стоить дешевле, т.к. не исполнителям не
+                                            приходится ничего выдумывать «с нуля».</p>
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-
-
-                        <div
-                            className={`w-full flex flex-col gap-[25px] mt-[45px] max-lg:gap-[20px]  max-md:justify-end max-lg:mt-[20px] items-start`}>
-                            <h2 className={`text-customerClientSize text-mainColor`}>Отзыв клиента</h2>
-                            <div className={`h-[1px] bg-foreground w-full`}></div>
-
-
-                            <div
-                                className={`w-full flex max-lg:gap-[20px] max-lg:mt-[10px] max-md:gap-0 max-md:flex-col`}>
-
-
-                                <div
-                                    className={`flex w-2/6 max-md:w-full flex-col justify-between pt-3 max-md:order-2 max-md:pt-2`}>
-                                    <Image className={`rotate-180 max-md:hidden`} src={'/arrows.png'} alt={`arrows`}
-                                           width={50}
-                                           height={50}/>
-                                    <div className={`w-full flex justify-start max-md:justify-end`}>
-                                        <div className={`flex gap-[10px]`}>
-                                            <Image className={`rounded-[50%] max-md:w-[60px] max-md:h-[60px]`}
-                                                   src={`/VostokAvtoMashDirector.jpg`}
-                                                   alt={`фото клиента`}
-                                                   width={75} height={75}/>
-                                            <div className={`flex flex-col justify-center`}>
-                                                <p className={`mb-[5px] text-[14px]`}>Фирсов Светозар</p>
-                                                <p className={`text-[12px] text-gray-500`}>Генеральный
-                                                    директор &quot;ВостокАвтоМаш&quot;</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div className={`flex w-4/6 max-md:w-full`}>
-                                    <p className={`w-full text-[22px] max-xl:text-[18px] max-sm:text-[16px] max-md:w-full mb-[25px] max-md:mb-0`}>Компания &quot;LV
-                                        GROUP&quot; сама вышла на нас с помощью холодного обзвона, что сразу нас сильно
-                                        подкупило.
-                                        Благодаря команде &quot;LV GROUP&quot; мы стали группой компаний и расширились
-                                        до 3-ех направлений и оборота в 500млн/год.
-                                        Особенно полезным лично для себе могу выделить ввод ежедневной отчетности и
-                                        единого формата ежедневных/еженедельных планерок отдела продаж.</p>
-                                </div>
-
-
-                            </div>
-
-                            <div className={`h-[1px] bg-foreground w-full`}></div>
-                            <div className={`h-[1px] bg-foreground w-full mt-[30px]`}></div>
                         </div>
 
                     </div>
@@ -643,19 +305,7 @@ const BratBuryat = () => {
                 <li>
                     <button
                         className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                        Отдел продаж
-                    </button>
-                </li>
-                <li>
-                    <button
-                        className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
                         Создание контента
-                    </button>
-                </li>
-                <li>
-                    <button
-                        className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                        Обучение
                     </button>
                 </li>
                 <li>
