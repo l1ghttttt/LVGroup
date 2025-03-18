@@ -154,11 +154,11 @@ const BratBuryat = () => {
 
 
                         <section
-                            className={`w-[100vw] bg-[url(/carousels-background.png)] bg-cover aspect-[16/8] flex justify-around items-center my-[120px] max-md:my-[60px]`}>
+                            className={`w-[100vw] bg-[url(/carousels-background.png)] bg-cover md:aspect-[16/8] flex justify-around items-center my-[120px] max-md:my-[60px] max-md:flex-col max-md:gap-[50px] max-md:py-[50px]`}>
 
 
                             <div
-                                className={`w-1/5 overflow-hidden border-white border-solid border-[5px] rounded-[30px]`}>
+                                className={`w-1/5 max-md:w-1/2 overflow-hidden border-white border-solid border-[5px] rounded-[30px] max-lg:border-[3px] max-lg:rounded-[20px] max-sm:border-[2px] max-sm:rounded-[15px]`}>
                                 <Carousel
                                     className={`w-full`}
                                     opts={{
@@ -185,7 +185,7 @@ const BratBuryat = () => {
 
 
                             <div
-                                className={`w-1/5 overflow-hidden border-white border-solid border-[5px] rounded-[30px]`}>
+                                className={`w-1/5 max-md:w-1/2 overflow-hidden border-white border-solid border-[5px] rounded-[30px] max-lg:border-[3px] max-lg:rounded-[20px] max-sm:border-[2px] max-sm:rounded-[15px]`}>
                                 <Carousel
                                     className={`w-full`}
                                     opts={{
@@ -211,7 +211,7 @@ const BratBuryat = () => {
                             </div>
 
                             <div
-                                className={`w-1/5 overflow-hidden border-white border-solid border-[5px] rounded-[30px]`}>
+                                className={`w-1/5 max-md:w-1/2 overflow-hidden border-white border-solid border-[5px] rounded-[30px] max-lg:border-[3px] max-lg:rounded-[20px] max-sm:border-[2px] max-sm:rounded-[15px]`}>
                                 <Carousel
                                     className={`w-full`}
                                     opts={{
