@@ -158,7 +158,7 @@ const BratBuryat = () => {
 
 
                             <div
-                                className={`w-1/5 max-md:w-1/2 overflow-hidden border-white border-solid border-[5px] rounded-[30px] max-lg:border-[3px] max-lg:rounded-[20px] max-sm:border-[2px] max-sm:rounded-[15px]`}>
+                                className={`w-1/5 max-md:w-3/4 overflow-hidden border-white border-solid border-[5px] rounded-[30px] max-lg:border-[3px] max-lg:rounded-[20px] max-sm:border-[2px] max-sm:rounded-[15px]`}>
                                 <Carousel
                                     className={`w-full`}
                                     opts={{
@@ -185,7 +185,7 @@ const BratBuryat = () => {
 
 
                             <div
-                                className={`w-1/5 max-md:w-1/2 overflow-hidden border-white border-solid border-[5px] rounded-[30px] max-lg:border-[3px] max-lg:rounded-[20px] max-sm:border-[2px] max-sm:rounded-[15px]`}>
+                                className={`w-1/5 max-md:w-3/4 overflow-hidden border-white border-solid border-[5px] rounded-[30px] max-lg:border-[3px] max-lg:rounded-[20px] max-sm:border-[2px] max-sm:rounded-[15px]`}>
                                 <Carousel
                                     className={`w-full`}
                                     opts={{
@@ -211,7 +211,7 @@ const BratBuryat = () => {
                             </div>
 
                             <div
-                                className={`w-1/5 max-md:w-1/2 overflow-hidden border-white border-solid border-[5px] rounded-[30px] max-lg:border-[3px] max-lg:rounded-[20px] max-sm:border-[2px] max-sm:rounded-[15px]`}>
+                                className={`w-1/5 max-md:w-3/4 overflow-hidden border-white border-solid border-[5px] rounded-[30px] max-lg:border-[3px] max-lg:rounded-[20px] max-sm:border-[2px] max-sm:rounded-[15px]`}>
                                 <Carousel
                                     className={`w-full`}
                                     opts={{
