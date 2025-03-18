@@ -4,6 +4,14 @@ import React, {useEffect, useState} from 'react';
 import Order from "@/widgets/order/Order";
 import Image from "next/image";
 import Link from "next/link";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
 
 const BratBuryat = () => {
     useEffect(() => window.document.scrollingElement?.scrollTo(0, 0), [])
@@ -145,6 +153,93 @@ const BratBuryat = () => {
                                 </p>
                             </div>
                         </div>
+
+
+                        <section
+                            className={`w-[100vw] bg-[url(/carousels-background.png)] bg-cover aspect-[16/8] flex justify-around items-center my-[120px] max-md:my-[60px]`}>
+
+
+                            <div
+                                className={`w-1/5 overflow-hidden border-white border-solid border-[5px] rounded-[30px]`}>
+                                <Carousel
+                                    className={`w-full`}
+                                    opts={{
+                                        align: "start",
+                                        loop: true,
+                                    }}
+                                    plugins={[
+                                        Autoplay({
+                                            delay: 4500,
+                                        }),
+                                    ]}
+                                >
+                                    <CarouselContent className="-ml-0 md:-ml-0">
+                                        <CarouselItem className="p-0"><Image src={`/1-1.JPG`} alt={`carousel photo`}
+                                                                             width={360} height={630} className={`w-full h-full`}/></CarouselItem>
+                                        <CarouselItem className="p-0"><Image src={`/1-2.JPG`} alt={`carousel photo`}
+                                                                             width={360} height={630}  className={`w-full h-full`}/></CarouselItem>
+                                        <CarouselItem className="p-0"><Image src={`/1-3.JPG`} alt={`carousel photo`}
+                                                                             width={360} height={630}  className={`w-full h-full`}/></CarouselItem>
+                                    </CarouselContent>
+
+                                </Carousel>
+                            </div>
+
+
+                            <div
+                                className={`w-1/5 overflow-hidden border-white border-solid border-[5px] rounded-[30px]`}>
+                                <Carousel
+                                    className={`w-full`}
+                                    opts={{
+                                        align: "start",
+                                        loop: true,
+                                    }}
+                                    plugins={[
+                                        Autoplay({
+                                            delay: 4500,
+                                        }),
+                                    ]}
+                                >
+                                    <CarouselContent className="-ml-0 md:-ml-0">
+                                        <CarouselItem className="p-0"><Image src={`/2-1.JPG`} alt={`carousel photo`}
+                                                                             width={360} height={630} className={`w-full h-full`}/></CarouselItem>
+                                        <CarouselItem className="p-0"><Image src={`/2-2.JPG`} alt={`carousel photo`}
+                                                                             width={360} height={630} className={`w-full h-full`}/></CarouselItem>
+                                        <CarouselItem className="p-0"><Image src={`/2-3.JPG`} alt={`carousel photo`}
+                                                                             width={360} height={630} className={`w-full h-full`}/></CarouselItem>
+                                    </CarouselContent>
+
+                                </Carousel>
+                            </div>
+
+                            <div
+                                className={`w-1/5 overflow-hidden border-white border-solid border-[5px] rounded-[30px]`}>
+                                <Carousel
+                                    className={`w-full`}
+                                    opts={{
+                                        align: "start",
+                                        loop: true,
+                                    }}
+                                    plugins={[
+                                        Autoplay({
+                                            delay: 4500,
+                                        }),
+                                    ]}
+                                >
+                                    <CarouselContent className="-ml-0 md:-ml-0">
+                                        <CarouselItem className="p-0"><Image src={`/3-1.JPG`} alt={`carousel photo`}
+                                                                             width={360} height={630} className={`w-full h-full`}/></CarouselItem>
+                                        <CarouselItem className="p-0"><Image src={`/3-2.JPG`} alt={`carousel photo`}
+                                                                             width={360} height={630} className={`w-full h-full`}/></CarouselItem>
+                                        <CarouselItem className="p-0"><Image src={`/3-3.JPG`} alt={`carousel photo`}
+                                                                             width={360} height={630} className={`w-full h-full`}/></CarouselItem>
+                                    </CarouselContent>
+
+                                </Carousel>
+                            </div>
+
+
+                        </section>
 
 
                         <div
