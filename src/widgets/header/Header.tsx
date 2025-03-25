@@ -177,7 +177,7 @@ const Header: React.FC = () => {
     if (!mounted) return null;
 
     return (
-        <header className= {`z-[3] header-clas w-full h-[100px] ${isSticky ? 'border-b-0' : 'border-b-[1px]'}  flex items-center pl-[15px] pr-[30px] gap-[25px] max-2xl:hidden top-0 ${isSticky ? "sticky duration-500 transform bg-background z-100" : "absolute"} ${isHidden && isSticky  ? "-translate-y-full" : "translate-y-0"}`}>
+        <header className= {`z-[50] header-clas w-full h-[100px] ${isSticky ? 'border-b-0' : 'border-b-[1px]'}  flex items-center pl-[15px] pr-[30px] gap-[25px] max-2xl:hidden top-0 ${isSticky ? "sticky duration-500 transform bg-background z-100" : "absolute"} ${isHidden && isSticky  ? "-translate-y-full" : "translate-y-0"}`}>
             <Link href={`/`}>
                 {theme === 'dark' ? (
                     <img src="/LVGROUP_logo.svg" alt="логотип LVGroup" className="w-[150px]" />

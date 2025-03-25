@@ -10,6 +10,7 @@ import {
     CarouselItem,
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
+import ProgressBars from "@/components/progress-bar/ProgressBar";
 
 const BratBuryat = () => {
     useEffect(() => window.document.scrollingElement?.scrollTo(0, 0), [])
@@ -154,11 +155,11 @@ const BratBuryat = () => {
 
 
                         <section
-                            className={`w-[100vw] bg-[url(/carousels-background.png)] bg-cover md:aspect-[16/8] flex justify-around items-center my-[120px] max-md:my-[60px] max-md:flex-col max-md:gap-[50px] max-md:py-[50px] pointer-events-none select-none`}>
+                            className={`w-[100vw] bg-[url(/carousels-background.png)] bg-cover md:aspect-[16/8] flex justify-center gap-[7%] items-center my-[120px] max-md:my-[60px] max-md:flex-col max-md:gap-[50px] max-md:py-[50px] pointer-events-none select-none`}>
 
 
                             <div
-                                className={`w-1/5 max-md:w-3/4 overflow-hidden border-white border-solid border-[5px] rounded-[30px] max-lg:border-[3px] max-lg:rounded-[20px] max-sm:border-[2px] max-sm:rounded-[15px]`}>
+                                className={`w-[22%] max-md:w-3/4 overflow-hidden border-white border-solid border-[3px] rounded-[40px] max-lg:border-[3px] max-lg:rounded-[20px] max-sm:border-[2px] max-sm:rounded-[15px]`}>
                                 <Carousel
                                     className={`w-full`}
                                     opts={{
@@ -171,6 +172,7 @@ const BratBuryat = () => {
                                         }),
                                     ]}
                                 >
+                                    <ProgressBars/>
                                     <CarouselContent className="-ml-0 md:-ml-0">
                                         <CarouselItem className="p-0"><Image src={`/1-1.JPG`} alt={`carousel photo`}
                                                                              width={360} height={630} className={`w-full h-full`}/></CarouselItem>
@@ -183,9 +185,8 @@ const BratBuryat = () => {
                                 </Carousel>
                             </div>
 
-
                             <div
-                                className={`w-1/5 max-md:w-3/4 overflow-hidden border-white border-solid border-[5px] rounded-[30px] max-lg:border-[3px] max-lg:rounded-[20px] max-sm:border-[2px] max-sm:rounded-[15px]`}>
+                                className={`w-[22%] max-md:w-3/4 overflow-hidden border-white border-solid border-[3px] rounded-[40px] max-lg:border-[3px] max-lg:rounded-[20px] max-sm:border-[2px] max-sm:rounded-[15px]`}>
                                 <Carousel
                                     className={`w-full`}
                                     opts={{
@@ -198,6 +199,7 @@ const BratBuryat = () => {
                                         }),
                                     ]}
                                 >
+                                    <ProgressBars/>
                                     <CarouselContent className="-ml-0 md:-ml-0">
                                         <CarouselItem className="p-0"><Image src={`/2-1.JPG`} alt={`carousel photo`}
                                                                              width={360} height={630} className={`w-full h-full`}/></CarouselItem>
@@ -211,7 +213,7 @@ const BratBuryat = () => {
                             </div>
 
                             <div
-                                className={`w-1/5 max-md:w-3/4 overflow-hidden border-white border-solid border-[5px] rounded-[30px] max-lg:border-[3px] max-lg:rounded-[20px] max-sm:border-[2px] max-sm:rounded-[15px]`}>
+                                className={`w-[22%] max-md:w-3/4 overflow-hidden border-white border-solid border-[3px] rounded-[40px] max-lg:border-[3px] max-lg:rounded-[20px] max-sm:border-[2px] max-sm:rounded-[15px]`}>
                                 <Carousel
                                     className={`w-full`}
                                     opts={{
@@ -224,6 +226,7 @@ const BratBuryat = () => {
                                         }),
                                     ]}
                                 >
+                                    <ProgressBars/>
                                     <CarouselContent className="-ml-0 md:-ml-0">
                                         <CarouselItem className="p-0"><Image src={`/3-1.JPG`} alt={`carousel photo`}
                                                                              width={360} height={630} className={`w-full h-full`}/></CarouselItem>

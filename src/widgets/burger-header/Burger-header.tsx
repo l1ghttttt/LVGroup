@@ -169,7 +169,7 @@ export default function BurgerHeader() {
     if (!mounted) return null;
 
     return (
-        <header className={`z-[3] header-clas justify-between absolute flex h-[100px] border-b-[1px] w-full pl-[15px] pr-[30px] gap-[25px] items-center 2xl:hidden max-sm:gap-[10px] max-sm:pr-[15px] max-sm:pl-[10px] top-0 ${isSticky ? "sticky duration-500 transform bg-background z-100" : "absolute"} ${isHidden && isSticky ? "-translate-y-full" : "translate-y-0"}`}>
+        <header className={`z-[50] header-clas justify-between absolute flex h-[100px] border-b-[1px] w-full pl-[15px] pr-[30px] gap-[25px] items-center 2xl:hidden max-sm:gap-[10px] max-sm:pr-[15px] max-sm:pl-[10px] top-0 ${isSticky ? "sticky duration-500 transform bg-background z-100" : "absolute"} ${isHidden && isSticky ? "-translate-y-full" : "translate-y-0"}`}>
                 <Sheet>
                     <SheetTrigger asChild>
                         <Button variant="ghost" size="icon">
