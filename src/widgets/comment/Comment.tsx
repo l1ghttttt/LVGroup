@@ -52,18 +52,21 @@ const Comment = ({ Xcoord, Ycoord, image, name, text, liked, layer, direction = 
     return (
         <div
             style={{
-                transform: `translate(${initialX + offset.x}px, ${initialY + offset.y}px)`,
+                transform: `translate(calc(${initialX + offset.x}px - 50%), calc(${initialY + offset.y}px - 50%))`,
                 zIndex: layer,
                 left: Xcoord,
                 top: Ycoord,
             }}
-            className="absolute bg-background px-4 py-5 rounded-[20px] flex items-start justify-between gap-4 w-[730px] -translate-y-[50%] -translate-x-[50%] transition-transform ease-linear"
+            className="absolute bg-background px-4 py-5 rounded-[20px] flex items-start justify-between gap-5 w-[730px] transition-transform"
         >
-            <Image src={`/${image}`} alt="Аватар комментатора" width={70} height={70} className="rounded-[50%]" />
-            <p className="text-[24px]">
-                <span className="font-bold text-[28px]">{name}</span> {text}
+            <Image src={`/${image}`} alt="Аватар комментатора" width={75} height={75} className="rounded-[50%] w-[75px] h-[75px]" />
+            <p className="text-[26px]">
+                <span className="font-bold text-[30px]">{name}</span> {text}
             </p>
-            {liked ? <IoHeart size={30} className="translate-y-2" /> : <CiHeart size={35} className="translate-y-2" />}
+            <div className={`w-[30px]`}>
+                {liked ? <IoHeart size={30} className="translate-y-2" /> : <CiHeart size={35} className="translate-y-2" />}
+            </div>
+
         </div>
     );
 };
