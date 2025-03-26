@@ -755,3 +755,7 @@ a {
 .list-item-full {
   grid-template-columns: none;
 }
+
+.comment-gradient {
+  background: linear-gradient(315deg, rgb(225, 197, 160), rgb(242, 177, 94))
+}
