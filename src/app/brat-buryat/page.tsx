@@ -418,7 +418,7 @@ const BratBuryat = () => {
             </ul>
 
 
-            <section className={`overflow-hidden w-[99vw] relative left-0 comment-gradient max-md:aspect-[16/10] max-xl:aspect-[16/9] aspect-[16/8] flex justify-center items-center my-[120px] max-md:my-[40px] max-md:mt-[15px] max-md:flex-col max-md:py-[50px]`}>
+            <section className={`overflow-hidden w-[99vw] relative left-0 comment-gradient max-sm:aspect-[16/14] max-md:aspect-[16/10] max-xl:aspect-[16/9] aspect-[16/8] flex justify-center items-center my-[120px] max-md:my-[40px] max-md:mt-[15px] max-md:flex-col max-md:py-[50px]`}>
                 <Comment image={`vlada.antonovaa.jpg`} Xcoord={`20%`} Ycoord={`10%`} name={`vlada.antonovaa`} text={`Да мы все такие повара 😂 ахахахх 😂`} liked={false} layer={2} direction={`diagonal`}/>
                 <Comment image={`valensia20.06.84.jpg`} Xcoord={`50%`} Ycoord={`18%`} name={`valensia20.06.84`} text={`Аж снюньки потекли 😂`} liked={true} layer={2} direction={`right`}/>
                 <Comment image={`o_l_ushka.jpg`} Xcoord={`25%`} Ycoord={`63%`} name={`o_l_ushka`} text={`Почему бузы такие вкусные? Потому что они сделаны с любовью и МЯСОМ 😍`} liked={true} layer={2} direction={`right`}/>
