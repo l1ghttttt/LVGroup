@@ -20,7 +20,7 @@ const Comment = ({ Xcoord, Ycoord, image, name, text, liked, layer, direction = 
     const initialX = parseFloat(Xcoord);
     const initialY = parseFloat(Ycoord);
     const [offset, setOffset] = useState({ x: 0, y: 0 });
-    const maxAmplitude = 30;
+    const maxAmplitude = 15;
 
     useEffect(() => {
         const moveComment = () => {
