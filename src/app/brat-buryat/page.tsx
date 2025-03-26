@@ -11,7 +11,6 @@ import {
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 import ProgressBars from "@/components/progress-bar/ProgressBar";
-import { CiHeart } from "react-icons/ci";
 import Comment from "@/widgets/comment/Comment";
 
 const BratBuryat = () => {
@@ -420,8 +419,8 @@ const BratBuryat = () => {
 
 
             <section className={`overflow-hidden w-[99vw] relative left-0 comment-gradient md:aspect-[16/8] flex justify-center items-center my-[120px] max-md:my-[60px] max-md:flex-col max-md:py-[50px]`}>
-                <Comment image={`VostokAvtoMashDirector.jpg`} Xcoord={`25%`} Ycoord={`15%`} name={`vlada.antonovaa`} text={`Да мы все такие повара 😂 ахахахх 😂`} liked={false} layer={2}/>
-                <Comment image={`VostokAvtoMashDirector.jpg`} Xcoord={`50%`} Ycoord={`23%`} name={`valensia20.06.84`} text={`Аж снюньки потекли 😂`} liked={true} layer={2}/>
+                <Comment image={`VostokAvtoMashDirector.jpg`} Xcoord={`25%`} Ycoord={`15%`} name={`vlada.antonovaa`} text={`Да мы все такие повара 😂 ахахахх 😂`} liked={false} layer={2} direction={`diagonal`}/>
+                <Comment image={`VostokAvtoMashDirector.jpg`} Xcoord={`50%`} Ycoord={`23%`} name={`valensia20.06.84`} text={`Аж снюньки потекли 😂`} liked={true} layer={2} direction={`right`}/>
             </section>
 
 
