@@ -56,7 +56,7 @@ const WelcomeCases = () => {
             </ul>
             <ul className={`bg-background flex items-start flex-wrap justify-start relative ml-[-1px] mb-[-1px]`}>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="/lamark-center">
+                    <Link href="/case/lamark-center">
                         {typeof window !== "undefined" && (
                             <video autoPlay muted loop playsInline id="myVideo"
                                    className="absolute top-0 left-0 w-full h-full object-cover">
@@ -72,7 +72,7 @@ const WelcomeCases = () => {
                 </li>
 
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="/dr-mobile">
+                    <Link href="/case/dr-mobile">
                         <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/2.jpg" alt=""/>
                         <div className={`bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`relative z-25 text-black text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
@@ -82,7 +82,7 @@ const WelcomeCases = () => {
                     </Link>
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="/vostokavtomash">
+                    <Link href="/case/vostokavtomash">
                         <video autoPlay muted loop playsInline id="myVideo">
                             <source src="/3.mp4" type="video/mp4"/>
                         </video>
@@ -94,7 +94,7 @@ const WelcomeCases = () => {
                     </Link>
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="/tooth-fairy">
+                    <Link href="/case/tooth-fairy">
                         <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/4.jpg" alt=""/>
                         <div className={`bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`relative z-25 text-black text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
@@ -105,7 +105,7 @@ const WelcomeCases = () => {
                     </Link>
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="/ldpr">
+                    <Link href="/case/ldpr">
                         <video autoPlay muted loop playsInline id="myVideo">
                             <source src="/5.mp4" type="video/mp4"/>
                         </video>
@@ -117,7 +117,7 @@ const WelcomeCases = () => {
                     </Link>
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="/bunker">
+                    <Link href="/case/bunker">
                         <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/6.jpg" alt=""/>
                         <div className={`bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
@@ -127,7 +127,7 @@ const WelcomeCases = () => {
                     </Link>
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="/chill-house">
+                    <Link href="/case/chill-house">
                         <video autoPlay muted loop playsInline id="myVideo">
                             <source src="/7.mp4" type="video/mp4"/>
                         </video>
@@ -139,7 +139,7 @@ const WelcomeCases = () => {
                     </Link>
                 </li>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="/brat-buryat">
+                    <Link href="/case/brat-buryat">
                         <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/8.jpg" alt=""/>
                         <div className={`bg-background w-full h-full p-caseContentPadding`}>
                             <p className={`relative z-25 text-black text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
@@ -165,10 +165,12 @@ const WelcomeCases = () => {
                                 Посмотреть все наши проекты
                             </p>
                             <div>
-                                <button
-                                    className={`relative z-50 font-semibold select-none text-background bg-mainColor hover:bg-darkMain cursor-pointer duration-300 tracking-widest h-[50px] flex items-center justify-center rounded-full px-[30px] font-railway text-[20px]`}>
-                                    <p className={`mb-2px`}>Смотреть</p>
-                                </button>
+                                <Link href={`/cases`} >
+                                    <button
+                                        className={`relative z-50 font-semibold select-none text-background bg-mainColor hover:bg-darkMain cursor-pointer duration-300 tracking-widest h-[50px] flex items-center justify-center rounded-full px-[30px] font-railway text-[20px]`}>
+                                        <p className={`mb-2px`}>Смотреть</p>
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

@@ -8,12 +8,12 @@ import BeforeAfterSlider from "@/components/before-after/Before-after";
 const Lamark = () => {
     useEffect(() => window.document.scrollingElement?.scrollTo(0, 0), [])
     const firstImage = {
-        imageUrl: './site-after.jpg',
+        imageUrl: '/site-after.jpg',
         alt: 'First Image',
     };
 
     const secondImage = {
-        imageUrl: './site-before.jpg',
+        imageUrl: '/site-before.jpg',
         alt: 'Second Image',
     };
 
@@ -145,12 +145,8 @@ const Lamark = () => {
 
                             </div>
                         </div>
-                        <div
-                            className={`rounded-[20px] border-[8px] border-black w-[70vw] mt-[45px] max-lg:gap-[20px] relative max-lg:w-[90%] max-sm:w-[95vw]`}>
-                            <BeforeAfterSlider firstImage={firstImage} secondImage={secondImage} delimiterColor={`black`}/>
-                            <p className={`absolute bottom-[-3px] left-0 text-[16px] max-md:text-[12px] font-railway text-mainColor bg-black p-[8px] max-md:p-[6px] rounded-tr-[7px]`}>Было</p>
-                            <p className={`absolute bottom-[-3px] right-0 text-[16px] max-md:text-[12px] font-railway text-mainColor bg-black p-[8px] max-md:p-[6px] rounded-tl-[7px]`}>Стало</p>
-                        </div>
+                        <BeforeAfterSlider firstImage={firstImage} secondImage={secondImage} delimiterColor={`black`}/>
+
 
                         <div
                             className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
@@ -340,15 +336,19 @@ const Lamark = () => {
                             <div className={`h-[1px] bg-foreground w-full`}></div>
 
 
-                            <div className={`w-full flex max-lg:gap-[20px] max-lg:mt-[10px] max-md:gap-0 max-md:flex-col`}>
+                            <div
+                                className={`w-full flex max-lg:gap-[20px] max-lg:mt-[10px] max-md:gap-0 max-md:flex-col`}>
 
 
-                                <div className={`flex w-2/6 max-md:w-full flex-col justify-between pt-3 max-md:order-2 max-md:pt-2`}>
-                                    <Image className={`rotate-180 max-md:hidden`} src={'/arrows.png'} alt={`arrows`} width={50}
+                                <div
+                                    className={`flex w-2/6 max-md:w-full flex-col justify-between pt-3 max-md:order-2 max-md:pt-2`}>
+                                    <Image className={`rotate-180 max-md:hidden`} src={'/arrows.png'} alt={`arrows`}
+                                           width={50}
                                            height={50}/>
                                     <div className={`w-full flex justify-start max-md:justify-end`}>
                                         <div className={`flex gap-[10px]`}>
-                                            <Image className={`rounded-[50%] max-md:w-[60px] max-md:h-[60px]`} src={`/lamark-director.png`}
+                                            <Image className={`rounded-[50%] max-md:w-[60px] max-md:h-[60px]`}
+                                                   src={`/lamark-director.png`}
                                                    alt={`фото клиента`}
                                                    width={75} height={75}/>
                                             <div className={`flex flex-col justify-center`}>
@@ -362,16 +362,11 @@ const Lamark = () => {
 
                                 <div className={`flex w-4/6 max-md:w-full`}>
                                     <p className={`w-full text-[22px] max-xl:text-[18px] max-sm:text-[16px] max-md:w-full mb-[25px] max-md:mb-0`}>Обратились
-                                        за
-                                        созданием сайта в компанию &quot;LVGroup&quot;. Ребята отнеслись креативно, с
-                                        подходом
-                                        и душой. Все
-                                        продумали, все отсняли, что нужно доработали и дописали. Еще нас тронуло, как
-                                        ребята
-                                        болеют
-                                        за проект - нам постоянно все напоминали, как-будто им нужен сайт еще больше,
-                                        чем нам.
-                                        Большое спасибо от всего &quot;Ламарк-центра&quot;!</p>
+                                        за созданием сайта в компанию &quot;LVGroup&quot;. Ребята отнеслись креативно, с
+                                        подходом и душой. Все продумали, все отсняли, что нужно доработали и дописали.
+                                        Еще нас тронуло, как ребята болеют за проект - нам постоянно все напоминали,
+                                        как-будто им нужен сайт еще больше, чем нам. Большое спасибо от
+                                        всего &quot;Ламарк-центра&quot;!</p>
                                 </div>
 
 
@@ -426,4 +421,4 @@ const Lamark = () => {
     );
 };
 
-export default Lamark;
+export default Lamark

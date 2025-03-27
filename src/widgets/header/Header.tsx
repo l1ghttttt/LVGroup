@@ -24,22 +24,22 @@ const components: NavbarComponent[] = [
         values: [
             {
                 title: "Аудит отдела продаж",
-                href: "/",
+                href: "/usluga/",
                 description: "Оценка эффективности",
             },
             {
                 title: "Создание/развитие отделов продаж",
-                href: "/create-salesment",
+                href: "/usluga/create-salesment",
                 description: "Достижение новых высот",
             },
             {
                 title: "Разработка регламентов и стандартов",
-                href: "/",
+                href: "/usluga/",
                 description: "Стандартизация процессов",
             },
             {
                 title: "Корпоративные тренинги и «полевое» обучение",
-                href: "/",
+                href: "/usluga/",
                 description: "Развитие вашей команды",
             },
         ],
@@ -49,22 +49,22 @@ const components: NavbarComponent[] = [
         values: [
             {
                 title: "Контекстная реклама",
-                href: "/",
+                href: "/usluga/",
                 description: "Горячие клиенты",
             },
             {
                 title: "SMM",
-                href: "/SMM",
+                href: "/usluga/SMM",
                 description: "Продвижение в соц. сетях",
             },
             {
                 title: "SEO",
-                href: "/",
+                href: "/usluga/",
                 description: "Оптимизация сайта",
             },
             {
                 title: "Маркетинговые исследования",
-                href: "/",
+                href: "/usluga/",
                 description: "Оценка рынка сбыта",
             },
         ],
@@ -74,12 +74,12 @@ const components: NavbarComponent[] = [
         values: [
             {
                 title: "Создание сайтов",
-                href: "/website-creation",
+                href: "/usluga/website-creation",
                 description: "Полный цикл разработки",
             },
             {
                 title: "Техническая поддержка",
-                href: "/tech-support",
+                href: "/usluga/tech-support",
                 description: "Оперативные решения задач",
             },
         ],
@@ -89,12 +89,12 @@ const components: NavbarComponent[] = [
         values: [
             {
                 title: "Видеосъемка",
-                href: "/",
+                href: "/usluga/",
                 description: "Reels, Shorts, реклама на TV",
             },
             {
                 title: "Фотосессии",
-                href: "/",
+                href: "/usluga/",
                 description: "Трендовый контент",
             },
         ],
@@ -104,17 +104,17 @@ const components: NavbarComponent[] = [
         values: [
             {
                 title: "Разработка фирменного стиля",
-                href: "/",
+                href: "/usluga/",
                 description: "От идеи до визуализации",
             },
             {
                 title: "Дизайн-поддержка",
-                href: "/",
+                href: "/usluga/",
                 description: "Красивый визуал",
             },
             {
                 title: "Создание коммерческого предложения",
-                href: "/",
+                href: "/usluga/",
                 description: "Marketing Kit",
             },
         ],
@@ -124,17 +124,17 @@ const components: NavbarComponent[] = [
         values: [
             {
                 title: "Создание и развитие call-центра",
-                href: "/",
+                href: "/usluga/",
                 description: "Достижение новых высот",
             },
             {
                 title: "Удаленный  call-центр",
-                href: "/",
+                href: "/usluga/",
                 description: "Выполнение срочных задач",
             },
             {
                 title: "Разработка регламентов и стандартов",
-                href: "/",
+                href: "/usluga/",
                 description: "Стандартизация процессов",
             },
         ],
@@ -148,8 +148,8 @@ const Header: React.FC = () => {
     const [mounted, setMounted] = useState(false);
     const pathname = usePathname(); // Используем usePathname вместо useRouter
 
-    const stickyRoutes = ["/lamark-center", "/ldpr", "/tooth-fairy", "/dr-mobile", "/vostokavtomash", "/bunker", "/website-creation", "/tech-support", "/SMM", "/chill-house", "/create-salesment", "/brat-buryat"];
-    const isSticky = stickyRoutes.includes(pathname);
+    const unstickyRoutes = ["/", "/cases"];
+    const isUnSticky = unstickyRoutes.includes(pathname) || pathname.includes("/usluga/");
 
     const [lastScroll, setLastScroll] = useState(0);
     const [isHidden, setIsHidden] = useState(false);
@@ -177,7 +177,7 @@ const Header: React.FC = () => {
     if (!mounted) return null;
 
     return (
-        <header className= {`z-[50] header-clas w-full h-[100px] ${isSticky ? 'border-b-0' : 'border-b-[1px]'}  flex items-center pl-[15px] pr-[30px] gap-[25px] max-2xl:hidden top-0 ${isSticky ? "sticky duration-500 transform bg-background z-100" : "absolute"} ${isHidden && isSticky  ? "-translate-y-full" : "translate-y-0"}`}>
+        <header className= {`z-[50] header-clas w-full h-[100px] ${isUnSticky ? 'border-b-[1px]' : 'border-b-0'}  flex items-center pl-[15px] pr-[30px] gap-[25px] max-2xl:hidden top-0 ${isUnSticky ? "absolute" : "sticky duration-500 transform bg-background z-100"} ${isHidden && !isUnSticky  ? "-translate-y-full" : "translate-y-0"}`}>
             <Link href={`/`}>
                 {theme === 'dark' ? (
                     <img src="/LVGROUP_logo.svg" alt="логотип LVGroup" className="w-[150px]" />

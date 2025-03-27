@@ -5,6 +5,7 @@ import './globals.css';
 import Header from "@/widgets/header/Header";
 import Footer from "@/widgets/footer/Footer";
 import BurgerHeader from "@/widgets/burger-header/Burger-header";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const raleway = Raleway({
     subsets: ['latin'],
@@ -37,6 +38,7 @@ export default function RootLayout({
                 enableSystem
                 disableTransitionOnChange
             >
+                <ThemeSwitcher/>
                 <Header />
                 <BurgerHeader />
                 <main className={`flex flex-col items-center`}>
