@@ -1,6 +1,5 @@
 import React from 'react';
 import WelcomeCases from "@/widgets/welcome-cases/Welcome-cases";
-import Link from "next/link";
 
 const Cases = () => {
     return (
