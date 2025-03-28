@@ -1,5 +1,5 @@
 'use client'
-import {Sheet, SheetTrigger, SheetContent, SheetHeader, SheetTitle, SheetClose} from "@/shared/ui/sheet"
+import {Sheet, SheetTrigger, SheetContent, SheetHeader, SheetTitle} from "@/shared/ui/sheet"
 import { Button } from "@/shared/ui/button"
 import React, {useEffect, useState} from "react";
 import {useTheme} from "next-themes";
@@ -86,7 +86,7 @@ export default function BurgerHeader() {
                                         <AccordionTrigger className={` !relative !text-serviceTitleSize !leading-serviceTitleLeading !decoration-0 !no-underline !font-railway`}>{component.trigger}</AccordionTrigger>
                                         <AccordionContent>
                                             <nav>
-                                                <ul className={`duration-500 pl-[15px]`}>
+                                                <ul className={`duration-500 pl-[15px]`}  key={component.trigger}>
                                                     {component.values.map((subcomponent) => (
                                                         <li className={`py-[10px]`} key={subcomponent.title} onClick={() => setIsOpen(false)}>
                                                             <Link href={`${subcomponent.href}`} className={`text-serviceNameSize leading-serviceNameLeading`}>{subcomponent.title}</Link>
