@@ -145,7 +145,7 @@ body {
     --customer-infography-size: 122px;
     --customer-infography-small-size: calc(var(--customer-infography-size) / 3);
     --website-creating-padding-bottom: calc(40.69767px + 4.65116vw);
-    --website-creating-padding-top: calc(0.53156px + 8.30565vw);
+    --website-creating-padding-top: calc(100.53156px + 8.30565vw);
     --website-creating-welcome-padding-x: var(--space-s);
     --website-creating-welcome-heading-width: calc(33.33333% - var(--app__space)/3);
     --website-creating-welcome-heading-size: calc(-60px + 8.33333vw);
@@ -409,7 +409,7 @@ body {
       --heading-level: calc(var(--heading-level_min)* 1px);
       --heading-size: calc(var(--heading-size_min)* 1px);
       --website-creating-padding-bottom: 60px;
-      --website-creating-padding-top: 35px;
+      --website-creating-padding-top: 135px;
       --website-creating-welcome-descr-margin-top: 100px;
       --website-creating-welcome-descr-leading: 34px;
       --ordered-list-heading-margin: 24px;
@@ -460,6 +460,11 @@ h4 {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+a:hover {
+  transition: 300ms;
+  color: hsl(var(--main-color));
 }
 
 .header-class {
@@ -536,7 +541,7 @@ a {
     padding-left: 0;
     padding-right: 0;
     --website-creating-padding-bottom: 130px;
-    --website-creating-padding-top: 160px;
+    --website-creating-padding-top: 260px;
     --website-creating-welcome-padding-x: var(--space-l);
     --website-creating-welcome-heading-width: calc(33.33333% - var(--app__space));
     --website-creating-welcome-heading-size: 85px;

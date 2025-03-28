@@ -12,136 +12,13 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { ThemeSwitcher } from "@/shared/ui/themeSwitcher";
 import { usePathname } from "next/navigation";
+import uslugi from "../../app/uslugi.json"
 
-interface NavbarComponent {
+interface ServicesListProps {
     trigger: string;
     values: { title: string; href: string; description: string }[];
 }
-
-const components: NavbarComponent[] = [
-    {
-        trigger: "Продажи",
-        values: [
-            {
-                title: "Аудит отдела продаж",
-                href: "/usluga/",
-                description: "Оценка эффективности",
-            },
-            {
-                title: "Создание/развитие отделов продаж",
-                href: "/usluga/create-salesment",
-                description: "Достижение новых высот",
-            },
-            {
-                title: "Разработка регламентов и стандартов",
-                href: "/usluga/",
-                description: "Стандартизация процессов",
-            },
-            {
-                title: "Корпоративные тренинги и «полевое» обучение",
-                href: "/usluga/",
-                description: "Развитие вашей команды",
-            },
-        ],
-    },
-    {
-        trigger: "Маркетинг",
-        values: [
-            {
-                title: "Контекстная реклама",
-                href: "/usluga/",
-                description: "Горячие клиенты",
-            },
-            {
-                title: "SMM",
-                href: "/usluga/SMM",
-                description: "Продвижение в соц. сетях",
-            },
-            {
-                title: "SEO",
-                href: "/usluga/",
-                description: "Оптимизация сайта",
-            },
-            {
-                title: "Маркетинговые исследования",
-                href: "/usluga/",
-                description: "Оценка рынка сбыта",
-            },
-        ],
-    },
-    {
-        trigger: "Веб-разработка",
-        values: [
-            {
-                title: "Создание сайтов",
-                href: "/usluga/website-creation",
-                description: "Полный цикл разработки",
-            },
-            {
-                title: "Техническая поддержка",
-                href: "/usluga/tech-support",
-                description: "Оперативные решения задач",
-            },
-        ],
-    },
-    {
-        trigger: "Создание контента",
-        values: [
-            {
-                title: "Видеосъемка",
-                href: "/usluga/",
-                description: "Reels, Shorts, реклама на TV",
-            },
-            {
-                title: "Фотосессии",
-                href: "/usluga/",
-                description: "Трендовый контент",
-            },
-        ],
-    },
-    {
-        trigger: "Дизайн",
-        values: [
-            {
-                title: "Разработка фирменного стиля",
-                href: "/usluga/",
-                description: "От идеи до визуализации",
-            },
-            {
-                title: "Дизайн-поддержка",
-                href: "/usluga/",
-                description: "Красивый визуал",
-            },
-            {
-                title: "Создание коммерческого предложения",
-                href: "/usluga/",
-                description: "Marketing Kit",
-            },
-        ],
-    },
-    {
-        trigger: "Call-центр",
-        values: [
-            {
-                title: "Создание и развитие call-центра",
-                href: "/usluga/",
-                description: "Достижение новых высот",
-            },
-            {
-                title: "Удаленный  call-центр",
-                href: "/usluga/",
-                description: "Выполнение срочных задач",
-            },
-            {
-                title: "Разработка регламентов и стандартов",
-                href: "/usluga/",
-                description: "Стандартизация процессов",
-            },
-        ],
-    },
-];
-
-
+const ServicesList: ServicesListProps[] = uslugi
 
 const Header: React.FC = () => {
     const { theme } = useTheme();
@@ -200,7 +77,7 @@ const Header: React.FC = () => {
                         </NavigationMenuItem>
 
 
-                        {components.map((component) => (
+                        {ServicesList.map((component) => (
                             <NavigationMenuItem key={component.trigger}>
                                 <NavigationMenuTrigger
                                     className={`!text-headerSize  text-headerColor `}>{component.trigger}</NavigationMenuTrigger>

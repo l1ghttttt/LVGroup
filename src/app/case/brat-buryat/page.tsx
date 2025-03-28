@@ -289,7 +289,7 @@ const BratBuryat = () => {
                                     услугу</p>
                                 <ul className={`flex flex-col max-xl:flex-row flex-wrap stack-grid`}>
                                     <li className={`items-center py-[10px] px-0 text-[18px] leading-[21px]`}>
-                                        <Link href={"/"}>Фирменный стиль кафе <span
+                                        <Link href={"/"} className={``}>Фирменный стиль кафе <span
                                             className={`whitespace-nowrap`}>&quot;Брат Бурят&quot;</span></Link>
                                     </li>
                                 </ul>
