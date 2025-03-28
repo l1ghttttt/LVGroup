@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import Link from "next/link";
 import {
@@ -35,11 +37,11 @@ const ServicesListComponent = () => {
 
                     {ServicesList.map((component) => (
                         <li className={`w-1/3 pb-servicesPadding`} key={component.trigger}>
-                            <h2 className={`block relative text-serviceTitleSize leading-serviceTitleLeading before:absolute before:content-[''] before:w-[85%] before:h-[1px] before:top-[-20px] before:left-[2px] before:bg-servicesLineBg`}>{component.trigger}</h2>
+                            <h2 key={component.trigger} className={`block relative text-serviceTitleSize leading-serviceTitleLeading before:absolute before:content-[''] before:w-[85%] before:h-[1px] before:top-[-20px] before:left-[2px] before:bg-servicesLineBg`}>{component.trigger}</h2>
                             <nav>
-                                <ul className={`duration-500 pt-servicePadding`}>
+                                <ul className={`duration-500 pt-servicePadding`} key={component.trigger}>
                                     {component.values.map((subcomponent) => (
-                                        <li className={`py-[10px]`}>
+                                        <li className={`py-[10px]`} key={subcomponent.title}>
                                             <Link href={`${subcomponent.href}`}
                                                   className={`text-serviceNameSize leading-serviceNameLeading text-mainColor hover:text-darkMain duration-300`}>{subcomponent.title}</Link>
                                         </li>
@@ -85,30 +87,20 @@ const ServicesListComponent = () => {
             </AccordionItem>
                 {ServicesList.map((component) => (
                     <AccordionItem value={`item-${component.trigger}`} key={component.trigger}>
-                        <AccordionTrigger
-                            key={`trigger-${component.trigger}`}  // Add key here for AccordionTrigger
-                            className={`!relative !text-serviceTitleSize !leading-serviceTitleLeading !decoration-0 !no-underline !font-railway`}
-                        >
-                            {component.trigger}
-                        </AccordionTrigger>
-                        <AccordionContent key={`content-${component.trigger}`}>  // Add key here for AccordionContent
+                        <AccordionTrigger key={component.trigger} className={` !relative !text-serviceTitleSize !leading-serviceTitleLeading !decoration-0 !no-underline !font-railway`}>{component.trigger}</AccordionTrigger>
+                        <AccordionContent>
                             <nav>
-                                <ul className={`duration-500 pl-[15px]`}>
+                                <ul className={`duration-500 pl-[15px]`} key={component.trigger}>
                                     {component.values.map((subcomponent) => (
                                         <li className={`py-[10px]`} key={subcomponent.title}>
-                                            <Link href={subcomponent.href} className={`text-serviceNameSize leading-serviceNameLeading`}>
-                                                {subcomponent.title}
-                                            </Link>
+                                            <Link href={`${subcomponent.href}`} className={`text-serviceNameSize leading-serviceNameLeading`}>{subcomponent.title}</Link>
                                         </li>
                                     ))}
                                 </ul>
                             </nav>
                         </AccordionContent>
                     </AccordionItem>
-                ))}
-
-
-
+                    ))}
             </Accordion>
 
 
