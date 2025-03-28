@@ -85,10 +85,13 @@ const ServicesListComponent = () => {
             </AccordionItem>
                 {ServicesList.map((component) => (
                     <AccordionItem value={`item-${component.trigger}`} key={component.trigger}>
-                        <AccordionTrigger className={`!relative !text-serviceTitleSize !leading-serviceTitleLeading !decoration-0 !no-underline !font-railway`}>
+                        <AccordionTrigger
+                            key={`trigger-${component.trigger}`}  // Add key here for AccordionTrigger
+                            className={`!relative !text-serviceTitleSize !leading-serviceTitleLeading !decoration-0 !no-underline !font-railway`}
+                        >
                             {component.trigger}
                         </AccordionTrigger>
-                        <AccordionContent>
+                        <AccordionContent key={`content-${component.trigger}`}>  // Add key here for AccordionContent
                             <nav>
                                 <ul className={`duration-500 pl-[15px]`}>
                                     {component.values.map((subcomponent) => (
@@ -103,6 +106,8 @@ const ServicesListComponent = () => {
                         </AccordionContent>
                     </AccordionItem>
                 ))}
+
+
 
             </Accordion>
 
