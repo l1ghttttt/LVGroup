@@ -85,7 +85,7 @@ const ServicesListComponent = () => {
             </AccordionItem>
                 {ServicesList.map((component) => (
                     <AccordionItem value={`item-${component.trigger}`} key={component.trigger}>
-                        <AccordionTrigger className={` !relative !text-serviceTitleSize !leading-serviceTitleLeading !decoration-0 !no-underline !font-railway`}>{component.trigger}</AccordionTrigger>
+                        <AccordionTrigger key={component.trigger} className={` !relative !text-serviceTitleSize !leading-serviceTitleLeading !decoration-0 !no-underline !font-railway`}>{component.trigger}</AccordionTrigger>
                         <AccordionContent>
                             <nav>
                                 <ul className={`duration-500 pl-[15px]`} key={component.trigger}>
