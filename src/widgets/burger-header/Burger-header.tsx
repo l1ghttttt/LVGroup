@@ -70,13 +70,13 @@ export default function BurgerHeader() {
                             <AccordionItem value="item-1" className={`border-none relative`}>
                                 <div className={`bg-background absolute w-[30px] h-full z-[1000] top-0 right-0 translate-x-1`}></div>
                                 <Link href="/">
-                                    <AccordionTrigger className={` !relative !text-serviceTitleSize !leading-serviceTitleLeading !decoration-0 !no-underline !font-railway`}>Главная</AccordionTrigger>
+                                    <AccordionTrigger onClick={() => setIsOpen(false)} className={` !relative !text-serviceTitleSize !leading-serviceTitleLeading !decoration-0 !no-underline !font-railway`}>Главная</AccordionTrigger>
                                 </Link>
                             </AccordionItem>
                             <AccordionItem value="item-2" className={`border-none relative`}>
                                 <div className={`bg-background absolute w-[30px] h-full z-[1000] top-0 right-0 translate-x-1`}></div>
                                 <Link href="/cases">
-                                    <AccordionTrigger
+                                    <AccordionTrigger onClick={() => setIsOpen(false)}
                                         className={` !relative !text-serviceTitleSize !leading-serviceTitleLeading !decoration-0 !no-underline !font-railway`}>Наши
                                         проекты</AccordionTrigger>
                                 </Link>
