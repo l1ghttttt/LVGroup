@@ -69,8 +69,9 @@ const WebsiteCreation = () => {
             <ServiceWelcome
                 title={`Создание сайтов`}
                 description={`Каждый наш сайт – это инструмент привлечения клиентов для бизнеса. Разработаем понятную структуру и визуал под вашу целевую аудиторию. Внимательно отнесемся ко всем пожеланиям и предложим наилучшие передовые решения в области веб-дизайна.`}
-                background={`WebsiteCreatingVideo.mp4`}
+                background={`WebDeveloping.mp4`}
             />
+
             <div className={`bg-background`}>
 
                 <OrderedList
