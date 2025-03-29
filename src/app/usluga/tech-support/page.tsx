@@ -8,32 +8,32 @@ import {CiBookmarkCheck, CiBoxList, CiCalendar, CiDiscount1, CiGrid32, CiMonitor
 
 const featuresList = [
     {
-        icon: <CiMonitor size={100} />,
+        icon: <CiMonitor size={100} className={`w-full`} />,
         title: "Современный и адаптивный сайт",
         description: "Используем на сайтах эффективные сервисы: квизы, формы обратной связи, сервисы для глубокой аналитики, калькуляторы стоимости. Пишем чистый и валидный код."
     },
     {
-        icon: <CiGrid32 size={100} />,
+        icon: <CiGrid32 size={100} className={`w-full`} />,
         title: "Экспертность в дизайне и создании контента",
         description: "Проводим съёмки, создаем иллюстрации, напишем тексты, исходя из современных и актуальных трендов."
     },
     {
-        icon: <CiBookmarkCheck size={100} />,
+        icon: <CiBookmarkCheck size={100} className={`w-full`} />,
         title: "Помощь и обучение работе с сайтом",
         description: "Поможем с CMS, научим обновлять контент сайта, поможем продлить сертификат SSL, сменить хостинг или домен сайта и многое другое."
     },
     {
-        icon: <CiBoxList size={100} />,
+        icon: <CiBoxList size={100} className={`w-full`} />,
         title: "Доступ к статистике и отчетам сайта",
         description: "Предоставляем постоянный доступ к онлайн статистике, регулярно отчитываемся о выполненных работах по сайту."
     },
     { icon:
-            <CiDiscount1 size={100} />,
+            <CiDiscount1 size={100} className={`w-full`} />,
         title: "Скидки",
         description: "Предоставляем скидки на сопутствующие услуги для максимально эффективного онлайн-продвижения компании."
     },
     {
-        icon: <CiCalendar size={100} />,
+        icon: <CiCalendar size={100} className={`w-full`} />,
         title: "Дальнейшее развитие после запуска",
         description: "Разработаем дальнейшую стратегию продвижения, подберем самые эффективные инструменты, исходя из нашего опыта и анализа."
     },

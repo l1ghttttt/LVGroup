@@ -16,8 +16,8 @@ const OwnFeatures = ({ title, featuresList }: OwnFeaturesProps) => {
 
 
     return (
-        <section className="px-WebsiteCreatingWelcomePaddingX w-full flex flex-col items-center relative mb-[100px]">
-            <div className="flex flex-col w-OrderedListWidth mt-[150px] max-w-[1200px]">
+        <section className="px-WebsiteCreatingWelcomePaddingX w-full flex flex-col items-center relative mb-[50px]">
+            <div className="flex flex-col mt-[150px] max-lg:mt-[100px] max-sm:mt-[50px] max-w-[1200px]">
                 <h2 className="mb-OrderedListHeadingMargin font-normal text-customerTitleSize leading-customerTitleLeading">{title}</h2>
             </div>
             <div className="w-full flex justify-center">

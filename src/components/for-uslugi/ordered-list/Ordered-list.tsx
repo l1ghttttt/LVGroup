@@ -14,7 +14,7 @@ interface OrderedListProps {
 const OrderedList = ({name, description, orderList}: OrderedListProps) => {
     return (
         <section className={`px-WebsiteCreatingWelcomePaddingX w-full flex flex-col items-center`}>
-            <div className={`xl:flex xl:items-start xl:justify-start flex-col w-OrderedListWidth max-w-[1200px] mt-[150px]`}>
+            <div className={`xl:flex xl:items-start xl:justify-start flex-col w-OrderedListWidth max-w-[1200px] mt-[150px] max-lg:mt-[100px] max-sm:mt-[50px]`}>
                 <h2 className={`mb-OrderedListHeadingMargin font-normal text-customerTitleSize leading-customerTitleLeading`}>{name}</h2>
                 <div className={`w-full xl:shrink-0`}>
                     <p className={`max-w-[1200px] text-OrderedListDescrSize leading-OrderedListDescrLeading flex flex-col justify-start items-stretch flow mb-OrderedListDescrMargin`}>

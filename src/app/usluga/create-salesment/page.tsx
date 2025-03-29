@@ -8,22 +8,22 @@ import { CiSquareCheck, CiUser, CiBoxList, CiRoute } from "react-icons/ci";
 
 const featuresList = [
     {
-        icon: <CiBoxList size={100} />,
+        icon: <CiBoxList size={100} className={`w-full`} />,
         title: "Покажем, как действовать",
         description: "Мы дадим и поможем внедрить проверенные на практике инструменты продаж."
     },
     {
-        icon: <CiSquareCheck size={100} />,
+        icon: <CiSquareCheck size={100} className={`w-full`} />,
         title: "Поможем выполнить поставленный результат",
         description: "Проведем аудит, устраним \"зоны роста\", обучим персонал, а также дадим гарантии."
     },
     {
-        icon: <CiUser size={100} />,
+        icon: <CiUser size={100} className={`w-full`} />,
         title: "Мы знаем, как определить ваших конкурентов",
         description: "Не важно какая сфера бизнеса - все разработанные инструменты дадут результат и сделают вас №1 в своей нише."
     },
     {
-        icon: <CiRoute size={100} />,
+        icon: <CiRoute size={100} className={`w-full`} />,
         title: "Дальнейшее сопровождение",
         description: "Оперативно подключимся к решению новых задач и открытию новых направлений бизнеса."
     }
