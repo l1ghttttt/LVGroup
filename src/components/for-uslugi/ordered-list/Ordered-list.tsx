@@ -23,7 +23,7 @@ const OrderedList = ({name, description, orderList}: OrderedListProps) => {
                 </div>
                 <ul>
                     {orderList.map((item, index) => (
-                        <li key={index} className={`website-creating-list-item  ${index ? `mt-OrderedListItemMargin` : null}`}>
+                        <li key={index} className={`website-creating-list-item ${item.description ? `` : `list-item-full`}   ${index ? `mt-OrderedListItemMargin` : null}`}>
                             <div className="text-[16px] pb-[12px] mb-[12px] border-b-[1px] border-solid border-foreground website-creating-list-item-number">
                                 0{index + 1}
                             </div>

@@ -12,6 +12,9 @@ interface OwnFeaturesProps {
 }
 
 const OwnFeatures = ({ title, featuresList }: OwnFeaturesProps) => {
+
+
+
     return (
         <section className="px-WebsiteCreatingWelcomePaddingX w-full flex flex-col items-center relative mb-[100px]">
             <div className="flex flex-col w-OrderedListWidth mt-[150px] max-w-[1200px]">
