@@ -3,7 +3,12 @@
 import React, {useEffect, useState} from 'react';
 import Link from "next/link";
 
-const WelcomeCases = () => {
+interface CasesProps {
+    text: string;
+    tags: boolean;
+}
+
+const CasesList = ({text, tags}: CasesProps) => {
 
     const [mounted, setMounted] = useState(false);
 
@@ -15,45 +20,49 @@ const WelcomeCases = () => {
 
     return (
         <section className={`w-full flex flex-col bg-background`}>
-            <h2 className={`p-casesNamePadding leading-none flex items-end justify-stretch sm:w-2/3 text-casesNameSize font-medium`}>Наши проекты</h2>
-            <ul className={`flex p-casesFilterPadding flex-wrap gap-2 gap-y-3`}>
-                <li>
-                    <button
-                        className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                        Продажи
-                    </button>
-                </li>
-                <li>
-                    <button
-                        className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                        Маркетинг
-                    </button>
-                </li>
-                <li>
-                    <button
-                        className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                        Веб-разработка
-                    </button>
-                </li>
-                <li>
-                    <button
-                        className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                        Создание контента
-                    </button>
-                </li>
-                <li>
-                    <button
-                        className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                        Дизайн
-                    </button>
-                </li>
-                <li>
-                    <button
-                        className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                        Call-центр
-                    </button>
-                </li>
+            <h2 className={`relative p-casesNamePadding leading-none flex items-end justify-stretch sm:w-2/3 text-casesNameSize font-medium before:absolute before:left-10 before:top-[45%] max-xl:before:left-7 max-lg:before:left-5 max-sm:before:left-4 before:w-[2px] max-md:before:w-[1px] before:bg-foreground before:h-[66%]`}>{text}</h2>
+            <ul className={`flex ${tags ? `p-casesFilterPadding` : `p-5 max-md:p-3`} flex-wrap gap-2 gap-y-3`}>
+                {tags ? (<>
+                    <li>
+                        <button
+                            className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                            Продажи
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                            Маркетинг
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                            Веб-разработка
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                            Создание контента
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                            Дизайн
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
+                            Call-центр
+                        </button>
+                    </li>
+                </>) : null}
+
             </ul>
+
             <ul className={`bg-background flex items-start flex-wrap justify-start relative ml-[-1px] mb-[-1px]`}>
                 <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                     <Link href="/case/lamark-center">
@@ -180,4 +189,4 @@ const WelcomeCases = () => {
     );
 };
 
-export default WelcomeCases;
+export default CasesList;

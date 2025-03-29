@@ -82,11 +82,11 @@ const Order = () => {
                     <nav className={`flex mt-auto w-full text-[18px] leading-[28px] max-xl:pt-[200px]`}>
                         <ul className={`flex`}>
                             <li className={`mr-[72px] max-xl:mr-[36px] max-sm:mr-0`}>
-                                <p className={`text-[20px] relative leading-[35px] mb-[20px] max-sm:font-medium max-sm:leading-[29px] max-sm:mb-[15px]`}>
+                                <p className={`text-[20px] max-lg:text-[18px] max-sm:text-[16px] max-sm:leading-[20px] relative leading-[35px] mb-[20px] max-sm:font-medium max-sm:mb-[15px]`}>
                                     Наши руководители готовы лично помочь и обсудить детали.
 
                                 </p>
-                                <p className={`text-[20px] relative leading-[35px] mb-[20px] max-sm:font-medium max-sm:leading-[29px] max-sm:mb-[15px]`}>
+                                <p className={`text-[20px] max-lg:text-[18px] max-sm:text-[16px] max-sm:leading-[20px] relative leading-[35px] mb-[20px] max-sm:font-medium max-sm:mb-[15px]`}>
                                     Позвоните, чтобы договориться о встрече или заполните форму,
                                     и мы вам обязательно перезвоним.
                                 </p>

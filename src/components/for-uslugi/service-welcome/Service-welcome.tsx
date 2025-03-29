@@ -3,7 +3,13 @@
 import React, {useEffect, useState} from 'react';
 import {useTheme} from "next-themes";
 
-const WebsiteCreationWelcome = () => {
+interface ServiceWelcomeProps {
+    title: string;
+    description: string;
+    background: string;
+}
+
+const ServiceWelcome = ({title, description, background}: ServiceWelcomeProps) => {
     const { theme } = useTheme();
     const [mounted, setMounted] = useState(false);
     useEffect(() => {
@@ -15,7 +21,7 @@ const WebsiteCreationWelcome = () => {
 
             <div className="video-background">
                 <video autoPlay muted loop playsInline id="myVideo" className={theme == 'dark' ? '' : 'invert'}>
-                    <source src="/WebsiteCreatingVideo.mp4" type="video/mp4"/>
+                    <source src={`/${background}`} type="video/mp4"/>
                 </video>
             </div>
 
@@ -23,7 +29,7 @@ const WebsiteCreationWelcome = () => {
                 className={`w-full px-WebsiteCreatingWelcomePaddingX flex max-xl:block pb-WebsiteCreatingWelcomePaddingBottom pt-WebsiteCreatingWelcomePaddingTop overflow-hidden`}>
                 <h1 className={`xl:WebsiteCreatingWelcomeHeadingWidth`}>
                     <div className={`leading-[1.1] text-WebsiteCreatingWelcomeHeadingSize font-railway`}>
-                        Создание сайтов
+                        {title}
                     </div>
                 </h1>
                 <div
@@ -34,11 +40,7 @@ const WebsiteCreationWelcome = () => {
                     </p>*/}
                     <div
                         className={`w-full max-w-[900px] text-WebsiteCreatingWelcomeDescrSize leading-[1.25] mt-WebsiteCreatingWelcomeDescrMarginTop`}>
-                        Каждый наш сайт – это инструмент привлечения клиентов для бизнеса. Разработаем понятную
-                        структуру и
-                        визуал под вашу целевую аудиторию. Внимательно отнесемся ко всем пожеланиям и предложим
-                        наилучшие
-                        передовые решения в области веб-дизайна.
+                        {description}
                     </div>
                 </div>
             </div>
@@ -46,4 +48,4 @@ const WebsiteCreationWelcome = () => {
     );
 };
 
-export default WebsiteCreationWelcome;
+export default ServiceWelcome;
