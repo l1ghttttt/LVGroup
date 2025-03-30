@@ -386,7 +386,6 @@ const VostokAvtoMash = () => {
                             </div>
 
                             <div className={`h-[1px] bg-foreground w-full`}></div>
-                            <div className={`h-[1px] bg-foreground w-full mt-[30px]`}></div>
                         </div>
 
                     </div>
