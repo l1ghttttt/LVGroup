@@ -73,7 +73,6 @@ const TechnicalSupport = () => {
                 />
 
                 <CasesList
-                    text={`Наша тех. поддержка`}
                     tags={false}
                 />
 

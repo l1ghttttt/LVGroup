@@ -4,11 +4,10 @@ import React, {useEffect, useState} from 'react';
 import Link from "next/link";
 
 interface CasesProps {
-    text: string;
     tags: boolean;
 }
 
-const CasesList = ({text, tags}: CasesProps) => {
+const CasesList = ({tags}: CasesProps) => {
 
     const [mounted, setMounted] = useState(false);
 
@@ -20,7 +19,7 @@ const CasesList = ({text, tags}: CasesProps) => {
 
     return (
         <section className={`w-full flex flex-col bg-background`}>
-            <h2 className={`relative p-casesNamePadding leading-none flex items-end justify-stretch sm:w-2/3 text-casesNameSize font-medium before:absolute before:left-10 before:top-[45%] max-xl:before:left-7 max-lg:before:left-5 max-sm:before:left-4 before:w-[2px] max-md:before:w-[1px] before:bg-foreground before:h-[66%]`}>{text}</h2>
+            <h2 className={`relative p-casesNamePadding leading-none flex items-end justify-stretch sm:w-2/3 text-casesNameSize font-medium before:absolute before:left-10 before:top-[45%] max-xl:before:left-7 max-lg:before:left-5 max-sm:before:left-4 before:w-[2px] max-md:before:w-[1px] before:bg-foreground before:h-[66%]`}>Наши работы</h2>
             <ul className={`flex ${tags ? `p-casesFilterPadding` : `p-5 max-md:p-3`} flex-wrap gap-2 gap-y-3`}>
                 {tags ? (<>
                     <li>

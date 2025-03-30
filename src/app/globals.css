@@ -70,6 +70,8 @@ body {
     --background: 0 0% 100%;
     --foreground: 224 71.4% 4.1%;
     --text-inversion: 0 100% 100%;
+    --qa-background: 220, 13%, 91%;
+    --qa-answer-color: 220, 8.9%, 46.1%;
     --mainZag: calc(24px + var(--responsive)* 56);
     --responsive: calc(-0.27575px + 0.06645vw);
     --welcome-pl: calc(25px + var(--responsive)* 35);
@@ -194,6 +196,8 @@ body {
     --footer-link-color: 0 0 71%;
     --services-line-bg: 0 0 71%;
     --main-color: 20 100% 50%;
+    --qa-background: 240, 0%, 12%;
+    --qa-answer-color: 240, 0%, 84%;
 
     --background: 0 0% 0%;
     --foreground: 210 0% 98%;

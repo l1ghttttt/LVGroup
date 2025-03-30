@@ -85,7 +85,9 @@ const SMM = () => {
                     orderList={orderList}
                 />
 
-                <CasesList text={`Наши SMM`} tags={false}/>
+                <CasesList
+                    tags={false}
+                />
 
                 <OwnFeatures
                     title={`Что вы получаете, работая с нами`}

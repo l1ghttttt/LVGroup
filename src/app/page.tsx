@@ -8,7 +8,7 @@ export default function Home() {
   return (
       <>
           <Welcome/>
-          <CasesList text={`Наши работы`} tags={true}/>
+          <CasesList tags={true}/>
           <ServicesListComponent/>
           <Order/>
       </>

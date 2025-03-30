@@ -81,7 +81,6 @@ const WebsiteCreation = () => {
                 />
 
                 <CasesList
-                    text={`Наши сайты`}
                     tags={false}
                 />
 

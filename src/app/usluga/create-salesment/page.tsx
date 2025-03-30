@@ -80,7 +80,6 @@ const CreateSalesment = () => {
                 />
 
                 <CasesList
-                    text={`Отделы продаж`}
                     tags={false}
                 />
 

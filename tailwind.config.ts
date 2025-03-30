@@ -97,14 +97,16 @@ export default {
   			welcomeColorDescr: 'hsl(var(--welcome-colorDescr))',
   			mainColor: 'hsl(var(--main-color))',
   			darkMain: 'hsl(var(--dark-main))',
-  			footerLinkColor: 'hsl(var(--footer-link-color))'
+  			footerLinkColor: 'hsl(var(--footer-link-color))',
+			qaColor: 'hsl(var(--qa-answer-color))',
   		},
   		backgroundColor: {
   			mainColor: 'hsl(var(--main-color))',
   			darkMain: 'hsl(var(--dark-main))',
   			servicesLineBg: 'hsl(var(--services-line-bg))',
   			orderBg: 'hsl(var(--order-bg))',
-  			altBg: 'hsl(var(--bg-inversion))'
+  			altBg: 'hsl(var(--bg-inversion))',
+			qaBg: 'hsl(var(--qa-background))',
   		},
   		fontFamily: {
   			railway: 'var(--title-font)'

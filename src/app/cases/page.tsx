@@ -5,7 +5,7 @@ const CasesPage = () => {
     return (
         <>
             <div className="cases-container mt-[50px] max-md:mt-[100px]">
-                <CasesList text={`Наши работы`} tags={true}/>
+                <CasesList tags={true}/>
             </div>
         </>
     );
