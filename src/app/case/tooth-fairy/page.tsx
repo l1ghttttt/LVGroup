@@ -561,13 +561,12 @@ const ToothFairy = () => {
                                     <div className={`flex gap-[10px]`}>
                                         <Image
                                             className={`rounded-[50%] max-md:w-[60px] max-md:h-[60px`}
-                                            src={`/VostokAvtoMashDirector.jpg`}
+                                            src={`/tooth-fairy-photo.png`}
                                             alt={`фото клиента`}
                                             width={75} height={75}/>
                                         <div className={`flex flex-col justify-center`}>
                                             <p className={`mb-[5px] text-[14px]`}>Екатерина Виноградова</p>
-                                            <p className={`text-[12px] text-gray-500`}>Генеральный
-                                                директор &quot;Зубная фея&quot;</p>
+                                            <p className={`text-[12px] text-gray-500`}>Управляющая стоматологией</p>
                                         </div>
                                     </div>
                                 </div>
