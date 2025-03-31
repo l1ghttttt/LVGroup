@@ -78,9 +78,9 @@ const CustomerText = ({title, defaultText, dottedText, numberText, lastText, bon
 
                                 {bonusTexts?.map((text, i) => (
                                     text.link ? (
-                                        <Link href={`/${text.link}`}>{text.text}</Link>
+                                        <Link href={`/${text.link}`} key={i}>{text.text}</Link>
                                     ) : (
-                                        <p>{text.text}</p>
+                                        <p key={i}>{text.text}</p>
                                     )
                                 ))}
 
