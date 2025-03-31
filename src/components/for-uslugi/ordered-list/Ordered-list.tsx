@@ -26,8 +26,8 @@ const OrderedList = ({name, description, orderList}: OrderedListProps) => {
                     {orderList.map((item, index) => (
                         <li key={index} className={`website-creating-list-item ${item.description ? `` : `list-item-full`}   ${index ? `mt-OrderedListItemMargin` : null}`}>
                             <div className="text-[16px] pb-[12px] mb-[12px] border-b-[1px] border-solid border-foreground website-creating-list-item-number">
-                                {index < 9 && index ? `0${index + 1}` : null}
-                                {index >= 9 && index ? `${index + 1}` : null}
+                                {index < 9 ? `0${index + 1}` : null}
+                                {index >= 9 ? `${index + 1}` : null}
                             </div>
                             <p className="block text-[30px] leading-[40px] website-creating-list-item-heading font-railway">{item.title}</p>
                             <p className="block text-[20px] leading-[34px] website-creating-list-item-descr max-md:mt-[10px]">{item.description}</p>
