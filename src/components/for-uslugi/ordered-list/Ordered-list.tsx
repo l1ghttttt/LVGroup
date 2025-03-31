@@ -29,8 +29,8 @@ const OrderedList = ({name, description, orderList}: OrderedListProps) => {
                                 {index < 9 ? `0${index + 1}` : null}
                                 {index >= 9 ? `${index + 1}` : null}
                             </div>
-                            <p className="block text-[30px] leading-[40px] website-creating-list-item-heading font-railway">{item.title}</p>
-                            <p className="block text-[20px] leading-[34px] website-creating-list-item-descr max-md:mt-[10px]">{item.description}</p>
+                            <p className="block text-[30px] leading-[40px] max-md:text-[21px] max-md:leading-[28px] website-creating-list-item-heading font-railway">{item.title}</p>
+                            <p className="block text-[20px] leading-[34px] max-md:text-[17px] max-md:leading-[24px] website-creating-list-item-descr max-md:mt-[10px]">{item.description}</p>
                         </li>
                     ))}
                 </ul>
