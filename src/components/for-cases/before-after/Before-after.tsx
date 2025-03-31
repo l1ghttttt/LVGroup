@@ -114,7 +114,7 @@ function normalizeNewPosition(newPosition: number, imagesWidth: number) {
 const DEFAULT_START_PERCENT = 50;
 const DEFAULT_BACKGROUND_COLOR = '#fff';
 
-export default function BeforeAfterSlider({
+export default function BeforeAfter({
                                               firstImage,
                                               secondImage,
                                               className,

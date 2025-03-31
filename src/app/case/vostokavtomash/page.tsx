@@ -364,7 +364,7 @@ const VostokAvtoMash = () => {
                                     <div className={`w-full flex justify-start max-md:justify-end`}>
                                         <div className={`flex gap-[10px]`}>
                                             <Image className={`rounded-[50%] max-md:w-[60px] max-md:h-[60px] ${theme == 'dark' ? 'invert' : ''}`}
-                                                   src={`/VostokAvtoMashDirector.jpg`}
+                                                   src={`/NoCustomerPhoto.jpg`}
                                                    alt={`фото клиента`}
                                                    width={75} height={75}/>
                                             <div className={`flex flex-col justify-center`}>
