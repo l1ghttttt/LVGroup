@@ -1,155 +1,63 @@
-'use client'
-
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Order from "@/components/order/Order";
-import Image from "next/image";
+import CustomerInfo from "@/components/for-cases/customer-info/Customer-info";
+import CustomerPhoto from "@/components/for-cases/customer-photo/Customer-photo";
+import CustomerText from "@/components/for-cases/customer-text/Customer-text";
+
+const tagsList = [
+    "Контекстная реклама",
+    "Маркетинговые исследования",
+    "Реклама",
+]
 
 const DrMobile = () => {
-    useEffect(() => window.document.scrollingElement?.scrollTo(0, 0), [])
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => {
-        setMounted(true);
-    }, []);
-
-    if (!mounted) return null;
-
     return (
         <>
             <section className={`w-full overflow-x-hidden`}>
                 <div className={`flex flex-col`}>
-                    <div className={`p-servicesTitlePadding`}>
-                        <div className={`flex justify-between`}>
-                            <h2 className={`max-sm:w-full text-customerTitleSize leading-customerTitleLeading`}>Контекстная реклама для &quot;Dr. Mobile&quot;: <br/> 100 лидов в месяц</h2>
-                            <Image
-                                className={`w-[150px] h-[150px] 2xl:hidden max-2xl:mr-[35px] max-lg:mr-[5px] max-sm:mb-0 max-sm:hidden`}
-                                src={`/DrMobileLogo.png`}
-                                alt={`лого заказчика`}
-                                width={180} height={180}/>
-                        </div>
-
-                        <ul className={`flex p-casesFilterPadding pl-0 flex-wrap gap-2 gap-y-3`}>
-                            <li>
-                                <button
-                                    className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                                    Контекстная реклама
-                                </button>
-                            </li>
-                            <li>
-                                <button
-                                    className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                                    Маркетинговые исследования
-                                </button>
-                            </li>
-                            <li>
-                                <button
-                                    className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                                    Реклама
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                    <h4 className={`text-customerClientSize leading-customerClientLeading customer-spacing w-full px-CustomerSpacingPadding`}><span
-                        className={`text-mainColor`}>Наш</span> клиент и <span
-                        className={`text-mainColor`}>его</span> задача</h4>
+                    <CustomerInfo
+                        title={`Контекстная реклама для "Dr. Mobile" 100 лидов в месяц`}
+                        logo={`DrMobileLogo.png`}
+                        tags={tagsList}
+                        descriptions={[
+                            "Dr. Mobile – это сеть сервисных центров по ремонту и выкупу любой электроники, по большей части оргтехники, мобильных телефонов и компьютеров. Сеть работает с 2010 года и радуетсвоих клиентов доступными ценами и профессиональным подходом к ремонту любой сложности.",
+                            "К нам клиент обратился с задачей – обеспечить стабильный поток клиентов в свои сервисные центры посредством контекстной рекламы."
+                        ]}
+                    />
                     <div
                         className={`my-0 mx-CustomerSpacingMargin customer-spacing relative max-sm:mx-[20px] flex flex-col items-center mt-[40px]`}>
-                        <div className={`w-full flex gap-[30px] items-center max-xl:flex-col`}>
-                            <Image
-                                className={`w-[250px] 2xl:absolute 2xl:top-0 2xl:w-customerImageWidth pr-[20px] max-2xl:hidden max-sm:mb-0 max-sm:block max-sm:w-3/4 h-auto CustomerImage max-sm:pr-0`}
-                                src={`/DrMobileLogo.png`}
-                                alt={`лого заказчика`}
-                                width={250} height={250}/>
-
-                            <div
-                                className={`flex flex-col gap-[10px] justify-start text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
-                                <p>
-                                    <span className={`text-mainColor font-bold mb-[20px]`}> Dr. Mobile </span> – это
-                                    сеть сервисных центров по ремонту и выкупу любой электроники, по большей части
-                                    оргтехники, мобильных телефонов и компьютеров. Сеть работает с 2010 года и радует
-                                    своих клиентов доступными ценами и профессиональным подходом к ремонту любой
-                                    сложности.
-                                </p>
-                                <p>
-                                    К нам клиент обратился с задачей – обеспечить стабильный поток клиентов в свои
-                                    сервисные центры посредством контекстной рекламы.
-                                </p>
-                            </div>
-                        </div>
-                        <div
-                            className={`w-[100vw] max-2xl:w-[100vw] flex mt-[100px] max-lg:mt-[30px] overflow-hidden overflow-x-hidden`}>
-                            <Image
-                                className={`w-full aspect-[16/6] max-sm:aspect-[16/9] object-cover max-w-full overflow-hidden overflow-x-hidden`}
-                                src={`/DrMobilePicture1.jpg`} alt={`картинка`} width={1600}
-                                height={900}/>
-                        </div>
-                        <div
-                            className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
-                            <h2 className={`text-customerClientSize text-mainColor`}>Подробнее о задаче</h2>
-                            <div
-                                className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
-                                <p>
-                                    У Dr. Mobile уже был опыт ведения контекстной рекламы. Предыдущие специалисты
-                                    предоставляли отчеты с большим количеством конверсий, но по факту отсутствовал поток
-                                    новых клиентов.
-                                </p>
-                                <p>
-                                    Причина была достаточно распространенная – конверсии были настроены на промежуточные
-                                    действия клиентов, например, переход между страницами сайта, нажатие кнопки
-                                    «оставить заявку», а не итоговый экран после заполненной формы и тому подобное. Как
-                                    следствие, рекламная компания качественно не обучалась, бюджет тратился впустую.
-                                </p>
-                            </div>
-                        </div>
+                        <CustomerPhoto
+                            full={true}
+                            photo={`DrMobilePicture1.jpg`}
+                        />
+                        <CustomerText
+                            title={`Подробнее о задаче`}
+                            defaultText={[
+                                "У Dr. Mobile уже был опыт ведения контекстной рекламы. Предыдущие специалисты предоставляли отчеты с большим количеством конверсий, но по факту отсутствовал поток новых клиентов.",
+                                "Причина была достаточно распространенная – конверсии были настроены на промежуточные действия клиентов, например, переход между страницами сайта, нажатие кнопки «оставить заявку», а не итоговый экран после заполненной формы и тому подобное. Как следствие, рекламная компания качественно не обучалась, бюджет тратился впустую.",
+                            ]}
+                        />
+                        <CustomerText
+                            title={`Подготовка к рекламной компании`}
+                            defaultText={[
+                                "На старте работ мы проанализировали сайт заказчика, переработали весь контент – оформили картинки и разделы с описанием каждой услуги и УТП компании для повышения конверсии.",
+                                "Подключили сервис для глубокого анализа работы контекстной рекламы, а также обратный звонок для увеличения конверсии входящего клиентского потока на сайте.",
+                                "Наша цель – стабильный поток качественных конверсий по стоимости лида в районе 500 рублей"
+                            ]}
+                        />
+                        <CustomerPhoto
+                            full={true}
+                            photo={`DrMobilePicture.jpg`}
+                        />
+                        <CustomerText
+                            title={`Результаты`}
+                            numberText={[
+                                "Dr. Mobile не планирует останавливаться на текущих результатах – далее в планах развивать направление выкупа техники с нашей всесторонней помощью.",
+                                "После проведенных работ по качественной настройке, анализу контекстной рекламы и доработке сайта клиент стабильно получает 100 заявок в месяц.",
+                            ]}
+                        />
 
 
-                        <div
-                            className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
-                            <h2 className={`text-customerClientSize text-mainColor`}>Подготовка к рекламной
-                                компании</h2>
-                            <div
-                                className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
-                                <p>
-                                    На старте работ мы проанализировали сайт заказчика, переработали весь контент –
-                                    оформили картинки и разделы с описанием каждой услуги и УТП компании для повышения
-                                    конверсии.
-                                </p>
-                                <p>
-                                    Подключили сервис для глубокого анализа работы контекстной рекламы, а также обратный
-                                    звонок для увеличения конверсии входящего клиентского потока на сайте.
-                                </p>
-                                <p>
-                                    Наша цель – стабильный поток качественных конверсий по стоимости лида в районе 500
-                                    рублей
-                                </p>
-                            </div>
-                        </div>
-
-                        <div
-                            className={`w-[100vw] max-2xl:w-[100vw] flex mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] overflow-hidden overflow-x-hidden`}>
-                            <Image
-                                className={`w-full aspect-[16/6] max-sm:aspect-[16/9] object-cover max-w-full overflow-hidden overflow-x-hidden`}
-                                src={`/DrMobilePicture.jpg`} alt={`картинка`} width={1600}
-                                height={900}/>
-                        </div>
-
-                        <div
-                            className={`w-full flex gap-[30px] mt-[45px] max-lg:gap-[20px] max-lg:mt-[20px] items-start justify-center flex-col`}>
-                            <h2 className={`text-customerClientSize text-mainColor`}>Результаты</h2>
-                            <div
-                                className={`flex flex-col gap-[5px] justify-start leading-[34px] text-[21px] max-md:text-[17px] max-md:leading-[30px]`}>
-                                <ul className={`flex flex-col gap-[5px] `}>
-                                    <li className={`pl-[25px] relative customerList `}><p
-                                        className={`my-[20px]`}>Dr. Mobile не планирует останавливаться на текущих
-                                        результатах – далее в планах развивать направление выкупа техники с нашей
-                                        всесторонней помощью.</p></li>
-                                    <li className={`pl-[25px] relative customerList `}><p
-                                        className={`my-[20px]`}>После проведенных работ по качественной настройке,
-                                        анализу контекстной рекламы и доработке сайта клиент стабильно получает 100
-                                        заявок в месяц.</p></li>
-                                </ul>
-                            </div>
-                        </div>
 
                         <div
                             className={`w-[80vw] max-xl:w-[90vw] flex gap-[30px] mt-[45px] items-start justify-center flex-col max-lg:hidden`}>
@@ -526,6 +434,8 @@ const DrMobile = () => {
                                 </div>
                             </li>
                         </ul>
+
+
                     </div>
                 </div>
             </section>
