@@ -416,7 +416,6 @@ const ChillHouse = () => {
                                     </li>
                                 </ul>
                             </div>
-
                         </div>
 
                         <div className='case-gallery-vertical mt-[45px] max-lg:mt-[20px] max-xl:hidden'>

@@ -29,9 +29,6 @@ p {
   --paragraphMarginBottom: 24px;
   margin-block: 0;
 }
-p:where(:not([class]):not(:last-child)) {
-  margin-bottom: var(--paragraphMarginBottom);
-}
 img {
   display: block;
   max-width: 100%;

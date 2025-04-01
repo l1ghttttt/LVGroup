@@ -5,9 +5,11 @@ import Link from "next/link";
 
 interface CasesProps {
     tags: boolean;
+    name?: string;
+    disableSeeAll?: boolean;
 }
 
-const CasesList = ({tags}: CasesProps) => {
+const CasesList = ({tags, name="Наши работы", disableSeeAll = false}: CasesProps) => {
 
     const [mounted, setMounted] = useState(false);
 
@@ -19,7 +21,7 @@ const CasesList = ({tags}: CasesProps) => {
 
     return (
         <section className={`w-full flex flex-col bg-background`}>
-            <h2 className={`relative p-casesNamePadding leading-none flex items-end justify-stretch sm:w-2/3 text-casesNameSize font-medium before:absolute before:left-10 before:top-[45%] max-xl:before:left-7 max-lg:before:left-5 max-sm:before:left-4 before:w-[2px] max-md:before:w-[1px] before:bg-foreground before:h-[66%]`}>Наши работы</h2>
+            <h2 className={`relative p-casesNamePadding leading-none flex items-end justify-stretch sm:w-2/3 text-casesNameSize font-medium before:absolute before:left-10 before:top-[45%] max-xl:before:left-7 max-lg:before:left-5 max-sm:before:left-4 before:w-[2px] max-md:before:w-[1px] before:bg-foreground before:h-[66%]`}>{name}</h2>
             <ul className={`flex ${tags ? `p-casesFilterPadding` : `p-5 max-md:p-3`} flex-wrap gap-2 gap-y-3`}>
                 {tags ? (<>
                     <li>
@@ -156,33 +158,36 @@ const CasesList = ({tags}: CasesProps) => {
                         </div>
                     </Link>
                 </li>
-                <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <div className={`w-full h-full`}>
-                        <video autoPlay muted loop playsInline id="myVideo" className={`pointer-events-none`}>
-                            <source src="/9.mp4" type="video/mp4"/>
-                        </video>
-                        <div
-                            className={`bg-background p-caseContentPadding w-full h-full flex flex-col justify-between`}>
-                            <p className={`max-2xl:hidden -translate-y-[0.8rem] relative z-25 text-seeAllSize leading-seeAllLeading text-white font-railway font-semibold transform-[translate3d(0, 0, 0)]`}>
-                                Посмотреть все <br/> наши проекты
-                            </p>
-                            <p className={`max-xl:hidden 2xl:hidden -translate-y-[0.8rem] relative z-25 text-seeAllSize leading-seeAllLeading text-white font-railway font-semibold transform-[translate3d(0, 0, 0)]`}>
-                                Посмотреть все наши проекты
-                            </p>
-                            <p className={`xl:hidden relative z-25 text-seeAllSize leading-seeAllLeading text-white font-railway font-semibold transform-[translate3d(0, 0, 0)]`}>
-                                Посмотреть все наши проекты
-                            </p>
-                            <div>
-                                <Link href={`/cases`} >
-                                    <button
-                                        className={`relative z-50 font-semibold select-none text-background bg-mainColor hover:bg-darkMain cursor-pointer duration-300 tracking-widest h-[50px] flex items-center justify-center rounded-full px-[30px] font-railway text-[20px]`}>
-                                        <p className={`mb-2px`}>Смотреть</p>
-                                    </button>
-                                </Link>
+
+                {disableSeeAll ? null : (
+                    <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
+                        <div className={`w-full h-full`}>
+                            <video autoPlay muted loop playsInline id="myVideo" className={`pointer-events-none`}>
+                                <source src="/9.mp4" type="video/mp4"/>
+                            </video>
+                            <div
+                                className={`bg-background p-caseContentPadding w-full h-full flex flex-col justify-between`}>
+                                <p className={`max-2xl:hidden -translate-y-[0.8rem] relative z-25 text-seeAllSize leading-seeAllLeading text-white font-railway font-semibold transform-[translate3d(0, 0, 0)]`}>
+                                    Посмотреть все <br/> наши проекты
+                                </p>
+                                <p className={`max-xl:hidden 2xl:hidden -translate-y-[0.8rem] relative z-25 text-seeAllSize leading-seeAllLeading text-white font-railway font-semibold transform-[translate3d(0, 0, 0)]`}>
+                                    Посмотреть все наши проекты
+                                </p>
+                                <p className={`xl:hidden relative z-25 text-seeAllSize leading-seeAllLeading text-white font-railway font-semibold transform-[translate3d(0, 0, 0)]`}>
+                                    Посмотреть все наши проекты
+                                </p>
+                                <div>
+                                    <Link href={`/cases`}>
+                                        <button
+                                            className={`relative z-50 font-semibold select-none text-background bg-mainColor hover:bg-darkMain cursor-pointer duration-300 tracking-widest h-[50px] flex items-center justify-center rounded-full px-[30px] font-railway text-[20px]`}>
+                                            <p className={`mb-2px`}>Смотреть</p>
+                                        </button>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </li>
+                    </li>
+                )}
             </ul>
         </section>
     );
