@@ -270,7 +270,7 @@ const CustomerChain = ({align = "horizontal", name, chainList = ["error"]}: Cust
                                         )}
                                     </div>
 
-                                    <div className={`flex flex-col gap-1 font-normal text-[18px] max-md:text-[18px] max-sm:text-[14px] lg:leading-[24px] leading-[18px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
+                                    <div className={`flex flex-col gap-1 font-normal text-[20px] max-md:text-[18px] max-sm:text-[15px] lg:leading-[24px] leading-[18px] pt-[5px] max-sm:pt-0 pb-[25px]`}>
                                         {
                                             Array.isArray(item) ? (
                                                 item.map((subItem, subIndex) => <p key={subIndex}>{subItem} </p>)
