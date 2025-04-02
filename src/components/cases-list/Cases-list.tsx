@@ -21,7 +21,7 @@ const CasesList = ({tags, name="Наши работы", disableSeeAll = false}: 
 
     return (
         <section className={`w-full flex flex-col bg-background`}>
-            <h2 className={`relative p-casesNamePadding leading-none flex items-end justify-stretch sm:w-2/3 text-casesNameSize font-medium before:absolute before:left-10 before:top-[45%] max-xl:before:left-7 max-lg:before:left-5 max-sm:before:left-4 before:w-[2px] max-md:before:w-[1px] before:bg-foreground before:h-[66%]`}>{name}</h2>
+            <h2 className={`relative p-casesNamePadding leading-none flex items-end justify-stretch sm:w-2/3 text-casesNameSize font-medium`}>{name}</h2>
             <ul className={`flex ${tags ? `p-casesFilterPadding` : `p-5 max-md:p-3`} flex-wrap gap-2 gap-y-3`}>
                 {tags ? (<>
                     <li>
