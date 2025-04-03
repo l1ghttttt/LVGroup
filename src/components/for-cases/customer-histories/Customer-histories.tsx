@@ -11,7 +11,7 @@ interface CustomerHistoriesProps {
     photoList: photos[]
 }
 
-const CustomerHistories = ({background, photoList}: CustomerHistoriesProps) => {
+const CustomerHistories = ({background = "carousels-background.png", photoList}: CustomerHistoriesProps) => {
     return (
         <section
             className={`w-[100vw] bg-[url(/${background})] bg-cover md:aspect-[16/8] flex justify-center gap-[7%] items-center my-[120px] max-md:my-[60px] max-md:flex-col max-md:gap-[50px] max-md:py-[50px] pointer-events-none select-none`}>
