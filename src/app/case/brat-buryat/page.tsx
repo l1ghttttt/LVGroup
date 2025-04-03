@@ -54,7 +54,6 @@ const BratBuryat = () => {
                             ]}
                         />
                         <CustomerHistories
-                            background={"carousels-background.png"}
                             photoList={[
                                 ["1-1.JPG", "1-2.JPG", "1-3.JPG"],
                                 ["2-1.JPG", "2-2.JPG", "2-3.JPG"],

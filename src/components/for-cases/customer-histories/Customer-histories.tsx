@@ -7,14 +7,13 @@ import Image from "next/image";
 type photos = string[]
 
 interface CustomerHistoriesProps {
-    background?: string,
     photoList: photos[]
 }
 
-const CustomerHistories = ({background = "carousels-background.png", photoList}: CustomerHistoriesProps) => {
+const CustomerHistories = ({photoList}: CustomerHistoriesProps) => {
     return (
         <section
-            className={`w-[100vw] bg-[url(/${background})] bg-cover md:aspect-[16/8] flex justify-center gap-[7%] items-center my-[120px] max-md:my-[60px] max-md:flex-col max-md:gap-[50px] max-md:py-[50px] pointer-events-none select-none`}>
+            className={`w-[100vw] bg-[url(/carousels-background.png)] bg-cover md:aspect-[16/8] flex justify-center gap-[7%] items-center my-[120px] max-md:my-[60px] max-md:flex-col max-md:gap-[50px] max-md:py-[50px] pointer-events-none select-none`}>
 
             {photoList.map((photos, index) => (
                 <div
