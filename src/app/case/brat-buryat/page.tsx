@@ -1,6 +1,4 @@
-'use client'
-
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Order from "@/components/order/Order";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,15 +12,6 @@ import ProgressBars from "@/widgets/progress-bar/ProgressBar";
 import Comment from "@/widgets/comment/Comment";
 
 const BratBuryat = () => {
-    useEffect(() => window.document.scrollingElement?.scrollTo(0, 0), [])
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => {
-        setMounted(true);
-    }, []);
-
-    if (!mounted) return null;
-
     return (
         <>
             <section className={`w-full overflow-x-hidden`}>

@@ -9,12 +9,14 @@ interface Technology {
 interface CustomerInfoProps {
     title: string;
     logo: string;
+    mobileLogo?: string;
+    whiteBackground?: boolean;
     tags: string[];
     technologies?: Technology[];
     descriptions?: string[];
 }
 
-const CustomerInfo = ({title, logo, tags, technologies, descriptions}: CustomerInfoProps) => {
+const CustomerInfo = ({title, logo, mobileLogo = logo, tags, technologies, descriptions, whiteBackground = false}: CustomerInfoProps) => {
 
     return (
         <section className="w-full">
@@ -23,8 +25,8 @@ const CustomerInfo = ({title, logo, tags, technologies, descriptions}: CustomerI
                     <div className={`flex justify-between`}>
                         <h2 className={`max-sm:w-full text-customerTitleSize leading-customerTitleLeading w-3/5`}>{title}</h2>
                         <Image
-                            className={`w-[150px] h-[150px] 2xl:hidden max-2xl:mr-[35px] max-lg:mr-[5px] max-sm:mb-0 max-sm:hidden`}
-                            src={`/${logo}`}
+                            className={`w-[150px] h-[150px] 2xl:hidden ${!whiteBackground && "max-2xl:mr-[35px] max-lg:mr-[5px]"} max-sm:mb-0 max-sm:hidden ${whiteBackground && "bg-white p-[4] rounded-xl"}`}
+                            src={`/${mobileLogo}`}
                             alt={`лого заказчика`}
                             width={180} height={180}/>
                     </div>
@@ -48,7 +50,7 @@ const CustomerInfo = ({title, logo, tags, technologies, descriptions}: CustomerI
 
                     <div className={`w-full flex gap-[30px] items-center max-xl:flex-col`}>
                         <Image
-                            className={`w-[250px] 2xl:absolute 2xl:top-0 2xl:w-customerImageWidth pr-[20px] max-2xl:hidden max-sm:mb-0 max-sm:block max-sm:w-3/4 h-auto CustomerImage max-sm:pr-0`}
+                            className={`w-[250px] 2xl:absolute 2xl:top-0 2xl:w-customerImageWidth ${!whiteBackground && "pr-[20px]"} max-2xl:hidden max-sm:mb-0 max-sm:block max-sm:w-3/4 h-auto CustomerImage max-sm:pr-0 ${whiteBackground && "bg-white py-3 px-2 rounded-xl"}`}
                             src={`/${logo}`}
                             alt={`лого заказчика`}
                             width={250} height={250}/>
@@ -58,7 +60,6 @@ const CustomerInfo = ({title, logo, tags, technologies, descriptions}: CustomerI
                                 <p className={`text-[15px] leading-[15px] border-t-[1px] border-stack pt-[10px] mb-[9px]`}>Технологии
                                     в проекте</p>
                                 <ul className={`flex flex-col max-xl:flex-row flex-wrap stack-grid`}>
-
                                     {technologies.map((technology, i) => (
                                         <li key={i} className={`grid stack-layout items-center h-fit py-[10px] px-0 text-[18px] leading-[21px]`}>
                                             <Image key={i} src={`/${technology.logo}`} alt={'иконка технологии'} width={`25`}
@@ -67,7 +68,6 @@ const CustomerInfo = ({title, logo, tags, technologies, descriptions}: CustomerI
                                             <p>{technology.name}</p>
                                         </li>
                                     ))}
-
                                 </ul>
                             </aside>
                         ) : null}
@@ -79,7 +79,6 @@ const CustomerInfo = ({title, logo, tags, technologies, descriptions}: CustomerI
                                         {description}
                                     </p>
                                 ))}
-
                             </div>
                         ) : null}
                     </div>
