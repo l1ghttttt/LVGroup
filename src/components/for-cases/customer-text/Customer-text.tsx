@@ -2,7 +2,7 @@ import React from 'react';
 import Link from "next/link";
 
 interface BonusText {
-    link: string;
+    link?: string;
     text: string;
 }
 
