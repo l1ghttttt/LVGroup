@@ -1,4 +1,3 @@
-'use client'
 import React from 'react';
 import Order from "@/components/order/Order";
 import Comment from "@/widgets/comment/Comment";
