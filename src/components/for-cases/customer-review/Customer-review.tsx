@@ -8,7 +8,7 @@ interface CustomerReviewProps {
     photo?: string;
     name: string;
     rank?: string;
-    text: string;
+    text: string | string[] ;
 }
 
 const CustomerReview = ({photo, name, rank, text}: CustomerReviewProps) => {
@@ -41,7 +41,13 @@ const CustomerReview = ({photo, name, rank, text}: CustomerReviewProps) => {
                     </div>
                 </div>
                 <div className={`flex w-4/6 max-md:w-full`}>
-                    <p className={`w-full text-[22px] max-xl:text-[18px] max-sm:text-[16px] max-md:w-full mb-[25px] max-md:mb-0`}>{text}</p>
+                    <p className={`w-full text-[22px] max-xl:text-[18px] max-sm:text-[16px] max-md:w-full mb-[25px] max-md:mb-0 flex flex-col gap-2`}>{
+                        Array.isArray(text) ? (
+                            text.map((subItem, subIndex) => <span key={subIndex}>{subItem} <br/></span>)
+                        ) : (
+                            <span>{text}</span>
+                        )
+                    }</p>
                 </div>
             </div>
             <div className={`h-[1px] bg-foreground w-full`}></div>
