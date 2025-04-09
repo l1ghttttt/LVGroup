@@ -25,7 +25,7 @@ const CustomerInfo = ({title, logo, mobileLogo = logo, tags, technologies, descr
                     <div className={`flex justify-between`}>
                         <h2 className={`max-sm:w-full text-customerTitleSize leading-customerTitleLeading w-3/5`}>{title}</h2>
                         <Image
-                            className={`w-[150px] h-[150px] 2xl:hidden ${!whiteBackground && "max-2xl:mr-[35px] max-lg:mr-[5px]"} max-sm:mb-0 max-sm:hidden ${whiteBackground && "bg-white p-[4] rounded-xl"}`}
+                            className={`h-[150px] 2xl:hidden ${!whiteBackground && "max-2xl:mr-[35px] max-lg:mr-[5px]"} max-sm:mb-0 max-sm:hidden ${whiteBackground && "bg-white p-[4] rounded-xl"}`}
                             src={`/${mobileLogo}`}
                             alt={`лого заказчика`}
                             width={180} height={180}/>

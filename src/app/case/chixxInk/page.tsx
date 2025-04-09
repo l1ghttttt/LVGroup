@@ -9,7 +9,7 @@ import CustomerVideo from "@/components/for-cases/customer-video/Customer-video"
 
 const tagsList = ["Контекстная реклама", "Таргетированная реклама", "Видеосъемка"]
 
-const Page = () => {
+const ChixxInk = () => {
     return (
         <main className={`w-full overflow-x-hidden`}>
             <div className={`flex flex-col`}>
@@ -87,4 +87,4 @@ const Page = () => {
 );
 };
 
-export default Page;
+export default ChixxInk;
