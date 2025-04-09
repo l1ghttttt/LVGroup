@@ -6,6 +6,7 @@ import Link from "next/link";
 
 const CasesPage = () => {
 
+    useEffect(() => window.document.scrollingElement?.scrollTo(0, 0), [])
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
