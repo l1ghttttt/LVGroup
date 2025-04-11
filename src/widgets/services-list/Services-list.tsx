@@ -57,7 +57,6 @@ const ServicesListComponent = () => {
 
             <Accordion type="single" collapsible className="w-full px-[5%] lg:hidden mx-auto">
                 <AccordionItem value="item-1">
-            <AccordionTrigger className={` !relative !text-serviceTitleSize !leading-serviceTitleLeading !decoration-0 !no-underline !font-railway`}>Продажи</AccordionTrigger>
             <AccordionContent>
                 <nav>
                     <ul className={`duration-500 pl-[15px]`}>

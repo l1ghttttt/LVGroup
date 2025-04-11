@@ -62,18 +62,17 @@ const CasesPage = () => {
                     <ul className={`bg-background flex items-start flex-wrap justify-start relative ml-[-1px] mb-[-1px]`}>
 
                         <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                            <Link href="/case/top-top-admin">
-                                <img className={`object-cover absolute left-0 top-0 w-full h-full`}
-                                     src="/TopTopAdminCasePreview.jpg"
-                                     alt=""/>
+                            <Link href="">
+                                <video autoPlay muted loop playsInline id="myVideo" className={`pointer-events-none`}>
+                                    <source src="/9.mp4" type="video/mp4"/>
+                                </video>
                                 <div className={`z-25 bg-background w-full h-full p-caseContentPadding`}>
-                                    <p className={`relative z-25 text-caseTextSize text-white leading-caseTextLeading font-railway`}>
-                                        Разработка коммерческого предложения для &quot;Топ-Топ Админ&quot;
+                                    <p className={`relative z-25 text-caseTextSize leading-caseTextLeading font-railway`}>
+                                        Заглушка
                                     </p>
                                 </div>
                             </Link>
                         </li>
-
 
                         <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                             <Link href="/case/khabarovsk-typography">
@@ -91,20 +90,18 @@ const CasesPage = () => {
                             </Link>
                         </li>
 
-
                         <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                            <Link href="/case/chixxInk">
+                            <Link href="/case/top-top-admin">
                                 <img className={`object-cover absolute left-0 top-0 w-full h-full`}
-                                     src="/ChixxInkLogo.jpg"
+                                     src="/TopTopAdminCasePreview.jpg"
                                      alt=""/>
                                 <div className={`z-25 bg-background w-full h-full p-caseContentPadding`}>
-                                    <p className={`relative z-25 text-caseTextSize text-black leading-caseTextLeading font-railway`}>
-                                        Контекстная и таргетированная <br/> реклама для &quot;ChixxInk&quot;
+                                    <p className={`relative z-25 text-caseTextSize text-white leading-caseTextLeading font-railway`}>
+                                        Разработка коммерческого предложения для &quot;Топ-Топ Админ&quot;
                                     </p>
                                 </div>
                             </Link>
                         </li>
-
 
                         <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                             <Link href="/case/lamark-center">
@@ -200,6 +197,18 @@ const CasesPage = () => {
                                 <div className={`bg-background w-full h-full p-caseContentPadding`}>
                                     <p className={`relative z-25 text-black text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
                                         SMM для кафе &quot;Брат Бурят&quot; <br/> с 200 до 12 000 подписчиков
+                                    </p>
+                                </div>
+                            </Link>
+                        </li>
+                        <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
+                            <Link href="/case/chixxInk">
+                                <video autoPlay muted loop playsInline id="myVideo" className={`pointer-events-none`}>
+                                    <source src="/9.mp4" type="video/mp4"/>
+                                </video>
+                                <div className={`z-25 bg-background w-full h-full p-caseContentPadding`}>
+                                    <p className={`relative z-25 text-caseTextSize leading-caseTextLeading font-railway`}>
+                                        Контекстная и таргетированная <br/> реклама для &quot;ChixxInk&quot;
                                     </p>
                                 </div>
                             </Link>
