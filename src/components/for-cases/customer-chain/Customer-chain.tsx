@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {useTheme} from "next-themes";
 
 type chainItem = string | string[];
@@ -12,6 +12,13 @@ interface CustomerChainProps {
 
 const CustomerChain = ({align = "horizontal", name, chainList = ["error"]}: CustomerChainProps) => {
     const { theme } = useTheme();
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    if (!mounted) return null;
     return (
         <section className={`${align == 'vertical' && `w-full`}`}>
             {align === "horizontal" && (
