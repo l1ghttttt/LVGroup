@@ -4,7 +4,7 @@ import CasesList from "@/components/cases-list/Cases-list";
 import ServiceWelcome from "@/components/for-uslugi/service-welcome/Service-welcome";
 import OrderedList from "@/components/for-uslugi/ordered-list/Ordered-list";
 import OwnFeatures from "@/components/for-uslugi/own-features/Own-features";
-import { CiSquareCheck, CiUser, CiMonitor, CiMedal } from "react-icons/ci";
+import { CiSquareCheck, CiTrophy, CiMonitor, CiMedal } from "react-icons/ci";
 
 const featuresList = [
     {
@@ -18,7 +18,7 @@ const featuresList = [
         description: "Обучение проходит в вашем офисе, в привычной для команды среде, без отрыва от операционной работы."
     },
     {
-        icon: <CiUser size={100} className={`w-full`} />,
+        icon: <CiTrophy size={100} className={`w-full`} />,
         title: "100% практика",
         description: "Кейсы, ролевые игры, разбор реальных звонков и ситуаций из Вашей практики."
     },
