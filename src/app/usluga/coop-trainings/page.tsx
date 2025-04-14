@@ -4,11 +4,11 @@ import CasesList from "@/components/cases-list/Cases-list";
 import ServiceWelcome from "@/components/for-uslugi/service-welcome/Service-welcome";
 import OrderedList from "@/components/for-uslugi/ordered-list/Ordered-list";
 import OwnFeatures from "@/components/for-uslugi/own-features/Own-features";
-import { CiSquareCheck, CiUser, CiMonitor, CiBasketball } from "react-icons/ci";
+import { CiSquareCheck, CiUser, CiMonitor, CiMedal } from "react-icons/ci";
 
 const featuresList = [
     {
-        icon: <CiBasketball size={100} className={`w-full`} />,
+        icon: <CiMedal size={100} className={`w-full`} />,
         title: "Обучение под Ваш бизнес",
         description: "Адаптируем материалы под вашу нишу, продукты, целевую аудиторию и стиль коммуникации."
     },
