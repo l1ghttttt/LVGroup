@@ -19,7 +19,7 @@
       },
       {
         "title": "Корпоративные тренинги и «полевое» обучение",
-        "href": "/usluga/",
+        "href": "/usluga/coop-trainings",
         "description": "Развитие вашей команды"
       }
     ]
@@ -43,9 +43,9 @@
         "description": "Оптимизация сайта"
       },
       {
-        "title": "Маркетинговые исследования",
-        "href": "/usluga/",
-        "description": "Оценка рынка сбыта"
+        "title": "Маркетинговое сопровождение",
+        "href": "/usluga/marketing-support",
+        "description": "От идей до результата"
       }
     ]
   },
