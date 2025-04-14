@@ -4,7 +4,7 @@ import OrderedList from "@/components/for-uslugi/ordered-list/Ordered-list";
 import CasesList from "@/components/cases-list/Cases-list";
 import OwnFeatures from "@/components/for-uslugi/own-features/Own-features";
 import Order from "@/components/order/Order";
-import {CiSquareCheck, CiViewList, CiDollar, CiUser} from "react-icons/ci";
+import {CiSquareCheck, CiViewList, CiDollar, CiTrophy} from "react-icons/ci";
 
 const featuresList = [
     {
@@ -13,7 +13,7 @@ const featuresList = [
         description: "Не нужно держать в штате дизайнера, копирайтера, таргетолога, SMM-специалиста, программиста и сотрудника по контексту."
     },
     {
-        icon: <CiUser size={100} className={`w-full`} />,
+        icon: <CiTrophy size={100} className={`w-full`} />,
         title: "Сильная команда с опытом",
         description: "Мы не тестируем гипотезы за Ваш счёт. Применяем только то, что реально работает — опираясь на десятки проектов."
     },

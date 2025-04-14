@@ -25,7 +25,7 @@ const Header: React.FC = () => {
     const [mounted, setMounted] = useState(false);
     const pathname = usePathname(); // Используем usePathname вместо useRouter
 
-    const unstickyRoutes = ["/", "/cases"];
+    const unstickyRoutes = ["/", "/cases", "/contacts"];
     const isUnSticky = unstickyRoutes.includes(pathname) || pathname.includes("/usluga/");
 
     const [lastScroll, setLastScroll] = useState(0);
@@ -99,7 +99,7 @@ const Header: React.FC = () => {
 
 
                         <NavigationMenuItem>
-                            <Link href="/" legacyBehavior passHref>
+                            <Link href="/contacts" legacyBehavior passHref>
                                 <NavigationMenuLink
                                     className={`text-headerColor !text-headerSize leading-[27px]` + navigationMenuTriggerStyle()}>
                                     Контакты

@@ -62,7 +62,7 @@ const CasesPage = () => {
                     <ul className={`bg-background flex items-start flex-wrap justify-start relative ml-[-1px] mb-[-1px]`}>
 
                         <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                            <Link href="/case/brat-buryat-contex-ad">
+                            <Link href="/case/brat-buryat-context-ad">
                                 <img className={`object-cover absolute left-0 top-0 w-full h-full`}
                                      src="/BratBuryatContextAdPreview.jpg"
                                      alt=""/>

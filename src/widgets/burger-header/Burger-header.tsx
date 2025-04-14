@@ -21,7 +21,7 @@ export default function BurgerHeader() {
     const [mounted, setMounted] = useState(false);
     const pathname = usePathname();
 
-    const unstickyRoutes = ["/", "/cases"];
+    const unstickyRoutes = ["/", "/cases", "/contacts"];
     const isUnSticky = unstickyRoutes.includes(pathname) || pathname.includes("/usluga/");
 
     const [lastScroll, setLastScroll] = useState(0);
@@ -98,6 +98,12 @@ export default function BurgerHeader() {
                                         </AccordionContent>
                                     </AccordionItem>
                                 ))}
+                            <AccordionItem value="item-1" className={`border-none relative`}>
+                                <div className={`bg-background absolute w-[30px] h-full z-[1000] top-0 right-0 translate-x-1`}></div>
+                                <Link href="/contacts">
+                                    <AccordionTrigger onClick={() => setIsOpen(false)} className={` !relative !text-serviceTitleSize !leading-serviceTitleLeading !decoration-0 !no-underline !font-railway`}>Контакты</AccordionTrigger>
+                                </Link>
+                            </AccordionItem>
                         </Accordion>
                     </nav>
                     <div className="absolute bottom-[20px] pt-[2.5] flex justify-between w-[calc(100%-25px)] pr-[20px] bg-background z-25">

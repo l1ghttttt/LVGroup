@@ -90,6 +90,9 @@ export default {
 			WebsiteCreatingWelcomeHeadingSize: 'var(--website-creating-welcome-heading-size)',
 			WebsiteCreatingWelcomeDescrSize: 'var(--website-creating-welcome-descr-size)',
 			OrderedListDescrSize: 'var(--ordered-list-descr-size)',
+			ContactsLinkTextSize: 'var(--contacts-link-text-size)',
+			ContactsHatTitle: 'var(--contacts-hat-title-text)',
+			ContactsCubeTextSize: 'var(--contacts-cube-title-size)',
 		},
   		textColor: {
   			headerColor: 'hsl(var(--header-color))',
@@ -134,6 +137,9 @@ export default {
 			WebsiteCreatingWelcomePaddingBottom: 'var(--website-creating-padding-bottom)',
 			WebsiteCreatingWelcomePaddingTop: 'var(--website-creating-padding-top)',
 			WebsiteCreatingWelcomeDescrPadding: 'var(--website-creating-welcome-descr-padding)',
+			ContactsHatPadding: 'var(--contacts-hat-padding)',
+			ContactsLinkPaddingLeft: 'var(--contacts-link-padding-left)',
+			ContactsCubeInnerPadding: 'var(--contacts-cube-inner-padding)',
   		},
   		margin: {
   			footerNavMarginXL: 'var(--footer-nav-margin-xl)',
@@ -151,6 +157,10 @@ export default {
 			OrderedListHeadingMargin: 'var(--ordered-list-heading-margin)',
 			OrderedListDescrMargin: 'var(--ordered-list-descr-margin)',
 			OrderedListItemMargin: 'var(--ordered-list-item-margin)',
+			ContactsHatMargin: 'var(--contacts-hat-margin-right)',
+			ContactsUroInfMarginTop: 'var(--contacts-uro-inf-margin-top)',
+			ContactsUroInfMarginBottom: 'var(--contacts-uro-inf-margin-bottom)',
+			ContactsLinksMarginTop: 'var(--contacts-link-margin-top)',
   		},
 		right: {
 			CustomerLogoRight: 'var(--right-CustomerLogo)'
@@ -163,9 +173,13 @@ export default {
 			WebsiteCreatingWelcomeHeadingWidth: 'var(--website-creating-welcome-heading-width)',
 			WebsiteCreatingWelcomeDescrWidth: 'var(--website-creating-welcome-descr-width)',
 			OrderedListWidth: 'var(--ordered-list-width)',
+			ContactsUroInfWidth: 'var(--contacts-uro-inf-width)',
+			ContactsCubeWidth: 'var(--contacts-cube-width)',
   		},
   		height: {
-  			caseHeight: 'var(--case-height)'
+  			caseHeight: 'var(--case-height)',
+			ContactsCubeHeight: 'var(--contacts-cube-height)',
+
   		},
   		lineHeight: {
   			caseTextLeading: 'var(--case-text-leading)',
@@ -182,6 +196,7 @@ export default {
 			customerInfographySmallLeading: 'var(--customer-infography-small-size)',
 			WebsiteCreatingWelcomeDescrLeading: 'var(--website-creating-welcome-descr-leading)',
 			OrderedListDescrLeading: 'var(--ordered-list-descr-leading)',
+			ContactsCubeTextLeading: 'var(--contacts-cube-title-leading)',
   		},
   		keyframes: {
   			'accordion-down': {

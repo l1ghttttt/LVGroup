@@ -6,7 +6,6 @@ import CustomerChain from "@/components/for-cases/customer-chain/Customer-chain"
 import CustomerStats from "@/components/for-cases/customer-stats/Customer-stats";
 import FooterTags from "@/components/for-cases/footer-tags/Footer-tags";
 import Order from "@/components/order/Order";
-import CustomerVideo from "@/components/for-cases/customer-video/Customer-video";
 
 const tagsList = [
     "Контекстная реклама",
@@ -39,9 +38,11 @@ const BratBuryatContextsAd = () => {
                             "Наша цель – стабильный поток  порядка 150 заказов с сайта по стоимости лида в районе 400-600 рублей."
                         ]}
                     />
-                    <div className={`h-[900px] overflow-hidden flex items-center my-[75px]`}>
-                        <CustomerVideo video={"BratBuryatContexAdVideo"} />
-                    </div>
+                    <CustomerPhoto
+                        full={true}
+                        photo={`BratBuryatContextAdPicture2.jpg`}
+                        higher={true}
+                    />
 
                     <CustomerText
                         title={`Результаты`}
