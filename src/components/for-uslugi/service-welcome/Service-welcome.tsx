@@ -7,20 +7,34 @@ interface ServiceWelcomeProps {
     title: string;
     description: string;
     background: string;
+    whiteBg?: boolean;
+    filters?: boolean;
 }
 
-const ServiceWelcome = ({title, description, background}: ServiceWelcomeProps) => {
+const ServiceWelcome = ({title, description, background, whiteBg=false, filters=false}: ServiceWelcomeProps) => {
     const { theme } = useTheme();
     const [mounted, setMounted] = useState(false);
+    const [currentTheme, setCurrentTheme] = useState(theme)
     useEffect(() => {
         setMounted(true);
     }, []);
+
+    useEffect(() => {
+        if (mounted && whiteBg) {
+            if (theme === 'dark') {
+                setCurrentTheme('light');
+            } else if (theme === 'light') {
+                setCurrentTheme('dark');
+            }
+        }
+    }, [mounted, whiteBg, theme]);
     if (!mounted) return null;
+
     return (
         <section className={`relative object-cover w-full`}>
 
             <div className="video-background">
-                <video autoPlay muted loop playsInline id="myVideo" className={theme == 'dark' ? '' : 'invert'}>
+                <video autoPlay muted loop playsInline id="myVideo" className={`${filters && 'grayscale contrast-200 brightness-125'} ${currentTheme == 'dark'  ? '' : 'invert'}`}>
                     <source src={`/${background}`} type="video/mp4"/>
                 </video>
             </div>

@@ -69,12 +69,12 @@
     "values": [
       {
         "title": "Видеосъемка",
-        "href": "/usluga/",
+        "href": "/usluga/videoshoot",
         "description": "Reels, Shorts, реклама на TV"
       },
       {
         "title": "Фотосессии",
-        "href": "/usluga/",
+        "href": "/usluga/photosessions",
         "description": "Трендовый контент"
       }
     ]
