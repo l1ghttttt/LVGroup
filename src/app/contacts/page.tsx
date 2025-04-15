@@ -26,7 +26,7 @@ const Page = () => {
                 <div className={`bg-transparent relative p-ContactsHatPadding`}>
                     <div className={`sm:flex sm:items-start sm:justify-between max-lg:flex-wrap `}>
                         <div
-                            className={`max-md:hidden text-ContactsHatTitle mr-ContactsHatMargin leading-[1] w-2/3 flex items-end justify-stretch max-xl:w-1/2 max-sm:w-full`}>
+                            className={`max-md:hidden font-railway text-ContactsHatTitle mr-ContactsHatMargin leading-[1] w-2/3 flex items-end justify-stretch max-xl:w-1/2 max-sm:w-full`}>
                             Контакты <br/> LVGroup
                         </div>
                         <div
@@ -54,37 +54,37 @@ const Page = () => {
                 <div
                     className={`bg-transparent flex items-start justify-start flex-wrap relative gap-0 ml-[-1px] mb-[-1px]`}>
                     <div
-                        className={`shrink-0 ${theme == "dark" ? "bg-[rgba(31,31,31,.5)]" : "bg-[rgba(184,184,184,.5)]"} ml-[1px] mb-[1px] relative overflow-hidden duration-500 transition-all w-ContactsCubeWidth h-ContactsCubeHeight ${theme == "dark" ? "hover:bg-[#1e1e1e]" : "hover:bg-[#d1d1d1]"}`}>
+                        className={`shrink-0 ${theme == "dark" ? "bg-[rgba(31,31,31,.5)]" : "bg-[rgba(184,184,184,.5)]"} ml-[1px] mb-[1px] relative overflow-hidden duration-500 transition-all w-ContactsCubeWidth h-ContactsCubeHeight ${theme == "dark" ? "hover:bg-[#262626]" : "hover:bg-[#d1d1d1]"}`}>
                         <div
                             className={`flex items-stretch justify-start flex-flow absolute z-[50] top-0 left-0 w-full h-full p-ContactsCubeInnerPadding`}>
                             <div className={`w-full h-4/5 flex justify-center items-center`}>
-                                <CiAirportSign1 size={100} className={`w-1/2 h-1/2`}/>
+                                <CiAirportSign1 size={100} className={`w-1/3 h-1/3`}/>
                             </div>
-                            <div className={`leading-ContactsCubeTextLeading text-ContactsCubeTextSize h-2/5`}>
+                            <div className={`leading-ContactsCubeTextLeading text-ContactsCubeTextSize h-2/5 font-railway`}>
                                 Работаем с клиентами по всему миру
                             </div>
                         </div>
                     </div>
                     <div
-                        className={`shrink-0 ${theme == "dark" ? "bg-[rgba(31,31,31,.5)]" : "bg-[rgba(184,184,184,.5)]"} ml-[1px] mb-[1px] relative overflow-hidden duration-500 transition-all w-ContactsCubeWidth h-ContactsCubeHeight  ${theme == "dark" ? "hover:bg-[#1e1e1e]" : "hover:bg-[#d1d1d1]"}`}>
+                        className={`shrink-0 ${theme == "dark" ? "bg-[rgba(31,31,31,.5)]" : "bg-[rgba(184,184,184,.5)]"} ml-[1px] mb-[1px] relative overflow-hidden duration-500 transition-all w-ContactsCubeWidth h-ContactsCubeHeight  ${theme == "dark" ? "hover:bg-[#262626]" : "hover:bg-[#d1d1d1]"}`}>
                         <div
                             className={`flex items-stretch justify-start flex-flow absolute z-[50] top-0 left-0 w-full h-full p-ContactsCubeInnerPadding`}>
                             <div className={`w-full h-4/5 flex justify-center items-center`}>
-                                <CiBullhorn size={100} className={`w-1/2 h-1/2`}/>
+                                <CiBullhorn size={100} className={`w-1/3 h-1/3`}/>
                             </div>
-                            <div className={`leading-ContactsCubeTextLeading text-ContactsCubeTextSize h-2/5`}>
+                            <div className={`leading-ContactsCubeTextLeading text-ContactsCubeTextSize h-2/5 font-railway`}>
                                 Всегда открыты к новым предложениям и сотрудничеству
                             </div>
                         </div>
                     </div>
                     <div
-                        className={`shrink-0 ${theme == "dark" ? "bg-[rgba(31,31,31,.5)]" : "bg-[rgba(184,184,184,.5)]"} ml-[1px] mb-[1px] relative overflow-hidden duration-500 transition-all w-ContactsCubeWidth h-ContactsCubeHeight  ${theme == "dark" ? "hover:bg-[#1e1e1e]" : "hover:bg-[#d1d1d1]"}`}>
+                        className={`shrink-0 ${theme == "dark" ? "bg-[rgba(31,31,31,.5)]" : "bg-[rgba(184,184,184,.5)]"} ml-[1px] mb-[1px] relative overflow-hidden duration-500 transition-all w-ContactsCubeWidth h-ContactsCubeHeight  ${theme == "dark" ? "hover:bg-[#262626]" : "hover:bg-[#d1d1d1]"}`}>
                         <div
                             className={`flex items-stretch justify-start flex-flow absolute z-[50] top-0 left-0 w-full h-full p-ContactsCubeInnerPadding`}>
                             <div className={`w-full h-4/5 flex justify-center items-center`}>
-                                <CiUser size={100} className={`w-1/2 h-1/2`}/>
+                                <CiUser size={100} className={`w-1/3 h-1/3`}/>
                             </div>
-                            <div className={`leading-ContactsCubeTextLeading text-ContactsCubeTextSize h-2/5`}>
+                            <div className={`leading-ContactsCubeTextLeading text-ContactsCubeTextSize h-2/5 font-railway`}>
                                 Рассматриваем как сотрудников в штат, так и работу на удалёнке
                             </div>
                         </div>
