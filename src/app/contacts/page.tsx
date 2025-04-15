@@ -54,7 +54,7 @@ const Page = () => {
                 <div
                     className={`bg-transparent flex items-start justify-start flex-wrap relative gap-0 ml-[-1px] mb-[-1px]`}>
                     <div
-                        className={`shrink-0 ${theme == "dark" ? "bg-[rgba(4,8,10,.5)]" : "bg-[rgba(184,184,184,.5)]"} ml-[1px] mb-[1px] relative overflow-hidden duration-500 transition-all w-ContactsCubeWidth h-ContactsCubeHeight ${theme == "dark" ? "hover:bg-[rgb(4,8,10)]" : "hover:bg-[#d1d1d1]"}`}>
+                        className={`shrink-0 ${theme == "dark" ? "bg-[rgba(4,8,10,.3)]" : "bg-[rgba(184,184,184,.3)]"} ml-[1px] mb-[1px] relative overflow-hidden duration-500 transition-all w-ContactsCubeWidth h-ContactsCubeHeight ${theme == "dark" ? "hover:bg-[rgb(4,8,10)]" : "hover:bg-[#d1d1d1]"}`}>
                         <div
                             className={`flex items-stretch justify-start flex-flow absolute z-[50] top-0 left-0 w-full h-full p-ContactsCubeInnerPadding`}>
                             <div className={`w-full h-4/5 flex justify-center items-center`}>
@@ -66,7 +66,7 @@ const Page = () => {
                         </div>
                     </div>
                     <div
-                        className={`shrink-0 ${theme == "dark" ? "bg-[rgba(4,8,10,.5)]" : "bg-[rgba(184,184,184,.5)]"} ml-[1px] mb-[1px] relative overflow-hidden duration-500 transition-all w-ContactsCubeWidth h-ContactsCubeHeight  ${theme == "dark" ? "hover:bg-[rgb(4,8,10)]" : "hover:bg-[#d1d1d1]"}`}>
+                        className={`shrink-0 ${theme == "dark" ? "bg-[rgba(4,8,10,.3)]" : "bg-[rgba(184,184,184,.3)]"} ml-[1px] mb-[1px] relative overflow-hidden duration-500 transition-all w-ContactsCubeWidth h-ContactsCubeHeight  ${theme == "dark" ? "hover:bg-[rgb(4,8,10)]" : "hover:bg-[#d1d1d1]"}`}>
                         <div
                             className={`flex items-stretch justify-start flex-flow absolute z-[50] top-0 left-0 w-full h-full p-ContactsCubeInnerPadding`}>
                             <div className={`w-full h-4/5 flex justify-center items-center`}>
@@ -78,7 +78,7 @@ const Page = () => {
                         </div>
                     </div>
                     <div
-                        className={`shrink-0 ${theme == "dark" ? "bg-[rgba(4,8,10,.5)]" : "bg-[rgba(184,184,184,.5)]"} ml-[1px] mb-[1px] relative overflow-hidden duration-500 transition-all w-ContactsCubeWidth h-ContactsCubeHeight  ${theme == "dark" ? "hover:bg-[rgb(4,8,10)]" : "hover:bg-[#d1d1d1]"}`}>
+                        className={`shrink-0 ${theme == "dark" ? "bg-[rgba(4,8,10,.3)]" : "bg-[rgba(184,184,184,.3)]"} ml-[1px] mb-[1px] relative overflow-hidden duration-500 transition-all w-ContactsCubeWidth h-ContactsCubeHeight  ${theme == "dark" ? "hover:bg-[rgb(4,8,10)]" : "hover:bg-[#d1d1d1]"}`}>
                         <div
                             className={`flex items-stretch justify-start flex-flow absolute z-[50] top-0 left-0 w-full h-full p-ContactsCubeInnerPadding`}>
                             <div className={`w-full h-4/5 flex justify-center items-center`}>
