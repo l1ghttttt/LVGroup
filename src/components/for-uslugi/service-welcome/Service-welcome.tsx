@@ -41,8 +41,8 @@ const ServiceWelcome = ({title, description, background, whiteBg=false, filters=
 
             <div
                 className={`w-full px-WebsiteCreatingWelcomePaddingX flex max-xl:block pb-WebsiteCreatingWelcomePaddingBottom pt-WebsiteCreatingWelcomePaddingTop overflow-hidden`}>
-                <h1 className={`xl:WebsiteCreatingWelcomeHeadingWidth`}>
-                    <div className={`leading-[1.1] text-WebsiteCreatingWelcomeHeadingSize font-railway`}>
+                <h1 className={`xl:w-WebsiteCreatingWelcomeHeadingWidth`}>
+                    <div className={`leading-[1.1] text-WebsiteCreatingWelcomeHeadingSize font-railway w-[125%] max-2xl:w-[175%] max-xl:w-auto`}>
                         {title}
                     </div>
                 </h1>

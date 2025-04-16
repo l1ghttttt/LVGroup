@@ -146,9 +146,9 @@ body {
     --website-creating-padding-bottom: calc(40.69767px + 4.65116vw);
     --website-creating-padding-top: calc(100.53156px + 8.30565vw);
     --website-creating-welcome-padding-x: var(--space-s);
-    --website-creating-welcome-heading-width: calc(33.33333% - var(--app__space)/3);
-    --website-creating-welcome-heading-size: calc(-60px + 8.33333vw);
-    --website-creating-welcome-descr-width: calc(66.66667% - var(--app__space)*2/3);
+    --website-creating-welcome-heading-width: calc(40% - var(--app__space)/3);
+    --website-creating-welcome-heading-size: calc(-70px + 8.33333vw);
+    --website-creating-welcome-descr-width: calc(60% - var(--app__space)*2/3);
     --website-creating-welcome-descr-padding: 0;
     --website-creating-welcome-descr-margin: 0;
     --website-creating-welcome-descr-margin-top: calc(41.95804px + 13.98601vw);
@@ -300,7 +300,7 @@ body {
       --ordered-list-item-margin: 90px;
       --website-creating-welcome-descr-size: 25px;
       --contacts-hat-margin-right: 140px;
-
+      --website-creating-welcome-heading-size: 80px;
       --contacts-uro-inf-width: 500px;
     }
   }
@@ -332,6 +332,12 @@ body {
       --order-icon-margin: calc(-18px + 2.08333vw);
       --grid__press: calc(-1.66667px + 0.13889vw);
       --space-m: calc(20px + 6.25vw);
+    }
+  }
+
+  @media (max-width: 1440px) {
+    :root {
+      --website-creating-welcome-heading-size: 65px;
     }
   }
 
@@ -391,14 +397,7 @@ body {
   @media (max-width: 1280px) {
     :root {
       --space-m: var(--space-s);
-    }
-  }
-
-  @media (max-width: 1199px) {
-    :root {
-      --order-title-size: 35px;
-      --order-title-leading: 45px;
-      --website-creating-welcome-heading-size: 40px;
+      --website-creating-welcome-heading-size: 45px;
     }
   }
 
@@ -768,14 +767,12 @@ a:hover {
   }
 }
 
-
-
-
-
-
-
-
-
+@media (max-width: 1199px) {
+  :root {
+    --order-title-size: 35px;
+    --order-title-leading: 45px;
+  }
+}
 
 @media (min-width: 769px) {
   .website-creating-list-item {
