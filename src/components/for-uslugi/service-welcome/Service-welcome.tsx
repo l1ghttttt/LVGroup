@@ -33,16 +33,28 @@ const ServiceWelcome = ({title, description, background, whiteBg=false, filters=
     return (
         <section className={`relative object-cover w-full`}>
 
-            <div className="video-background">
-                <video autoPlay muted loop playsInline id="myVideo" className={`${filters && 'grayscale contrast-200 brightness-125'} ${currentTheme == 'dark'  ? '' : 'invert'}`}>
-                    <source src={`/${background}`} type="video/mp4"/>
-                </video>
-            </div>
+            {currentTheme === 'dark' ? (
+                <div className="video-background">
+                    <video autoPlay muted loop playsInline id="myVideo"
+                           className={`${filters && 'grayscale contrast-200 brightness-125'}`}>
+                        <source src={`/${background}`} type="video/mp4"/>
+                    </video>
+                </div>
+            ) : (
+                <div className="video-background">
+                    <video autoPlay muted loop playsInline id="myVideo"
+                           className={`${filters && 'grayscale contrast-200 brightness-125'} invert`}>
+                        <source src={`/${background}`} type="video/mp4"/>
+                    </video>
+                </div>
+            )}
+
 
             <div
                 className={`w-full px-WebsiteCreatingWelcomePaddingX flex max-xl:block pb-WebsiteCreatingWelcomePaddingBottom pt-WebsiteCreatingWelcomePaddingTop overflow-hidden`}>
                 <h1 className={`xl:w-WebsiteCreatingWelcomeHeadingWidth`}>
-                    <div className={`leading-[1.1] text-WebsiteCreatingWelcomeHeadingSize font-railway w-[125%] max-2xl:w-[175%] max-xl:w-auto`}>
+                    <div
+                        className={`leading-[1.1] text-WebsiteCreatingWelcomeHeadingSize font-railway w-[125%] max-2xl:w-[175%] max-xl:w-auto`}>
                         {title}
                     </div>
                 </h1>
