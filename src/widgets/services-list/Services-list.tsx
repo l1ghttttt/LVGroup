@@ -31,7 +31,6 @@ const ServicesListComponent = () => {
                     Мы постоянно развиваемся и глубоко вникаем <span className={`text-mainColor`}>в каждый</span> проект наших заказчиков.
                 </div>
             </div>
-
             <nav className={`flex pt-servicesPadding max-lg:hidden`}>
                 <ul className={`flex flex-wrap services-list w-full`}>
 
@@ -50,40 +49,9 @@ const ServicesListComponent = () => {
                             </nav>
                         </li>
                     ))}
-
                 </ul>
             </nav>
-
-
             <Accordion type="single" collapsible className="w-full px-[5%] lg:hidden mx-auto">
-                <AccordionItem value="item-1">
-            <AccordionContent>
-                <nav>
-                    <ul className={`duration-500 pl-[15px]`}>
-                        <li className={`py-[10px]`}>
-                            <Link href="/"
-                                  className={`text-serviceNameSize leading-serviceNameLeading`}>Аудит
-                                отдела продаж</Link>
-                        </li>
-                        <li className={`py-[10px]`}>
-                            <Link href="/"
-                                  className={`text-serviceNameSize leading-serviceNameLeading`}>Создание/развитие
-                                отделов продаж</Link>
-                        </li>
-                        <li className={`py-[10px]`}>
-                            <Link href="/"
-                                  className={`text-serviceNameSize leading-serviceNameLeading`}>Разработка
-                                регламентов и стандартов</Link>
-                        </li>
-                        <li className={`py-[10px]`}>
-                            <Link href="/"
-                                  className={`text-serviceNameSize leading-serviceNameLeading`}>Корпоративные
-                                тренинги и «полевое» обучение</Link>
-                        </li>
-                    </ul>
-                </nav>
-            </AccordionContent>
-            </AccordionItem>
                 {ServicesList.map((component) => (
                     <AccordionItem value={`item-${component.trigger}`} key={component.trigger}>
                         <AccordionTrigger key={component.trigger} className={` !relative !text-serviceTitleSize !leading-serviceTitleLeading !decoration-0 !no-underline !font-railway`}>{component.trigger}</AccordionTrigger>
@@ -101,9 +69,6 @@ const ServicesListComponent = () => {
                     </AccordionItem>
                     ))}
             </Accordion>
-
-
-
         </section>
     );
 };

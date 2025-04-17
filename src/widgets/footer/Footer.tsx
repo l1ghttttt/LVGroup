@@ -1,44 +1,29 @@
 import React from 'react';
 import Link from "next/link";
 import Script from "next/script";
+import uslugi from "@/app/uslugi.json";
+
+interface ServicesListProps {
+    trigger: string;
+    values: { title: string; href: string; description: string }[];
+}
+
+const ServicesList: ServicesListProps[] = uslugi
 
 const Footer = () => {
     return (
         <footer className={``}>
             <nav className={`2xl:h-[160px] 2xl:flex 2xl:items-stretch 2xl:justify-between bg-background px-servicePadding max-2xl:py-servicePadding`}>
                 <ul className={`flex items-stretch justify-start flex-wrap 2xl:mx-footerNavMarginXL max-2xl:m-footerNavMarginMaxl max-sm:justify-around`}>
-                    <li className={`flex items-center justify-center 2xl:px-footerNavListPadding max-2xl:p-footerNavListPaddingMaxl`}>
-                        <Link href="/"
-                              className={`duration-300 hover:duration-150 transition-all hover:text-footerLinkColor`}>Проекты</Link>
-                    </li>
-                    <li className={`flex items-center justify-center 2xl:px-footerNavListPadding max-2xl:p-footerNavListPaddingMaxl`}>
-                        <Link href="/"
-                              className={`duration-300 hover:duration-150 transition-all hover:text-footerLinkColor`}>Продажи</Link>
-                    </li>
-                    <li className={`flex items-center justify-center 2xl:px-footerNavListPadding max-2xl:p-footerNavListPaddingMaxl`}>
-                        <Link href="/"
-                              className={`duration-300 hover:duration-150 transition-all hover:text-footerLinkColor`}>Маркетинг</Link>
-                    </li>
-                    <li className={`flex items-center justify-center 2xl:px-footerNavListPadding max-2xl:p-footerNavListPaddingMaxl`}>
-                        <Link href="/"
-                              className={`duration-300 hover:duration-150 transition-all hover:text-footerLinkColor`}>Веб-разработка</Link>
-                    </li>
-                    <li className={`flex items-center justify-center 2xl:px-footerNavListPadding max-2xl:p-footerNavListPaddingMaxl`}>
-                        <Link href="/"
-                              className={`duration-300 hover:duration-150 transition-all hover:text-footerLinkColor`}>Создание контента</Link>
-                    </li>
-                    <li className={`flex items-center justify-center 2xl:px-footerNavListPadding max-2xl:p-footerNavListPaddingMaxl`}>
-                        <Link href="/"
-                              className={`duration-300 hover:duration-150 transition-all hover:text-footerLinkColor`}>Дизайн</Link>
-                    </li>
-                    <li className={`flex items-center justify-center 2xl:px-footerNavListPadding max-2xl:p-footerNavListPaddingMaxl`}>
-                        <Link href="/"
-                              className={`duration-300 hover:duration-150 transition-all hover:text-footerLinkColor`}>Call-центр</Link>
-                    </li>
-                    <li className={`flex items-center justify-center 2xl:px-footerNavListPadding max-2xl:p-footerNavListPaddingMaxl`}>
-                        <Link href="/"
-                              className={`duration-300 hover:duration-150 transition-all hover:text-footerLinkColor`}>Контакты</Link>
-                    </li>
+
+                    {
+                        ServicesList.map((service, index) => (
+                            <li className={`flex items-center justify-center 2xl:px-footerNavListPadding max-2xl:p-footerNavListPaddingMaxl`} key={index}>
+                                <Link href={`${service.values[0].href}`}
+                                      className={`duration-300 hover:duration-150 transition-all hover:text-footerLinkColor`}>{service.trigger}</Link>
+                            </li>
+                        ))
+                    }
                 </ul>
                 <ul className={`flex items-stretch justify-start 2xl:mx-footerNavMarginXL max-2xl:mt-footerSocialMarginTopMaxXL max-2xl:m-footerSocialMarginMaxXL max-sm:justify-around`}>
                     <li className={`flex `}>

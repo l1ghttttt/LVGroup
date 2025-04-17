@@ -45,7 +45,7 @@ const Welcome = () => {
                     <p className={`text-[16px] mb-[10px] md:hidden text-welcomeColorDescr`}>
                         В нашей команде более 20 профильных специалистов.
                     </p>
-                    <p className={`text-[16px] mb-[10px] md:hidden text-welcomeColorDescr`}>Чтобы вы сфокусировались на
+                    <p className={`text-[16px] mb-[10px] md:hidden text-welcomeColorDescr`}>
                         Наша цель - это результат
                     </p>
                 </div>
