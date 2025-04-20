@@ -56,10 +56,8 @@ const CasesList = ({name = "Наши работы", disableSeeAll = false, onlyH
     filteredCases = filteredCases.sort((a, b) => b.order - a.order)
 
     if (onlyHomePage) {
-        filteredCases = filteredCases.slice(0, 9)
+        filteredCases = filteredCases.slice(0, 8)
     }
-
-    const shouldDisableSeeAll = disableSeeAll || !!activeCategory
 
     return (
         <section className={`w-full flex flex-col bg-background`}>
@@ -99,11 +97,11 @@ const CasesList = ({name = "Наши работы", disableSeeAll = false, onlyH
                     </li>
                 ))}
 
-                {!shouldDisableSeeAll && (
+                {!disableSeeAll && (
                     <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                         <div className={`w-full h-full`}>
                             <video autoPlay muted loop playsInline id="myVideo" className={`pointer-events-none`}>
-                                <source src="/9.mp4" type="video/mp4"/>
+                                <source src="/SeeAllProjects.mp4" type="video/mp4"/>
                             </video>
                             <div
                                 className={`bg-background p-caseContentPadding w-full h-full flex flex-col justify-between`}>

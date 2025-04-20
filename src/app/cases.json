@@ -1,11 +1,41 @@
 [
   {
+    "title": "291 заказ за один месяц с сайта кафе <br/>\"Брат Бурят\" ",
+    "preview": "BratBuryatContextAdPreview.jpg",
+    "video": false,
+    "previewTextWhite": true,
+    "tags": ["Контекстная реклама"],
+    "order": 12,
+    "homepage": false,
+    "href": "/brat-buryat-context-ad"
+  },
+  {
+    "title": "+600% оборота в Хабаровской <br/> Краевой Типографии",
+    "preview": "KhabarovskTypographyPreview.mp4",
+    "video": true,
+    "previewTextWhite": true,
+    "tags": ["Создание/развитие отделов продаж", "Корпоративные тренинги и \"полевое\" обучение", "Разработка регламентов и стандартов"],
+    "order": 11,
+    "homepage": false,
+    "href": "/khabarovsk-typography"
+  },
+  {
+    "title": "Разработка коммерческого предложения для \"Топ-Топ Админ\"",
+    "preview": "TopTopAdminPreview.jpg",
+    "video": false,
+    "previewTextWhite": true,
+    "tags": ["Создание коммерческого предложения", "Дизайн"],
+    "order": 10,
+    "homepage": false,
+    "href": "/top-top-admin"
+  },
+  {
     "title": "Редизайн и разработка сайта для <br/> автосервиса \"Ламарк-Центр\"",
     "preview": "LamarkCenterPreview.mp4",
     "video": true,
     "previewTextWhite": true,
     "tags": ["Продажи", "Маркетинг", "Веб-разработка", "Создание контента", "Дизайн", "Call-центр"],
-    "order": 7,
+    "order": 9,
     "homepage": true,
     "href": "/lamark-center"
   },
@@ -15,7 +45,7 @@
     "video": false,
     "previewTextWhite": false,
     "tags": ["Контекстная реклама", "Маркетинговое сопровождение"],
-    "order": 6,
+    "order": 8,
     "homepage": true,
     "href": "/dr-mobile"
   },
@@ -25,7 +55,7 @@
     "video": true,
     "previewTextWhite": true,
     "tags": ["Создание/развитие отделов продаж", "Маркетинговое сопровождение", "Корпоративные тренинги и \"полевое\" обучение"],
-    "order": 5,
+    "order": 7,
     "homepage": true,
     "href": "/vostokavtomash"
   },
@@ -35,7 +65,7 @@
     "video": false,
     "previewTextWhite": false,
     "tags": ["Контекстная реклама", "Маркетинговое сопровождение"],
-    "order": 4,
+    "order": 6,
     "homepage": true,
     "href": "/tooth-fairy"
   },
@@ -45,7 +75,7 @@
     "video": true,
     "previewTextWhite": true,
     "tags": ["Удаленный Call-центр", "Создание и развитие Call-центра"],
-    "order": 3,
+    "order": 5,
     "homepage": true,
     "href": "/ldpr"
   },
@@ -55,7 +85,7 @@
     "video": false,
     "previewTextWhite": true,
     "tags": ["Разработка фирменного стиля", "Дизайн-поддержка", "Создание контента"],
-    "order": 2,
+    "order": 4,
     "homepage": true,
     "href": "/bunker"
   },
@@ -65,7 +95,7 @@
     "video": true,
     "previewTextWhite": true,
     "tags": ["Создание/развитие отделов продаж", "Создание контента", "Корпоративные тренинги и \"полевое\" обучение", "SMM", "Дизайн"],
-    "order": 1,
+    "order": 3,
     "homepage": true,
     "href": "/chill-house"
   },
@@ -75,8 +105,18 @@
     "video": false,
     "previewTextWhite": false,
     "tags": ["Создание контента", "SMM", "Дизайн"],
-    "order": 0,
+    "order": 2,
     "homepage": true,
     "href": "/brat-buryat"
+  },
+  {
+    "title": "Контекстная и таргетированная<br/>реклама для \"ChixxInk\"",
+    "preview": "SeeAllProjects.mp4",
+    "video": true,
+    "previewTextWhite": true,
+    "tags": ["Контекстная реклама", "Видеосъемка"],
+    "order": 1,
+    "homepage": true,
+    "href": "/chixxInk"
   }
 ]

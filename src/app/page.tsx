@@ -8,7 +8,7 @@ export default function Home() {
   return (
       <>
           <Welcome/>
-          <CasesList tags={true} name={`Наши проекты`} onlyHomePage={true}/>
+          <CasesList name={`Наши проекты`} onlyHomePage={true} disableSeeAll={false}/>
           <ServicesListComponent/>
           <Order/>
       </>
