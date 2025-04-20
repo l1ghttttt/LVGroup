@@ -79,9 +79,7 @@ const CreateSalesment = () => {
                     orderList={orderList}
                 />
 
-                <CasesList
-                    tags={false}
-                />
+                <CasesList />
 
                 <OwnFeatures
                     title={`Что вы получаете, работая с нами`}

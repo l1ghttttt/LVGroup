@@ -90,9 +90,7 @@ const TechnicalSupport = () => {
                     orderList={orderList2}
                 />
 
-                <CasesList
-                    tags={false}
-                />
+                <CasesList />
 
                 <OwnFeatures
                     title={`Что вы получаете, работая с нами`}
