@@ -1,8 +1,7 @@
 'use client'
 
 import React, {useEffect, useState} from 'react';
-import Order from "@/components/order/Order";
-import Link from "next/link";
+import Order from "@/components/order/Order"
 import CasesList from "@/components/cases-list/Cases-list";
 
 const CasesPage = () => {
