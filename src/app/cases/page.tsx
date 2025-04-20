@@ -108,7 +108,7 @@ const CasesPage = () => {
                                 {typeof window !== "undefined" && (
                                     <video autoPlay muted loop playsInline id="myVideo"
                                            className="absolute top-0 left-0 w-full h-full object-cover">
-                                        <source src="/1.mp4" type="video/mp4"/>
+                                        <source src="/LamarkCenterPreview.mp4" type="video/mp4"/>
                                     </video>
                                 )}
                                 <div className={`z-25 bg-background w-full h-full p-caseContentPadding`}>
@@ -121,7 +121,7 @@ const CasesPage = () => {
 
                         <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                             <Link href="/case/dr-mobile">
-                                <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/2.jpg"
+                                <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/DrMobilePreview.jpg"
                                      alt=""/>
                                 <div className={`bg-background w-full h-full p-caseContentPadding`}>
                                     <p className={`relative z-25 text-black text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
@@ -133,7 +133,7 @@ const CasesPage = () => {
                         <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                             <Link href="/case/vostokavtomash">
                                 <video autoPlay muted loop playsInline id="myVideo">
-                                    <source src="/3.mp4" type="video/mp4"/>
+                                    <source src="/VostokAvtoMashPreview.mp4" type="video/mp4"/>
                                 </video>
                                 <div className={`bg-background w-full h-full p-caseContentPadding`}>
                                     <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
@@ -144,7 +144,7 @@ const CasesPage = () => {
                         </li>
                         <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                             <Link href="/case/tooth-fairy">
-                                <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/4.jpg"
+                                <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/ToothFairyPreview.jpg"
                                      alt=""/>
                                 <div className={`bg-background w-full h-full p-caseContentPadding`}>
                                     <p className={`relative z-25 text-black text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
@@ -158,7 +158,7 @@ const CasesPage = () => {
                         <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                             <Link href="/case/ldpr">
                                 <video autoPlay muted loop playsInline id="myVideo">
-                                    <source src="/5.mp4" type="video/mp4"/>
+                                    <source src="/LDPRPreview.mp4" type="video/mp4"/>
                                 </video>
                                 <div className={`bg-background w-full h-full p-caseContentPadding`}>
                                     <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
@@ -169,7 +169,7 @@ const CasesPage = () => {
                         </li>
                         <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                             <Link href="/case/bunker">
-                                <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/6.jpg"
+                                <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/BunkerPreview.jpg"
                                      alt=""/>
                                 <div className={`bg-background w-full h-full p-caseContentPadding`}>
                                     <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
@@ -181,7 +181,7 @@ const CasesPage = () => {
                         <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                             <Link href="/case/chill-house">
                                 <video autoPlay muted loop playsInline id="myVideo">
-                                    <source src="/7.mp4" type="video/mp4"/>
+                                    <source src="/ChillHousePreview.mp4" type="video/mp4"/>
                                 </video>
                                 <div className={`bg-background w-full h-full p-caseContentPadding`}>
                                     <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
@@ -192,7 +192,7 @@ const CasesPage = () => {
                         </li>
                         <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                             <Link href="/case/brat-buryat">
-                                <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/8.jpg"
+                                <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/BratBuryatSMMPreview.jpg"
                                      alt=""/>
                                 <div className={`bg-background w-full h-full p-caseContentPadding`}>
                                     <p className={`relative z-25 text-black text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>

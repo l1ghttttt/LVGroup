@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Редизайн и разработка сайта для <br/> автосервиса \"Ламарк-Центр\"",
+    "preview": "LamarkCenterPreview.mp4",
+    "video": true,
+    "previewTextWhite": true,
+    "tags": ["Продажи", "Маркетинг", "Веб-разработка", "Создание контента", "Дизайн", "Call-центр"],
+    "order": 7,
+    "homepage": true,
+    "href": "/lamark-center"
+  },
+  {
+    "title": "Контекстная реклама для Dr.Mobile: <br/> 100 лидов в месяц",
+    "preview": "DrMobilePreview.jpg",
+    "video": false,
+    "previewTextWhite": false,
+    "tags": ["Контекстная реклама", "Маркетинговое сопровождение"],
+    "order": 6,
+    "homepage": true,
+    "href": "/dr-mobile"
+  },
+  {
+    "title": "+250% прибыли отдела продаж <br/> ГК \"ВостокАвтоМаш\"",
+    "preview": "VostokAvtoMashPreview.mp4",
+    "video": true,
+    "previewTextWhite": true,
+    "tags": ["Создание/развитие отделов продаж", "Маркетинговое сопровождение", "Корпоративные тренинги и \"полевое\" обучение"],
+    "order": 5,
+    "homepage": true,
+    "href": "/vostokavtomash"
+  },
+  {
+    "title": "\"Зубная фея\": от 5000 лидов в <br/> отчете и отсутствия клиентов <br/> до реальных показателей",
+    "preview": "ToothFairyPreview.jpg",
+    "video": false,
+    "previewTextWhite": false,
+    "tags": ["Контекстная реклама", "Маркетинговое сопровождение"],
+    "order": 4,
+    "homepage": true,
+    "href": "/tooth-fairy"
+  },
+  {
+    "title": "Обзвон-информирование граждан <br/> для партии \"ЛДПР\"",
+    "preview": "LDPRPreview.mp4",
+    "video": true,
+    "previewTextWhite": true,
+    "tags": ["Удаленный Call-центр", "Создание и развитие Call-центра"],
+    "order": 3,
+    "homepage": true,
+    "href": "/ldpr"
+  },
+  {
+    "title": "Фирменный стиль компьютерного клуба \"Бункер\"",
+    "preview": "BunkerPreview.jpg",
+    "video": false,
+    "previewTextWhite": true,
+    "tags": ["Разработка фирменного стиля", "Дизайн-поддержка", "Создание контента"],
+    "order": 2,
+    "homepage": true,
+    "href": "/bunker"
+  },
+  {
+    "title": "Продажи, маркетинг и HR в сети <br/> заведений \"Чиллхаус\"",
+    "preview": "ChillHousePreview.mp4",
+    "video": true,
+    "previewTextWhite": true,
+    "tags": ["Создание/развитие отделов продаж", "Создание контента", "Корпоративные тренинги и \"полевое\" обучение", "SMM", "Дизайн"],
+    "order": 1,
+    "homepage": true,
+    "href": "/chill-house"
+  },
+  {
+    "title": "SMM для кафе \"Брат Бурят\" <br/> с 200 до 12000 подписчиков",
+    "preview": "BratBuryatSMMPreview.jpg",
+    "video": false,
+    "previewTextWhite": false,
+    "tags": ["Создание контента", "SMM", "Дизайн"],
+    "order": 0,
+    "homepage": true,
+    "href": "/brat-buryat"
+  }
+]

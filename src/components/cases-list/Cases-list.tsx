@@ -1,165 +1,105 @@
 'use client'
 
-import React, {useEffect, useState} from 'react';
-import Link from "next/link";
+import React, { useEffect, useState } from 'react'
+import Link from 'next/link'
+import casesList from '../../app/cases.json'
+import categories from '../../app/uslugi.json'
 
-interface CasesProps {
-    tags: boolean;
-    name?: string;
-    disableSeeAll?: boolean;
+interface CaseItem {
+    title: string
+    preview: string
+    video: boolean
+    previewTextWhite: boolean
+    tags: string[]
+    order: number
+    homepage: boolean
+    href: string
 }
 
-const CasesList = ({tags, name="Наши работы", disableSeeAll = false}: CasesProps) => {
+interface Category {
+    trigger: string
+    values: { title: string }[]
+}
 
-    const [mounted, setMounted] = useState(false);
+interface CasesProps {
+    name?: string
+    disableSeeAll?: boolean
+    onlyHomePage?: boolean
+}
+
+const CasesList = ({name = "Наши работы", disableSeeAll = false, onlyHomePage = false }: CasesProps) => {
+    const [mounted, setMounted] = useState(false)
+    const [activeCategory, setActiveCategory] = useState<string | null>(null)
 
     useEffect(() => {
-        setMounted(true);
-    }, []);
+        setMounted(true)
+    }, [])
 
-    if (!mounted) return null;
+    if (!mounted) return null
+
+    const categoryTags = activeCategory
+        ? [
+            activeCategory.toLowerCase(),
+            ...((categories as Category[]).find(c => c.trigger === activeCategory)?.values.map(v => v.title.toLowerCase()) || [])
+        ]
+        : []
+
+    let filteredCases = (casesList as CaseItem[])
+        .filter(caseItem => (onlyHomePage ? caseItem.homepage : true))
+
+    if (activeCategory && categoryTags.length > 0) {
+        filteredCases = filteredCases.filter(item =>
+            item.tags?.some(tag => categoryTags.includes(tag.toLowerCase()))
+        )
+    }
+
+    filteredCases = filteredCases.sort((a, b) => b.order - a.order)
+
+    if (onlyHomePage) {
+        filteredCases = filteredCases.slice(0, 9)
+    }
+
+    const shouldDisableSeeAll = disableSeeAll || !!activeCategory
 
     return (
         <section className={`w-full flex flex-col bg-background`}>
-            <h2 className={`relative p-casesNamePadding leading-none flex items-end justify-stretch sm:w-2/3 text-casesNameSize font-medium`}>{name}</h2>
-            <ul className={`flex ${tags ? `p-casesFilterPadding` : `p-5 max-md:p-3`} flex-wrap gap-2 gap-y-3`}>
-                {tags ? (<>
-                    <li>
-                        <button
-                            className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                            Продажи
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                            Маркетинг
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                            Веб-разработка
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                            Создание контента
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                            Дизайн
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                            Call-центр
-                        </button>
-                    </li>
-                </>) : null}
+            <h2 className={`relative p-casesNamePadding leading-none flex items-end justify-stretch sm:w-2/3 text-casesNameSize font-medium`}>
+                {name}
+            </h2>
 
+            {/* Кнопки фильтра категорий */}
+            <ul className={`flex p-casesFilterPadding flex-wrap gap-2 gap-y-3`}>
+                {(categories as Category[]).map((cat, index) => (
+                    <li key={index}>
+                        <button
+                            onClick={() => setActiveCategory(prev => prev === cat.trigger ? null : cat.trigger)}
+                            className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:text-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px] ${activeCategory === cat.trigger ? 'bg-mainColor text-white' : ''}`}
+                        >
+                            {cat.trigger}
+                        </button>
+                    </li>
+                ))}
             </ul>
 
             <ul className={`bg-background flex items-start flex-wrap justify-start relative ml-[-1px] mb-[-1px]`}>
-                <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="/case/lamark-center">
-                        {typeof window !== "undefined" && (
-                            <video autoPlay muted loop playsInline id="myVideo"
-                                   className="absolute top-0 left-0 w-full h-full object-cover">
-                                <source src="/1.mp4" type="video/mp4"/>
-                            </video>
-                        )}
-                        <div className={`z-25 bg-background w-full h-full p-caseContentPadding`}>
-                            <p className={`relative z-25 text-caseTextSize text-white leading-caseTextLeading font-railway`}>
-                                Редизайн и разработка сайта для <br/> автосервиса &quot;Ламарк-Центр&quot;
-                            </p>
-                        </div>
-                    </Link>
-                </li>
+                {filteredCases.map((item, index) => (
+                    <li key={`${item.href}-${index}`} className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
+                        <Link href={`/case${item.href}`}>
+                            {item.video ? (
+                                <video autoPlay muted loop playsInline className="absolute top-0 left-0 w-full h-full object-cover">
+                                    <source src={`/${item.preview}`} type="video/mp4" />
+                                </video>
+                            ) : (
+                                <img className="object-cover absolute left-0 top-0 w-full h-full" src={`/${item.preview}`} alt="" />
+                            )}
+                            <div className={`bg-background w-full h-full p-caseContentPadding`}>
+                                <p className={`relative z-25 ${item.previewTextWhite ? 'text-white' : 'text-black'} text-caseTextSize leading-caseTextLeading font-railway`} dangerouslySetInnerHTML={{ __html: item.title }} />
+                            </div>
+                        </Link>
+                    </li>
+                ))}
 
-                <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="/case/dr-mobile">
-                        <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/2.jpg" alt=""/>
-                        <div className={`bg-background w-full h-full p-caseContentPadding`}>
-                            <p className={`relative z-25 text-black text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                Контекстная реклама для Dr.Mobile: <br/> 100 лидов в месяц
-                            </p>
-                        </div>
-                    </Link>
-                </li>
-                <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="/case/vostokavtomash">
-                        <video autoPlay muted loop playsInline id="myVideo">
-                            <source src="/3.mp4" type="video/mp4"/>
-                        </video>
-                        <div className={`bg-background w-full h-full p-caseContentPadding`}>
-                            <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                +250% прибыли отдела продаж <br/> ГК &quot;ВостокАвтоМаш&quot;
-                            </p>
-                        </div>
-                    </Link>
-                </li>
-                <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="/case/tooth-fairy">
-                        <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/4.jpg" alt=""/>
-                        <div className={`bg-background w-full h-full p-caseContentPadding`}>
-                            <p className={`relative z-25 text-black text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                &quot;Зубная Фея&quot;: от 5000 лидов в <br/> отсчете и отсутствия клиентов <br/> до
-                                реальных показателей
-                            </p>
-                        </div>
-                    </Link>
-                </li>
-                <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="/case/ldpr">
-                        <video autoPlay muted loop playsInline id="myVideo">
-                            <source src="/5.mp4" type="video/mp4"/>
-                        </video>
-                        <div className={`bg-background w-full h-full p-caseContentPadding`}>
-                            <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                Обзвон-информирование граждан <br/> для партии &quot;ЛДПР&quot;
-                            </p>
-                        </div>
-                    </Link>
-                </li>
-                <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="/case/bunker">
-                        <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/6.jpg" alt=""/>
-                        <div className={`bg-background w-full h-full p-caseContentPadding`}>
-                            <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                Фирменный стиль компьютерного <br/> клуба &quot;Бункер&quot;
-                            </p>
-                        </div>
-                    </Link>
-                </li>
-                <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="/case/chill-house">
-                        <video autoPlay muted loop playsInline id="myVideo">
-                            <source src="/7.mp4" type="video/mp4"/>
-                        </video>
-                        <div className={`bg-background w-full h-full p-caseContentPadding`}>
-                            <p className={`relative z-25 text-white text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                Продажи, Маркетинг и HR в сети <br/> заведений &quot;Чиллхаус&quot;
-                            </p>
-                        </div>
-                    </Link>
-                </li>
-                <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
-                    <Link href="/case/brat-buryat">
-                        <img className={`object-cover absolute left-0 top-0 w-full h-full`} src="/8.jpg" alt=""/>
-                        <div className={`bg-background w-full h-full p-caseContentPadding`}>
-                            <p className={`relative z-25 text-black text-caseTextSize leading-caseTextLeading font-railway transform-[translate3d(0, 0, 0)]`}>
-                                SMM для кафе &quot;Брат Бурят&quot; <br/> с 200 до 12 000 подписчиков
-                            </p>
-                        </div>
-                    </Link>
-                </li>
-
-                {disableSeeAll ? null : (
+                {!shouldDisableSeeAll && (
                     <li className={`w-caseWidth h-caseHeight ml-[1px] mb-[1px] relative shrink-0 overflow-hidden outline outline-1 outline-[#252525] duration-300`}>
                         <div className={`w-full h-full`}>
                             <video autoPlay muted loop playsInline id="myVideo" className={`pointer-events-none`}>
@@ -190,7 +130,7 @@ const CasesList = ({tags, name="Наши работы", disableSeeAll = false}: 
                 )}
             </ul>
         </section>
-    );
-};
+    )
+}
 
-export default CasesList;
+export default CasesList
