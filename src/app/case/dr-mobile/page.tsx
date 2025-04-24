@@ -6,12 +6,11 @@ import CustomerText from "@/components/for-cases/customer-text/Customer-text";
 import CustomerStats from "@/components/for-cases/customer-stats/Customer-stats";
 import FooterTags from "@/components/for-cases/footer-tags/Footer-tags";
 import CustomerChain from "@/components/for-cases/customer-chain/Customer-chain";
+import casesList from '../../../app/cases.json'
 
-const tagsList = [
-    "Контекстная реклама",
-    "Маркетинговые исследования",
-    "Реклама",
-]
+const caseHref = "/dr-mobile"; // должен совпадать с href в data
+const currentCase = casesList.find(c => c.href === caseHref);
+const tagsList = currentCase?.tags || [];
 
 const DrMobile = () => {
     return (

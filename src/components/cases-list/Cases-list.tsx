@@ -25,11 +25,18 @@ interface CasesProps {
     name?: string
     disableSeeAll?: boolean
     onlyHomePage?: boolean
+    initialCategory?: string | null
 }
 
-const CasesList = ({name = "Наши работы", disableSeeAll = false, onlyHomePage = false }: CasesProps) => {
+const CasesList = React.forwardRef<HTMLDivElement, CasesProps>(
+    ({ name = "Наши работы", disableSeeAll = false, onlyHomePage = false, initialCategory}, ref) => {
     const [mounted, setMounted] = useState(false)
     const [activeCategory, setActiveCategory] = useState<string | null>(null)
+    useEffect(() => {
+        if (initialCategory) {
+            setActiveCategory(initialCategory)
+        }
+    }, [initialCategory])
 
     useEffect(() => {
         setMounted(true)
@@ -60,7 +67,7 @@ const CasesList = ({name = "Наши работы", disableSeeAll = false, onlyH
     }
 
     return (
-        <section className={`w-full flex flex-col bg-background`}>
+        <section ref={ref} className={`w-full flex flex-col bg-background`}>
             <h2 className={`relative p-casesNamePadding leading-none flex items-end justify-stretch sm:w-2/3 text-casesNameSize font-medium`}>
                 {name}
             </h2>
@@ -129,6 +136,7 @@ const CasesList = ({name = "Наши работы", disableSeeAll = false, onlyH
             </ul>
         </section>
     )
-}
+    })
 
+CasesList.displayName = 'CasesList'
 export default CasesList

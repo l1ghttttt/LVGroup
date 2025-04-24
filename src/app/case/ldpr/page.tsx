@@ -5,8 +5,11 @@ import CustomerText from "@/components/for-cases/customer-text/Customer-text";
 import CustomerPhoto from "@/components/for-cases/customer-photo/Customer-photo";
 import CustomerStats from "@/components/for-cases/customer-stats/Customer-stats";
 import FooterTags from "@/components/for-cases/footer-tags/Footer-tags";
+import casesList from '../../../app/cases.json'
 
-const tagsList = ["Удаленный Call-центр", "Создание и развитие Call-центра"]
+const caseHref = "/ldpr"; // должен совпадать с href в data
+const currentCase = casesList.find(c => c.href === caseHref);
+const tagsList = currentCase?.tags || [];
 
 const LDPR = () => {
     return (

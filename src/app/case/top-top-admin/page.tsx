@@ -4,8 +4,11 @@ import CustomerText from "@/components/for-cases/customer-text/Customer-text";
 import FooterTags from "@/components/for-cases/footer-tags/Footer-tags";
 import Order from "@/components/order/Order";
 import CustomerGallery from "@/components/for-cases/customer-gallery/Customer-gallery";
+import casesList from '../../../app/cases.json'
 
-const tagsList = ["Коммерческое предложение", "Marketing Kit", "Дизайн"]
+const caseHref = "/top-top-admin"; // должен совпадать с href в data
+const currentCase = casesList.find(c => c.href === caseHref);
+const tagsList = currentCase?.tags || [];
 
 const TopTopAdmin = () => {
     return (

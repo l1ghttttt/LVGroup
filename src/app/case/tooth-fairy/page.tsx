@@ -7,8 +7,11 @@ import CustomerChain from "@/components/for-cases/customer-chain/Customer-chain"
 import CustomerStats from "@/components/for-cases/customer-stats/Customer-stats";
 import CustomerReview from "@/components/for-cases/customer-review/Customer-review";
 import FooterTags from "@/components/for-cases/footer-tags/Footer-tags";
+import casesList from '../../../app/cases.json'
 
-const tagsList = ["Контекстная реклама", "Маркетинговые исследования", "Реклама"]
+const caseHref = "/tooth-fairy"; // должен совпадать с href в data
+const currentCase = casesList.find(c => c.href === caseHref);
+const tagsList = currentCase?.tags || [];
 
 const ToothFairy = () => {
     return (

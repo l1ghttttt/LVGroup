@@ -7,8 +7,11 @@ import Order from "@/components/order/Order";
 import FooterTags from "@/components/for-cases/footer-tags/Footer-tags";
 import CustomerPhoto from "@/components/for-cases/customer-photo/Customer-photo";
 import CustomerReview from "@/components/for-cases/customer-review/Customer-review";
+import casesList from '../../../app/cases.json'
 
-const tagsList = ["Отдел продаж", "Обучение", "Разработка регламентов и стандартов"]
+const caseHref = "/khabarovsk-typography"; // должен совпадать с href в data
+const currentCase = casesList.find(c => c.href === caseHref);
+const tagsList = currentCase?.tags || [];
 
 const KhabarovskTypography = () => {
     return (

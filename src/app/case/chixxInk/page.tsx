@@ -6,8 +6,11 @@ import CustomerStats from "@/components/for-cases/customer-stats/Customer-stats"
 import Order from "@/components/order/Order";
 import FooterTags from "@/components/for-cases/footer-tags/Footer-tags";
 import CustomerVideo from "@/components/for-cases/customer-video/Customer-video";
+import casesList from '../../../app/cases.json'
 
-const tagsList = ["Контекстная реклама", "Таргетированная реклама", "Видеосъемка"]
+const caseHref = "/chixxInk"; // должен совпадать с href в data
+const currentCase = casesList.find(c => c.href === caseHref);
+const tagsList = currentCase?.tags || [];
 
 const ChixxInk = () => {
     return (

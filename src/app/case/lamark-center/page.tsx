@@ -6,6 +6,11 @@ import CustomerText from "@/components/for-cases/customer-text/Customer-text";
 import PhonesVideo from "@/components/for-cases/phones-video/Phones-video";
 import CustomerReview from "@/components/for-cases/customer-review/Customer-review";
 import FooterTags from "@/components/for-cases/footer-tags/Footer-tags";
+import casesList from '../../../app/cases.json'
+
+const caseHref = "/lamark-center"; // должен совпадать с href в data
+const currentCase = casesList.find(c => c.href === caseHref);
+const tagsList = currentCase?.tags || [];
 
 const firstImage = {
     imageUrl: '/site-after.jpg',
@@ -16,8 +21,6 @@ const secondImage = {
     imageUrl: '/site-before.jpg',
     alt: 'Сайт до',
 };
-
-const tagsList = ["Продажи", "Маркетинг", "Веб-разработка", "Создание контента", "Дизайн", "Call-центр"]
 
 const descriptiopnsList = ["Ламарк-Центр - автосервис, который работает с 1998 года, партнерами и клиентами стали уже более 15 000 человек. Ключевые ценности компании - честность, уважение, доверие и ответственность.", "Клиент столкнулся со следующей проблемой - прошлые разработчики сайта брали оплату за обслуживание сайта, но фактически ничего не делали - сайт не обновлялся более 5 лет, в итоге стоимость работ по обновлению сайта и корректировки работы всех установленных модулей стала сравнима с разработкой полностью нового сайта с современным дизайном и лучшей конверсией."]
 

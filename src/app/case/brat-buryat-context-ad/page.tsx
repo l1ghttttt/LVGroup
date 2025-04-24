@@ -6,10 +6,11 @@ import CustomerChain from "@/components/for-cases/customer-chain/Customer-chain"
 import CustomerStats from "@/components/for-cases/customer-stats/Customer-stats";
 import FooterTags from "@/components/for-cases/footer-tags/Footer-tags";
 import Order from "@/components/order/Order";
+import casesList from '../../../app/cases.json'
 
-const tagsList = [
-    "Контекстная реклама",
-]
+const caseHref = "/brat-buryat-context-ad"; // должен совпадать с href в data
+const currentCase = casesList.find(c => c.href === caseHref);
+const tagsList = currentCase?.tags || [];
 
 const BratBuryatContextsAd = () => {
     return (

@@ -1,16 +1,15 @@
 import Welcome from "@/widgets/welcome-page/Welcome";
 import ServicesListComponent from "@/widgets/services-list/Services-list";
 import Order from "@/components/order/Order";
-import CasesList from "@/components/cases-list/Cases-list";
-import React from "react";
+import CasesListWrapper from "@/components/cases-list/CasesListWrapper"; // новый обёрточный компонент
 
 export default function Home() {
-  return (
-      <>
-          <Welcome/>
-          <CasesList name={`Наши проекты`} onlyHomePage={true} disableSeeAll={false}/>
-          <ServicesListComponent/>
-          <Order/>
-      </>
-  );
+    return (
+        <>
+            <Welcome />
+            <CasesListWrapper />
+            <ServicesListComponent />
+            <Order />
+        </>
+    );
 }

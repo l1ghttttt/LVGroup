@@ -8,8 +8,11 @@ import CustomerGallery from "@/components/for-cases/customer-gallery/Customer-ga
 import CustomerStats from "@/components/for-cases/customer-stats/Customer-stats";
 import FooterTags from "@/components/for-cases/footer-tags/Footer-tags";
 import CustomerReview from "@/components/for-cases/customer-review/Customer-review";
+import casesList from '../../../app/cases.json'
 
-const tagsList = ["Отдел продаж", "Создание контента", "Обучение", "SMM", "Дизайн"]
+const caseHref = "/chill-house"; // должен совпадать с href в data
+const currentCase = casesList.find(c => c.href === caseHref);
+const tagsList = currentCase?.tags || [];
 
 const ChillHouse = () => {
     return (

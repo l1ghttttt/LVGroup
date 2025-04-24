@@ -1,5 +1,7 @@
 import React from 'react';
 import Image from "next/image";
+import Link from "next/link";
+import uslugiList from "@/app/uslugi.json";
 
 interface Technology {
     logo: string;
@@ -18,6 +20,17 @@ interface CustomerInfoProps {
 
 const CustomerInfo = ({title, logo, mobileLogo = logo, tags, technologies, descriptions, whiteBackground = false}: CustomerInfoProps) => {
 
+// Мапа тегов к href
+    const tagLinksMap = new Map<string, string>();
+    (uslugiList as {
+        trigger: string;
+        values: { title: string; href: string; description: string }[];
+    }[]).forEach(category => {
+        category.values.forEach(service => {
+            tagLinksMap.set(service.title.toLowerCase(), service.href);
+        });
+    });
+
     return (
         <section className="w-full">
             <div className=" mb-CustomerTitleMargin flex flex-col">
@@ -31,15 +44,36 @@ const CustomerInfo = ({title, logo, mobileLogo = logo, tags, technologies, descr
                             width={180} height={180}/>
                     </div>
                     <ul className={`flex p-casesFilterPadding px-[15px] flex-wrap gap-2 gap-y-3`}>
-                        {tags.map(tag => (
-                            <li key={tag}>
-                                <button
-                                    key={tag}
-                                    className={`text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]`}>
-                                    {tag}
-                                </button>
-                            </li>
-                        ))}
+                        {tags.map(tag => {
+                            // Проверим, есть ли совпадение с title услуги
+                            const lowerTag = tag.toLowerCase();
+                            let matchedHref: string | null = null;
+
+                            for (const category of uslugiList) {
+                                for (const service of category.values) {
+                                    if (service.title.toLowerCase() === lowerTag) {
+                                        matchedHref = service.href;
+                                        break;
+                                    }
+                                }
+                                if (matchedHref) break;
+                            }
+
+                            // Если нет прямого совпадения, считаем, что это категория
+                            const linkHref = matchedHref ?? `/?category=${encodeURIComponent(tag)}`;
+
+                            return (
+                                <li key={tag}>
+                                    <Link href={linkHref} passHref>
+                                        <button
+                                            className="text-[18px] max-sm:text-[14px] select-none text-background bg-foreground hover:bg-mainColor cursor-pointer duration-300 tracking-widest h-[40px] flex items-center justify-center rounded-full px-[20px]"
+                                        >
+                                            {tag}
+                                        </button>
+                                    </Link>
+                                </li>
+                            );
+                        })}
                     </ul>
                 </div>
                 <h4 className={`text-customerClientSize leading-customerClientLeading customer-spacing w-full px-CustomerSpacingPadding`}><span

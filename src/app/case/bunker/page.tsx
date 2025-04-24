@@ -5,8 +5,11 @@ import CustomerPhoto from "@/components/for-cases/customer-photo/Customer-photo"
 import CustomerText from "@/components/for-cases/customer-text/Customer-text";
 import CustomerPhotosStroke from "@/components/for-cases/customer-photos-stroke/Customer-photos-stroke";
 import FooterTags from "@/components/for-cases/footer-tags/Footer-tags";
+import casesList from '../../../app/cases.json'
 
-const tagsList = ["Фирменный стиль", "Дизайн-поддержка", "Создание контента"]
+const caseHref = "/bunker"; // должен совпадать с href в data
+const currentCase = casesList.find(c => c.href === caseHref);
+const tagsList = currentCase?.tags || [];
 
 const Bunker = () => {
     return (

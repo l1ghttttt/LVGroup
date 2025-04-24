@@ -9,8 +9,11 @@ import CustomerStats from "@/components/for-cases/customer-stats/Customer-stats"
 import FooterTags from "@/components/for-cases/footer-tags/Footer-tags";
 import CustomerComments from "@/components/for-cases/customer-comments/Customer-comments";
 import CustomerHistories from "@/components/for-cases/customer-histories/Customer-histories";
+import casesList from '../../../app/cases.json'
 
-const tagsList = ["Создание контента", "SMM", "Дизайн"]
+const caseHref = "/brat-buryat"; // должен совпадать с href в data
+const currentCase = casesList.find(c => c.href === caseHref);
+const tagsList = currentCase?.tags || [];
 
 const BratBuryat = () => {
     return (
