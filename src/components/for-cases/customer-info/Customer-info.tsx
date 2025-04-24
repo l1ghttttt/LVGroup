@@ -60,7 +60,7 @@ const CustomerInfo = ({title, logo, mobileLogo = logo, tags, technologies, descr
                             }
 
                             // Если нет прямого совпадения, считаем, что это категория
-                            const linkHref = matchedHref ?? `/?category=${encodeURIComponent(tag)}`;
+                            const linkHref = matchedHref ?? `/cases/?category=${encodeURIComponent(tag)}`;
 
                             return (
                                 <li key={tag}>

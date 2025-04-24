@@ -3,6 +3,7 @@
 import React, {useEffect, useState} from 'react';
 import Order from "@/components/order/Order"
 import CasesList from "@/components/cases-list/Cases-list";
+import CasesListWrapper from "@/components/cases-list/CasesListWrapper";
 
 const CasesPage = () => {
 
@@ -18,6 +19,7 @@ const CasesPage = () => {
     return (
         <>
             <div className="cases-container mt-[50px] max-md:mt-[100px]">
+                <CasesListWrapper />
                 <CasesList name={`Наши проекты`} onlyHomePage={false} disableSeeAll={true}/>
                 <Order/>
             </div>
