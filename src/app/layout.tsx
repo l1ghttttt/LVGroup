@@ -19,15 +19,15 @@ const roboto = Roboto({
 
 export const metadata = {
     title: 'LV Group',
-    description: 'Сайты, колл-центры, контент, дизайн, стратегия, отделы продаж. Мы команда, которая делает результат.',
+    description: 'Продвигаем бизнес — от маркетинга до продаж. Сайты, колл-центры, контент, дизайн, стратегия. LV GROUP — команда, которая делает результат.',
     applicationName: 'LV Group',
-    authors: [{ name: 'маркетинг' }], // <-- без email
-    creator: 'Продвигаем бизнес — от маркетинга до продаж (bsleonov@gmail.com)',
-    publisher: 'LV Group',
+    authors: { name: 'ABC' },
     keywords: [
         'маркетинг', 'продажи', 'разработка сайтов', 'колл-центр',
         'контент', 'дизайн', 'упаковка бизнеса', 'отдел продаж', 'LV Group'
     ],
+    creator: 'LV Group',
+    publisher: 'LV Group',
     robots: {
         index: true,
         follow: true,
@@ -35,20 +35,20 @@ export const metadata = {
     openGraph: {
         title: 'LV Group',
         description: 'Сайты, колл-центры, контент, дизайн, стратегия — делаем результат.',
-        url: 'https://grouplv.ru/',
+        url: 'https://lvgroup.site', // Укажи свой реальный домен
         siteName: 'LV Group',
         locale: 'ru_RU',
         type: 'website',
         images: [
             {
-                url: 'https://grouplv.ru/og-image.jpg',
+                url: 'https://lvgroup.site/og-image.jpg', // Укажи свою картинку
                 width: 1200,
                 height: 630,
                 alt: 'LV Group — ваш партнёр по маркетингу и продажам',
             },
         ],
     },
-    metadataBase: new URL('https://grouplv.ru'),
+    metadataBase: new URL('https://lvgroup.site'), // обязательно если используешь относительные OG URL
     viewport: 'width=device-width, initial-scale=1',
     category: 'Бизнес',
 };
