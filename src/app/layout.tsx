@@ -18,8 +18,39 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-    title: 'LVGroup',
-    description: 'LVGroup - лучшая маркетинговая компания',
+    title: 'LV Group',
+    description: 'Продвигаем бизнес — от маркетинга до продаж. Сайты, колл-центры, контент, дизайн, стратегия. LV GROUP — команда, которая делает результат.',
+    applicationName: 'LV Group',
+    authors: [{ name: 'Boris' }], // <-- без email
+    creator: 'Boris (bsleonov@gmail.com)',
+    publisher: 'LV Group',
+    keywords: [
+        'маркетинг', 'продажи', 'разработка сайтов', 'колл-центр',
+        'контент', 'дизайн', 'упаковка бизнеса', 'отдел продаж', 'LV Group'
+    ],
+    robots: {
+        index: true,
+        follow: true,
+    },
+    openGraph: {
+        title: 'LV Group',
+        description: 'Сайты, колл-центры, контент, дизайн, стратегия — делаем результат.',
+        url: 'https://grouplv.ru/',
+        siteName: 'LV Group',
+        locale: 'ru_RU',
+        type: 'website',
+        images: [
+            {
+                url: 'https://grouplv.ru/og-image.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'LV Group — ваш партнёр по маркетингу и продажам',
+            },
+        ],
+    },
+    metadataBase: new URL('https://grouplv.ru'),
+    viewport: 'width=device-width, initial-scale=1',
+    category: 'Бизнес',
 };
 
 export default function RootLayout({
