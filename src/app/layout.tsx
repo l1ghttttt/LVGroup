@@ -18,37 +18,46 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-    title: 'LV Group',
-    description: 'Продвигаем бизнес — от маркетинга до продаж. Сайты, колл-центры, контент, дизайн, стратегия. LV GROUP — команда, которая делает результат.',
+    title: 'LV Group - команда, которая делает результат!',
+    description: 'Отделы продаж, создание сайтов, контекстная реклама, дизайн, SMM.',
     applicationName: 'LV Group',
-    authors: { name: 'ABC' },
-    keywords: [
-        'маркетинг', 'продажи', 'разработка сайтов', 'колл-центр',
-        'контент', 'дизайн', 'упаковка бизнеса', 'отдел продаж', 'LV Group'
-    ],
-    creator: 'LV Group',
+    authors: [{ name: 'Boris' }],
+    creator: 'Boris (bsleonov@gmail.com)',
     publisher: 'LV Group',
+    keywords: [
+        'маркетинг', 'отделы продаж', 'создание сайтов',
+        'контекстная реклама', 'дизайн', 'SMM', 'LV Group'
+    ],
     robots: {
         index: true,
         follow: true,
     },
+    metadataBase: new URL('https://lv-group.vercel.app'),
     openGraph: {
-        title: 'LV Group',
-        description: 'Сайты, колл-центры, контент, дизайн, стратегия — делаем результат.',
-        url: 'https://lvgroup.site', // Укажи свой реальный домен
+        title: 'LV Group - команда, которая делает результат!',
+        description: 'Отделы продаж, создание сайтов, контекстная реклама, дизайн, SMM.',
+        url: 'https://lv-group.vercel.app',
         siteName: 'LV Group',
-        locale: 'ru_RU',
-        type: 'website',
         images: [
             {
-                url: 'https://lvgroup.site/og-image.jpg', // Укажи свою картинку
+                url: 'https://opengraph.b-cdn.net/production/images/4b778b81-5173-45ae-8a48-cec9a566e529.jpg?token=FI-tZi6fkA4LbV_D4i1GOR8Nbf_JcWFOvff_kB9XfWM&height=1200&width=1200&expires=33281589971',
                 width: 1200,
-                height: 630,
-                alt: 'LV Group — ваш партнёр по маркетингу и продажам',
+                height: 1200,
+                alt: 'LV Group - команда, которая делает результат!',
             },
         ],
+        locale: 'ru_RU',
+        type: 'website',
     },
-    metadataBase: new URL('https://lvgroup.site'), // обязательно если используешь относительные OG URL
+    twitter: {
+        card: 'summary_large_image',
+        title: 'LV Group - команда, которая делает результат!',
+        description: 'Отделы продаж, создание сайтов, контекстная реклама, дизайн, SMM.',
+        site: '@lvgroup',
+        images: [
+            'https://opengraph.b-cdn.net/production/images/4b778b81-5173-45ae-8a48-cec9a566e529.jpg?token=FI-tZi6fkA4LbV_D4i1GOR8Nbf_JcWFOvff_kB9XfWM&height=1200&width=1200&expires=33281589971',
+        ],
+    },
     viewport: 'width=device-width, initial-scale=1',
     category: 'Бизнес',
 };
