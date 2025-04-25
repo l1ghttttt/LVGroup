@@ -21,7 +21,7 @@ export const metadata = {
     title: 'LV Group',
     description: 'Сайты, колл-центры, контент, дизайн, стратегия, отделы продаж. Мы команда, которая делает результат.',
     applicationName: 'LV Group',
-    authors: [{ name: 'Продвигаем бизнес — от маркетинга до продаж' }], // <-- без email
+    authors: [{ name: 'маркетинг' }], // <-- без email
     creator: 'Продвигаем бизнес — от маркетинга до продаж (bsleonov@gmail.com)',
     publisher: 'LV Group',
     keywords: [
