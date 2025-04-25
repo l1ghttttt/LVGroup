@@ -1,10 +1,10 @@
 import React from 'react';
 import OrderedList from "@/components/for-uslugi/ordered-list/Ordered-list";
-import CasesList from "@/components/cases-list/Cases-list";
 import Order from "@/components/order/Order";
 import OwnFeatures from "@/components/for-uslugi/own-features/Own-features";
 import ServiceWelcome from "@/components/for-uslugi/service-welcome/Service-welcome";
 import {CiBookmarkCheck, CiBoxList, CiCalendar, CiDiscount1, CiGrid32, CiMonitor} from "react-icons/ci";
+import CasesListWrapper from "@/components/cases-list/CasesListWrapper";
 
 const featuresList = [
     {
@@ -80,7 +80,7 @@ const WebsiteCreation = () => {
                     orderList={orderList}
                 />
 
-                <CasesList />
+                <CasesListWrapper forcedInitialCategory={"Веб-разработка"} />
 
                 <OwnFeatures
                     title={`Что вы получаете, работая с нами`}

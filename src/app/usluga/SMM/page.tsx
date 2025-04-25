@@ -1,10 +1,10 @@
 import React from 'react';
 import {CiBookmarkCheck, CiBoxList, CiCalendar, CiDiscount1, CiGrid32, CiMonitor} from "react-icons/ci";
 import Order from "@/components/order/Order";
-import CasesList from "@/components/cases-list/Cases-list";
 import ServiceWelcome from "@/components/for-uslugi/service-welcome/Service-welcome";
 import OrderedList from "@/components/for-uslugi/ordered-list/Ordered-list";
 import OwnFeatures from "@/components/for-uslugi/own-features/Own-features";
+import CasesListWrapper from "@/components/cases-list/CasesListWrapper";
 
 const featuresList = [
     {
@@ -85,7 +85,7 @@ const SMM = () => {
                     orderList={orderList}
                 />
 
-                <CasesList />
+                <CasesListWrapper forcedInitialCategory={"Маркетинг"} />
 
                 <OwnFeatures
                     title={`Что вы получаете, работая с нами`}

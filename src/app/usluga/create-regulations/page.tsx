@@ -1,10 +1,10 @@
 import React from 'react';
 import ServiceWelcome from "@/components/for-uslugi/service-welcome/Service-welcome";
 import {CiBoxList, CiRoute, CiSquareCheck, CiUser} from "react-icons/ci";
-import CasesList from "@/components/cases-list/Cases-list";
 import OwnFeatures from "@/components/for-uslugi/own-features/Own-features";
 import Order from "@/components/order/Order";
 import OrderedList from "@/components/for-uslugi/ordered-list/Ordered-list";
+import CasesListWrapper from "@/components/cases-list/CasesListWrapper";
 
 const orderList = [
     {
@@ -90,7 +90,7 @@ const CreateRegulations = () => {
                     orderList={orderList}
                 />
 
-                <CasesList />
+                <CasesListWrapper forcedInitialCategory={"Продажи"} />
 
                 <OwnFeatures
                     title={`Что вы получаете, работая с нами`}

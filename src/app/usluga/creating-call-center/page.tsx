@@ -1,10 +1,10 @@
 import React from 'react';
 import Order from "@/components/order/Order";
-import CasesList from "@/components/cases-list/Cases-list";
 import ServiceWelcome from "@/components/for-uslugi/service-welcome/Service-welcome";
 import OrderedList from "@/components/for-uslugi/ordered-list/Ordered-list";
 import OwnFeatures from "@/components/for-uslugi/own-features/Own-features";
 import {CiBoxList, CiSquareCheck, CiUser, CiRoute} from "react-icons/ci";
+import CasesListWrapper from "@/components/cases-list/CasesListWrapper";
 
 const featuresList = [
     {
@@ -79,7 +79,7 @@ const TechnicalSupport = () => {
                     orderList={orderList}
                 />
 
-                <CasesList />
+                <CasesListWrapper forcedInitialCategory={"Call-центр"} />
 
                 <OwnFeatures
                     title={`Что вы получаете, работая с нами`}

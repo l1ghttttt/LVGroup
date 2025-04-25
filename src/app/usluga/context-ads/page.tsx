@@ -1,11 +1,11 @@
 import React from 'react';
 import ServiceWelcome from "@/components/for-uslugi/service-welcome/Service-welcome";
 import OrderedList from "@/components/for-uslugi/ordered-list/Ordered-list";
-import CasesList from "@/components/cases-list/Cases-list";
 import OwnFeatures from "@/components/for-uslugi/own-features/Own-features";
 import Order from "@/components/order/Order";
 import {CiSquareCheck, CiViewList, CiRoute, CiSaveUp1, CiGrid41, CiTimer} from "react-icons/ci";
 import QuestionAnswer from "@/components/for-uslugi/question-answer/Question-answer";
+import CasesListWrapper from "@/components/cases-list/CasesListWrapper";
 
 const featuresList = [
     {
@@ -107,7 +107,7 @@ const ContextAds = () => {
                     orderList={orderList}
                 />
 
-                <CasesList />
+                <CasesListWrapper forcedInitialCategory={"Маркетинг"} />
 
                 <OwnFeatures
                     title={`Что вы получаете, работая с нами`}

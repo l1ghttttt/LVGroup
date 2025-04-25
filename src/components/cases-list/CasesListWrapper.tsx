@@ -7,29 +7,44 @@ interface CasesListWrapperProps {
     name?: string
     onlyHomePage?: boolean
     disableSeeAll?: boolean
+    forcedInitialCategory?: string // 👈 новый пропс
 }
 
-const CasesListWrapper = ({name="Наши работы", disableSeeAll = false, onlyHomePage = true }:CasesListWrapperProps) => {
+const CasesListWrapper = ({
+                              name = "Наши работы",
+                              disableSeeAll = false,
+                              onlyHomePage = true,
+                              forcedInitialCategory
+                          }: CasesListWrapperProps) => {
+
     const ref = useRef<HTMLDivElement>(null)
     const [initialCategory, setInitialCategory] = useState<string | null>(null)
-    const parametrName = name
-    const parametrdisableSeeAll = disableSeeAll
-    const parametronlyHomePage = onlyHomePage
+
     useEffect(() => {
+        if (forcedInitialCategory) {
+            setInitialCategory(forcedInitialCategory)
+            return // 👈 если задан — не читаем из URL и не скроллим
+        }
+
         const urlCategory = new URLSearchParams(window.location.search).get("category")
         if (urlCategory) {
             const decoded = decodeURIComponent(urlCategory)
             setInitialCategory(decoded)
 
-            // Прокрутка после установки состояния
             setTimeout(() => {
                 ref.current?.scrollIntoView({ behavior: "smooth" })
             }, 300)
         }
-    }, [])
+    }, [forcedInitialCategory])
 
     return (
-        <CasesList ref={ref} name={parametrName} onlyHomePage={parametronlyHomePage} disableSeeAll={parametrdisableSeeAll} initialCategory={initialCategory} />
+        <CasesList
+            ref={ref}
+            name={name}
+            onlyHomePage={onlyHomePage}
+            disableSeeAll={disableSeeAll}
+            initialCategory={initialCategory}
+        />
     )
 }
 
