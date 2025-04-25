@@ -19,9 +19,9 @@ const roboto = Roboto({
 
 export const metadata = {
     title: 'LV Group',
-    description: 'Продвигаем бизнес — от маркетинга до продаж. Сайты, колл-центры, контент, дизайн, стратегия. LV GROUP — команда, которая делает результат.',
+    description: 'Сайты, колл-центры, контент, дизайн, стратегия, отделы продаж. Мы команда, которая делает результат.',
     applicationName: 'LV Group',
-    authors: [{ name: 'Boris' }], // <-- без email
+    authors: [{ name: 'Продвигаем бизнес — от маркетинга до продаж' }], // <-- без email
     creator: 'Boris (bsleonov@gmail.com)',
     publisher: 'LV Group',
     keywords: [
