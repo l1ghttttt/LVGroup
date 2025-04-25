@@ -22,7 +22,7 @@ export const metadata = {
     description: 'Сайты, колл-центры, контент, дизайн, стратегия, отделы продаж. Мы команда, которая делает результат.',
     applicationName: 'LV Group',
     authors: [{ name: 'Продвигаем бизнес — от маркетинга до продаж' }], // <-- без email
-    creator: 'Boris (bsleonov@gmail.com)',
+    creator: 'Продвигаем бизнес — от маркетинга до продаж (bsleonov@gmail.com)',
     publisher: 'LV Group',
     keywords: [
         'маркетинг', 'продажи', 'разработка сайтов', 'колл-центр',
