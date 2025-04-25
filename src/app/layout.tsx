@@ -21,7 +21,7 @@ export const metadata = {
     title: 'LV Group - команда, которая делает результат!',
     description: 'Отделы продаж, создание сайтов, контекстная реклама, дизайн, SMM.',
     applicationName: 'LV Group',
-    authors: [{ name: 'Boris' }],
+    authors: [{ name: 'Продвигаем бизнес — от маркетинга до продаж' }],
     creator: 'Boris (bsleonov@gmail.com)',
     publisher: 'LV Group',
     keywords: [
@@ -34,7 +34,7 @@ export const metadata = {
     },
     metadataBase: new URL('https://lv-group.vercel.app'),
     openGraph: {
-        title: 'LV Group - команда, которая делает результат!',
+        title: 'LV Group делает результат! Реклама, создание сайтов, дизайн.',
         description: 'Отделы продаж, создание сайтов, контекстная реклама, дизайн, SMM.',
         url: 'https://lv-group.vercel.app',
         siteName: 'LV Group',
