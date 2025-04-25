@@ -84,17 +84,17 @@
     "values": [
       {
         "title": "Разработка фирменного стиля",
-        "href": "/usluga/",
+        "href": "/usluga/style-creating",
         "description": "От идеи до визуализации"
       },
       {
         "title": "Дизайн-поддержка",
-        "href": "/usluga/",
+        "href": "/usluga/design-support",
         "description": "Красивый визуал"
       },
       {
         "title": "Создание коммерческого предложения",
-        "href": "/usluga/",
+        "href": "/usluga/create-commercial-offer",
         "description": "Marketing Kit"
       }
     ]
@@ -104,17 +104,17 @@
     "values": [
       {
         "title": "Создание и развитие call-центра",
-        "href": "/usluga/",
+        "href": "/usluga/creating-call-center",
         "description": "Достижение новых высот"
       },
       {
         "title": "Удаленный  call-центр",
-        "href": "/usluga/",
+        "href": "/usluga/remoted-call-center",
         "description": "Выполнение срочных задач"
       },
       {
         "title": "Разработка регламентов и стандартов",
-        "href": "/usluga/",
+        "href": "/usluga/create-reglaments",
         "description": "Стандартизация процессов"
       }
     ]
