@@ -22,11 +22,13 @@ const Order = () => {
                 </div>
                 <div
                     className={`flex flex-col items-stretch justify-start relative w-full py-formSpaceYPadding px-formSpaceXPadding`}>
-                    <h3 className={`text-orderTitleSize leading-orderTitleLeading font-medium relative`}>
+                    <h3 className="text-orderTitleSize leading-orderTitleLeading font-medium relative">
                         Нужна встреча, чтобы
-                        <br/>
+                        <span className="hidden sm:inline"><br/></span>
+                        {' '}
                         принять решение?
                     </h3>
+
                     <nav className={`flex`}>
                         <ul className={`flex flex-wrap mt-[47px] max-w-[700px] max-sm:flex-col`}>
                             <li className={`mr-[40px] mb-[50px] max-2xl:mr-[30px] max-2xl:mb-[30px] max-sm:mr-[20px] max-sm:mb-[20px] max-sm:w-auto`}>
