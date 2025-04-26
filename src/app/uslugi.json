@@ -108,13 +108,13 @@
         "description": "Достижение новых высот"
       },
       {
-        "title": "Удаленный  call-центр",
+        "title": "Удаленный call-центр",
         "href": "/usluga/remoted-call-center",
         "description": "Выполнение срочных задач"
       },
       {
-        "title": "Разработка регламентов и стандартов",
-        "href": "/usluga/create-reglaments",
+        "title": "Регламенты и стандарты",
+        "href": "/usluga/reglaments",
         "description": "Стандартизация процессов"
       }
     ]

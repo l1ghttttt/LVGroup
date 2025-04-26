@@ -34,7 +34,7 @@
     "preview": "LamarkCenterPreview.mp4",
     "video": true,
     "previewTextWhite": true,
-    "tags": ["Продажи", "Маркетинг", "Веб-разработка", "Создание контента", "Дизайн", "Call-центр"],
+    "tags": ["Создание сайтов", "Техническая поддержка", "Дизайн"],
     "order": 9,
     "homepage": true,
     "href": "/lamark-center"
@@ -44,7 +44,7 @@
     "preview": "DrMobilePreview.jpg",
     "video": false,
     "previewTextWhite": false,
-    "tags": ["Контекстная реклама", "Маркетинговое сопровождение"],
+    "tags": ["Контекстная реклама"],
     "order": 8,
     "homepage": true,
     "href": "/dr-mobile"
@@ -54,7 +54,7 @@
     "preview": "VostokAvtoMashPreview.mp4",
     "video": true,
     "previewTextWhite": true,
-    "tags": ["Создание/развитие отделов продаж", "Маркетинговое сопровождение", "Корпоративные тренинги и \"полевое\" обучение"],
+    "tags": ["Создание/развитие отделов продаж", "Корпоративные тренинги и \"полевое\" обучение", "Разработка регламентов и стандартов"],
     "order": 7,
     "homepage": true,
     "href": "/vostokavtomash"
@@ -64,7 +64,7 @@
     "preview": "ToothFairyPreview.jpg",
     "video": false,
     "previewTextWhite": false,
-    "tags": ["Контекстная реклама", "Маркетинговое сопровождение"],
+    "tags": ["Контекстная реклама"],
     "order": 6,
     "homepage": true,
     "href": "/tooth-fairy"
@@ -74,7 +74,7 @@
     "preview": "LDPRPreview.mp4",
     "video": true,
     "previewTextWhite": true,
-    "tags": ["Удаленный Call-центр", "Создание и развитие Call-центра"],
+    "tags": ["Удаленный call-центр", "Регламенты и стандарты"],
     "order": 5,
     "homepage": true,
     "href": "/ldpr"
@@ -84,7 +84,7 @@
     "preview": "BunkerPreview.jpg",
     "video": false,
     "previewTextWhite": true,
-    "tags": ["Разработка фирменного стиля", "Дизайн-поддержка", "Создание контента"],
+    "tags": ["Разработка фирменного стиля", "Дизайн-поддержка"],
     "order": 4,
     "homepage": true,
     "href": "/bunker"
@@ -94,7 +94,7 @@
     "preview": "ChillHousePreview.mp4",
     "video": true,
     "previewTextWhite": true,
-    "tags": ["Создание/развитие отделов продаж", "Создание контента", "Корпоративные тренинги и \"полевое\" обучение", "SMM", "Дизайн"],
+    "tags": ["Маркетинг", "Создание/развитие отделов продаж", "Разработка регламентов и стандартов", "Корпоративные тренинги и \"полевое\" обучение", "Дизайн-поддержка", "Создание коммерческого предложения"],
     "order": 3,
     "homepage": true,
     "href": "/chill-house"
@@ -104,7 +104,7 @@
     "preview": "BratBuryatSMMPreview.jpg",
     "video": false,
     "previewTextWhite": false,
-    "tags": ["Создание контента", "SMM", "Дизайн"],
+    "tags": ["SMM" ,"Создание контента", "Дизайн", "Дизайн-поддержка"],
     "order": 2,
     "homepage": true,
     "href": "/brat-buryat"
