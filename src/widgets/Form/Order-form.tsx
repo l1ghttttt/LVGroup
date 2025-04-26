@@ -1,6 +1,6 @@
 "use client"
 
-import React from "react";
+import React from "react"
 
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
@@ -42,69 +42,113 @@ export function OrderForm() {
         defaultValues: {
             username: "",
             phone: "",
+            bio: "",
         },
     })
 
-    function onSubmit(data: z.infer<typeof FormSchema>) {
-        toast({
-            title: "You submitted the following values:",
-            description: (
-                <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-background">{JSON.stringify(data, null, 2)}</code>
-        </pre>
-            ),
+    async function sendTelegramMessage(data: z.infer<typeof FormSchema>) {
+        const TOKEN = "7609911041:AAEukD-G3bxU8MiuyikUhe9us042dzsRfBo"
+        const CHAT_ID = "-4727934737"
+        const message = `📨 Новая заявка:
+    
+👤 Имя: ${data.username}
+📞 Телефон: ${data.phone}
+📝 Описание: ${data.bio}`
+
+        const url = `https://api.telegram.org/bot${TOKEN}/sendMessage`
+
+        await fetch(url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                chat_id: CHAT_ID,
+                text: message,
+                parse_mode: "HTML",
+            }),
         })
     }
 
+    async function onSubmit(data: z.infer<typeof FormSchema>) {
+        try {
+            await sendTelegramMessage(data)
+            toast({
+                title: "Успешно отправлено!",
+                description: "Мы получили вашу заявку. Спасибо!",
+            })
+            form.reset()
+        } catch (error) {
+            console.error(error)
+            toast({
+                title: "Ошибка отправки",
+                description: "Пожалуйста, попробуйте позже.",
+                variant: "destructive",
+            })
+        }
+    }
+
     function validate(e: React.KeyboardEvent<HTMLInputElement>) {
-        const key = e.key; // Use `key` property
-        const regex = /^[0-9.]$/; // Match numbers or a dot
+        const key = e.key
+        const regex = /^[0-9.]$/
         if (!regex.test(key)) {
-            e.preventDefault(); // Prevent invalid input
+            e.preventDefault()
         }
     }
 
     return (
         <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)}
-                  className="space-y-6 min-h-full items-stretch relative w-full py-formSpaceYPadding px-formSpaceXPadding duration-300 text-background mb-[50px]">
-                <h3 className={`text-orderContactsSize mb-orderContactsMargin font-semibold text-background`}>Ваши
-                    контакты</h3>
+            <form
+                onSubmit={form.handleSubmit(onSubmit)}
+                className="space-y-6 min-h-full items-stretch relative w-full py-formSpaceYPadding px-formSpaceXPadding duration-300 text-background mb-[50px]"
+            >
+                <h3 className="text-orderContactsSize mb-orderContactsMargin font-semibold text-background">
+                    Ваши контакты
+                </h3>
                 <FormField
                     control={form.control}
                     name="username"
-                    render={({field}) => (
+                    render={({ field }) => (
                         <FormItem>
-                            <FormLabel className={`text-[22px]`}>Имя</FormLabel>
-                            <FormControl className={`text-background`}>
-                                <Input className={`text-background`} placeholder="Имя" {...field} />
+                            <FormLabel className="text-[22px]">Имя</FormLabel>
+                            <FormControl className="text-background">
+                                <Input
+                                    className="text-background"
+                                    placeholder="Имя"
+                                    {...field}
+                                />
                             </FormControl>
-                            <FormMessage/>
+                            <FormMessage />
                         </FormItem>
                     )}
                 />
                 <FormField
                     control={form.control}
                     name="phone"
-                    render={({field}) => (
+                    render={({ field }) => (
                         <FormItem>
-                            <FormLabel className={`text-[22px]`}>Телефон</FormLabel>
-                            <FormControl className={`text-background`}>
-                                <Input className={`text-background`} onKeyDown={validate}
-                                       placeholder="+7 (0000) 00-00-00" {...field} />
+                            <FormLabel className="text-[22px]">Телефон</FormLabel>
+                            <FormControl className="text-background">
+                                <Input
+                                    className="text-background"
+                                    onKeyDown={validate}
+                                    placeholder="+7 (0000) 00-00-00"
+                                    {...field}
+                                />
                             </FormControl>
-                            <FormMessage/>
+                            <FormMessage />
                         </FormItem>
                     )}
                 />
-                <h3 className={`text-orderContactsSize mb-orderContactsMargin font-semibold`}>Расскажите про вашу
-                    задачу</h3>
+                <h3 className="text-orderContactsSize mb-orderContactsMargin font-semibold">
+                    Расскажите про вашу задачу
+                </h3>
                 <FormField
                     control={form.control}
                     name="bio"
-                    render={({field}) => (
+                    render={({ field }) => (
                         <FormItem>
-                            <FormLabel className={`text-[22px]`}>Описание</FormLabel>
+                            <FormLabel className="text-[22px]">Описание</FormLabel>
                             <FormControl>
                                 <Textarea
                                     placeholder="Описание"
@@ -112,14 +156,20 @@ export function OrderForm() {
                                     {...field}
                                 />
                             </FormControl>
-                            <FormMessage/>
+                            <FormMessage />
                         </FormItem>
                     )}
                 />
-                <div className="g-recaptcha" data-sitekey="6LcHvZ8qAAAAAPcsVxxP3LUyUVRMBwKpMD-ApTjg"></div>
+                <div
+                    className="g-recaptcha"
+                    data-sitekey="6LcHvZ8qAAAAAPcsVxxP3LUyUVRMBwKpMD-ApTjg"
+                ></div>
                 <Button
-                    className={`rounded-[50px] px-10 py-6 text-[20px] tracking-wide bg-mainColor hover:bg-darkMain duration-300 hover:duration-150`}
-                    type="submit">Отправить</Button>
+                    className="rounded-[50px] px-10 py-6 text-[20px] tracking-wide bg-mainColor hover:bg-darkMain duration-300 hover:duration-150"
+                    type="submit"
+                >
+                    Отправить
+                </Button>
             </form>
         </Form>
     )
