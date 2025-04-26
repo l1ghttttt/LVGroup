@@ -85,7 +85,7 @@ const SMM = () => {
                     orderList={orderList}
                 />
 
-                <CasesListWrapper forcedInitialCategory={"Маркетинг"} />
+                <CasesListWrapper forcedInitialCategory={"Маркетинг"} onlyHomePage={false} />
 
                 <OwnFeatures
                     title={`Что вы получаете, работая с нами`}

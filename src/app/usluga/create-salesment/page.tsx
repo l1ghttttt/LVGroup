@@ -79,7 +79,7 @@ const CreateSalesment = () => {
                     orderList={orderList}
                 />
 
-                <CasesListWrapper forcedInitialCategory={"Продажи"} />
+                <CasesListWrapper forcedInitialCategory={"Продажи"} onlyHomePage={false} />
 
                 <OwnFeatures
                     title={`Что вы получаете, работая с нами`}

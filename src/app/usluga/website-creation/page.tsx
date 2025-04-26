@@ -80,7 +80,7 @@ const WebsiteCreation = () => {
                     orderList={orderList}
                 />
 
-                <CasesListWrapper forcedInitialCategory={"Веб-разработка"} />
+                <CasesListWrapper forcedInitialCategory={"Веб-разработка"} onlyHomePage={false} />
 
                 <OwnFeatures
                     title={`Что вы получаете, работая с нами`}

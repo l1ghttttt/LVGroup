@@ -71,7 +71,7 @@ const TechnicalSupport = () => {
                     orderList={orderList}
                 />
 
-                <CasesListWrapper forcedInitialCategory={"Дизайн"} />
+                <CasesListWrapper forcedInitialCategory={"Дизайн"} onlyHomePage={false} />
 
                 <OwnFeatures
                     title={`Что вы получаете, работая с нами`}
