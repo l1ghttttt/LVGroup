@@ -32,9 +32,10 @@ interface CasesProps {
 function adaptBr(title: string) {
     return title.replace(
         /<br\s*\/?>/gi,
-        '<span class="hidden sm:inline"><br/></span>'
+        '<span class="hidden sm:inline"><br/></span>&nbsp;'
     )
 }
+
 
 const CasesList = React.forwardRef<HTMLDivElement, CasesProps>(
     ({ name = "Наши проекты", disableSeeAll = false, onlyHomePage = false, initialCategory }, ref) => {
