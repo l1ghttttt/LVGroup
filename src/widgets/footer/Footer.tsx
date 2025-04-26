@@ -1,14 +1,6 @@
 import React from 'react';
 import Link from "next/link";
 import Script from "next/script";
-import uslugi from "@/app/uslugi.json";
-
-interface ServicesListProps {
-    trigger: string;
-    values: { title: string; href: string; description: string }[];
-}
-
-const ServicesList: ServicesListProps[] = uslugi
 
 const Footer = () => {
     return (
@@ -36,7 +28,7 @@ const Footer = () => {
                     <li className={`flex items-center justify-center 2xl:px-footerNavListPadding max-2xl:p-footerNavListPaddingMaxl`}>
                         <Link href="/usluga/context-ads"
                               className={`duration-300 hover:duration-150 transition-all hover:text-footerLinkColor`}>
-                            Контекст
+                            Контекстная реклама
                         </Link>
                     </li>
                     <li className={`flex items-center justify-center 2xl:px-footerNavListPadding max-2xl:p-footerNavListPaddingMaxl`}>
