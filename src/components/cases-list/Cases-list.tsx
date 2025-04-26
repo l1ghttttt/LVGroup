@@ -29,7 +29,7 @@ interface CasesProps {
 }
 
 const CasesList = React.forwardRef<HTMLDivElement, CasesProps>(
-    ({ name = "Наши работы", disableSeeAll = false, onlyHomePage = false, initialCategory}, ref) => {
+    ({ name = "Наши проекты", disableSeeAll = false, onlyHomePage = false, initialCategory}, ref) => {
     const [mounted, setMounted] = useState(false)
     const [activeCategory, setActiveCategory] = useState<string | null>(null)
     useEffect(() => {

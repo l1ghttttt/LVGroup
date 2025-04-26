@@ -11,7 +11,7 @@ interface CasesListWrapperProps {
 }
 
 const CasesListWrapper = ({
-                              name = "Наши работы",
+                              name = "Наши проекты",
                               disableSeeAll = false,
                               onlyHomePage = true,
                               forcedInitialCategory

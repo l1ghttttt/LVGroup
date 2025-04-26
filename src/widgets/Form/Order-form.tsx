@@ -19,21 +19,18 @@ import {
 import { Input } from "@/shared/ui/input"
 import { Textarea } from "@/shared/ui/textarea"
 
+// ✨ Обновленная схема с валидацией на минимум 10 цифр в телефоне
 const FormSchema = z.object({
-    username: z.string().min(1, {
-        message: "Введите имя",
-    }),
-    phone: z.string().min(1, {
-        message: "Введите телефон",
-    }),
-    bio: z
-        .string()
-        .min(1, {
-            message: "Введите Описание",
-        })
-        .max(800, {
-            message: "Максимум 800 символов",
-        }),
+    username: z.string().min(1, { message: "Введите имя" }),
+    phone: z.string()
+        .min(1, { message: "Введите телефон" })
+        .refine(val => {
+            const digitsOnly = val.replace(/\D/g, "");
+            return digitsOnly.length >= 10;
+        }, { message: "Телефон должен содержать минимум 10 цифр" }),
+    bio: z.string()
+        .min(1, { message: "Введите описание" })
+        .max(800, { message: "Максимум 800 символов" }),
 })
 
 export function OrderForm() {
@@ -46,11 +43,13 @@ export function OrderForm() {
         },
     })
 
+    const [isSubmitting, setIsSubmitting] = React.useState(false)
+
     async function sendTelegramMessage(data: z.infer<typeof FormSchema>) {
         const TOKEN = "7609911041:AAEukD-G3bxU8MiuyikUhe9us042dzsRfBo"
         const CHAT_ID = "-4727934737"
         const message = `📨 Новая заявка:
-    
+
 👤 Имя: ${data.username}
 📞 Телефон: ${data.phone}
 📝 Описание: ${data.bio}`
@@ -59,9 +58,7 @@ export function OrderForm() {
 
         await fetch(url, {
             method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
+            headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
                 chat_id: CHAT_ID,
                 text: message,
@@ -72,6 +69,7 @@ export function OrderForm() {
 
     async function onSubmit(data: z.infer<typeof FormSchema>) {
         try {
+            setIsSubmitting(true)
             await sendTelegramMessage(data)
             toast({
                 title: "Успешно отправлено!",
@@ -85,15 +83,27 @@ export function OrderForm() {
                 description: "Пожалуйста, попробуйте позже.",
                 variant: "destructive",
             })
+        } finally {
+            setIsSubmitting(false)
         }
     }
 
-    function validate(e: React.KeyboardEvent<HTMLInputElement>) {
-        const key = e.key
-        const regex = /^[0-9.]$/
-        if (!regex.test(key)) {
-            e.preventDefault()
+    // Маска телефона
+    function handlePhoneChange(e: React.ChangeEvent<HTMLInputElement>) {
+        let value = e.target.value;
+
+        // Убираем все символы кроме цифр, плюса и пробела
+        value = value.replace(/[^\d+ ]/g, "");
+
+        // Убедимся, что строка начинается с "+"
+        if (!value.startsWith("+")) {
+            value = "+" + value.replace(/\+/g, "");
         }
+
+        // Заменяем множественные пробелы на один
+        value = value.replace(/ {2,}/g, " ");
+
+        form.setValue("phone", value);
     }
 
     return (
@@ -105,6 +115,7 @@ export function OrderForm() {
                 <h3 className="text-orderContactsSize mb-orderContactsMargin font-semibold text-background">
                     Ваши контакты
                 </h3>
+
                 <FormField
                     control={form.control}
                     name="username"
@@ -122,6 +133,7 @@ export function OrderForm() {
                         </FormItem>
                     )}
                 />
+
                 <FormField
                     control={form.control}
                     name="phone"
@@ -131,18 +143,20 @@ export function OrderForm() {
                             <FormControl className="text-background">
                                 <Input
                                     className="text-background"
-                                    onKeyDown={validate}
-                                    placeholder="+7 (0000) 00-00-00"
-                                    {...field}
+                                    value={field.value}
+                                    onChange={handlePhoneChange}
+                                    placeholder="+7 (000) 000-00-00"
                                 />
                             </FormControl>
                             <FormMessage />
                         </FormItem>
                     )}
                 />
+
                 <h3 className="text-orderContactsSize mb-orderContactsMargin font-semibold">
                     Расскажите про вашу задачу
                 </h3>
+
                 <FormField
                     control={form.control}
                     name="bio"
@@ -160,15 +174,18 @@ export function OrderForm() {
                         </FormItem>
                     )}
                 />
+
                 <div
                     className="g-recaptcha"
                     data-sitekey="6LcHvZ8qAAAAAPcsVxxP3LUyUVRMBwKpMD-ApTjg"
                 ></div>
+
                 <Button
                     className="rounded-[50px] px-10 py-6 text-[20px] tracking-wide bg-mainColor hover:bg-darkMain duration-300 hover:duration-150"
                     type="submit"
+                    disabled={isSubmitting}
                 >
-                    Отправить
+                    {isSubmitting ? "Отправка..." : "Отправить"}
                 </Button>
             </form>
         </Form>

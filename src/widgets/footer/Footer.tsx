@@ -15,19 +15,47 @@ const Footer = () => {
         <footer className={``}>
             <nav className={`2xl:h-[160px] 2xl:flex 2xl:items-stretch 2xl:justify-between bg-background px-servicePadding max-2xl:py-servicePadding`}>
                 <ul className={`flex items-stretch justify-start flex-wrap 2xl:mx-footerNavMarginXL max-2xl:m-footerNavMarginMaxl max-sm:justify-around`}>
-
-                    {
-                        ServicesList.map((service, index) => (
-                            <li className={`flex items-center justify-center 2xl:px-footerNavListPadding max-2xl:p-footerNavListPaddingMaxl`} key={index}>
-                                <Link href={`${service.values[0].href}`}
-                                      className={`duration-300 hover:duration-150 transition-all hover:text-footerLinkColor`}>{service.trigger}</Link>
-                            </li>
-                        ))
-                    }
+                    <li className={`flex items-center justify-center 2xl:px-footerNavListPadding max-2xl:p-footerNavListPaddingMaxl`}>
+                        <Link href="/"
+                              className={`duration-300 hover:duration-150 transition-all hover:text-footerLinkColor`}>
+                            Главная
+                        </Link>
+                    </li>
+                    <li className={`flex items-center justify-center 2xl:px-footerNavListPadding max-2xl:p-footerNavListPaddingMaxl`}>
+                        <Link href="/cases"
+                              className={`duration-300 hover:duration-150 transition-all hover:text-footerLinkColor`}>
+                            Проекты
+                        </Link>
+                    </li>
+                    <li className={`flex items-center justify-center 2xl:px-footerNavListPadding max-2xl:p-footerNavListPaddingMaxl`}>
+                        <Link href="/usluga/create-salesment"
+                              className={`duration-300 hover:duration-150 transition-all hover:text-footerLinkColor`}>
+                            Продажи
+                        </Link>
+                    </li>
+                    <li className={`flex items-center justify-center 2xl:px-footerNavListPadding max-2xl:p-footerNavListPaddingMaxl`}>
+                        <Link href="/usluga/context-ads"
+                              className={`duration-300 hover:duration-150 transition-all hover:text-footerLinkColor`}>
+                            Контекст
+                        </Link>
+                    </li>
+                    <li className={`flex items-center justify-center 2xl:px-footerNavListPadding max-2xl:p-footerNavListPaddingMaxl`}>
+                        <Link href="/usluga/SMM"
+                              className={`duration-300 hover:duration-150 transition-all hover:text-footerLinkColor`}>
+                            SMM
+                        </Link>
+                    </li>
+                    <li className={`flex items-center justify-center 2xl:px-footerNavListPadding max-2xl:p-footerNavListPaddingMaxl`}>
+                        <Link href="/usluga/website-creation"
+                              className={`duration-300 hover:duration-150 transition-all hover:text-footerLinkColor`}>
+                            Веб-разработка
+                        </Link>
+                    </li>
                 </ul>
+
                 <ul className={`flex items-stretch justify-start 2xl:mx-footerNavMarginXL max-2xl:mt-footerSocialMarginTopMaxXL max-2xl:m-footerSocialMarginMaxXL max-sm:justify-around`}>
                     <li className={`flex `}>
-                        <Link href="https://www.youtube.com/@Dvigatel"
+                        <Link href="https://www.youtube.com/@Group_LV"
                               target={`_blank`}
                               className={`duration-300 hover:duration-150 transition-all flex justify-center items-center 2xl:px-footerSocialPaddingXL max-2xl:p-footerSocialPaddingMaxl`}>
                             <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
@@ -51,7 +79,7 @@ const Footer = () => {
                         </Link>
                     </li>
                     <li className={`flex `}>
-                        <Link href="https://wa.me/89242040030"
+                        <Link href="https://wa.me/79242040030"
                               target={`_blank`}
                               className={`duration-300 hover:duration-150 transition-all flex justify-center items-center 2xl:px-footerSocialPaddingXL max-2xl:p-footerSocialPaddingMaxl`}>
                             <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
