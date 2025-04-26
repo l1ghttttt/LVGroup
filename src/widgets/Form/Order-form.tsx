@@ -1,10 +1,10 @@
 "use client"
 
 import React from "react"
-
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
+import ReCAPTCHA from "react-google-recaptcha"
 
 import { toast } from "@/hooks/use-toast"
 import { Button } from "@/shared/ui/button"
@@ -19,18 +19,19 @@ import {
 import { Input } from "@/shared/ui/input"
 import { Textarea } from "@/shared/ui/textarea"
 
-// ✨ Обновленная схема с валидацией на минимум 10 цифр в телефоне
+// ✅ Обновленная схема с капчей
 const FormSchema = z.object({
     username: z.string().min(1, { message: "Введите имя" }),
     phone: z.string()
         .min(1, { message: "Введите телефон" })
         .refine(val => {
-            const digitsOnly = val.replace(/\D/g, "");
-            return digitsOnly.length >= 10;
+            const digitsOnly = val.replace(/\D/g, "")
+            return digitsOnly.length >= 10
         }, { message: "Телефон должен содержать минимум 10 цифр" }),
     bio: z.string()
         .min(1, { message: "Введите описание" })
         .max(800, { message: "Максимум 800 символов" }),
+    captcha: z.string().min(1, { message: "Подтвердите, что вы не робот" }),
 })
 
 export function OrderForm() {
@@ -40,6 +41,7 @@ export function OrderForm() {
             username: "",
             phone: "",
             bio: "",
+            captcha: "",
         },
     })
 
@@ -88,22 +90,19 @@ export function OrderForm() {
         }
     }
 
-    // Маска телефона
     function handlePhoneChange(e: React.ChangeEvent<HTMLInputElement>) {
-        let value = e.target.value;
+        let value = e.target.value
 
-        // Убираем все символы кроме цифр, плюса и пробела
-        value = value.replace(/[^\d+ ]/g, "");
+        // Очищаем все кроме цифр, плюса и пробелов
+        value = value.replace(/[^\d+ ]/g, "")
 
-        // Убедимся, что строка начинается с "+"
         if (!value.startsWith("+")) {
-            value = "+" + value.replace(/\+/g, "");
+            value = "+" + value.replace(/\+/g, "")
         }
 
-        // Заменяем множественные пробелы на один
-        value = value.replace(/ {2,}/g, " ");
+        value = value.replace(/ {2,}/g, " ")
 
-        form.setValue("phone", value);
+        form.setValue("phone", value)
     }
 
     return (
@@ -175,10 +174,22 @@ export function OrderForm() {
                     )}
                 />
 
-                <div
-                    className="g-recaptcha"
-                    data-sitekey="6LcHvZ8qAAAAAPcsVxxP3LUyUVRMBwKpMD-ApTjg"
-                ></div>
+                {/* ReCAPTCHA */}
+                <FormField
+                    control={form.control}
+                    name="captcha"
+                    render={({ field }) => (
+                        <FormItem>
+                            <FormControl>
+                                <ReCAPTCHA
+                                    sitekey="6LfKkCUrAAAAAERkmg83_GzpKKInWJ4zAaqtbO0K"
+                                    onChange={(token: string | null) => field.onChange(token)}
+                                />
+                            </FormControl>
+                            <FormMessage />
+                        </FormItem>
+                    )}
+                />
 
                 <Button
                     className="rounded-[50px] px-10 py-6 text-[20px] tracking-wide bg-mainColor hover:bg-darkMain duration-300 hover:duration-150"
