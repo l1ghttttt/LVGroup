@@ -66,7 +66,7 @@ export default function BurgerHeader() {
                 </SheetTrigger>
                 <SheetContent side="left">
                     <SheetHeader><SheetTitle></SheetTitle></SheetHeader>
-                    <nav className="w-full flex flex-col gap-[16px]">
+                    <nav className="w-full flex flex-col gap-[16px] max-h-[85vh] overflow-y-auto overflow-x-hidden">
                         <Accordion type="single" collapsible className="w-full select-none">
                             <AccordionItem value="item-1" className={`border-none relative`}>
                                 <div className={`bg-background absolute w-[30px] h-full z-[1000] top-0 right-0 translate-x-1`}></div>
