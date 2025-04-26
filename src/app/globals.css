@@ -811,3 +811,13 @@ a:hover {
 .flex-flow {
   flex-flow: column;
 }
+
+.y-scrollbar {
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.y-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari и Chrome */
+}
