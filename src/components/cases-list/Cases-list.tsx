@@ -32,7 +32,7 @@ interface CasesProps {
 function adaptBr(title: string) {
     return title.replace(
         /<br\s*\/?>/gi,
-        '<span class="hidden sm:inline"><br/></span>&nbsp;'
+        '<span class="hidden sm:inline"><br/></span>'
     )
 }
 
