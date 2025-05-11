@@ -5,10 +5,11 @@ import CustomerChain from "@/components/for-cases/customer-chain/Customer-chain"
 import Order from "@/components/order/Order";
 import FooterTags from "@/components/for-cases/footer-tags/Footer-tags";
 import casesList from '../../../app/cases.json'
+import HorizontalScrollSlider from "@/components/for-cases/customer-images-slider/Customer-Images-Slider";
 const caseHref = "/MurMuracia"; // должен совпадать с href в data
 const currentCase = casesList.find(c => c.href === caseHref);
 const tagsList = currentCase?.tags || [];
-
+const images = ['BratBuryatSMMPreview.jpg', 'BratBuryatSMMPreview.jpg', 'BunkerPicture1.jpg', 'BratBuryatSMMPreview.jpg']; // должны быть в public/изображения
 const ChixxInk = () => {
     return (
         <main className={`w-full overflow-x-hidden`}>
@@ -24,6 +25,7 @@ const ChixxInk = () => {
                 />
                 <div className={`my-0 mx-CustomerSpacingMargin customer-spacing relative max-sm:mx-[20px] flex flex-col items-center mt-[40px]`}>
 
+                    <HorizontalScrollSlider images={images} />
 
                     <CustomerChain
                         align={`vertical`}
