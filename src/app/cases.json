@@ -1,5 +1,35 @@
 [
   {
+    "title": "411 куличей за неделю: съёмка, которая продала",
+    "preview": "MurMuraciaPreview.jpg",
+    "video": false,
+    "previewTextWhite": false,
+    "tags": ["Создание контента", "Фотосессии", "Видеосъемка", "SMM"],
+    "order": 15,
+    "homepage": false,
+    "href": "/MurMuracia"
+  },
+  {
+    "title": "Сделали так, чтобы захотелось поесть: сайт для кафе с удобной корзиной и оплатой",
+    "preview": "BratBuryatWebsite.png",
+    "video": false,
+    "previewTextWhite": false,
+    "tags": ["Создание сайтов", "Техническая поддержка", "Дизайн"],
+    "order": 14,
+    "homepage": false,
+    "href": "/brat-buryat-website"
+  },
+  {
+    "title": "400 звонков, десятки новых клиентов и первый договор на 100 000 уже в день старта",
+    "preview": "LaundryCleanerPreview.mp4",
+    "video": true,
+    "previewTextWhite": true,
+    "tags": ["Удаленный call-центр", "Регламенты и стандарты"],
+    "order": 13,
+    "homepage": false,
+    "href": "/laundry-cleaner"
+  },
+  {
     "title": "291 заказ за один месяц с сайта кафе <br/>\"Брат Бурят\" ",
     "preview": "BratBuryatContextAdPreview.jpg",
     "video": false,
