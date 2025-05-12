@@ -823,21 +823,78 @@ a:hover {
 }
 
 .scrolling-wrapper {
-  padding: 10vh 85px;
+  padding: 10vh 5vw;
   display: flex;
   flex-wrap: nowrap;
-  gap: 85px;
+  gap: 4vw;
   width: 100vw;
-  height: 2950px;
+  height: 310vh;
+  box-sizing: border-box;
+  overflow: hidden;
 }
+
 .card {
   flex: 0 0 auto;
   width: 24%;
 }
+
 .scroll-image {
-  width: 90%;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 6px 6px 26px -4px rgba(0,0,0,0.66);
+  -webkit-box-shadow: 6px 6px 26px -4px rgba(0,0,0,0.66);
+  -moz-box-shadow: 6px 6px 26px -4px rgba(0,0,0,0.66);
   object-fit: cover;
   opacity: 0;
   transform: translateX(150px) rotate(5deg) scale(0.95);
   transition: opacity 0.3s;
+}
+
+/* ===== Адаптивность ===== */
+
+@media (max-width: 1440px) {
+  .scrolling-wrapper {
+    height: 270vh;
+  }
+}
+
+/* Для планшетов (≤1024px) */
+@media (max-width: 1024px) {
+  .scrolling-wrapper {
+    height: 225vh;
+  }
+
+  .card {
+    width: 33%;
+  }
+
+  .scrolling-wrapper {
+    gap: 4vw;
+  }
+}
+
+/* Для телефонов (≤768px) */
+@media (max-width: 768px) {
+  .card {
+    width: 36%;
+  }
+  .scrolling-wrapper {
+    height: 200vh;
+  }
+  .scrolling-wrapper {
+    gap: 4vw;
+    padding: 8vh 4vw;
+  }
+}
+
+/* Очень маленькие устройства (≤480px) */
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+  }
+
+  .scrolling-wrapper {
+    gap: 2vw;
+    padding: 6vh 3vw;
+  }
 }
