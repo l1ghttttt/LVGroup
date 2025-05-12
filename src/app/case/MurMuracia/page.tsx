@@ -9,7 +9,24 @@ import HorizontalScrollSlider from "@/components/for-cases/customer-images-slide
 const caseHref = "/MurMuracia"; // должен совпадать с href в data
 const currentCase = casesList.find(c => c.href === caseHref);
 const tagsList = currentCase?.tags || [];
-const images = ['BratBuryatSMMPreview.jpg', 'BratBuryatSMMPreview.jpg', 'BunkerPicture1.jpg', 'BratBuryatSMMPreview.jpg']; // должны быть в public/изображения
+const images = [
+    'Mur-1.jpg',
+    'Mur-2.jpg',
+    'Mur-3.jpg',
+    'Mur-4.jpg',
+    'Mur-5.jpg',
+    'Mur-6.jpg',
+    'Mur-7.jpg',
+    'Mur-8.jpg',
+    'Mur-9.jpg',
+    'Mur-10.jpg',
+    'Mur-11.jpg',
+    'Mur-12.jpg',
+    'Mur-13.jpg',
+    'Mur-14.jpg',
+    'Mur-15.jpg',
+    'Mur-16.jpg',
+]; // должны быть в public/изображения
 const ChixxInk = () => {
     return (
         <main className={`w-full overflow-x-hidden`}>

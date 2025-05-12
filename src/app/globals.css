@@ -821,3 +821,23 @@ a:hover {
 .y-scrollbar::-webkit-scrollbar {
   display: none; /* Safari и Chrome */
 }
+
+.scrolling-wrapper {
+  padding: 10vh 85px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 85px;
+  width: 100vw;
+  height: 3000px;
+}
+.card {
+  flex: 0 0 auto;
+  width: 24%;
+}
+.scroll-image {
+  width: 90%;
+  object-fit: cover;
+  opacity: 0;
+  transform: translateX(150px) rotate(5deg) scale(0.95);
+  transition: opacity 0.3s;
+}
