@@ -12,21 +12,21 @@ type Props = {
 };
 
 export default function HorizontalScrollSlider({ images, className }: Props) {
-    const wrapperRef = useRef<HTMLDivElement | null>(null);
-    const cardsRef = useRef<Array<HTMLDivElement | null>>([]);
-    const imagesRef = useRef<Array<HTMLImageElement | null>>([]);
+    const wrapperRef = useRef<HTMLDivElement>(null);
+    const cardsRef = useRef<HTMLDivElement[]>([]);
+    const imagesRef = useRef<HTMLImageElement[]>([]);
 
     useEffect(() => {
-        if (!wrapperRef.current || cardsRef.current.length === 0) return;
+        if (!wrapperRef.current || !cardsRef.current.length) return;
 
         const ctx = gsap.context(() => {
-            const horizontalAnim = gsap.to(cardsRef.current.filter(Boolean) as HTMLDivElement[], {
+            const horizontalAnim = gsap.to(cardsRef.current, {
                 xPercent: -100 * (images.length - 1),
                 ease: 'none',
                 scrollTrigger: {
-                    trigger: wrapperRef.current!,
+                    trigger: wrapperRef.current,
                     start: 'top top',
-                    end: () => `+=${wrapperRef.current!.offsetWidth}`,
+                    end: () => '+=' + wrapperRef.current!.offsetWidth,
                     scrub: 1,
                     pin: true,
                     anticipatePin: 1,
@@ -34,11 +34,10 @@ export default function HorizontalScrollSlider({ images, className }: Props) {
             });
 
             imagesRef.current.forEach((img, i) => {
-                if (!img) return;
-
                 const isInitiallyVisible = i <= 2;
 
                 if (isInitiallyVisible) {
+                    // Показываем первые 3 изображения сразу
                     gsap.set(img, {
                         opacity: 1,
                         x: 0,
@@ -46,6 +45,7 @@ export default function HorizontalScrollSlider({ images, className }: Props) {
                         scale: 1,
                     });
 
+                    // Анимация исчезновения при прокрутке
                     gsap.to(img, {
                         opacity: 0,
                         x: -150,
@@ -63,6 +63,7 @@ export default function HorizontalScrollSlider({ images, className }: Props) {
                         },
                     });
                 } else {
+                    // Анимация появления остальных изображений
                     gsap.fromTo(
                         img,
                         {
@@ -90,7 +91,7 @@ export default function HorizontalScrollSlider({ images, className }: Props) {
                     );
                 }
             });
-        }, wrapperRef as React.RefObject<Element>);
+        }, wrapperRef);
 
         return () => ctx.revert();
     }, [images]);
@@ -102,13 +103,13 @@ export default function HorizontalScrollSlider({ images, className }: Props) {
                     key={i}
                     className="card"
                     ref={(el) => {
-                        cardsRef.current[i] = el;
+                        if (el) cardsRef.current[i] = el;
                     }}
                 >
-                    <div className={`flex justify-center h-[80vh] ${i % 2 === 0 ? 'items-start' : 'items-end'}`}>
+                    <div className={`flex justify-center h-[80vh] ${i % 2 == 0 ? 'items-start' : 'items-end'}`}>
                         <img
                             ref={(el) => {
-                                imagesRef.current[i] = el;
+                                if (el) imagesRef.current[i] = el;
                             }}
                             src={`/${img}`}
                             alt={`Image ${i + 1}`}
