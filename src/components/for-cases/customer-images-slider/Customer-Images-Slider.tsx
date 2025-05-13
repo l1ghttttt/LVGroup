@@ -8,15 +8,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 type Props = {
     images: string[];
+    className?: string;
 };
 
-export default function HorizontalScrollSlider({ images }: Props) {
+export default function HorizontalScrollSlider({ images, className }: Props) {
     const wrapperRef = useRef<HTMLDivElement>(null);
     const cardsRef = useRef<HTMLDivElement[]>([]);
     const imagesRef = useRef<HTMLImageElement[]>([]);
 
     useEffect(() => {
-        if (!wrapperRef.current || !cardsRef.current.length) return;
 
         const ctx = gsap.context(() => {
             const horizontalAnim = gsap.to(cardsRef.current, {
@@ -96,7 +96,7 @@ export default function HorizontalScrollSlider({ images }: Props) {
     }, [images]);
 
     return (
-        <div ref={wrapperRef} className="scrolling-wrapper">
+        <div ref={wrapperRef} className={`scrolling-wrapper ${className || ''}`}>
             {images.map((img, i) => (
                 <div
                     key={i}
