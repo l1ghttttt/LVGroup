@@ -12,12 +12,12 @@ type Props = {
 };
 
 export default function HorizontalScrollSlider({ images, className }: Props) {
-    const wrapperRef = useRef<HTMLDivElement>(null);
-    const cardsRef = useRef<HTMLDivElement[]>([]);
-    const imagesRef = useRef<HTMLImageElement[]>([]);
+    const wrapperRef = useRef<HTMLDivElement | null>(null);
+    const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+    const imagesRef = useRef<(HTMLImageElement | null)[]>([]);
 
     useEffect(() => {
-        if (!wrapperRef.current || !cardsRef.current.length) return;
+        if (!wrapperRef.current || cardsRef.current.length === 0) return;
 
         const ctx = gsap.context(() => {
             const horizontalAnim = gsap.to(cardsRef.current, {
@@ -34,10 +34,11 @@ export default function HorizontalScrollSlider({ images, className }: Props) {
             });
 
             imagesRef.current.forEach((img, i) => {
+                if (!img) return;
+
                 const isInitiallyVisible = i <= 2;
 
                 if (isInitiallyVisible) {
-                    // Показываем первые 3 изображения сразу
                     gsap.set(img, {
                         opacity: 1,
                         x: 0,
@@ -45,7 +46,6 @@ export default function HorizontalScrollSlider({ images, className }: Props) {
                         scale: 1,
                     });
 
-                    // Анимация исчезновения при прокрутке
                     gsap.to(img, {
                         opacity: 0,
                         x: -150,
@@ -63,7 +63,6 @@ export default function HorizontalScrollSlider({ images, className }: Props) {
                         },
                     });
                 } else {
-                    // Анимация появления остальных изображений
                     gsap.fromTo(
                         img,
                         {
@@ -103,13 +102,13 @@ export default function HorizontalScrollSlider({ images, className }: Props) {
                     key={i}
                     className="card"
                     ref={(el) => {
-                        if (el) cardsRef.current[i] = el;
+                        cardsRef.current[i] = el;
                     }}
                 >
                     <div className={`flex justify-center h-[80vh] ${i % 2 == 0 ? 'items-start' : 'items-end'}`}>
                         <img
                             ref={(el) => {
-                                if (el) imagesRef.current[i] = el;
+                                imagesRef.current[i] = el;
                             }}
                             src={`/${img}`}
                             alt={`Image ${i + 1}`}
