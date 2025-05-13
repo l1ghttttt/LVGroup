@@ -13,20 +13,20 @@ type Props = {
 
 export default function HorizontalScrollSlider({ images, className }: Props) {
     const wrapperRef = useRef<HTMLDivElement | null>(null);
-    const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
-    const imagesRef = useRef<(HTMLImageElement | null)[]>([]);
+    const cardsRef = useRef<Array<HTMLDivElement | null>>([]);
+    const imagesRef = useRef<Array<HTMLImageElement | null>>([]);
 
     useEffect(() => {
         if (!wrapperRef.current || cardsRef.current.length === 0) return;
 
         const ctx = gsap.context(() => {
-            const horizontalAnim = gsap.to(cardsRef.current, {
+            const horizontalAnim = gsap.to(cardsRef.current.filter(Boolean) as HTMLDivElement[], {
                 xPercent: -100 * (images.length - 1),
                 ease: 'none',
                 scrollTrigger: {
-                    trigger: wrapperRef.current,
+                    trigger: wrapperRef.current!,
                     start: 'top top',
-                    end: () => '+=' + wrapperRef.current!.offsetWidth,
+                    end: () => `+=${wrapperRef.current!.offsetWidth}`,
                     scrub: 1,
                     pin: true,
                     anticipatePin: 1,
@@ -90,7 +90,7 @@ export default function HorizontalScrollSlider({ images, className }: Props) {
                     );
                 }
             });
-        }, wrapperRef);
+        }, wrapperRef as React.RefObject<Element>);
 
         return () => ctx.revert();
     }, [images]);
@@ -105,7 +105,7 @@ export default function HorizontalScrollSlider({ images, className }: Props) {
                         cardsRef.current[i] = el;
                     }}
                 >
-                    <div className={`flex justify-center h-[80vh] ${i % 2 == 0 ? 'items-start' : 'items-end'}`}>
+                    <div className={`flex justify-center h-[80vh] ${i % 2 === 0 ? 'items-start' : 'items-end'}`}>
                         <img
                             ref={(el) => {
                                 imagesRef.current[i] = el;
