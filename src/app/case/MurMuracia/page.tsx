@@ -6,7 +6,6 @@ import Order from "@/components/order/Order";
 import FooterTags from "@/components/for-cases/footer-tags/Footer-tags";
 import casesList from '../../../app/cases.json'
 import HorizontalScrollSlider from "@/components/for-cases/customer-images-slider/Customer-Images-Slider";
-import CustomerImageSwiper from "@/components/for-cases/customer-image-swiper/Customer-Image-Swiper";
 const caseHref = "/MurMuracia"; // должен совпадать с href в data
 const currentCase = casesList.find(c => c.href === caseHref);
 const tagsList = currentCase?.tags || [];
@@ -44,9 +43,6 @@ const ChixxInk = () => {
                 <div className={`my-0 mx-CustomerSpacingMargin customer-spacing relative max-sm:mx-[20px] flex flex-col items-center mt-[40px]`}>
 
                     <HorizontalScrollSlider images={images} />
-
-                    <CustomerImageSwiper images={images} className={`sm:hidden`} />
-
 
                     <CustomerChain
                         align={`vertical`}
