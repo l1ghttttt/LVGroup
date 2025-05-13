@@ -854,14 +854,14 @@ a:hover {
 
 @media (max-width: 1440px) {
   .scrolling-wrapper {
-    height: 270vh;
+    height: 260vh;
   }
 }
 
 /* Для планшетов (≤1024px) */
 @media (max-width: 1024px) {
   .scrolling-wrapper {
-    height: 225vh;
+    height: 220vh;
   }
 
   .card {
