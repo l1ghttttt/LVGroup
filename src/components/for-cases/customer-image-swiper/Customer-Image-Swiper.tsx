@@ -8,6 +8,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './style-for-swiper.css';
+import type { Swiper as SwiperClass } from 'swiper';
 
 type Props = {
     images: string[];
@@ -17,7 +18,7 @@ type Props = {
 const CustomerImageSwiper = ({ images, className }: Props) => {
     const prevRef = useRef<HTMLDivElement>(null);
     const nextRef = useRef<HTMLDivElement>(null);
-    const swiperRef = useRef<any>(null);
+    const swiperRef = useRef<SwiperClass | null>(null);
 
     return (
         <div className={`relative w-full flex justify-center py-8 ${className || ''}`}>
