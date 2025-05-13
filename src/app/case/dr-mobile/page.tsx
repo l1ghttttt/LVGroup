@@ -7,6 +7,7 @@ import CustomerStats from "@/components/for-cases/customer-stats/Customer-stats"
 import FooterTags from "@/components/for-cases/footer-tags/Footer-tags";
 import CustomerChain from "@/components/for-cases/customer-chain/Customer-chain";
 import casesList from '../../../app/cases.json'
+import CustomerReview from "@/components/for-cases/customer-review/Customer-review";
 
 const caseHref = "/dr-mobile"; // должен совпадать с href в data
 const currentCase = casesList.find(c => c.href === caseHref);
@@ -86,6 +87,12 @@ const DrMobile = () => {
                                 description: "руб",
                             }
                             ]}
+                    />
+                    <CustomerReview
+                        photo={`DrMobilePhoto.jpg`}
+                        name={`Евгений Кревский`}
+                        text={`Огромное спасибо команде LV GROUP за невероятную поддержку и крутой результат! С самого начала чувствовалась вовлеченность и желание реально помочь, а не просто «отработать проект». Всё сделали быстро, чётко и с душой. Клиентов стало больше, а работа сервиса Dr. Mobile теперь выглядит гораздо ярче и привлекательнее. Очень рады, что обратились именно к вам!`}
+                        rank={`Собственник`}
                     />
                     <FooterTags
                         tags={tagsList}

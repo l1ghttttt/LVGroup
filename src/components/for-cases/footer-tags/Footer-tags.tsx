@@ -5,6 +5,8 @@ interface FooterTagsProps {
 }
 
 const FooterTags = ({tags}: FooterTagsProps) => {
+
+    if (1) {return null}
     return (
         <ul className={`flex p-casesFilterPadding pr-0 pl-0 flex-wrap gap-2 gap-y-3`}>
             {tags.map((tag, i) => (
