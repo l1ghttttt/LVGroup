@@ -43,9 +43,7 @@ const ChixxInk = () => {
                 />
                 <div className={`my-0 mx-CustomerSpacingMargin customer-spacing relative max-sm:mx-[20px] flex flex-col items-center mt-[40px]`}>
 
-
                     <HorizontalScrollSlider images={images} />
-
 
                     <CustomerImageSwiper images={images} className={`sm:hidden`} />
 

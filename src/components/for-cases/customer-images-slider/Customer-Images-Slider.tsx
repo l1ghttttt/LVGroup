@@ -96,7 +96,7 @@ export default function HorizontalScrollSlider({ images }: Props) {
     }, [images]);
 
     return (
-        <div ref={wrapperRef} className={`scrolling-wrapper`}>
+        <div ref={wrapperRef} className="scrolling-wrapper">
             {images.map((img, i) => (
                 <div
                     key={i}
