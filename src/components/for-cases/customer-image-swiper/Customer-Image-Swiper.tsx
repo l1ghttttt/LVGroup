@@ -52,7 +52,7 @@ const CustomerImageSwiper = ({ images, className }: Props) => {
                         swiperRef.current = swiper;
                     }}
 
-                    slidesPerView={2}
+                    slidesPerView={1}
                     spaceBetween={20}
                     modules={[Pagination, Navigation]}
                     className="mySwiper"
