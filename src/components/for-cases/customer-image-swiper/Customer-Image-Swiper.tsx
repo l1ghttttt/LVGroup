@@ -27,13 +27,13 @@ const CustomerImageSwiper = ({ images, className }: Props) => {
                 {/* Custom Navigation Buttons */}
                 <button
                     onClick={() => prevRef.current?.click()}
-                    className="absolute left-[-50px] top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white shadow rounded-full flex items-center justify-center transition z-20"
+                    className="absolute left-[-50px] top-1/2 transform -translate-y-1/2 w-10 h-10 bg-background shadow shadow-gray-200 rounded-full flex items-center justify-center transition z-20"
                 >
                     ←
                 </button>
                 <button
                     onClick={() => nextRef.current?.click()}
-                    className="absolute right-[-50px] top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white shadow rounded-full flex items-center justify-center transition z-20"
+                    className="absolute right-[-50px] top-1/2 transform -translate-y-1/2 w-10 h-10 bg-background shadow shadow-gray-200 rounded-full flex items-center justify-center transition z-20"
                 >
                     →
                 </button>
