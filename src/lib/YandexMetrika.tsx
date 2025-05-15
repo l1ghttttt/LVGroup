@@ -9,6 +9,7 @@ export default function YandexMetrika() {
 
     useEffect(() => {
         const url = `${pathname}?${searchParams}`
+        //@typescript-eslint/ban-ts-comment
         // @ts-expect-error
         ym(101600589, 'hit', url);
 
