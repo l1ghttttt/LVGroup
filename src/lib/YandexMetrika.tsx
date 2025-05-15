@@ -10,7 +10,7 @@ export default function YandexMetrika() {
     useEffect(() => {
         const url = `${pathname}?${searchParams}`
         //@typescript-eslint/ban-ts-comment
-        // @ts-expect-error
+        // @ts-expect-error Yandex Metrika global function not typed
         ym(101600589, 'hit', url);
 
     }, [pathname, searchParams])
