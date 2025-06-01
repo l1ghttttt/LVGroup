@@ -1,5 +1,6 @@
 'use client'
 
+import { motion } from 'motion/react';
 import React, {MouseEventHandler, TouchEventHandler, useEffect, useRef, useState} from 'react';
 
 export function isIntersectionObserverSupport() {
@@ -276,7 +277,15 @@ export default function BeforeAfter({
     }
 
     return (
-        <div
+        <motion.div
+            initial={{ opacity: 0, y: 200 }}
+            transition={{
+                delay: 0.1,
+                duration: 1.2,
+                scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+            }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             className={`rounded-[20px] border-[8px] border-black w-[70vw] mt-[45px] max-lg:gap-[20px] relative max-lg:w-[90%] max-sm:w-[95vw]`}>
 
             <div
@@ -328,6 +337,6 @@ export default function BeforeAfter({
             </div>
             <p className={`absolute bottom-[-3px] left-0 text-[16px] max-md:text-[12px] font-railway text-mainColor bg-black p-[8px] max-md:p-[6px] rounded-tr-[7px]`}>Было</p>
             <p className={`absolute bottom-[-3px] right-0 text-[16px] max-md:text-[12px] font-railway text-mainColor bg-black p-[8px] max-md:p-[6px] rounded-tl-[7px]`}>Стало</p>
-        </div>
+        </motion.div>
     );
 }

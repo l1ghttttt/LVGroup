@@ -106,7 +106,7 @@ const BratBuryat = () => {
                             },
                             {
                                 name: "Охваты Instagram в месяц",
-                                value: "64,3",
+                                value: "64.3",
                                 description: "тыс."
                             },
                         ]}

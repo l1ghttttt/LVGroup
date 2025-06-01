@@ -1,6 +1,8 @@
 'use client'
 
 import React, {useEffect, useState} from 'react';
+import { motion } from "motion/react"
+
 
 interface PhonesVideoProps {
     videoList: string[];
@@ -22,7 +24,15 @@ const PhonesVideo = ({videoList}: PhonesVideoProps) => {
 
             {videoList.map((videoName, i) => (
                 <div className={`w-1/3 pr-[30px] max-sm:w-3/5 max-sm:p-0 max-sm:mb-[25px]`} key={i}>
-                    <div
+                    <motion.div
+                        initial={{ opacity: 0, y: 100 }}
+                        transition={{
+                            delay: 0.25,
+                            duration: 1.5,
+                            scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+                        }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
                         className={`w-full `}>
                         {typeof window !== "undefined" && (
                             <video loop muted autoPlay playsInline
@@ -30,7 +40,7 @@ const PhonesVideo = ({videoList}: PhonesVideoProps) => {
                                 <source src={`/${videoName}.mp4`} type="video/mp4"/>
                             </video>
                         )}
-                    </div>
+                    </motion.div>
                 </div>
             ))}
         </section>

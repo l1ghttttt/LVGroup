@@ -1,4 +1,5 @@
 import React from 'react';
+import NumberAnimate from "@/components/number-animate/Number-animate";
 
 interface statsItem {
     name?: string;
@@ -21,7 +22,7 @@ const CustomerStats = ({statsList}: CustomerStatsProps) => {
                         </div>
                         <div className={`border-b-[1px] flex items-baseline pb-[15px] max-sm:pb-[20px]`}>
                             <div
-                                className={`text-mainColor text-customerInfographySize leading-customerInfographyLeading`}>{stat.value}
+                                className={`text-mainColor text-customerInfographySize leading-customerInfographyLeading`}><NumberAnimate number={Number(stat.value)} delay={0.1} duration={2} />
                             </div>
                             <div
                                 className={` text-mainColor text-customerInfographySmallSize mx-[10px] leading-customerInfographySmallLeading`}>{stat.description}

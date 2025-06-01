@@ -66,7 +66,7 @@ const KhabarovskTypography = () => {
                         },
                         {
                             name: "Оборот стал",
-                            value: "1,8",
+                            value: "1.8",
                             description: "млн.",
                         },
                         {
