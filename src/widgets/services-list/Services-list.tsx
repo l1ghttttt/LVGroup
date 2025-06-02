@@ -26,7 +26,7 @@ const ServicesListComponent = () => {
                     <span className={`text-mainColor font-railway`}>LV GROUP</span> - это сильная команда специалистов
                 </div>
                 <div className={`w-1/3 max-lg:w-1/2 max-sm:w-full pt-3 text-servicesDescriptionSize leading-servicesDescriptionLeading pr-servicesTitlePadding`}>
-                    <p className={`mb-[15px]`}>Наш опыт в сфере продаж и маркетинга привысил <span className={`text-mainColor`}>15 лет.</span></p>
+                    <p className={`mb-[15px]`}>Наш опыт в сфере продаж и маркетинга превысил <span className={`text-mainColor`}>15 лет.</span></p>
 
                     Мы постоянно развиваемся и глубоко вникаем <span className={`text-mainColor`}>в каждый</span> проект наших заказчиков.
                 </div>
