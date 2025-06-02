@@ -9,6 +9,7 @@ import ThemeSwitcher from "./ThemeSwitcher";
 import { Suspense } from 'react';
 import Script from 'next/script';
 import YandexMetrika from "@/lib/YandexMetrika";
+import CookieConsentComponent from "@/widgets/CookieConsent/CookieConsent";
 const raleway = Raleway({
     subsets: ['latin'],
     weight: ['400', '700'],
@@ -106,6 +107,7 @@ export default function RootLayout({
                     {children}
                 </main>
                 <Footer />
+                <CookieConsentComponent />
             </ThemeProvider>
             </body>
             </html>
