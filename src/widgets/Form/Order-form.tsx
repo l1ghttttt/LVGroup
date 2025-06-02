@@ -19,7 +19,7 @@ import {
 import { Input } from "@/shared/ui/input"
 import { Textarea } from "@/shared/ui/textarea"
 
-// ✅ Обновленная схема с капчей
+// ✅ Обновленная схема с капчей и согласием
 const FormSchema = z.object({
     username: z.string().min(1, { message: "Введите имя" }),
     phone: z.string()
@@ -32,6 +32,11 @@ const FormSchema = z.object({
         .min(1, { message: "Введите описание" })
         .max(800, { message: "Максимум 800 символов" }),
     captcha: z.string().min(1, { message: "Подтвердите, что вы не робот" }),
+    consent: z.literal(true, {
+        errorMap: () => ({
+            message: "Вы должны дать согласие на обработку персональных данных",
+        }),
+    }),
 })
 
 export function OrderForm() {
@@ -42,6 +47,7 @@ export function OrderForm() {
             phone: "",
             bio: "",
             captcha: "",
+            consent: true,
         },
     })
 
@@ -50,11 +56,7 @@ export function OrderForm() {
     async function sendTelegramMessage(data: z.infer<typeof FormSchema>) {
         const TOKEN = "7609911041:AAEukD-G3bxU8MiuyikUhe9us042dzsRfBo"
         const CHAT_ID = "-4727934737"
-        const message = `📨 Новая заявка:
-
-👤 Имя: ${data.username}
-📞 Телефон: ${data.phone}
-📝 Описание: ${data.bio}`
+        const message = `📨 Новая заявка:\n\n👤 Имя: ${data.username}\n📞 Телефон: ${data.phone}\n📝 Описание: ${data.bio}`
 
         const url = `https://api.telegram.org/bot${TOKEN}/sendMessage`
 
@@ -92,16 +94,11 @@ export function OrderForm() {
 
     function handlePhoneChange(e: React.ChangeEvent<HTMLInputElement>) {
         let value = e.target.value
-
-        // Очищаем все кроме цифр, плюса и пробелов
         value = value.replace(/[^\d+ ]/g, "")
-
         if (!value.startsWith("+")) {
             value = "+" + value.replace(/\+/g, "")
         }
-
         value = value.replace(/ {2,}/g, " ")
-
         form.setValue("phone", value)
     }
 
@@ -187,6 +184,42 @@ export function OrderForm() {
                                 />
                             </FormControl>
                             <FormMessage />
+                        </FormItem>
+                    )}
+                />
+
+                {/* Согласие на обработку данных */}
+                <FormField
+                    control={form.control}
+                    name="consent"
+                    render={({ field }) => (
+                        <FormItem className="flex items-start space-x-3 space-y-0">
+                            <FormControl>
+                                <input
+                                    type="checkbox"
+                                    id="consent"
+                                    className="mt-1"
+                                    checked={field.value}
+                                    onChange={field.onChange}
+                                />
+                            </FormControl>
+                            <div className="flex flex-col">
+                                <FormLabel
+                                    htmlFor="consent"
+                                    className="text-sm font-normal text-muted-foreground"
+                                >
+                                    Я прочитал и даю{" "}
+                                    <a
+                                        href="/personal-consent"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="underline text-blue-600 hover:text-blue-800"
+                                    >
+                                        согласие на обработку персональных данных
+                                    </a>
+                                </FormLabel>
+                                <FormMessage />
+                            </div>
                         </FormItem>
                     )}
                 />

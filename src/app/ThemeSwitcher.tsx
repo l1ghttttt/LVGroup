@@ -14,7 +14,7 @@ export default function ThemeSwitcherLogic() {
 
         // Если пользователь НЕ выбирал тему вручную
         if (!userChangedTheme) {
-            if (pathname.startsWith("/case/") || pathname.startsWith("/usluga")) {
+            if (pathname.startsWith("/case/") || pathname.startsWith("/usluga") || pathname.startsWith("/privacy-policy") || pathname.startsWith("/personal-consent")) {
                 setTheme("light"); // Включаем светлую тему в /cases
             } else {
                 setTheme("dark"); // Включаем тёмную тему на остальных страницах
