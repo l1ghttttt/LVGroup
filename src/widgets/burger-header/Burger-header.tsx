@@ -108,11 +108,27 @@ export default function BurgerHeader() {
                     </nav>
                     <div className="absolute bottom-[20px] pt-[2.5] flex justify-between w-[calc(100%-25px)] pr-[20px] bg-background z-25">
                         <div className="flex items-center space-x-4">
-                            <Link href="#order-section">
-                                <button className="bg-mainColor px-[30px] py-[10px] hover:bg-darkMain rounded-[50px] font-semibold tracking-wider text-altColor duration-150">
-                                    ЗАЯВКА
-                                </button>
-                            </Link>
+                            <button
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    setIsOpen(false);
+
+                                    setTimeout(() => {
+                                        // Сначала вручную прокручиваем
+                                        const el = document.getElementById("order-section");
+                                        if (el) {
+                                            el.scrollIntoView({behavior: "smooth"});
+                                        }
+
+                                        // Затем обновляем хеш в URL — это предотвратит повторный scroll от браузера
+                                        history.replaceState(null, "", "#order-section");
+                                    }, 300); // подождите, пока Sheet закроется
+                                }}
+                                className="bg-mainColor px-[30px] py-[10px] hover:bg-darkMain rounded-[50px] font-semibold tracking-wider text-altColor duration-150"
+                            >
+                                ЗАЯВКА
+                            </button>
+
                         </div>
                         <div>
                             <ThemeSwitcher/>

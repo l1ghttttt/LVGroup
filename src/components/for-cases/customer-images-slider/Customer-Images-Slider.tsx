@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import Image from 'next/image'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -106,13 +107,15 @@ export default function HorizontalScrollSlider({ images, className }: Props) {
                     }}
                 >
                     <div className={`flex justify-center h-[80vh] ${i % 2 == 0 ? 'items-start' : 'items-end'}`}>
-                        <img
+                        <Image
                             ref={(el) => {
                                 if (el) imagesRef.current[i] = el;
                             }}
                             src={`/${img}`}
                             alt={`Image ${i + 1}`}
                             loading="eager"
+                            width={415}
+                            height={622}
                             className="scroll-image"
                         />
                     </div>
