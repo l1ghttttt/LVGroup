@@ -89,6 +89,7 @@ export function OrderForm() {
             })
         } finally {
             setIsSubmitting(false)
+            alert("Ваша заявка отправлена, мы обязательно свяжемся с вами")
         }
     }
 
