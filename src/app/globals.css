@@ -154,6 +154,10 @@ body {
     --website-creating-welcome-descr-margin-top: calc(41.95804px + 13.98601vw);
     --website-creating-welcome-descr-leading: calc(31.87179px + .51282vw);
     --website-creating-welcome-descr-size: calc(16.30097px + 0.45307vw);
+    --blog-welcome-descr-margin-top: calc(var(--website-creating-welcome-descr-margin-top) / 2.5);
+    --blog-welcome-padding-top: calc(var(--website-creating-padding-top) * 0.5);
+    --blog-welcome-padding-bottom: calc(var(--website-creating-padding-bottom) * 0.5);
+    --blog-welcome-padding-x: calc(var(--website-creating-welcome-padding-x) * 3.5);
     --ordered-list-width: calc(66.66667%);
     --ordered-list-heading-margin: calc(8.55814px + 3.72093vw);
     --ordered-list-descr-size: calc(18.89701px + .26578vw);
