@@ -1,5 +1,35 @@
 [
   {
+    "title": "Гранд-Смета: 77 участников на семинаре с обзвона",
+    "preview": "GrandSmetaPreview.mp4",
+    "video": true,
+    "previewTextWhite": true,
+    "tags": ["Удаленный call-центр", "Регламенты и стандарты"],
+    "order": 18,
+    "homepage": false,
+    "href": "/grand-smeta"
+  },
+  {
+    "title": "Сайт OSTRO SUSHI, который <br/>хочется показать каждому",
+    "preview": "OstroSushiPreview.png",
+    "video": false,
+    "previewTextWhite": true,
+    "tags": ["Создание сайтов", "Техническая поддержка", "Дизайн"],
+    "order": 17,
+    "homepage": false,
+    "href": "/ostro-sushi"
+  },
+  {
+    "title": "+400% прибыли отдела <br/>продаж РК \"ТАУЭР\"",
+    "preview": "Taurer.png",
+    "video": false,
+    "previewTextWhite": true,
+    "tags": ["Создание/развитие отделов продаж", "Корпоративные тренинги и \"полевое\" обучение", "Разработка регламентов и стандартов", "Создание и развитие call-центра"],
+    "order": 16,
+    "homepage": false,
+    "href": "/taurer"
+  },
+  {
     "title": "411 куличей за неделю: съёмка, которая продала",
     "preview": "MurMuraciaPreview.jpg",
     "video": false,
