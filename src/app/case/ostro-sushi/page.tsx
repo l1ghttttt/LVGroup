@@ -20,6 +20,10 @@ const technologiesList = [
     {
         logo: "WooCommerce.png",
         name: "WooCommerce",
+    },
+    {
+        logo: "robokassaLogo.png",
+        name: "Robokassa",
     }
 ]
 

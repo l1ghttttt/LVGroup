@@ -19,7 +19,7 @@ const Taurer = () => {
             <div className={`flex flex-col`}>
                 <CustomerInfo
                     title={"+400% прибыли отдела продаж РК \"ТАУЭР\""}
-                    logo={"TaurerLogo.png"}
+                    logo={"TaurerLogo1.png"}
                     tags={tagsList}
                     descriptions={[
                         "Риэлторская компания «ТАУЭР» — одна из крупнейших риэлторских компаний на Дальнем Востоке, работающая на рынке недвижимости Хабаровска с 1995 года. Компания зарекомендовала себя как надёжный, стабильный и профессиональный игрок.",
@@ -30,7 +30,6 @@ const Taurer = () => {
 
                 />
                 <div className={`my-0 mx-CustomerSpacingMargin customer-spacing relative max-sm:mx-[20px] flex flex-col items-center mt-[40px]`}>
-                    <CustomerPhoto photo={"TaurerPicture.jpg"} full={true}/>
                     <CustomerText
                         title={"Подробнее о задаче"}
                         defaultText={[
@@ -39,6 +38,7 @@ const Taurer = () => {
                             "Холодный обзвон заказчик решил перенести на созданный нами call-центр для обеспечения эффективности проработки каждого потенциального клиента компании.",
                         ]}
                     />
+                    <CustomerPhoto photo={"TaurerPicture.jpg"}/>
                     <CustomerChain
                         name={"План работы"}
                         align={"vertical"}
@@ -72,7 +72,7 @@ const Taurer = () => {
                         }
                     ]}
                     />
-                    <CustomerText title={"Общие выводы"} numberText={[
+                    <CustomerText title={"Общий вывод"} defaultText={[
                         "Системная работа с отделом продаж и запуск внутреннего колл-центра позволили РК «ТАУЭР» вырасти с 10 до 40 авансов в месяц. Это дало рост +400% к прибыли отдела продаж и обеспечило стабильный приток новых клиентов. И всё это — всего за 4 месяца работы. Кейс стал примером того, как структурный подход и внимание к команде дают быстрый и измеримый результат.",
                     ]}/>
                     <CustomerReview
