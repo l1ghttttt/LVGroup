@@ -1,5 +1,35 @@
 [
   {
+    "title": "Обновление и редизайн сайта ФРП Хабаровского края",
+    "preview": "frpPreview1.png",
+    "video": false,
+    "previewTextWhite": true,
+    "tags": ["Создание сайтов", "Техническая поддержка", "Дизайн"],
+    "order": 21,
+    "homepage": false,
+    "href": "/frp"
+  },
+  {
+    "title": "Корм Green Qzin: Холодный обзвон <br/>52 клиента за 1 неделю",
+    "preview": "GreenQzinPreview.png",
+    "video": false,
+    "previewTextWhite": true,
+    "tags": ["Удаленный call-центр", "Регламенты и стандарты"],
+    "order": 20,
+    "homepage": false,
+    "href": "/green-qzin"
+  },
+  {
+    "title": "Салон мебели Авангард: продажа дивана с первого Reels",
+    "preview": "VanguardPreview.mp4",
+    "video": true,
+    "previewTextWhite": false,
+    "tags": ["Создание контента", "Видеосъемка", "SMM"],
+    "order": 19,
+    "homepage": false,
+    "href": "/vanguard"
+  },
+  {
     "title": "Гранд-Смета: 77 участников на семинаре с обзвона",
     "preview": "GrandSmetaPreview.mp4",
     "video": true,
@@ -30,7 +60,7 @@
     "href": "/taurer"
   },
   {
-    "title": "411 куличей за неделю: съёмка, которая продала",
+    "title": "411 куличей в МурМурации за неделю: съёмка, которая продала",
     "preview": "MurMuraciaPreview.jpg",
     "video": false,
     "previewTextWhite": false,
@@ -40,7 +70,7 @@
     "href": "/MurMuracia"
   },
   {
-    "title": "Сделали сайт так, чтобы захотелось поесть",
+    "title": "Сделали сайт \"Брат Бурят\" так, чтобы захотелось поесть",
     "preview": "BratBuryatWebsite.png",
     "video": false,
     "previewTextWhite": false,
@@ -50,7 +80,7 @@
     "href": "/brat-buryat-website"
   },
   {
-    "title": "Договор на 100 000 в первый день обзвона",
+    "title": "Прачечная \"Чистюля\": договор на 100 000 в первый день обзвона",
     "preview": "LaundryCleanerPreview.mp4",
     "video": true,
     "previewTextWhite": true,

@@ -29,7 +29,7 @@ const BratBuryatWebsite = () => {
         <main className="w-full">
             <div className="flex flex-col">
                 <CustomerInfo
-                    title={`Сделали так, чтобы захотелось поесть: сайт для кафе с удобной корзиной и оплатой`}
+                    title={`Кафе \"Брат Бурят\". Сделали сайт так, чтобы захотелось поесть – удобная корзина и онлайн-оплата заказа`}
                     logo={`BratBuryatLogo.jpg`}
                     tags={tagsList}
                     descriptions={descriptiopnsList}

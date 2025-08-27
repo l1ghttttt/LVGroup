@@ -33,7 +33,7 @@ const ChixxInk = () => {
         <main className={`w-full overflow-x-hidden`}>
             <div className={`flex flex-col`}>
                 <CustomerInfo
-                    title={"411 куличей за неделю: съёмка, которая продала"}
+                    title={"411 куличей в МурМурации за неделю: съёмка, которая продала"}
                     logo={"MurMuraciaLogo.png"}
                     tags={tagsList}
                     descriptions={[

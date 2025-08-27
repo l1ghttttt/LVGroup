@@ -17,7 +17,7 @@ const LaundryCleaner = () => {
         <main className="w-full">
             <div className="flex flex-col">
                 <CustomerInfo
-                    title={"400 звонков, десятки новых клиентов и первый договор на 100 000 уже в день старта"}
+                    title={"Прачечная \"Чистюля\": 400 звонков, десятки новых клиентов и первый договор на 100 000 уже в день старта"}
                     logo={"LaundryCleanerLogo.png"}
                     tags={tagsList}
                     descriptions={[

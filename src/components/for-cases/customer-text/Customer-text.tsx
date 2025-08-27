@@ -16,6 +16,16 @@ interface CustomerTextProps {
     bonusTexts?: BonusText[];
 }
 
+function adaptText(text: string) {
+    return text
+        // заменяем <br>
+        .replace(/<br\s*\/?>/gi, '<span class="hidden sm:inline"><br/></span>')
+        // заменяем <b>
+        .replace(/<b>/gi, '<span class="font-bold">')
+        // заменяем </b>
+        .replace(/<\/b>/gi, '</span>');
+}
+
 const CustomerText = ({title, defaultText, dottedText, numberText, lastText, bonusName, bonusTexts}: CustomerTextProps) => {
     return (
         <div
@@ -26,46 +36,42 @@ const CustomerText = ({title, defaultText, dottedText, numberText, lastText, bon
 
                 {defaultText ? (
                     defaultText.map((text, i) => (
-                        <p key={i}>
-                            {text}
-                        </p>
+                        <p key={i} dangerouslySetInnerHTML={{ __html: adaptText(text) }} />
                     ))
                 ) : null}
 
                 {dottedText ? (
-                    <ul className={`flex flex-col gap-[5px] `}>
+                    <ul className="flex flex-col gap-[5px]">
                         {dottedText.map((text, i) => (
-                            <li key={i} className={`pl-[25px] relative customerList`}>
-                                <p className={`my-[20px]`}>{text}</p>
+                            <li key={i} className="pl-[25px] relative customerList">
+                                <p
+                                    className="my-[20px]"
+                                    dangerouslySetInnerHTML={{ __html: adaptText(text) }}
+                                />
                             </li>
                         ))}
                     </ul>
-
                 ) : null}
 
                 {numberText ? (
-                    <ul className={`flex flex-col gap-[5px] `}>
+                    <ul className="flex flex-col gap-[5px] ">
                         {numberText.map((text, i) => (
-                            <li key={i} className={`pl-[25px] relative`}>
-
-                                <p className={`text-[16px] conclusion`}>
-                                    {i < 9 ? `0${i + 1}` : null}
-                                    {i >= 9 ? `${i + 1}` : null}
+                            <li key={i} className="pl-[25px] relative" >
+                                <p className="text-[16px] conclusion">
+                                    {i < 9 ? `0${i + 1}` : i + 1}
                                 </p>
-
-                                <p className={`my-[20px]`}>{text}</p>
-
+                                <p
+                                    className="my-[20px]"
+                                    dangerouslySetInnerHTML={{ __html: adaptText(text) }}
+                                />
                             </li>
                         ))}
                     </ul>
-
                 ) : null}
 
                 {lastText ? (
                     lastText.map((text, i) => (
-                        <p key={i}>
-                            {text}
-                        </p>
+                        <p key={i} dangerouslySetInnerHTML={{ __html: adaptText(text) }} />
                     ))
                 ) : null}
 
