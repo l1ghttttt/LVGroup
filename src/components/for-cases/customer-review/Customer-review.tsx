@@ -50,7 +50,7 @@ const CustomerReview = ({photo, name, rank, text}: CustomerReviewProps) => {
                     }</p>
                 </div>
             </div>
-            <div className={`h-[1px] bg-foreground w-full`}></div>
+            <div className={`h-[5px] w-full`}></div>
         </div>
     );
 };

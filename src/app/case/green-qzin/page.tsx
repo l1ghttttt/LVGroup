@@ -6,6 +6,7 @@ import CustomerPhoto from "@/components/for-cases/customer-photo/Customer-photo"
 import CustomerStats from "@/components/for-cases/customer-stats/Customer-stats";
 import FooterTags from "@/components/for-cases/footer-tags/Footer-tags";
 import casesList from '../../../app/cases.json'
+import CustomerChain from "@/components/for-cases/customer-chain/Customer-chain";
 
 const caseHref = "/grin-qzin"; // должен совпадать с href в data
 const currentCase = casesList.find(c => c.href === caseHref);
@@ -30,6 +31,9 @@ const GrinQzin = () => {
                     ]}
                 />
                 <div className={`my-0 mx-CustomerSpacingMargin customer-spacing relative max-sm:mx-[20px] flex flex-col items-center mt-[40px]`}>
+                    <CustomerChain
+                        name={"Решение"}
+                    />
                     <CustomerText
                         title={"Решение"}
                         defaultText={[
@@ -65,9 +69,8 @@ const GrinQzin = () => {
                                 description: "дней",
                             },
                             {
-                                name: "Обработано",
+                                name: "Обработано клиентов",
                                 value: "132",
-                                description: "клиента",
                             },
                             {
                                 name: "Передано",
