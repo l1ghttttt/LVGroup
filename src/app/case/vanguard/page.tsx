@@ -25,9 +25,9 @@ const Vanguard = () => {
                 />
                 <div className={`my-0 mx-CustomerSpacingMargin customer-spacing relative max-sm:mx-[20px] flex flex-col items-center mt-[40px]`}>
                     <PhonesVideo videoList={[
-                        "video-1",
-                        "video-2",
-                        "video-3",]}
+                        "VanguardVideoLeft",
+                        "VanguardVideoCenter",
+                        "VanguardVideoRight",]}
                     />
                     <CustomerChain
                         align={`vertical`}

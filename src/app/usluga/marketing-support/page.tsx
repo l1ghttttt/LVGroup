@@ -5,7 +5,43 @@ import OwnFeatures from "@/components/for-uslugi/own-features/Own-features";
 import Order from "@/components/order/Order";
 import {CiSquareCheck, CiViewList, CiDollar, CiTrophy} from "react-icons/ci";
 import CasesListWrapper from "@/components/cases-list/CasesListWrapper";
+import type { Metadata } from 'next'
 
+// Импорт сырого JSON и задание типов
+import uslugiListRaw from '../../../app/uslugi.json'
+
+interface Usluga {
+    title: string
+    href: string
+    description: string
+    "SEO-title"?: string
+    "SEO-description"?: string
+    "SEO-keywords"?: string
+}
+
+interface UslugaGroup {
+    trigger: string
+    values: Usluga[]
+}
+
+const uslugiList = uslugiListRaw as UslugaGroup[]
+
+// Текущий путь услуги для этой страницы
+const uslugaHref: string = "/marketing-support"
+
+// Находим услугу по href
+const currentUsluga = uslugiList
+    .flatMap(group => group.values)
+    .find(item => item.href === "/usluga" + uslugaHref)
+
+export const metadata: Metadata = {
+    title: currentUsluga?.["SEO-title"] ?? currentUsluga?.title ?? "LV GROUP",
+    description: currentUsluga?.["SEO-description"] ?? currentUsluga?.description ?? "",
+    // Превратим CSV-строку ключевых слов в массив (Metadata принимает string | string[])
+    keywords: currentUsluga?.["SEO-keywords"]
+        ? currentUsluga["SEO-keywords"].split(",").map(k => k.trim())
+        : undefined,
+}
 const featuresList = [
     {
         icon: <CiSquareCheck size={100} className={`w-full`} />,
