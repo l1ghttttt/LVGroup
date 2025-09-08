@@ -1,6 +1,7 @@
 import React from 'react';
 import BlogWelcome from "@/components/for-blog/Blog-welcome";
 
+
 const Blog = () => {
     return (
         <main className="w-full flex flex-col items-center">

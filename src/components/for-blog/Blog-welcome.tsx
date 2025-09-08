@@ -11,6 +11,13 @@ interface ServiceWelcomeProps {
     filters?: boolean;
 }
 
+function adaptBr(title: string) {
+    return title.replace(
+        /<br\s*\/?>/gi,
+        '<span class="hidden sm:inline"><br/></span>'
+    )
+}
+
 const BlogWelcome = ({
                          title,
                          description,
@@ -46,8 +53,7 @@ const BlogWelcome = ({
 
             <div className="w-full px-BlogWelcomePaddingX flex max-xl:block pb-BlogWelcomePaddingBottom pt-BlogWelcomePaddingTop overflow-hidden">
                 <h1 className="xl:w-WebsiteCreatingWelcomeHeadingWidth">
-                    <div className="leading-[1.1] text-WebsiteCreatingWelcomeHeadingSize font-railway w-[125%] max-2xl:w-[175%] max-xl:w-auto">
-                        {title}
+                    <div className="leading-[1.1] text-WebsiteCreatingWelcomeHeadingSize font-railway w-[125%] max-2xl:w-[175%] max-xl:w-auto" dangerouslySetInnerHTML={{ __html: adaptBr(title) }}>
                     </div>
                 </h1>
                 <div className="xl:w-WebsiteCreatingWelcomeDescrWidth p-WebsiteCreatingWelcomeDescrPadding ml-WebsiteCreatingWelcomeDescrMargin">
