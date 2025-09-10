@@ -9,34 +9,51 @@ const Welcome = () => {
 
             <div className="flex w-full px-welcomePadding gap-[6px] max-xl:gap-[3px] relative max-sm:flex-col">
                 <div className="w-2/3 max-2xl:w-1/2 flex flex-col justify-between max-sm:w-full">
-                    <h1 className="text-mainZag max-xl:hidden font-semibold leading-[80px] max-lg:leading-[50px] max-xl:max-w-[750px]">
-                        Возьмём маркетинг <br /> и продажи <br /> на себя
-                    </h1>
-                    <h1 className="text-mainZag xl:hidden max-sm:hidden font-semibold leading-[80px] mb-[30px] max-lg:leading-[50px] max-xl:max-w-[750px]">
-                        Возьмём маркетинг и продажи на себя
-                    </h1>
-                    <h1 className="text-[36px] mb-[35px] sm:hidden font-semibold leading-[80px] max-lg:leading-[50px] max-xl:max-w-[750px]">
-                        Возьмём маркетинг и продажи на себя
+                    {/* Один h1 для SEO */}
+                    <h1 className="text-mainZag font-semibold leading-[80px] max-lg:leading-[50px] max-xl:max-w-[750px]">
+                        {/* Для xl и больше — версия с переносами */}
+                        <span className="hidden xl:inline">
+            Возьмём маркетинг <br/> и продажи <br/> на себя
+        </span>
+
+                        {/* Для sm–xl — версия в одну строку */}
+                        <span className="hidden sm:inline xl:hidden">
+            Возьмём маркетинг и продажи на себя
+        </span>
+
+                        {/* Для мобилок (sm:hidden) — меньший размер */}
+                        <span className="sm:hidden text-[36px] mb-[35px] block leading-[50px]">
+            Возьмём маркетинг и продажи на себя
+        </span>
                     </h1>
 
-                    <p className="text-welcomeDescr text-welcomeColorDescr max-md:hidden">
-                        Чтобы вы сфокусировались на других важных задачах бизнеса.<br />
-                        В нашей команде более 20 профильных специалистов. <br />
-                        Наша цель - это результат
-                    </p>
+                    {/* Один p для SEO и чистоты */}
+                    <p className="text-welcomeColorDescr">
+                        {/* Десктопная версия (многострочный текст) */}
+                        <span className="hidden md:inline text-welcomeDescr">
+            Чтобы вы сфокусировались на других важных задачах бизнеса.<br/>
+            В нашей команде более 20 профильных специалистов. <br/>
+            Наша цель — это результат
+        </span>
 
-                    <p className="text-[16px] mb-[10px] md:hidden text-welcomeColorDescr">
-                        Чтобы вы сфокусировались на других важных задачах бизнеса.
-                    </p>
-                    <p className="text-[16px] mb-[10px] md:hidden text-welcomeColorDescr">
-                        В нашей команде более 20 профильных специалистов.
-                    </p>
-                    <p className="text-[16px] mb-[10px] md:hidden text-welcomeColorDescr">
-                        Наша цель - это результат
+                        {/* Мобильная версия (три абзаца, но внутри одного p) */}
+                        <span className="md:hidden block text-[16px]">
+            <span className="block mb-[10px]">
+                Чтобы вы сфокусировались на других важных задачах бизнеса.
+            </span>
+            <span className="block mb-[10px]">
+                В нашей команде более 20 профильных специалистов.
+            </span>
+            <span className="block mb-[10px]">
+                Наша цель — это результат
+            </span>
+        </span>
                     </p>
                 </div>
 
-                <nav className="w-1/2 max-2xl:w-1/2 max-sm:w-full p-welcomeLinkPadding pt-welcomeLinkPaddingTop max-sm:pl-0">
+
+                <nav
+                    className="w-1/2 max-2xl:w-1/2 max-sm:w-full p-welcomeLinkPadding pt-welcomeLinkPaddingTop max-sm:pl-0">
                     <ul className="flex flex-col gap-[10px] max-lg:gap-[7px]">
                         <Link
                             href="/usluga/website-creation"
@@ -66,7 +83,7 @@ const Welcome = () => {
                             href="/usluga/create-salesment"
                             className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 max-2xl:hidden"
                         >
-                            Создание/развитие <br /> отделов продаж
+                            Создание/развитие <br/> отделов продаж
                         </Link>
                         <Link
                             href="/usluga/create-salesment"
