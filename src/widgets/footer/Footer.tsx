@@ -33,6 +33,7 @@ const Footer = () => {
                     {/* YouTube */}
                     <li className={`flex`}>
                         <Link
+                            rel="noopener noreferrer"
                             href="https://www.youtube.com/@Group_LV"
                             target="_blank"
                             className={`duration-300 hover:duration-150 transition-all flex justify-center items-center 2xl:px-footerSocialPaddingXL max-2xl:p-footerSocialPaddingMaxl`}
@@ -44,6 +45,7 @@ const Footer = () => {
                     {/* Telegram */}
                     <li className={`flex`}>
                         <Link
+                            rel="noopener noreferrer"
                             href="https://t.me/tvoi_dvigatel"
                             target="_blank"
                             className={`duration-300 hover:duration-150 transition-all flex justify-center items-center 2xl:px-footerSocialPaddingXL max-2xl:p-footerSocialPaddingMaxl`}
@@ -55,6 +57,7 @@ const Footer = () => {
                     {/* WhatsApp */}
                     <li className={`flex`}>
                         <Link
+                            rel="noopener noreferrer"
                             href="https://wa.me/79242040030"
                             target="_blank"
                             className={`duration-300 hover:duration-150 transition-all flex justify-center items-center 2xl:px-footerSocialPaddingXL max-2xl:p-footerSocialPaddingMaxl`}

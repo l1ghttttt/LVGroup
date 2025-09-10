@@ -44,7 +44,7 @@ const Order = () => {
                                 </Link>
                             </li>*/}
                             <li className={`mr-[40px] mb-[50px] max-2xl:mr-[30px] max-2xl:mb-[30px] max-sm:mr-[20px] max-sm:mb-[20px] max-sm:w-auto`}>
-                                <Link target={`_blank`} href="https://t.me/tvoi_dvigatel"
+                                <Link rel="noopener noreferrer" target={`_blank`} href="https://t.me/tvoi_dvigatel"
                                       className={`touch-manipulation text-orderDescrSize leading-orderDescrLeading flex`}>
                                     <svg className="w-6 h-6 text-gray-800 dark:text-white mr-orderIconMargin"
                                          aria-hidden="true" fill="currentColor"
@@ -57,7 +57,7 @@ const Order = () => {
                                 </Link>
                             </li>
                             <li className={`mr-[40px] mb-[50px] max-2xl:mr-[30px] max-2xl:mb-[30px] max-sm:mr-[20px] max-sm:mb-[20px] max-sm:w-auto`}>
-                                <Link target={`_blank`} href="https://wa.me/79242040030"
+                                <Link rel="noopener noreferrer" target={`_blank`} href="https://wa.me/79242040030"
                                       className={`touch-manipulation text-orderDescrSize leading-orderDescrLeading flex`}>
                                     <svg className="w-6 h-6 text-gray-800 dark:invert mr-orderIconMargin" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
                                          viewBox="0 0 50 50">

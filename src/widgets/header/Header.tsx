@@ -68,13 +68,13 @@ const Header: React.FC = () => {
 
 
                         <NavigationMenuItem>
-                            <Link href="/cases" legacyBehavior passHref>
-                                <NavigationMenuLink
-                                    className={`text-headerColor !text-headerSize leading-[27px] ` + navigationMenuTriggerStyle()}>
+                            <NavigationMenuLink asChild>
+                                <Link href="/cases" className={`text-headerColor !text-headerSize leading-[27px] ` + navigationMenuTriggerStyle()}>
                                     Проекты
-                                </NavigationMenuLink>
-                            </Link>
+                                </Link>
+                            </NavigationMenuLink>
                         </NavigationMenuItem>
+
 
 
                         {ServicesList.map((component) => (
@@ -99,13 +99,19 @@ const Header: React.FC = () => {
 
 
                         <NavigationMenuItem>
-                            <Link href="/contacts" legacyBehavior passHref>
-                                <NavigationMenuLink
-                                    className={`text-headerColor !text-headerSize leading-[27px]` + navigationMenuTriggerStyle()}>
+                            <NavigationMenuLink asChild>
+                                <Link
+                                    href="/contacts"
+                                    className={
+                                        `text-headerColor !text-headerSize leading-[27px] ` +
+                                        navigationMenuTriggerStyle()
+                                    }
+                                >
                                     Контакты
-                                </NavigationMenuLink>
-                            </Link>
+                                </Link>
+                            </NavigationMenuLink>
                         </NavigationMenuItem>
+
 
 
                     </NavigationMenuList>

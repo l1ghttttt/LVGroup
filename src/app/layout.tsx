@@ -14,6 +14,7 @@ const raleway = Raleway({
     subsets: ['latin'],
     weight: ['400', '700'],
 });
+import {Corporation, Product, WithContext} from 'schema-dts'
 
 const roboto = Roboto({
     subsets: ['latin'],
@@ -65,6 +66,26 @@ export const metadata = {
     category: 'Бизнес',
 };
 
+const jsonLd: WithContext<Corporation> = {
+    '@context': 'https://schema.org',
+    '@type': 'Corporation',
+    name: 'LV Group',
+    alternateName: "ЛВ Групп",
+    url: "https://grouplv.ru/",
+    logo: "https://grouplv.ru/LVGROUP_logo.svg",
+    sameAs: [
+        "https://grouplv.ru/",
+        "https://www.youtube.com/@Group_LV"
+    ],
+    contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+7 (4212) 93-03-01",
+        contactType: "customer service",
+        areaServed: "RU",
+        availableLanguage: ["en","Russian"],
+    }
+}
+
 export default function RootLayout({
                                        children,
                                    }: Readonly<{ children: React.ReactNode }>) {
@@ -91,6 +112,14 @@ export default function RootLayout({
               });`
                 }
             </Script>
+
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c'),
+                }}
+            />
+
             <Suspense fallback={<></>}>
                 <YandexMetrika />
             </Suspense>
@@ -106,7 +135,7 @@ export default function RootLayout({
                 <main className={`flex flex-col items-center`}>
                     {children}
                 </main>
-                <Footer />
+                <Footer/>
                 <CookieConsentComponent />
             </ThemeProvider>
             </body>
