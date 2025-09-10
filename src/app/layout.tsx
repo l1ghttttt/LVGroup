@@ -14,7 +14,7 @@ const raleway = Raleway({
     subsets: ['latin'],
     weight: ['400', '700'],
 });
-import {Corporation, Product, WithContext} from 'schema-dts'
+import {Corporation, WithContext} from 'schema-dts'
 
 const roboto = Roboto({
     subsets: ['latin'],
