@@ -32,6 +32,8 @@ COPY --from=builder /app/tsconfig.json tsconfig.json
 COPY --from=builder /app/tailwind.config.ts tailwind.config.ts
 COPY --from=builder /app/postcss.config.mjs postcss.config.mjs
 COPY --from=builder /app/src src
+COPY --from=builder /app/robots.txt public/robots.txt
+COPY --from=builder /app/sitemap.xml public/sitemap.xml
 
 # 10. Устанавливаем только production-зависимости
 RUN npm install --omit=dev
