@@ -38,6 +38,9 @@ const PhonesVideo = ({videoList}: PhonesVideoProps) => {
                             <video loop muted autoPlay playsInline
                                    className={`rounded-[30px] border-[8px] border-foreground`}>
                                 <source src={`/${videoName}.mp4`} type="video/mp4"/>
+                                <track
+                                    default
+                                    kind="captions"/>
                             </video>
                         )}
                     </motion.div>

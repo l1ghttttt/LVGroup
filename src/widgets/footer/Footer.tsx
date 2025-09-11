@@ -33,6 +33,7 @@ const Footer = () => {
                     {/* YouTube */}
                     <li className={`flex`}>
                         <Link
+                            aria-label={"Ссылка на ютуб"}
                             rel="noopener noreferrer"
                             href="https://www.youtube.com/@Group_LV"
                             target="_blank"
@@ -45,6 +46,7 @@ const Footer = () => {
                     {/* Telegram */}
                     <li className={`flex`}>
                         <Link
+                            aria-label={"Ссылка на телеграм"}
                             rel="noopener noreferrer"
                             href="https://t.me/tvoi_dvigatel"
                             target="_blank"
@@ -57,6 +59,7 @@ const Footer = () => {
                     {/* WhatsApp */}
                     <li className={`flex`}>
                         <Link
+                            aria-label={"Ссылка на WhatsApp"}
                             rel="noopener noreferrer"
                             href="https://wa.me/79242040030"
                             target="_blank"
@@ -75,11 +78,11 @@ const Footer = () => {
                     © 2025 LV GROUP <br className="sm:hidden" />
                     ИП Леонов Борис Сергеевич, ОГРНИП 321272400043890
                 </p>
-                <div className="flex flex-col sm:flex-row sm:gap-4 gap-1 mt-2 sm:mt-0">
-                    <Link href="/privacy-policy" className="hover:text-foreground transition-colors duration-200 underline">
+                <div className="flex flex-col sm:flex-row sm:gap-4 gap-4  sm:mt-0">
+                    <Link href="/privacy-policy" className="hover:text-foreground transition-colors duration-200 underline p-2 ">
                         Политика конфиденциальности
                     </Link>
-                    <Link href="/personal-consent" className="hover:text-foreground transition-colors duration-200 underline">
+                    <Link href="/personal-consent" className="hover:text-foreground transition-colors duration-200 underline p-2">
                         Согласие на обработку персональных данных
                     </Link>
                 </div>

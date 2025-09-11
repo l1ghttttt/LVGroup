@@ -20,6 +20,9 @@ const Page = () => {
                 <div className="video-background">
                     <video autoPlay muted loop playsInline id="myVideo" className={theme == 'dark' ? '' : 'invert'}>
                         <source src={`/ContactsBackground.mp4`} type="video/mp4"/>
+                        <track
+                            default
+                            kind="captions"/>
                     </video>
                 </div>
 

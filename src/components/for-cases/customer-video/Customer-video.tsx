@@ -21,6 +21,9 @@ const CustomerVideo = ({video}: CustomerVideoProps) => {
             <video autoPlay muted loop playsInline
                    className={`w-[100vw] max-w-full overflow-hidden overflow-x-hidden`}>
                 <source src={`/${video}.mp4`} type="video/mp4"/>
+                <track
+                    default
+                    kind="captions"/>
             </video>
         </div>
     );

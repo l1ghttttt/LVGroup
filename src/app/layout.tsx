@@ -91,7 +91,7 @@ export default function RootLayout({
                                    }: Readonly<{ children: React.ReactNode }>) {
     return (
         <>
-            <html lang="en" suppressHydrationWarning>
+            <html lang="ru" suppressHydrationWarning>
             <head />
             <body
                 className={`${raleway.className} ${roboto.className} antialiased`} // Применяем шрифты

@@ -55,66 +55,66 @@ const Welcome = () => {
                 <nav
                     className="w-1/2 max-2xl:w-1/2 max-sm:w-full p-welcomeLinkPadding pt-welcomeLinkPaddingTop max-sm:pl-0">
                     <ul className="flex flex-col gap-[10px] max-lg:gap-[7px]">
-                        <Link
-                            href="/usluga/website-creation"
-                            className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 max-md:hidden max-sm:inline"
-                        >
-                            Создание сайтов
-                        </Link>
-                        <Link
-                            href="/usluga/website-creation"
-                            className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 md:hidden max-sm:hidden"
-                        >
-                            Cайты
-                        </Link>
-                        <Link
-                            href="/usluga/context-ads"
-                            className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 max-lg:hidden max-sm:inline"
-                        >
-                            Контекстная реклама
-                        </Link>
-                        <Link
-                            href="/usluga/context-ads"
-                            className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 lg:hidden max-sm:hidden"
-                        >
-                            Реклама
-                        </Link>
-                        <Link
-                            href="/usluga/create-salesment"
-                            className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 max-2xl:hidden"
-                        >
-                            Создание/развитие <br/> отделов продаж
-                        </Link>
-                        <Link
-                            href="/usluga/create-salesment"
-                            className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 2xl:hidden max-xl:hidden"
-                        >
-                            Развитие отделов продаж
-                        </Link>
-                        <Link
-                            href="/usluga/create-salesment"
-                            className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 xl:hidden max-md:hidden max-sm:inline"
-                        >
-                            Развитие продаж
-                        </Link>
-                        <Link
-                            href="/usluga/create-salesment"
-                            className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 md:hidden max-sm:hidden"
-                        >
-                            Продажи
-                        </Link>
-                        <Link
-                            href="/usluga/"
-                            className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300"
-                        >
-                            Видеосьемка
-                        </Link>
-                        <Link
-                            href="/usluga/SMM"
-                            className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300"
-                        >
-                            SMM
-                        </Link>
+                        <li>
+                            <Link
+                                href="/usluga/website-creation"
+                                className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 max-md:hidden max-sm:inline">
+                                Создание сайтов
+                            </Link>
+                            <Link
+                                href="/usluga/website-creation"
+                                className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 md:hidden max-sm:hidden">
+                                Cайты
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href="/usluga/context-ads"
+                                className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 max-lg:hidden max-sm:inline">
+                                Контекстная реклама
+                            </Link>
+                            <Link
+                                href="/usluga/context-ads"
+                                className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 lg:hidden max-sm:hidden">
+                                Реклама
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href="/usluga/create-salesment"
+                                className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 max-2xl:hidden">
+                                Создание/развитие <br/> отделов продаж
+                            </Link>
+                            <Link
+                                href="/usluga/create-salesment"
+                                className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 2xl:hidden max-xl:hidden">
+                                Развитие отделов продаж
+                            </Link>
+                            <Link
+                                href="/usluga/create-salesment"
+                                className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 xl:hidden max-md:hidden max-sm:inline">
+                                Развитие продаж
+                            </Link>
+                            <Link
+                                href="/usluga/create-salesment"
+                                className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300 md:hidden max-sm:hidden">
+                                Продажи
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href="/usluga/"
+                                className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300">
+                                Видеосьемка
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href="/usluga/SMM"
+                                className="text-welcomeLink max-sm:text-[30px] font-medium font-railway hover:text-mainColor duration-300">
+                                SMM
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
             </div>

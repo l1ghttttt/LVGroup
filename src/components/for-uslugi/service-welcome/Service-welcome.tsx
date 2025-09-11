@@ -41,6 +41,9 @@ const ServiceWelcome = ({
                     className={`${filters && 'grayscale contrast-200 brightness-125'} ${!isDark && 'invert'}`}
                 >
                     <source src={`/${background}`} type="video/mp4" />
+                    <track
+                        default
+                        kind="captions"/>
                 </video>
             </div>
 

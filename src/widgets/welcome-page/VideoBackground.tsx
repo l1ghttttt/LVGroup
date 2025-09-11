@@ -24,6 +24,9 @@ const VideoBackground = () => {
                 className={theme === 'dark' ? '' : 'invert'}
             >
                 <source src="/animated-background.mp4" type="video/mp4" />
+                <track
+                    default
+                    kind="captions" />
             </video>
         </div>
     );

@@ -34,6 +34,7 @@ COPY --from=builder /app/postcss.config.mjs postcss.config.mjs
 COPY --from=builder /app/src src
 COPY --from=builder /app/robots.txt public/robots.txt
 COPY --from=builder /app/sitemap.xml public/sitemap.xml
+COPY --from=builder /app/.htaccess public/.htaccess
 
 # 10. Устанавливаем только production-зависимости
 RUN npm install --omit=dev

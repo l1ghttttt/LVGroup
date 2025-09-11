@@ -104,6 +104,9 @@ const CasesList = React.forwardRef<HTMLDivElement, CasesProps>(
                                 {item.video ? (
                                     <video autoPlay muted loop playsInline className="absolute top-0 left-0 w-full h-full object-cover">
                                         <source src={`/${item.preview}`} type="video/mp4" />
+                                        <track
+                                            default
+                                            kind="captions"/>
                                     </video>
                                 ) : (
                                     <img className="object-cover absolute left-0 top-0 w-full h-full" src={`/${item.preview}`} alt="" />
@@ -124,6 +127,9 @@ const CasesList = React.forwardRef<HTMLDivElement, CasesProps>(
                             <div className="w-full h-full">
                                 <video autoPlay muted loop playsInline id="myVideo" className="pointer-events-none">
                                     <source src="/SeeAllProjects.mp4" type="video/mp4" />
+                                    <track
+                                        default
+                                        kind="captions"/>
                                 </video>
                                 <div className="bg-background p-caseContentPadding w-full h-full flex flex-col justify-between">
                                     <p className="max-2xl:hidden -translate-y-[0.8rem] relative z-25 text-seeAllSize leading-seeAllLeading text-white font-railway font-semibold">

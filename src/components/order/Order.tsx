@@ -18,6 +18,9 @@ const Order = () => {
                 <div className="order-video-background absolute top-0 left-0 w-full h-full">
                     <video autoPlay muted loop playsInline id="myOrderVideo" className={theme === 'dark' ? '' : 'invert'}>
                         <source src="/order-bg.mp4" type="video/mp4"/>
+                        <track
+                            default
+                            kind="captions"/>
                     </video>
                 </div>
                 <div
