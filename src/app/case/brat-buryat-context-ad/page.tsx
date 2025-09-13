@@ -30,6 +30,7 @@ const BratBuryatContextsAd = () => {
                     <CustomerPhoto
                         full={true}
                         photo={`BratBuryatContextAdPicture.jpg`}
+                        photoAlt={`Фото контекстной рекламы`}
                     />
                     <CustomerText
                         title={`Подготовка к рекламной компании`}
@@ -43,6 +44,7 @@ const BratBuryatContextsAd = () => {
                         full={true}
                         photo={`BratBuryatContextAdPicture2.jpg`}
                         higher={true}
+                        photoAlt={`Фото контекстной рекламы номер 2`}
                     />
 
                     <CustomerText
