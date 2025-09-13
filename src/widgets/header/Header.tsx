@@ -13,6 +13,7 @@ import { useTheme } from "next-themes";
 import { ThemeSwitcher } from "@/shared/ui/themeSwitcher";
 import { usePathname } from "next/navigation";
 import uslugi from "../../app/uslugi.json"
+import Image from "next/image";
 
 interface ServicesListProps {
     trigger: string;
@@ -57,9 +58,9 @@ const Header: React.FC = () => {
         <header className= {`z-[50] header-clas w-full h-[100px] ${isUnSticky ? 'border-b-[1px]' : 'border-b-0'}  flex items-center pl-[15px] pr-[30px] gap-[25px] max-2xl:hidden top-0 ${isUnSticky ? "absolute" : "sticky duration-500 transform bg-background z-100"} ${isHidden && !isUnSticky  ? "-translate-y-full" : "translate-y-0"}`}>
             <Link href={`/`}>
                 {theme === 'dark' ? (
-                    <img src="/LVGROUP_logo.svg" alt="логотип LVGroup" className="w-[150px]" />
+                    <Image src="/LVGROUP_logo.svg" width={360} height={150}  alt="логотип LVGroup" className="w-[150px]" />
                 ) : (
-                    <img src="/LVGROUP_logo-black.svg" alt="логотип LVGroup" className="w-[150px]" />
+                    <Image src="/LVGROUP_logo-black.svg" width={360} height={150} alt="логотип LVGroup" className="w-[150px]" />
                 )}
             </Link>
             <nav className="flex items-center gap-3">

@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from "@/shared/ui/accordion";
 import uslugi from "@/app/uslugi.json";
+import Image from "next/image";
 
 interface ServicesListProps {
     trigger: string;
@@ -47,9 +48,9 @@ export default function BurgerHeader() {
         <header className={`z-[50] header-clas justify-between absolute flex h-[100px] border-b-[1px] w-full pl-[15px] pr-[30px] gap-[25px] items-center 2xl:hidden max-sm:gap-[10px] max-sm:pr-[15px] max-sm:pl-[10px] top-0 ${isUnSticky ? "absolute" : "sticky duration-500 transform bg-background z-100"} ${isHidden && !isUnSticky ? "-translate-y-full" : "translate-y-0"}`}>
             <Link href={`/`}>
                 {theme === 'dark' ? (
-                    <img src="/LVGROUP_logo.svg" alt="логотип LVGroup" className="w-[150px] max-sm:w-[130px]"/>
+                    <Image src="/LVGROUP_logo.svg" alt="логотип LVGroup" width={360} height={150} className="w-[150px] max-sm:w-[130px]"/>
                 ) : (
-                    <img src="/LVGROUP_logo-black.svg" alt="логотип LVGroup" className="w-[150px] max-sm:w-[130px]"/>
+                    <Image src="/LVGROUP_logo-black.svg" alt="логотип LVGroup" width={360} height={150} className="w-[150px] max-sm:w-[130px]"/>
                 )}
             </Link>
 

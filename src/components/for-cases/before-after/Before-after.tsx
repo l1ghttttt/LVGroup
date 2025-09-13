@@ -2,6 +2,7 @@
 
 import { motion } from 'motion/react';
 import React, {MouseEventHandler, TouchEventHandler, useEffect, useRef, useState} from 'react';
+import Image from "next/image";
 
 export function isIntersectionObserverSupport() {
     if (typeof window === 'undefined') return false;
@@ -10,7 +11,7 @@ export function isIntersectionObserverSupport() {
 
 export interface Image {
     imageUrl: string;
-    alt?: string,
+    alt: string,
 }
 
 type OnSliderLoadCallback = () => void;
@@ -299,25 +300,29 @@ export default function BeforeAfter({
 
             >
                 <div className="before-after-slider__first-photo-container">
-                    <img
+                    <Image
                         src={firstImage.imageUrl}
                         onLoad={onFirstImageLoad}
                         draggable={false}
                         alt={firstImage.alt}
                         ref={firstImageRef}
                         className={`rounded-[10px] overflow-hidden`}
+                        width={1920}
+                        height={1080}
                     />
                 </div>
                 {Boolean(imagesWidth) && (
                     <>
                         <div className="before-after-slider__second-photo-container" style={secondImgContainerStyle}>
-                            <img
+                            <Image
                                 style={imgStyles}
                                 src={secondImage.imageUrl}
                                 onLoad={() => onImageLoad(1)}
                                 draggable={false}
                                 alt={secondImage.alt}
                                 className={`rounded-[10px] overflow-hidden`}
+                                width={1920}
+                                height={1080}
                             />
                         </div>
                         <div

@@ -207,7 +207,7 @@ export function OrderForm() {
                             <div className="flex flex-col">
                                 <FormLabel
                                     htmlFor="consent"
-                                    className="text-sm font-normal text-muted-foreground"
+                                    className="text-sm font-normal text-background"
                                 >
                                     Я прочитал и даю{" "}
                                     <a

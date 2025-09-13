@@ -36,11 +36,11 @@ export const metadata = {
         index: true,
         follow: true,
     },
-    metadataBase: new URL('https://lv-group.vercel.app'),
+    metadataBase: new URL('https://grouplv.ru'),
     openGraph: {
         title: 'LV Group - команда, которая делает результат!',
         description: 'Отделы продаж, создание сайтов, контекстная реклама, дизайн, SMM.',
-        url: 'https://lv-group.vercel.app',
+        url: 'https://grouplv.ru',
         siteName: 'LV Group',
         images: [
             {

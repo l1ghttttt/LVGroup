@@ -61,7 +61,7 @@ const CustomerImageSwiper = ({ images, className }: Props) => {
                         <SwiperSlide key={i}>
                             <Image
                                 src={`/${img}`}
-                                alt={`Image ${i + 1}`}
+                                alt={`Картинка номер ${i + 1}`}
                                 loading="eager"
                                 width={800}
                                 height={800}

@@ -4,7 +4,7 @@ import Image from "next/image";
 interface CustomerPhotoProps {
     full?: boolean;
     photo: string;
-    photoAlt?: string;
+    photoAlt: string;
     higher?: boolean;
 }
 

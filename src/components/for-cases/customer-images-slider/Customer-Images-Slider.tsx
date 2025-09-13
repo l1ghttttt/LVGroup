@@ -112,7 +112,7 @@ export default function HorizontalScrollSlider({ images, className }: Props) {
                                 if (el) imagesRef.current[i] = el;
                             }}
                             src={`/${img}`}
-                            alt={`Image ${i + 1}`}
+                            alt={`картинка номер ${i + 1}`}
                             loading="eager"
                             width={415}
                             height={622}
