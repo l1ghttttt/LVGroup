@@ -35,6 +35,8 @@ COPY --from=builder /app/src src
 COPY --from=builder /app/robots.txt public/robots.txt
 COPY --from=builder /app/sitemap.xml public/sitemap.xml
 COPY --from=builder /app/.htaccess public/.htaccess
+COPY --from=builder /app/Ads.txt public/Ads.txt
+
 
 # 10. Устанавливаем только production-зависимости
 RUN npm install --omit=dev
