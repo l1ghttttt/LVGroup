@@ -22,15 +22,16 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-    title: 'LV Group - команда, которая делает результат!',
-    description: 'Отделы продаж, создание сайтов, контекстная реклама, дизайн, SMM.',
+    title: 'LV GROUP — продажи, сайты, реклама под ключ',
+    description: 'LV GROUP помогает бизнесу расти: аудит и развитие отделов продаж, создание сайтов, SEO и контекстная реклама, SMM и дизайн. Команда, которая делает результат!.',
     applicationName: 'LV Group',
     authors: [{ name: 'Продвигаем бизнес — от маркетинга до продаж' }],
     creator: 'Boris (bsleonov@gmail.com)',
     publisher: 'LV Group',
     keywords: [
-        'маркетинг', 'отделы продаж', 'создание сайтов',
-        'контекстная реклама', 'дизайн', 'SMM', 'LV Group'
+        'аудит отдела продаж', 'создание сайтов', 'контекстная реклама',
+        'SMM продвижение', 'SEO продвижение', 'маркетинговое сопровождение',
+        'фирменный стиль', 'фотосессии', 'видеосъемка', 'call-центр под ключ'
     ],
     robots: {
         index: true,
@@ -111,6 +112,19 @@ export default function RootLayout({
                     webvisor:true
               });`
                 }
+            </Script>
+            {/* Google Analytics */}
+            <Script
+                src="https://www.googletagmanager.com/gtag/js?id=G-5B22PCRL13"
+                strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+                {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-5B22PCRL13');
+          `}
             </Script>
 
             <script
